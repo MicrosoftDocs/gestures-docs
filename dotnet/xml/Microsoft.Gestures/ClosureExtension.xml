@@ -1,0 +1,40 @@
+<Type Name="ClosureExtension" FullName="Microsoft.Gestures.ClosureExtension">
+  <TypeSignature Language="C#" Value="public static class ClosureExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClosureExtension extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.ClosureExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Closure">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.List&lt;Microsoft.Gestures.GestureSegment&gt; Closure (this System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt; gestureSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.List`1&lt;class Microsoft.Gestures.GestureSegment&gt; Closure(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.GestureSegment&gt; gestureSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.ClosureExtension.Closure(System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Gestures.GestureSegment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gestureSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="gestureSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

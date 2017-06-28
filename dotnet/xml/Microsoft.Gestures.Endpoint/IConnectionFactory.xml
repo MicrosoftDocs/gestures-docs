@@ -1,0 +1,34 @@
+<Type Name="IConnectionFactory" FullName="Microsoft.Gestures.Endpoint.IConnectionFactory">
+  <TypeSignature Language="C#" Value="public interface IConnectionFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConnectionFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.IConnectionFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Gestures.Protocol.IConnection&gt; Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Gestures.Protocol.IConnection&gt; Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.IConnectionFactory.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Gestures.Protocol.IConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

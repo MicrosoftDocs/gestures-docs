@@ -1,0 +1,150 @@
+<Type Name="AllFingersExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension">
+  <TypeSignature Language="C#" Value="public class AllFingersExtension : Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AllFingersExtension extends Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(Microsoft.Gestures.AllFingersContext))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AllFingersExtension (Microsoft.Gestures.Finger finger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+      </Parameters>
+      <Docs>
+        <param name="finger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AllFingersExtension (Microsoft.Gestures.Finger finger1, Microsoft.Gestures.Finger finger2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger1, valuetype Microsoft.Gestures.Finger finger2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger1" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger2" Type="Microsoft.Gestures.Finger" />
+      </Parameters>
+      <Docs>
+        <param name="finger1">To be added.</param>
+        <param name="finger2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AllFingersExtension (Microsoft.Gestures.Finger finger1, Microsoft.Gestures.Finger finger2, Microsoft.Gestures.Finger finger3);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger1, valuetype Microsoft.Gestures.Finger finger2, valuetype Microsoft.Gestures.Finger finger3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger1" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger2" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger3" Type="Microsoft.Gestures.Finger" />
+      </Parameters>
+      <Docs>
+        <param name="finger1">To be added.</param>
+        <param name="finger2">To be added.</param>
+        <param name="finger3">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AllFingersExtension (Microsoft.Gestures.Finger finger1, Microsoft.Gestures.Finger finger2, Microsoft.Gestures.Finger finger3, Microsoft.Gestures.Finger finger4);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger1, valuetype Microsoft.Gestures.Finger finger2, valuetype Microsoft.Gestures.Finger finger3, valuetype Microsoft.Gestures.Finger finger4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger1" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger2" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger3" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger4" Type="Microsoft.Gestures.Finger" />
+      </Parameters>
+      <Docs>
+        <param name="finger1">To be added.</param>
+        <param name="finger2">To be added.</param>
+        <param name="finger3">To be added.</param>
+        <param name="finger4">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AllFingersExtension (Microsoft.Gestures.Finger finger1, Microsoft.Gestures.Finger finger2, Microsoft.Gestures.Finger finger3, Microsoft.Gestures.Finger finger4, Microsoft.Gestures.Finger finger5);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger1, valuetype Microsoft.Gestures.Finger finger2, valuetype Microsoft.Gestures.Finger finger3, valuetype Microsoft.Gestures.Finger finger4, valuetype Microsoft.Gestures.Finger finger5) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger1" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger2" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger3" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger4" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="finger5" Type="Microsoft.Gestures.Finger" />
+      </Parameters>
+      <Docs>
+        <param name="finger1">To be added.</param>
+        <param name="finger2">To be added.</param>
+        <param name="finger3">To be added.</param>
+        <param name="finger4">To be added.</param>
+        <param name="finger5">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFingersContext">
+      <MemberSignature Language="C#" Value="public override Microsoft.Gestures.FingersContext CreateFingersContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Gestures.FingersContext CreateFingersContext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.CreateFingersContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingersContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

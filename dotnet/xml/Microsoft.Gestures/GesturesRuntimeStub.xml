@@ -1,0 +1,50 @@
+<Type Name="GesturesRuntimeStub" FullName="Microsoft.Gestures.GesturesRuntimeStub">
+  <TypeSignature Language="C#" Value="public class GesturesRuntimeStub" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GesturesRuntimeStub extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GesturesRuntimeStub" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GesturesRuntimeStub ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesRuntimeStub.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GesturesRuntime">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.IGestureContainerCollection GesturesRuntime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.IGestureContainerCollection GesturesRuntime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GesturesRuntimeStub.GesturesRuntime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.IGestureContainerCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

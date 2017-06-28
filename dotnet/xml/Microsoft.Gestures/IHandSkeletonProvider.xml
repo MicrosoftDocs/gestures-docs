@@ -1,0 +1,32 @@
+<Type Name="IHandSkeletonProvider" FullName="Microsoft.Gestures.IHandSkeletonProvider">
+  <TypeSignature Language="C#" Value="public interface IHandSkeletonProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHandSkeletonProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.IHandSkeletonProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HandSkeletonsReady">
+      <MemberSignature Language="C#" Value="public event Microsoft.Gestures.HandSkeletonsReadyHandler HandSkeletonsReady;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Gestures.HandSkeletonsReadyHandler HandSkeletonsReady" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.IHandSkeletonProvider.HandSkeletonsReady" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HandSkeletonsReadyHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

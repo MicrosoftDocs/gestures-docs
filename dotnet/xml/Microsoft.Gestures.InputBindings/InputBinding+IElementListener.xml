@@ -1,0 +1,49 @@
+<Type Name="InputBinding+IElementListener" FullName="Microsoft.Gestures.InputBindings.InputBinding+IElementListener">
+  <TypeSignature Language="C#" Value="protected interface InputBinding.IElementListener" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected interface auto ansi abstract InputBinding/IElementListener" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.InputBinding.IElementListener" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public bool IsActive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActiveChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler IsActiveChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler IsActiveChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActiveChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

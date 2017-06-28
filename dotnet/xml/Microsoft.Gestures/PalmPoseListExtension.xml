@@ -1,0 +1,71 @@
+<Type Name="PalmPoseListExtension" FullName="Microsoft.Gestures.PalmPoseListExtension">
+  <TypeSignature Language="C#" Value="public static class PalmPoseListExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PalmPoseListExtension extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.PalmPoseListExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt; poseConstraints, Microsoft.Gestures.Hand hand, Microsoft.Gestures.PoseDirection direction = Microsoft.Gestures.PoseDirection.Undefined, Microsoft.Gestures.PoseDirection orientation = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.PoseConstraint&gt; poseConstraints, valuetype Microsoft.Gestures.Hand hand, valuetype Microsoft.Gestures.PoseDirection direction, valuetype Microsoft.Gestures.PoseDirection orientation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Hand,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="poseConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt;" RefType="this" />
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+        <Parameter Name="orientation" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="poseConstraints">To be added.</param>
+        <param name="hand">To be added.</param>
+        <param name="direction">To be added.</param>
+        <param name="orientation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt; poseConstraints, Microsoft.Gestures.HandContext handContext, Microsoft.Gestures.PoseDirection direction, Microsoft.Gestures.PoseDirection orientation = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.PoseConstraint&gt; poseConstraints, class Microsoft.Gestures.HandContext handContext, valuetype Microsoft.Gestures.PoseDirection direction, valuetype Microsoft.Gestures.PoseDirection orientation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="poseConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt;" RefType="this" />
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+        <Parameter Name="orientation" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="poseConstraints">To be added.</param>
+        <param name="handContext">To be added.</param>
+        <param name="direction">To be added.</param>
+        <param name="orientation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

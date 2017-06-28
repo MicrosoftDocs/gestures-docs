@@ -1,0 +1,180 @@
+<Type Name="FingertipDistanceRelation" FullName="Microsoft.Gestures.FingertipDistanceRelation">
+  <TypeSignature Language="C#" Value="public class FingertipDistanceRelation : Microsoft.Gestures.FingersRelation&lt;Microsoft.Gestures.RelativeDistance&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FingertipDistanceRelation extends Microsoft.Gestures.FingersRelation`1&lt;valuetype Microsoft.Gestures.RelativeDistance&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingertipDistanceRelation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.FingersRelation&lt;Microsoft.Gestures.RelativeDistance&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TRelationEnum">Microsoft.Gestures.RelativeDistance</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingertipDistanceRelation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingertipDistanceRelation (Microsoft.Gestures.Finger finger, Microsoft.Gestures.RelativeDistance distanceRelation, Microsoft.Gestures.Finger otherFinger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.RelativeDistance distanceRelation, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="distanceRelation" Type="Microsoft.Gestures.RelativeDistance" />
+        <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
+      </Parameters>
+      <Docs>
+        <param name="finger">To be added.</param>
+        <param name="distanceRelation">To be added.</param>
+        <param name="otherFinger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingertipDistanceRelation (Microsoft.Gestures.Finger finger, Microsoft.Gestures.RelativeDistance distanceRelation, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.RelativeDistance distanceRelation, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="distanceRelation" Type="Microsoft.Gestures.RelativeDistance" />
+        <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="finger">To be added.</param>
+        <param name="distanceRelation">To be added.</param>
+        <param name="otherFingers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingertipDistanceRelation (Microsoft.Gestures.FingersContext context, Microsoft.Gestures.RelativeDistance relativeDistance, Microsoft.Gestures.FingersContext otherContext = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext context, valuetype Microsoft.Gestures.RelativeDistance relativeDistance, class Microsoft.Gestures.FingersContext otherContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.FingersContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="relativeDistance" Type="Microsoft.Gestures.RelativeDistance" />
+        <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="relativeDistance">To be added.</param>
+        <param name="otherContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingertipDistanceRelation (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativeDistance distanceRelation, Microsoft.Gestures.Finger otherFinger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativeDistance distanceRelation, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="distanceRelation" Type="Microsoft.Gestures.RelativeDistance" />
+        <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
+      </Parameters>
+      <Docs>
+        <param name="fingers">To be added.</param>
+        <param name="distanceRelation">To be added.</param>
+        <param name="otherFinger">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingertipDistanceRelation (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativeDistance distanceRelation, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativeDistance distanceRelation, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="distanceRelation" Type="Microsoft.Gestures.RelativeDistance" />
+        <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="fingers">To be added.</param>
+        <param name="distanceRelation">To be added.</param>
+        <param name="otherFingers">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DistanceRelation">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.RelativeDistance DistanceRelation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.RelativeDistance DistanceRelation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingertipDistanceRelation.DistanceRelation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Gestures.XamlTypeConverters.FlagEnumConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativeDistance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

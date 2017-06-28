@@ -1,0 +1,325 @@
+<Type Name="HorizontalMotionSegment" FullName="Microsoft.Gestures.HorizontalMotionSegment">
+  <TypeSignature Language="C#" Value="public class HorizontalMotionSegment : Microsoft.Gestures.MotionSegment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HorizontalMotionSegment extends Microsoft.Gestures.MotionSegment" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HorizontalMotionSegment" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.MotionSegment</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllSegments">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt; AllSegments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt; AllSegments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.AllSegments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Backward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment Backward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment Backward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.Backward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcLeftBackward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcLeftBackward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcLeftBackward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcLeftBackward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcLeftForward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcLeftForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcLeftForward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcLeftForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcRightBackward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcRightBackward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcRightBackward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcRightBackward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcRightForward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcRightForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment ClockwiseArcRightForward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcRightForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcLeftBackward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcLeftBackward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcLeftBackward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcLeftBackward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcLeftForward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcLeftForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcLeftForward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcLeftForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcRightBackward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcRightBackward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcRightBackward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcRightBackward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcRightForward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcRightForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment CounterClockwiseArcRightForward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcRightForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalLeftBackward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment DiagonalLeftBackward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment DiagonalLeftBackward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalLeftBackward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalLeftForward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment DiagonalLeftForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment DiagonalLeftForward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalLeftForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalRightBackward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment DiagonalRightBackward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment DiagonalRightBackward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalRightBackward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalRightForward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment DiagonalRightForward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment DiagonalRightForward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalRightForward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment Forward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment Forward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.Forward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment Left { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MotionPlane">
+      <MemberSignature Language="C#" Value="public override Microsoft.Gestures.MotionPlane MotionPlane { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.MotionPlane MotionPlane" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.MotionPlane" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.HorizontalMotionSegment Right { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.HorizontalMotionSegment Right" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HorizontalMotionSegment.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HorizontalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

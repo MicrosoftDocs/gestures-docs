@@ -1,0 +1,176 @@
+<Type Name="Quaternion" FullName="Microsoft.Gestures.Skeleton.Quaternion">
+  <TypeSignature Language="C#" Value="public class Quaternion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Quaternion extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.Quaternion" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Quaternion (float r, float i, float j, float k);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 r, float32 i, float32 j, float32 k) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="r" Type="System.Single" />
+        <Parameter Name="i" Type="System.Single" />
+        <Parameter Name="j" Type="System.Single" />
+        <Parameter Name="k" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="r">To be added.</param>
+        <param name="i">To be added.</param>
+        <param name="j">To be added.</param>
+        <param name="k">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="I">
+      <MemberSignature Language="C#" Value="public float I { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 I" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.I" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="J">
+      <MemberSignature Language="C#" Value="public float J { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 J" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.J" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="K">
+      <MemberSignature Language="C#" Value="public float K { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 K" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.K" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Quaternion op_Multiply (Microsoft.Gestures.Skeleton.Quaternion q1, Microsoft.Gestures.Skeleton.Quaternion q2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Quaternion op_Multiply(class Microsoft.Gestures.Skeleton.Quaternion q1, class Microsoft.Gestures.Skeleton.Quaternion q2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.op_Multiply(Microsoft.Gestures.Skeleton.Quaternion,Microsoft.Gestures.Skeleton.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="q1" Type="Microsoft.Gestures.Skeleton.Quaternion" />
+        <Parameter Name="q2" Type="Microsoft.Gestures.Skeleton.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="q1">To be added.</param>
+        <param name="q2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="R">
+      <MemberSignature Language="C#" Value="public float R { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 R" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.R" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Quaternion Rotate (float deltaX, float deltaY = 0, float deltaZ = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Gestures.Skeleton.Quaternion Rotate(float32 deltaX, float32 deltaY, float32 deltaZ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.Rotate(System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deltaX" Type="System.Single" />
+        <Parameter Name="deltaY" Type="System.Single" />
+        <Parameter Name="deltaZ" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="deltaX">To be added.</param>
+        <param name="deltaY">To be added.</param>
+        <param name="deltaZ">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAxisAngle">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.AxisAngle ToAxisAngle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Gestures.Skeleton.AxisAngle ToAxisAngle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.ToAxisAngle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.AxisAngle</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,554 @@
+<Type Name="PalmMotion" FullName="Microsoft.Gestures.PalmMotion">
+  <TypeSignature Language="C#" Value="public class PalmMotion : Microsoft.Gestures.HandPartMotion&lt;Microsoft.Gestures.HandContext&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PalmMotion extends Microsoft.Gestures.HandPartMotion`1&lt;class Microsoft.Gestures.HandContext&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.PalmMotion" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.HandPartMotion&lt;Microsoft.Gestures.HandContext&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TContextType">Microsoft.Gestures.HandContext</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.MotionScript motionScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.MotionScript motionScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.MotionScript)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionScript" Type="Microsoft.Gestures.MotionScript" />
+      </Parameters>
+      <Docs>
+        <param name="motionScript">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.DepthMotionSegment motionSegment, Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.DepthMotionSegment motionSegment, class Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.DepthMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.DepthMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, Microsoft.Gestures.MotionScript motionScript = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, class Microsoft.Gestures.MotionScript motionScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.MotionScript)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="motionScript" Type="Microsoft.Gestures.MotionScript" />
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="motionScript">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext HandContext, Microsoft.Gestures.MotionScript motionScript = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext HandContext, class Microsoft.Gestures.MotionScript motionScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.MotionScript)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="HandContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="motionScript" Type="Microsoft.Gestures.MotionScript" />
+      </Parameters>
+      <Docs>
+        <param name="HandContext">To be added.</param>
+        <param name="motionScript">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext handContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext handContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handContext">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext handContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext handContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handContext">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext handContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext handContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handContext">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HorizontalMotionSegment motionSegment, Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HorizontalMotionSegment motionSegment, class Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.HorizontalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.HorizontalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.VerticalMotionSegment motionSegment, Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.VerticalMotionSegment motionSegment, class Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.VerticalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.VerticalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (string svgPath, Microsoft.Gestures.MotionPlane plane = Microsoft.Gestures.MotionPlane.Vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string svgPath, valuetype Microsoft.Gestures.MotionPlane plane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(System.String,Microsoft.Gestures.MotionPlane)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="svgPath" Type="System.String" />
+        <Parameter Name="plane" Type="Microsoft.Gestures.MotionPlane" />
+      </Parameters>
+      <Docs>
+        <param name="svgPath">To be added.</param>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, Microsoft.Gestures.DepthMotionSegment motionSegment, Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, class Microsoft.Gestures.DepthMotionSegment motionSegment, class Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.DepthMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.DepthMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, Microsoft.Gestures.HorizontalMotionSegment motionSegment, Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, class Microsoft.Gestures.HorizontalMotionSegment motionSegment, class Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.HorizontalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.HorizontalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, Microsoft.Gestures.VerticalMotionSegment motionSegment, Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, class Microsoft.Gestures.VerticalMotionSegment motionSegment, class Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.VerticalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.VerticalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.Hand hand, string svgPath, Microsoft.Gestures.MotionPlane plane = Microsoft.Gestures.MotionPlane.Vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand, string svgPath, valuetype Microsoft.Gestures.MotionPlane plane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.String,Microsoft.Gestures.MotionPlane)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="svgPath" Type="System.String" />
+        <Parameter Name="plane" Type="Microsoft.Gestures.MotionPlane" />
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <param name="svgPath">To be added.</param>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext handContext, Microsoft.Gestures.DepthMotionSegment motionSegment, Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext handContext, class Microsoft.Gestures.DepthMotionSegment motionSegment, class Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.DepthMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.DepthMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="handContext">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext handContext, Microsoft.Gestures.HorizontalMotionSegment motionSegment, Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext handContext, class Microsoft.Gestures.HorizontalMotionSegment motionSegment, class Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.HorizontalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.HorizontalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="handContext">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext handContext, Microsoft.Gestures.VerticalMotionSegment motionSegment, Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext handContext, class Microsoft.Gestures.VerticalMotionSegment motionSegment, class Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.VerticalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.VerticalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="handContext">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PalmMotion (Microsoft.Gestures.HandContext handContext, string svgPath, Microsoft.Gestures.MotionPlane plane = Microsoft.Gestures.MotionPlane.Vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.HandContext handContext, string svgPath, valuetype Microsoft.Gestures.MotionPlane plane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.String,Microsoft.Gestures.MotionPlane)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handContext" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="svgPath" Type="System.String" />
+        <Parameter Name="plane" Type="Microsoft.Gestures.MotionPlane" />
+      </Parameters>
+      <Docs>
+        <param name="handContext">To be added.</param>
+        <param name="svgPath">To be added.</param>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

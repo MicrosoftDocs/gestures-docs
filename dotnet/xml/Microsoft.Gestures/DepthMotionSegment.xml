@@ -1,0 +1,325 @@
+<Type Name="DepthMotionSegment" FullName="Microsoft.Gestures.DepthMotionSegment">
+  <TypeSignature Language="C#" Value="public class DepthMotionSegment : Microsoft.Gestures.MotionSegment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DepthMotionSegment extends Microsoft.Gestures.MotionSegment" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.DepthMotionSegment" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.MotionSegment</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllSegments">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; AllSegments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; AllSegments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.AllSegments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Backward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment Backward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment Backward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.Backward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcBackwardDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment ClockwiseArcBackwardDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment ClockwiseArcBackwardDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcBackwardDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcBackwardUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment ClockwiseArcBackwardUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment ClockwiseArcBackwardUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcBackwardUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcForwardDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment ClockwiseArcForwardDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment ClockwiseArcForwardDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcForwardDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcForwardUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment ClockwiseArcForwardUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment ClockwiseArcForwardUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcForwardUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcBackwardDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcBackwardDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcBackwardDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcBackwardDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcBackwardUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcBackwardUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcBackwardUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcBackwardUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcForwardDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcForwardDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcForwardDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcForwardDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcForwardUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcForwardUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment CounterClockwiseArcForwardUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcForwardUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalBackwardDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment DiagonalBackwardDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment DiagonalBackwardDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.DiagonalBackwardDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalBackwardUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment DiagonalBackwardUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment DiagonalBackwardUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.DiagonalBackwardUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalForwardDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment DiagonalForwardDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment DiagonalForwardDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.DiagonalForwardDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalForwardUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment DiagonalForwardUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment DiagonalForwardUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.DiagonalForwardUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Downward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment Downward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment Downward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.Downward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment Forward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment Forward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.Forward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MotionPlane">
+      <MemberSignature Language="C#" Value="public override Microsoft.Gestures.MotionPlane MotionPlane { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.MotionPlane MotionPlane" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.MotionPlane" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Upward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.DepthMotionSegment Upward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.DepthMotionSegment Upward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.DepthMotionSegment.Upward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.DepthMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

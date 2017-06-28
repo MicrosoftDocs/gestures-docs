@@ -1,0 +1,280 @@
+<Type Name="FingerPose" FullName="Microsoft.Gestures.FingerPose">
+  <TypeSignature Language="C#" Value="public class FingerPose : Microsoft.Gestures.HandPartPose&lt;Microsoft.Gestures.FingersContext&gt;, IEquatable&lt;Microsoft.Gestures.FingerPose&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FingerPose extends Microsoft.Gestures.HandPartPose`1&lt;class Microsoft.Gestures.FingersContext&gt; implements class System.IEquatable`1&lt;class Microsoft.Gestures.FingerPose&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingerPose" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.HandPartPose&lt;Microsoft.Gestures.FingersContext&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="ContextType">Microsoft.Gestures.FingersContext</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Gestures.FingerPose&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.Finger finger, Microsoft.Gestures.PoseDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="finger">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.PoseDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext fingersContext, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingersContext">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.PoseDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingers">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.Finger finger, Microsoft.Gestures.FingerFlexion flexion, Microsoft.Gestures.PoseDirection direction = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.FingerFlexion flexion, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="flexion" Type="Microsoft.Gestures.FingerFlexion" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="finger">To be added.</param>
+        <param name="flexion">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.FingerFlexion flexion, Microsoft.Gestures.PoseDirection direction = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext fingersContext, valuetype Microsoft.Gestures.FingerFlexion flexion, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="flexion" Type="Microsoft.Gestures.FingerFlexion" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingersContext">To be added.</param>
+        <param name="flexion">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.FingerFlexion flexion, Microsoft.Gestures.PoseDirection direction = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.FingerFlexion flexion, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="flexion" Type="Microsoft.Gestures.FingerFlexion" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingers">To be added.</param>
+        <param name="flexion">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Gestures.FingerPose other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Gestures.FingerPose other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.Equals(Microsoft.Gestures.FingerPose)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Gestures.FingerPose" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flexion">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.FingerFlexion Flexion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.FingerFlexion Flexion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingerPose.Flexion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Gestures.XamlTypeConverters.FlagEnumConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingerFlexion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

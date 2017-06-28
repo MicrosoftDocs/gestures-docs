@@ -1,0 +1,154 @@
+<Type Name="GesturesFrameworkObjectValidationException" FullName="Microsoft.Gestures.GesturesFrameworkObjectValidationException">
+  <TypeSignature Language="C#" Value="public class GesturesFrameworkObjectValidationException : Microsoft.Gestures.GesturesFrameworkException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GesturesFrameworkObjectValidationException extends Microsoft.Gestures.GesturesFrameworkException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GesturesFrameworkObjectValidationException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.GesturesFrameworkException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GesturesFrameworkObjectValidationException (System.Linq.Expressions.Expression&lt;Func&lt;object&gt;&gt; paramName, string customFaultMessage = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`1&lt;object&gt;&gt; paramName, string customFaultMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.#ctor(System.Linq.Expressions.Expression{System.Func{System.Object}},System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="paramName" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Object&gt;&gt;" />
+        <Parameter Name="customFaultMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="paramName">To be added.</param>
+        <param name="customFaultMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GesturesFrameworkObjectValidationException (object invalidObject, string customFaultMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object invalidObject, string customFaultMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.#ctor(System.Object,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="invalidObject" Type="System.Object" />
+        <Parameter Name="customFaultMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="invalidObject">To be added.</param>
+        <param name="customFaultMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GesturesFrameworkObjectValidationException (object invalidObject, System.Linq.Expressions.Expression&lt;Func&lt;object&gt;&gt; paramName, string customFaultMessage = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object invalidObject, class System.Linq.Expressions.Expression`1&lt;class System.Func`1&lt;object&gt;&gt; paramName, string customFaultMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.#ctor(System.Object,System.Linq.Expressions.Expression{System.Func{System.Object}},System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="invalidObject" Type="System.Object" />
+        <Parameter Name="paramName" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Object&gt;&gt;" />
+        <Parameter Name="customFaultMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="invalidObject">To be added.</param>
+        <param name="paramName">To be added.</param>
+        <param name="customFaultMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateException">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.GesturesFrameworkObjectValidationException CreateException (object invalidObject, System.Linq.Expressions.Expression&lt;Func&lt;object&gt;&gt; paramName, string customFaultMessage = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Gestures.GesturesFrameworkObjectValidationException CreateException(object invalidObject, class System.Linq.Expressions.Expression`1&lt;class System.Func`1&lt;object&gt;&gt; paramName, string customFaultMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.CreateException(System.Object,System.Linq.Expressions.Expression{System.Func{System.Object}},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.GesturesFrameworkObjectValidationException</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="invalidObject" Type="System.Object" />
+        <Parameter Name="paramName" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Object&gt;&gt;" />
+        <Parameter Name="customFaultMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="invalidObject">To be added.</param>
+        <param name="paramName">To be added.</param>
+        <param name="customFaultMessage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidContainingObject">
+      <MemberSignature Language="C#" Value="public object InvalidContainingObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InvalidContainingObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GesturesFrameworkObjectValidationException.InvalidContainingObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidVariableName">
+      <MemberSignature Language="C#" Value="public string InvalidVariableName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InvalidVariableName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GesturesFrameworkObjectValidationException.InvalidVariableName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidVariableValue">
+      <MemberSignature Language="C#" Value="public object InvalidVariableValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InvalidVariableValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GesturesFrameworkObjectValidationException.InvalidVariableValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

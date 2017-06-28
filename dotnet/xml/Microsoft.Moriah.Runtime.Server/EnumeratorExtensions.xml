@@ -1,0 +1,49 @@
+<Type Name="EnumeratorExtensions" FullName="Microsoft.Moriah.Runtime.Server.EnumeratorExtensions">
+  <TypeSignature Language="C#" Value="public static class EnumeratorExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EnumeratorExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Moriah.Runtime.Server.EnumeratorExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSafeEnumerable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetSafeEnumerable&lt;T&gt; (this System.Collections.Generic.IEnumerator&lt;T&gt; enumerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetSafeEnumerable&lt;T&gt;(class System.Collections.Generic.IEnumerator`1&lt;!!T&gt; enumerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Moriah.Runtime.Server.EnumeratorExtensions/&lt;GetSafeEnumerable&gt;d__0`1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="enumerator" Type="System.Collections.Generic.IEnumerator&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="enumerator">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

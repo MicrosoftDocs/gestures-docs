@@ -1,0 +1,153 @@
+<Type Name="GesturesFrameworkBinding" FullName="Microsoft.Gestures.InputBindings.GesturesFrameworkBinding">
+  <TypeSignature Language="C#" Value="public class GesturesFrameworkBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi GesturesFrameworkBinding extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GesturesFrameworkBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddGestureTriggerHandler">
+      <MemberSignature Language="C#" Value="public static void AddGestureTriggerHandler (System.Windows.DependencyObject element, Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddGestureTriggerHandler(class System.Windows.DependencyObject element, class Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.AddGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="Microsoft.Gestures.InputBindings.GestureTriggerEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPreviewGestureTriggerHandler">
+      <MemberSignature Language="C#" Value="public static void AddPreviewGestureTriggerHandler (System.Windows.DependencyObject element, Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddPreviewGestureTriggerHandler(class System.Windows.DependencyObject element, class Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.AddPreviewGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="Microsoft.Gestures.InputBindings.GestureTriggerEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GestureTriggerEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent GestureTriggerEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent GestureTriggerEvent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.GestureTriggerEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewGestureTriggerEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent PreviewGestureTriggerEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent PreviewGestureTriggerEvent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.PreviewGestureTriggerEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveGestureTriggerHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveGestureTriggerHandler (System.Windows.DependencyObject element, Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveGestureTriggerHandler(class System.Windows.DependencyObject element, class Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.RemoveGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="Microsoft.Gestures.InputBindings.GestureTriggerEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePreviewGestureTriggerHandler">
+      <MemberSignature Language="C#" Value="public static void RemovePreviewGestureTriggerHandler (System.Windows.DependencyObject element, Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemovePreviewGestureTriggerHandler(class System.Windows.DependencyObject element, class Microsoft.Gestures.InputBindings.GestureTriggerEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.RemovePreviewGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="handler" Type="Microsoft.Gestures.InputBindings.GestureTriggerEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
