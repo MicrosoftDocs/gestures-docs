@@ -2,7 +2,7 @@
 ## [About Project Prague](overview-about-project-prague.md)
 ## [Get Project Prague runtime](overview-get-project-prague-runtime.md)
 # Get Started
-## [Prerequisites](get-started-prerequisites)
+## [Prerequisites](get-started-prerequisites.md)
 ## [Start writing gestures](get-started-writing-gestures.md)
 # How To
 ## [Design gestures](how-to-design-gesturs.md)
