@@ -14,7 +14,7 @@ To get project Prague running on your machine you will need to:
 
 1. Purchase an [Intel (R) RealSense (TM) SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html). Connect the camera to a USB 3.0 port (avoid using a charging port, use an "SS" port instead) and place it below your computer monitor as illustrated in the image: ![RealSense camera desktop setup](Images\RealSenseDesktopSetup.jpg)
 
-1. Install project Prague runtime from [this url](aka.ms/gestures). The installation will create shortcuts on your desktop to out compiled samples.Please run one of the samples to verify the your setup is correct.
+1. Install project Prague runtime from [this url](https://aka.ms/moriah/alef/setup). The installation will create shortcuts on your desktop to out compiled samples.Please run one of the samples to verify the your setup is correct.
 
 ## Understanding gestures in project Prague
 
