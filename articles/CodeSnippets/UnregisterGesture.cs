@@ -1,0 +1,1 @@
+await gesturesService.UnregisterGesture(rotateRight);

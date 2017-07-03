@@ -1,0 +1,1 @@
+rotateRight.Triggered += (sender, args) => { /* This is called when the user performs the "RotateRight" gesture */ };
