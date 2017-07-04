@@ -10,4 +10,6 @@ To get Project Prague running on your machine you will need to:
 
     ![Gesture Detection Dashboard](Images\MicrosoftGesturesService.png)
 
-1. When installation completes, you will have an environment variable named "MicrosoftGesturesInstallDir". This variable points at the directory where all our assemblies are located. You can use it to reference our assemblies from your code.-->
+1. When installation completes, you will have an environment variable named "MicrosoftGesturesInstallDir". This variable points at the directory where all our assemblies are located. You can use it to reference our assemblies from your code.
+
+1. Don't forget to restart VisualStudio or command line for the environment varibales to work-->
