@@ -10,9 +10,22 @@ Using Project Prague, you will enable your users to use hand gestures to intuiti
 
 ## Getting started with Project Prague
 
+### Hardware and software requirements
+
+Please make sure your system meets the following requirements before you proceed to set up Project Prague:
+
+Category     | Minimal | Recommended
+------------ | ------------ | -------------
+Camera       | [Intel (R) RealSense (TM) SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html)
+CPU | Intel (R) Core (TM) i5 series, 4 logical cores | Intel (R) Core (TM) i7 series, 8 logical cores
+Free RAM | 1GB | 2GB
+Operating System | Windows 10 | Windows 10 with Creator's Update installed
+
+### Setting up Project Prague on your machine
+
 To get Project Prague running on your machine you will need to:
 
-1. Purchase an [Intel (R) RealSense (TM) SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html). Connect the camera to a USB 3.0 port and place it below your computer's monitor, as illustrated in the image below:
+1. Connect your [Intel (R) RealSense (TM) SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html) to a USB 3.0 port and place it below your computer's monitor, as illustrated in the image below:
     
     ![RealSense camera desktop setup](Images\RealSenseDesktopSetup.png)
 
@@ -79,7 +92,12 @@ The "Slingshot" gesture in the example is made up of a single hand motion, named
 
 ## Creating gestures in Project Prague
 
-We will now give an example illustrating how to code up a simple gesture using the Project Prague API. The gesture we will implement is called "RotateRight":
+We will now give an example illustrating how to code up a simple gesture using the Project Prague API.
+
+> [!IMPORTANT]
+> The root namespace for all Project Prague .NET entities is Microsoft.Gestures
+
+The gesture we will implement is called "RotateRight":
 
 ![Rotate right FSM](Images\RotateRightFsm.png)
 
@@ -116,6 +134,5 @@ Please note that in order for the above code to compile, you will need to refere
 * Microsoft.Gestures.dll
 * Microsoft.Gestures.Endpoint.dll
 * Microsoft.Gestures.Protocol.dll
-* Microsoft.Gestures.Common.dll
 
 To experiment with a full sample of a use case for the "RotateRight" gesture, please refer to the "RotateSample" in our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples). In this repository, you will also find other samples displaying more advanced applications for gestures.
