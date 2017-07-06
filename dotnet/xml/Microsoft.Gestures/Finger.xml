@@ -1,0 +1,96 @@
+<Type Name="Finger" FullName="Microsoft.Gestures.Finger">
+  <TypeSignature Language="C#" Value="public enum Finger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Finger extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Finger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enumerates the fingers, can be used to specify a <see cref="T:Microsoft.Gestures.FingersContext" /> which can then be used to define <see cref="T:Microsoft.Gestures.FingerPose" />, <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" />
+            and <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraints.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="Index" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.Finger Index = unsigned int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Index" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Finger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Index finger </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Middle">
+      <MemberSignature Language="C#" Value="Middle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.Finger Middle = unsigned int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Middle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Finger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Middle finger </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pinky">
+      <MemberSignature Language="C#" Value="Pinky" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.Finger Pinky = unsigned int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Pinky" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Finger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Pinky finger </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ring">
+      <MemberSignature Language="C#" Value="Ring" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.Finger Ring = unsigned int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Ring" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Finger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Ring finger </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumb">
+      <MemberSignature Language="C#" Value="Thumb" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.Finger Thumb = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Thumb" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Finger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Thumb finger </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,22 @@
+<Type Name="IGesturesRuntime" FullName="Microsoft.Gestures.IGesturesRuntime">
+  <TypeSignature Language="C#" Value="public interface IGesturesRuntime : Microsoft.Gestures.IGestureRegistrar, Microsoft.Gestures.IHandSkeletonProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGesturesRuntime implements class Microsoft.Gestures.IGestureRegistrar, class Microsoft.Gestures.IHandSkeletonProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.IGesturesRuntime" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Gestures.IGestureRegistrar</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Gestures.IHandSkeletonProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

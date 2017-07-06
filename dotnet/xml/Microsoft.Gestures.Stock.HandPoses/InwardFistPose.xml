@@ -1,0 +1,52 @@
+<Type Name="InwardFistPose" FullName="Microsoft.Gestures.Stock.HandPoses.InwardFistPose">
+  <TypeSignature Language="C#" Value="public sealed class InwardFistPose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InwardFistPose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.InwardFistPose" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.Stock.HandPoses.StockHandPose</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InwardFistPose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.InwardFistPose.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InwardFistPose (string name, Microsoft.Gestures.Hand hand = Microsoft.Gestures.Hand.RightHand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype Microsoft.Gestures.Hand hand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.InwardFistPose.#ctor(System.String,Microsoft.Gestures.Hand)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="hand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

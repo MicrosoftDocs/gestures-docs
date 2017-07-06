@@ -1,0 +1,98 @@
+<Type Name="ThrowRightGesture" FullName="Microsoft.Gestures.Stock.Gestures.ThrowRightGesture">
+  <TypeSignature Language="C#" Value="public sealed class ThrowRightGesture : Microsoft.Gestures.Stock.Gestures.StockGesture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThrowRightGesture extends Microsoft.Gestures.Stock.Gestures.StockGesture" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.Stock.Gestures.StockGesture</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThrowRightGesture ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThrowRightGesture (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForehandTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ForehandTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ForehandTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.ForehandTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InwardFistTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; InwardFistTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; InwardFistTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.InwardFistTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbsUpTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ThumbsUpTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ThumbsUpTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.ThumbsUpTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

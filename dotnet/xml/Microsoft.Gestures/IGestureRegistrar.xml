@@ -1,0 +1,56 @@
+<Type Name="IGestureRegistrar" FullName="Microsoft.Gestures.IGestureRegistrar">
+  <TypeSignature Language="C#" Value="public interface IGestureRegistrar" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGestureRegistrar" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.IGestureRegistrar" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public void Register (Microsoft.Gestures.Gesture gesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Register(class Microsoft.Gestures.Gesture gesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureRegistrar.Register(Microsoft.Gestures.Gesture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public void Unregister (Microsoft.Gestures.Gesture gesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unregister(class Microsoft.Gestures.Gesture gesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureRegistrar.Unregister(Microsoft.Gestures.Gesture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

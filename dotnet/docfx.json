@@ -3,9 +3,12 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
+          "api/overwrites/**",
+          "**/toc.yml",
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -13,6 +16,13 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": [
+          "**/toc.yml"
+        ],
+        "src": ".",
+        "dest": "bot_dotnet_toc"
       }
     ],
     "resource": [
@@ -27,11 +37,20 @@
         ]
       }
     ],
-    "overwrite": [],
+    "overwrite": {
+      "files": [
+        "api/overwrites/**/*.md"
+      ]
+    },
+    "xref": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "apiPlatform": "dotnet",
+      "author": "dotnet-bot"
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "gestures-dotnet"
+    "dest": "gestures-dotnet",
+    "lruSize": 0
   }
 }

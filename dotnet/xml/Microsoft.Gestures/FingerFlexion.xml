@@ -1,0 +1,100 @@
+<Type Name="FingerFlexion" FullName="Microsoft.Gestures.FingerFlexion">
+  <TypeSignature Language="C#" Value="public enum FingerFlexion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FingerFlexion extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingerFlexion" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Specifies the flexion state of a finger, can be used to define <see cref="T:Microsoft.Gestures.FingerPose" /> constraints.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Folded">
+      <MemberSignature Language="C#" Value="Folded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.FingerFlexion Folded = unsigned int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.FingerFlexion.Folded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingerFlexion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Finger is folded or tucked </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FoldedTucked">
+      <MemberSignature Language="C#" Value="FoldedTucked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.FingerFlexion FoldedTucked = unsigned int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.FingerFlexion.FoldedTucked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingerFlexion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Finger is folded and tucked </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="Open" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.FingerFlexion Open = unsigned int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.FingerFlexion.Open" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingerFlexion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Finger is open or stretched </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenStretched">
+      <MemberSignature Language="C#" Value="OpenStretched" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.FingerFlexion OpenStretched = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.FingerFlexion.OpenStretched" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingerFlexion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Finger is open and stretched </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Undefined">
+      <MemberSignature Language="C#" Value="Undefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.FingerFlexion Undefined = unsigned int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.FingerFlexion.Undefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingerFlexion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Finger flexion is unconstrained </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,63 @@
+<Type Name="TcpConnectionFactory" FullName="Microsoft.Gestures.Endpoint.TcpConnectionFactory">
+  <TypeSignature Language="C#" Value="public class TcpConnectionFactory : Microsoft.Gestures.Endpoint.IConnectionFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TcpConnectionFactory extends System.Object implements class Microsoft.Gestures.Endpoint.IConnectionFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.TcpConnectionFactory" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Gestures.Endpoint.IConnectionFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TcpConnectionFactory (int port);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 port) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.TcpConnectionFactory.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="port" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Gestures.Protocol.IConnection&gt; Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Gestures.Protocol.IConnection&gt; Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.TcpConnectionFactory.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Gestures.Endpoint.TcpConnectionFactory/&lt;Create&gt;d__2))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Gestures.Protocol.IConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

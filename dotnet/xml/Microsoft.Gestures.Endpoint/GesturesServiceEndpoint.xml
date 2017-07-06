@@ -1,0 +1,313 @@
+<Type Name="GesturesServiceEndpoint" FullName="Microsoft.Gestures.Endpoint.GesturesServiceEndpoint">
+  <TypeSignature Language="C#" Value="public sealed class GesturesServiceEndpoint : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GesturesServiceEndpoint extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GesturesServiceEndpoint (Microsoft.Gestures.Endpoint.IConnectionFactory connectionFactory, Microsoft.Gestures.IGestureContainerCollection containerCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.Endpoint.IConnectionFactory connectionFactory, class Microsoft.Gestures.IGestureContainerCollection containerCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.#ctor(Microsoft.Gestures.Endpoint.IConnectionFactory,Microsoft.Gestures.IGestureContainerCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionFactory" Type="Microsoft.Gestures.Endpoint.IConnectionFactory" />
+        <Parameter Name="containerCollection" Type="Microsoft.Gestures.IGestureContainerCollection" />
+      </Parameters>
+      <Docs>
+        <param name="connectionFactory">To be added.</param>
+        <param name="containerCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; ConnectAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; ConnectAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.ConnectAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Gestures.Protocol.IConnection&gt; ConnectAsync (Microsoft.Gestures.Endpoint.IConnectionFactory connectionFactory, int delayBetweenRetries, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Gestures.Protocol.IConnection&gt; ConnectAsync(class Microsoft.Gestures.Endpoint.IConnectionFactory connectionFactory, int32 delayBetweenRetries, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.ConnectAsync(Microsoft.Gestures.Endpoint.IConnectionFactory,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Gestures.Endpoint.GesturesServiceEndpoint/&lt;ConnectAsync&gt;d__44))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Gestures.Protocol.IConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionFactory" Type="Microsoft.Gestures.Endpoint.IConnectionFactory" />
+        <Parameter Name="delayBetweenRetries" Type="System.Int32" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="connectionFactory">To be added.</param>
+        <param name="delayBetweenRetries">To be added.</param>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionClosed">
+      <MemberSignature Language="C#" Value="public event Microsoft.Gestures.Endpoint.ConnectionClosedHandler ConnectionClosed;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Gestures.Endpoint.ConnectionClosedHandler ConnectionClosed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.ConnectionClosed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Endpoint.ConnectionClosedHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelayBetweenRetries">
+      <MemberSignature Language="C#" Value="public int DelayBetweenRetries { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DelayBetweenRetries" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.DelayBetweenRetries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Delay between re-connection retries in milliseconds
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Disconnect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task Disconnect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.Disconnect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRegistered">
+      <MemberSignature Language="C#" Value="public bool IsRegistered (Microsoft.Gestures.Gesture gesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsRegistered(class Microsoft.Gestures.Gesture gesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.IsRegistered(Microsoft.Gestures.Gesture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterGesture">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RegisterGesture (Microsoft.Gestures.Gesture gesture, bool isGlobal = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RegisterGesture(class Microsoft.Gestures.Gesture gesture, bool isGlobal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.RegisterGesture(Microsoft.Gestures.Gesture,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+        <Parameter Name="isGlobal" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <param name="isGlobal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterToSkeleton">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RegisterToSkeleton (Microsoft.Gestures.HandSkeletonsReadyHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RegisterToSkeleton(class Microsoft.Gestures.HandSkeletonsReadyHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.RegisterToSkeleton(Microsoft.Gestures.HandSkeletonsReadyHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Gestures.HandSkeletonsReadyHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Endpoint.EndpointStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.Endpoint.EndpointStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Endpoint.EndpointStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusChanged">
+      <MemberSignature Language="C#" Value="public event Microsoft.Gestures.Endpoint.StatusChangedHandler StatusChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Gestures.Endpoint.StatusChangedHandler StatusChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.StatusChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Endpoint.StatusChangedHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterFromSkeleton">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UnregisterFromSkeleton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UnregisterFromSkeleton() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.UnregisterFromSkeleton" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterGesture">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UnregisterGesture (Microsoft.Gestures.Gesture gesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UnregisterGesture(class Microsoft.Gestures.Gesture gesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.UnregisterGesture(Microsoft.Gestures.Gesture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WarningLog">
+      <MemberSignature Language="C#" Value="public event Microsoft.Gestures.Endpoint.WarningHandler WarningLog;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Gestures.Endpoint.WarningHandler WarningLog" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.WarningLog" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Endpoint.WarningHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

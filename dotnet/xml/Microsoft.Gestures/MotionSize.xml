@@ -1,0 +1,55 @@
+<Type Name="MotionSize" FullName="Microsoft.Gestures.MotionSize">
+  <TypeSignature Language="C#" Value="public enum MotionSize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MotionSize extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.MotionSize" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary> 
+            [Reserved for future use] Specifies the distance which a <see cref="T:Microsoft.Gestures.PalmMotion" /> or a <see cref="T:Microsoft.Gestures.FingerMotion" /> spans. 
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Large">
+      <MemberSignature Language="C#" Value="Large" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.MotionSize Large = unsigned int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.MotionSize.Large" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> long distance </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.MotionSize Normal = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.MotionSize.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> normal distance </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

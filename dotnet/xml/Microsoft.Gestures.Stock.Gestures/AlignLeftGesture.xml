@@ -1,0 +1,82 @@
+<Type Name="AlignLeftGesture" FullName="Microsoft.Gestures.Stock.Gestures.AlignLeftGesture">
+  <TypeSignature Language="C#" Value="public sealed class AlignLeftGesture : Microsoft.Gestures.Stock.Gestures.StockGesture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AlignLeftGesture extends Microsoft.Gestures.Stock.Gestures.StockGesture" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.Stock.Gestures.StockGesture</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AlignLeftGesture ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AlignLeftGesture (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveLeftTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; MoveLeftTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; MoveLeftTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.MoveLeftTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpreadLeftTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; SpreadLeftTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; SpreadLeftTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.SpreadLeftTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

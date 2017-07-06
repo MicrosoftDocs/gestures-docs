@@ -1,0 +1,150 @@
+<Type Name="IGestureContainerCollection" FullName="Microsoft.Gestures.IGestureContainerCollection">
+  <TypeSignature Language="C#" Value="public interface IGestureContainerCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGestureContainerCollection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.IGestureContainerCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.Gestures.GestureContainer gestureContainer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class Microsoft.Gestures.GestureContainer gestureContainer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureContainerCollection.Add(Microsoft.Gestures.GestureContainer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gestureContainer" Type="Microsoft.Gestures.GestureContainer" />
+      </Parameters>
+      <Docs>
+        <param name="gestureContainer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collection">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Gestures.GestureContainer&gt; Collection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyCollection`1&lt;class Microsoft.Gestures.GestureContainer&gt; Collection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.IGestureContainerCollection.Collection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Gestures.GestureContainer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionChanged">
+      <MemberSignature Language="C#" Value="public event Microsoft.Gestures.CollectionChanged&lt;Microsoft.Gestures.GestureContainer&gt; CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Gestures.CollectionChanged`1&lt;class Microsoft.Gestures.GestureContainer&gt; CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.IGestureContainerCollection.CollectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.CollectionChanged&lt;Microsoft.Gestures.GestureContainer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Microsoft.Gestures.Gesture gesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class Microsoft.Gestures.Gesture gesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureContainerCollection.Contains(Microsoft.Gestures.Gesture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (Microsoft.Gestures.Gesture gesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class Microsoft.Gestures.Gesture gesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureContainerCollection.Remove(Microsoft.Gestures.Gesture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (Microsoft.Gestures.GestureContainer gestureContainer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class Microsoft.Gestures.GestureContainer gestureContainer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureContainerCollection.Remove(Microsoft.Gestures.GestureContainer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gestureContainer" Type="Microsoft.Gestures.GestureContainer" />
+      </Parameters>
+      <Docs>
+        <param name="gestureContainer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerNestingPath">
+      <MemberSignature Language="C#" Value="public void TriggerNestingPath (string nestingPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TriggerNestingPath(string nestingPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureContainerCollection.TriggerNestingPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nestingPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nestingPath">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

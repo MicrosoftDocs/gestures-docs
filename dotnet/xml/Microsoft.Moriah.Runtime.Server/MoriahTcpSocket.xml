@@ -1,0 +1,87 @@
+<Type Name="MoriahTcpSocket" FullName="Microsoft.Moriah.Runtime.Server.MoriahTcpSocket">
+  <TypeSignature Language="C#" Value="public class MoriahTcpSocket" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MoriahTcpSocket extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MoriahTcpSocket ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionReceived">
+      <MemberSignature Language="C#" Value="public event Action&lt;Microsoft.Gestures.Protocol.IConnection&gt; ConnectionReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class Microsoft.Gestures.Protocol.IConnection&gt; ConnectionReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.ConnectionReceived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;Microsoft.Gestures.Protocol.IConnection&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public bool Start (int port);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Start(int32 port) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.Start(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

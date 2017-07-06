@@ -1,0 +1,325 @@
+<Type Name="VerticalMotionSegment" FullName="Microsoft.Gestures.VerticalMotionSegment">
+  <TypeSignature Language="C#" Value="public class VerticalMotionSegment : Microsoft.Gestures.MotionSegment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VerticalMotionSegment extends Microsoft.Gestures.MotionSegment" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.VerticalMotionSegment" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.MotionSegment</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllSegments">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; AllSegments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; AllSegments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.AllSegments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcLeftDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment ClockwiseArcLeftDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment ClockwiseArcLeftDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcLeftDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcLeftUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment ClockwiseArcLeftUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment ClockwiseArcLeftUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcLeftUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcRightDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment ClockwiseArcRightDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment ClockwiseArcRightDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcRightDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockwiseArcRightUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment ClockwiseArcRightUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment ClockwiseArcRightUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcRightUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcLeftDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcLeftDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcLeftDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcLeftDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcLeftUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcLeftUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcLeftUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcLeftUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcRightDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcRightDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcRightDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcRightDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterClockwiseArcRightUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcRightUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment CounterClockwiseArcRightUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcRightUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalLeftDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment DiagonalLeftDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment DiagonalLeftDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalLeftDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalLeftUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment DiagonalLeftUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment DiagonalLeftUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalLeftUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalRightDownward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment DiagonalRightDownward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment DiagonalRightDownward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalRightDownward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagonalRightUpward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment DiagonalRightUpward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment DiagonalRightUpward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalRightUpward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Downward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment Downward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment Downward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Downward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment Left { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MotionPlane">
+      <MemberSignature Language="C#" Value="public override Microsoft.Gestures.MotionPlane MotionPlane { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.MotionPlane MotionPlane" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.MotionPlane" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment Right { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment Right" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Upward">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.VerticalMotionSegment Upward { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Gestures.VerticalMotionSegment Upward" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Upward" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.VerticalMotionSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
