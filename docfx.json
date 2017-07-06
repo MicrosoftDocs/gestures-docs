@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "toc.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -37,7 +38,8 @@
       "ms.topic": "conceptual",
       "ms.prod": "",
       "ms.service": "",
-      "ms.technology": ""
+      "ms.technology": "",
+      "breadcrumb_path": "/gestures/toc.json"
     },
     "fileMetadata": {},
     "template": [],
