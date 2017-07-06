@@ -29,7 +29,16 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "title": "Project Prague Conceptual Documentation",
+      "author": "YoniSmolin",
+      "ms.author": "yonis",
+      "ms.date": "07/06/2017",
+      "ms.topic": "conceptual",
+      "ms.prod": "",
+      "ms.service": "",
+      "ms.technology": ""
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "Gestures"
