@@ -3,8 +3,7 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "toc.yml"
+          "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
@@ -36,8 +35,7 @@
       "ms.author": "yonis",
       "ms.date": "07/06/2017",
       "ms.topic": "conceptual",
-      "ms.prod": "gesture",
-      "breadcrumb_path": "/gestures/toc.json"
+      "ms.prod": "gesture"
     },
     "fileMetadata": {},
     "template": [],
