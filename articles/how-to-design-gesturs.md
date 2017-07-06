@@ -1,1 +1,0 @@
-https://docs.microsoft.com/en-us/bot-framework/bot-design-principles

@@ -40,7 +40,7 @@ To get Project Prague running on your machine you will need to:
     * Microsoft.Gestures.Sync - an update client that will pull updated builds of Project Prague assemblies when we publish them.
     * Microsoft.Gestures.DiscoveryClient - a sample application providing gestures for various contexts - Windows shell, PowerPoint, Skype and YouTube. To learn more about this sample, follow [this link](https://review.docs.microsoft.com/en-us/gestures).
 
-For a more detailed description of the setup process, please refer to the [Set up Project Prague](overview-set-up-project-prague.md) section.
+For a more detailed description of the setup process, please refer to the [Set up Project Prague](http://aka.ms/gestures/docs) section.
 
 ## Understanding gestures in Project Prague
 
