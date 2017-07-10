@@ -1,6 +1,6 @@
 # Gestures Service
 
-The Gestures Service provides [gesture](index.md###gesture) detection as a local service for client applications. For example, our demo applications, provided with the Project Prague installation - [DiscoveryClient](https://aka.ms/gestures/docs), [Gestures Camera](https://aka.ms/gestures/docs) and [Wolfly](https://aka.ms/gestures/docs) - are all relying on the Gestures Service for [gesture](index.md###gesture) detection. You can use the [GesturesServiceEndpoint](xref:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint) class from the [Project Prague API](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures) in order to communicate with the Gestures Service from your application.
+The Gestures Service provides [gesture](index.md###gesture) detection as a local service for client applications. For example, our demo applications, provided with the Project Prague installation - [DiscoveryClient](https://aka.ms/gestures/docs), [Gestures Camera](https://aka.ms/gestures/docs) and [Wolfly](https://aka.ms/gestures/docs) - are all relying on the Gestures Service for [gesture](index.md###gesture) detection. You can use the [GesturesServiceEndpoint](http://aka.ms/gestures) class from the [Project Prague API](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures) in order to communicate with the Gestures Service from your application.
 
 After you install Project Prague, the Gestures Service will be launched every time your machine starts. For further details on installation, refer to [Setting up Project Prague on your machine](index.md###setting-up-project-prague-on-your-machine).
 
@@ -64,10 +64,10 @@ This sub-region of the Gestures Service UI displays the IR video stream produced
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Image.png)
 
-On top of the IR frame, We draw vectors indicating the estimated direction of each finger and location of each fingertip. We also draw a local coordinate system, positioned at the [palm center](xref:Microsoft.Gestures.Skeleton.I​Hand​Skeleton.​Palm​Position), made up of the following axes
+On top of the IR frame, We draw vectors indicating the estimated direction of each finger and location of each fingertip. We also draw a local coordinate system, positioned at the [palm center](http://aka.ms/gestures), made up of the following axes
 
-- Blue - the direction perpendicular to the palm plane. In our API, we refer to this axis as the [palm direction](xref::Microsoft.Gestures.Skeleton.I​Hand​Skeleton.​Palm​Direction).
-- Green - the direction that would be aligned with the middle finger had it been stretched out. In our API, we refer to this axis as the [palm orientation](xref::Microsoft.Gestures.Skeleton.I​Hand​Skeleton.​Palm​Orientation).
+- Blue - the direction perpendicular to the palm plane. In our API, we refer to this axis as the [palm direction](http://aka.ms/gestures).
+- Green - the direction that would be aligned with the middle finger had it been stretched out. In our API, we refer to this axis as the [palm orientation](http://aka.ms/gestures).
 - Red - the cross product of the palm direction (blue) and palm orientation (green) axes.
 
 #### Clients sub-region
@@ -80,7 +80,7 @@ In the above example there is only a single client and the information displayed
 
 - The client’s process name - Microsoft.Gestures.DiscoveryClient in our example.
 - The client's process Id - 7908 in our example.
-- The API version of the client's [GesturesServiceEndpoint](xref:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint) - 1.0.17190.3 in our example.
+- The API version of the client's [GesturesServiceEndpoint](http://aka.ms/gestures) - 1.0.17190.3 in our example.
 - An indication whether the client is receiving a skeleton stream - our client is *Receiving Skeleton Stream*.
 - A list of all gestures that the client has registered with the service - "Shell_MuteToggle", "Discovery_Tray" and "Shell_Start" in the example.
 
@@ -101,7 +101,7 @@ A disambiguation for the symbols displayed in the Gesture Detection sub-region:
 
 #### Log sub-region
 
-The Log sub-region displays messages recorded by the Gestures Service in real-time. You will find here various information about the internal state of the Gestures Service process. When the Gestures Service is not behaving as expected, try looking for an indication of an error in the log. Contact [gestures@microsoft.com](gestures@microsoft.com) for support in case you can't figure solve the problem.
+The Log sub-region displays messages recorded by the Gestures Service in real-time. You will find here various information about the internal state of the Gestures Service process. When the Gestures Service is not behaving as expected, try looking for an indication of an error in the log. Contact [gestures@microsoft.com](http://aka.ms/gestures) for support in case you can't figure solve the problem.
 
 Here is an example snapshot of the Log sub-region:
 
