@@ -125,7 +125,7 @@ When you wish to stop the detection of the "RotateRight" gesture, you can unregi
 
 And your handler will no longer be triggered when the user executes the "RotateRight" gesture.
 
-When your are finished working with gestures, you should dispose the [GesturesServiceEndpoint](https://review.docs.microsoft.com/en-us/gestures) object:
+When you are finished working with gestures, you should dispose the [GesturesServiceEndpoint](https://review.docs.microsoft.com/en-us/gestures) object:
 
 [!code-csharp[Dispose gestures service](CodeSnippets\DisposeGesturesService.cs)]
 
