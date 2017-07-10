@@ -29,7 +29,7 @@ To get Project Prague running on your machine you will need to:
     
     ![RealSense camera desktop setup](Images\RealSenseDesktopSetup.png)
 
-1. Install Project Prague runtime from [aka.ms/gestures/setup](http://aka.ms/gestures/setup). The installation will create shortcuts on your desktop pointing to our compiled samples.
+1. Install Project Prague runtime from [aka.ms/gestures](http://aka.ms/gestures). The installation will create shortcuts on your desktop pointing to our compiled samples.
 
 1. When installation completes, a window titled "Microsoft Gestures Service" will be launched. This window displays information about gesture and pose detection in real-time.  Make sure that your fingers are detected successfully, as demonstrated below:
 
