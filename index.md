@@ -31,16 +31,16 @@ To get Project Prague running on your machine you will need to:
 
 1. Download and install Project Prague runtime from [aka.ms/gestures/download](http://aka.ms/gestures/download). The installation will create shortcuts on your desktop pointing to our compiled demo applications:
 
-    <div style="text-align:center"><img src ="Images\DemoApplications.png" /></div>
+    <br><div align="center"><img src ="Images\DemoApplications.png" /></div>
 
     The demo application are:
 
     Application  | Description
     ------------ | ------------
-    <div><img style="vertical-align:middle" src="Images\GesturesServiceIcon.png"><span style=""> Microsoft.Gestures.Service</span></div> | Runs our [gesture detection service](getting-started-gestures-service.md)
-    <div><img style="vertical-align:middle" src="Images\DiscoveryClientIcon.png"><span style=""> Microsoft.Gestures.DiscoveryClient</span></div> | Provides gesture integration for Windows shell, PowerPoint, Skype and more
-    <div><img style="vertical-align:middle" src="Images\GesturesCameraIcon.png"><span style=""> Microsoft.Gestures.Camera.Viewer</span></div> | Displays the RGB stream from the camera, adding gesture-triggered <br> animated overlays
-    <div><img style="vertical-align:middle" src="Images\WolflyIcon.png"><span style=""> Wolfly</span></div> | Runs a gestures driven game made with Unity®
+    <div><img align="center" src="Images\GesturesServiceIcon.png"><span> Microsoft.Gestures.Service</span></div> | Runs our [gesture detection service](getting-started-gestures-service.md)
+    <div><img align="center" src="Images\DiscoveryClientIcon.png"><span> Microsoft.Gestures.DiscoveryClient</span></div> | Provides gesture integration for Windows shell, PowerPoint, Skype and more
+    <div><img align="center" src="Images\GesturesCameraIcon.png"><span> Microsoft.Gestures.Camera.Viewer</span></div> | Displays the RGB stream from the camera, adding gesture-triggered <br> animated overlays
+    <div><img align="center" src="Images\WolflyIcon.png"><span> Wolfly</span></div> | Runs a gestures driven game made with Unity®
 
 1. When installation is complete, a window titled "Microsoft Gestures Service" will be launched. This window displays information about gesture and pose detection in real-time.  Make sure that your fingers are detected successfully, as demonstrated below:
 
