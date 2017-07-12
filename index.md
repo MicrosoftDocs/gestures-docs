@@ -29,7 +29,18 @@ To get Project Prague running on your machine you will need to:
     
     ![RealSense camera desktop setup](Images\RealSenseDesktopSetup.png)
 
-1. Download and install Project Prague runtime from [aka.ms/gestures/download](http://aka.ms/gestures/download). The installation will create shortcuts on your desktop pointing to our compiled demo applications.
+1. Download and install Project Prague runtime from [aka.ms/gestures/download](http://aka.ms/gestures/download). The installation will create shortcuts on your desktop pointing to our compiled demo applications:
+
+    <div style="text-align:center"><img src ="Images\DemoApplications.png" /></div>
+
+    The demo application are:
+
+    Application  | Description
+    ------------ | ------------
+    <div><img style="vertical-align:middle" src="Images\GesturesServiceIcon.png"><span style=""> Microsoft.Gestures.Service</span></div> | Runs our [gesture detection service](getting-started-gestures-service.md)
+    <div><img style="vertical-align:middle" src="Images\DiscoveryClientIcon.png"><span style=""> Microsoft.Gestures.DiscoveryClient</span></div> | Provides gesture integration for Windows shell, PowerPoint, Skype and more
+    <div><img style="vertical-align:middle" src="Images\GesturesCameraIcon.png"><span style=""> Microsoft.Gestures.Camera.Viewer</span></div> | Displays the RGB stream from the camera, adding gesture-triggered <br> animated overlays
+    <div><img style="vertical-align:middle" src="Images\WolflyIcon.png"><span style=""> Wolfly</span></div> | Runs a gestures driven game made with Unity®
 
 1. When installation is complete, a window titled "Microsoft Gestures Service" will be launched. This window displays information about gesture and pose detection in real-time.  Make sure that your fingers are detected successfully, as demonstrated below:
 
@@ -37,8 +48,8 @@ To get Project Prague running on your machine you will need to:
 
 1. Note that Project Prague setup has added two applications to your Windows startup configuration. You can modify this configuration any time in the Startup tab of the Task Manager. We have configured the following applications to launch on Windows startup:
 
-    * Microsoft.Gestures.Sync - an update client that will pull updated builds of Project Prague assemblies when we publish them.
-    * Microsoft.Gestures.DiscoveryClient - a sample application providing gestures for various contexts - Windows shell, PowerPoint, Skype and YouTube. To learn more about this sample, follow [this link](https://docs.microsoft.com/en-us/gestures).
+    * Microsoft.Gestures.Sync - keeps the [Gestures Service](getting-started-gestures-service.md) running and pulls updates when we publish them.
+    * Microsoft.Gestures.DiscoveryClient - provides gesture integration for various contexts: Windows shell, PowerPoint, Skype, YouTube, Photos and Visual Studio.
 
 For a more detailed description of the setup process, please refer to the [Set up Project Prague](http://aka.ms/gestures/docs) section.
 
@@ -52,7 +63,7 @@ A hand pose refers to a snapshot of the hand at a given moment. The hand pose co
 
 ![HandPose and constraints](Images\HandPoseAndConstraints.png)
 
-To learn more about how to define a [HandPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handpose) using the [PalmPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.palmpose), [FingerPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.fingerpose), [FingertipPlacementRelation](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.fingertipplacementrelation) and [FingertipDistanceRelation](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.fingertipdistancerelation) constraints, refer to the corresponding pages in the [Concepts](https://docs.microsoft.com/en-us/gestures) section.
+<!--To learn more about how to define a [HandPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handpose) using the [PalmPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.palmpose), [FingerPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.fingerpose), [FingertipPlacementRelation](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.fingertipplacementrelation) and [FingertipDistanceRelation](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.fingertipdistancerelation) constraints, refer to the corresponding pages in the Concepts section.-->
 
 You can specify any hand pose you like by characterizing all the constraints describing that pose, as illustrated below:
 
@@ -101,7 +112,7 @@ The gesture we will implement is called "RotateRight":
 
 ![Rotate right FSM](Images\RotateRightFsm.png)
 
-Intuitively, when performing the "RotateRight" gesture, a user would expect some object in the foreground application to be rotated right by 90°. We have used this gesture, for instance, in our [Discovery Client](https://docs.microsoft.com/en-us/gestures), to trigger the rotation of an image in a PowerPoint slideshow.
+Intuitively, when performing the "RotateRight" gesture, a user would expect some object in the foreground application to be rotated right by 90°. We have used this gesture, for instance, in our Discovery Client, to trigger the rotation of an image in a PowerPoint slideshow.
 
 The following code demonstrates one possible way to define the "RotateRight" gesture:
 
