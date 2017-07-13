@@ -16,7 +16,7 @@ Please make sure your system meets the following requirements before you proceed
 
 Category     | Minimal | Recommended
 ------------ | ------------ | -------------
-Camera       | [Intel (R) RealSense (TM) SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html)
+Camera       | [Intel® RealSense™ SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html)
 CPU | Intel (R) Core (TM) i5 series, 4 logical cores | Intel (R) Core (TM) i7 series, 8 logical cores
 Free RAM | 1GB | 2GB
 Operating System | Windows 10 | Windows 10 with Creator's Update installed
@@ -25,7 +25,7 @@ Operating System | Windows 10 | Windows 10 with Creator's Update installed
 
 To get Project Prague running on your machine you will need to:
 
-1. Connect your [Intel (R) RealSense (TM) SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html) to a USB 3.0 port and place it below your computer's monitor, as illustrated in the image below:
+1. Connect your [Intel® RealSense™ SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html) to a USB 3.0 port and place it below your computer's monitor, as illustrated in the image below:
     
     ![RealSense camera desktop setup](Images\RealSenseDesktopSetup.png)
 

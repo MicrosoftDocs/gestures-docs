@@ -20,21 +20,21 @@ To shut terminate the Gestures Service entirely, bring the "Microsoft Gestures S
 
 ### Gestures Service UI features
 
-In this section, we will cover the various sub-regions of the Gestures Service UI.
+We will now cover the various sections of the Gestures Service UI.
 
-Note that every sub-region has a maximization button in the top right corner: 
+Note that every section has a maximization button in the top right corner:
 
-![Gestures Service sub-region Maximization](Images/MicrosoftGesturesService_Maximize.png)
+![Gestures Service section Maximization](Images/MicrosoftGesturesService_Maximize.png)
 
-By clicking this button you can extend the sub-region to occupy the entire area of the "Microsoft Gestures Service" window.
+By clicking this button you can extend the section to occupy the entire area of the "Microsoft Gestures Service" window.
 
-#### System sub-region
+#### System section
 
-The System sub-region is the command-and-control part of the Gestures Service UI:
+The System section is the command-and-control part of the Gestures Service UI:
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_System.png)
 
-This sub-region is divided into two halves: The upper half contains check-boxes that toggle different features of the Gestures Service and the lower half contains a graph illustrating relevant performance metrics as they evolve over time.
+This section is divided into two halves: The upper half contains check-boxes that toggle different features of the Gestures Service and the lower half contains a graph illustrating relevant performance metrics as they evolve over time.
 
 The check-boxes and their corresponding functionality are listed in the following table:
 
@@ -44,13 +44,13 @@ Enable detection | Halt or resume the Gestures Service
 Enable detection at Windows Startup | Specify whether the Gestures Service will be launched next time Windows starts
 Enable toast notifications | Specify whether the Gestures Service will display toast notifications
 Update UI | Halt or resume Gestures Service UI (halt to save machine resources)
-Show log | Toggle the visibility of the log sub-region in the Gestures Service UI
+Show log | Toggle the visibility of the log section in the Gestures Service UI
 
 Note that when the "Show log" check-box is enabled, you can clear the log of its contents by hitting the "Clear log" link:
 
 ![Clear Log](Images/MicrosoftGesturesService_ClearLog.png)
 
-The graph in the lower half of the System sub-region depicts
+The graph in the lower half of the System section depicts
 
 - FPS - momentary frame rate, in units of frames-per-second.
 - CPU - momentary processing resources consumption, in units of percentage from the total available processing power.
@@ -58,9 +58,9 @@ The graph in the lower half of the System sub-region depicts
 
 The FPS and CPU metrics are computed and displayed for both the "Workflow" and the "UI" threads. The "Workflow" thread is our main worker thread. You can control which metrics are plotted in the graph by toggling the check-boxes placed beneath it.
 
-#### Image sub-region
+#### Image section
 
-This sub-region of the Gestures Service UI displays the IR video stream produced by the depth camera. As you can see, we filter out all the pixels in the frame which are outside of a rectangle containing the hand:
+This section of the Gestures Service UI displays the IR video stream produced by the depth camera. As you can see, we filter out all the pixels in the frame which are outside of a rectangle containing the hand:
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Image.png)
 
@@ -70,9 +70,9 @@ On top of the IR frame, We draw vectors indicating the estimated direction of ea
 - Green - the direction that would be aligned with the middle finger had it been stretched out. In our API, we refer to this axis as the [palm orientation](http://aka.ms/gestures).
 - Red - the cross product of the palm direction (blue) and palm orientation (green) axes.
 
-#### Clients sub-region
+#### Clients section
 
-This sub-region displays a list of clients connected to the gestures service:
+This section displays a list of clients connected to the gestures service:
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Clients.png)
 
@@ -84,26 +84,26 @@ In the above example there is only a single client and the information displayed
 - An indication whether the client is receiving a skeleton stream - our client is *Receiving Skeleton Stream*.
 - A list of all gestures that the client has registered with the service - "Shell_MuteToggle", "Discovery_Tray" and "Shell_Start" in the example.
 
- #### Gesture Detection sub-region
+ #### Gesture Detection section
 
-The Gesture Detection sub-region depicts the detection history of all registered [gestures](index.md###gesture). Recall that every [gesture](index.md###gesture) is represented as a state-machine. A correct execution of a given [gesture](index.md###gesture) corresponds to a sequence of states in its state-machine, such that the first state in the sequence is an initial state and the final state is a receiving state.
+The Gesture Detection section depicts the detection history of all registered [gestures](index.md###gesture). Recall that every [gesture](index.md###gesture) is represented as a state-machine. A correct execution of a given [gesture](index.md###gesture) corresponds to a sequence of states in its state-machine, such that the first state in the sequence is an initial state and the final state is a receiving state.
 
-Following is a snapshot of the Gesture Detection sub-region. Each line corresponds to a different gesture that was registered at some point in time. The first column, Gesture, lists all the gestures that were registered over time. The second column, Timeline, displays the history of the gesture detection state. The third column, Current, displays the current state of the gesture state-machine.
+Following is a snapshot of the Gesture Detection section. Each line corresponds to a different gesture that was registered at some point in time. The first column, Gesture, lists all the gestures that were registered over time. The second column, Timeline, displays the history of the gesture detection state. The third column, Current, displays the current state of the gesture state-machine.
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Timeline.png)
 
-A disambiguation for the symbols displayed in the Gesture Detection sub-region:
+A disambiguation for the symbols displayed in the Gesture Detection section:
 
 - Red square - the gesture is not currently active (the application which registered is not the foreground application).
 - Green triangle - the gesture is active.
 - Blue circle - the segment of the gesture has been detected and the state-machine advanced to the corresponding state.
 - White Vulcan salute - the gesture detection completed successfully.
 
-#### Log sub-region
+#### Log section
 
-The Log sub-region displays messages recorded by the Gestures Service in real-time. You will find here various information about the internal state of the Gestures Service process. When the Gestures Service is not behaving as expected, try looking for an indication of an error in the log. Contact [gestures@microsoft.com](http://aka.ms/gestures) for support in case you can't figure solve the problem.
+The Log section displays messages recorded by the Gestures Service in real-time. You will find here various information about the internal state of the Gestures Service process. When the Gestures Service is not behaving as expected, try looking for an indication of an error in the log. Contact [gestures@microsoft.com](http://aka.ms/gestures) for support in case you can't figure solve the problem.
 
-Here is an example snapshot of the Log sub-region:
+Here is an example snapshot of the Log section:
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Log.png)
 
