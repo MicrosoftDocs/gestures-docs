@@ -60,7 +60,7 @@ The FPS and CPU metrics are computed and displayed for both the "Workflow" and t
 
 #### Image section
 
-This section of the Gestures Service UI displays the IR video stream produced by the depth camera. As you can see, we filter out all the pixels in the frame which are outside of a rectangle containing the hand:
+This section of the Gestures Service UI displays the IR video stream produced by the [depth camera](index.md#supported-depth-cameras). As you can see, we filter out all the pixels in the frame which are outside of a rectangle containing the hand:
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Image.png)
 
