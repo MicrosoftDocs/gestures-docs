@@ -14,9 +14,9 @@ Unfortunately, no. The Surface Pro (or for that matter - any currently shipped S
 
 Check out our overview page for [a list of the currently supported depth cameras](index.md#supported-depth-cameras).
 
-### **Does Project Prague work with with Leap Motion or Kinect v1?**
+### **Does Project Prague work with Leap Motion or Kinect v1?**
 
-No, we currently do not support these sensors. We expect to add Leap Motion support in an upcoming release.
+No, we currently do not support these sensors.
 
 We will definitely consider adding support for any depth sensor that gains enough demand from our users and can produce depth images in an adequate quality for gesture detection.
 
