@@ -61,7 +61,7 @@ Use the **GameObject** menu to  **Create Empty** and rename the new object to **
 
 ![Create Scripts folder](Images\UnityCreateNewFolder.png)
 
-In the **Scripts** folder, create a new script named **PrimitiveFactory** (no need to add the .cs extension to the name):
+In the **Scripts** folder, create a new script named **PrimitiveFactory** (no need to add the .cs extension to the script name):
 
 ![Create new script](Images\UnityCreateScript.png)
 
@@ -116,4 +116,4 @@ Finally, to make **CreateRandomPrimitive()** run every time the **tap** gesture 
 
 If you run the app now, you should be able to generate new 3D-primitives by either clicking the left mouse button or performing the **tap** gesture with your right hand:
 
-![Tap gesture animation](./Images/UnityTapGesture.gif)
+![Tap gesture animation](Images\UnityTapGesture.gif)
