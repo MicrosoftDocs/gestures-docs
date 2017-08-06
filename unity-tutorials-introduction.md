@@ -1,6 +1,6 @@
 # Introduction to Gestures in Unity®
 
-This tutorial provides a basic introduction for adding gestures to a Unity application. You will create a simple Unity project that generates a random 3D-primitive every time the user executes a certain gesture. You can find the final version of the Unity project that will be created during this tutorial in [our open source GitHub repository](https://github.com/Microsoft/Gestures-Samples).
+This tutorial will introduce you to adding gestures to a Unity application. You will create a simple Unity project that generates a random 3D-primitive every time the user executes a certain gesture. The final version of the Unity project you will arrive at by the end of this tutorial can be found in [our open source GitHub repository](https://github.com/Microsoft/Gestures-Samples).
 
 This tutorial assumes you have basic familiarity with the C# programming language. It should take you approximately 30 minutes to complete the tutorial.
 
@@ -15,15 +15,15 @@ You will need the following tools for this tutorial
 
 ## Step 1 - Create and Configure a New Unity Project
 
-Launch Unity editor and create a new project at a location of your choice:
+Launch the Unity editor and create a new project in a location of your choice:
 
 ![Create new unity project](Images\UnityCreateNewProject.png)
 
-Download the Project Prague Toolkit from the [Unity asset store](https://www.assetstore.unity3d.com/en/), and import it into your project:
+Download the Project Prague Toolkit from the [Unity asset store](https://www.assetstore.unity3d.com/en/), and import it to your project:
 
 ![Import Project Prague toolkit](Images\UnityImportPackage.png)
 
-At this point, you should give the scene a name and save it:
+At this point, you should give your scene a name and save it:
 
 ![Save scene](Images\UnitySaveScene.png)
 
@@ -31,27 +31,27 @@ At this point, you should give the scene a name and save it:
 
 We will now establish a connection between our Unity application and the [Gestures Service](getting-started-gestures-service.md). Please make sure that your [depth camera](index.md#supported-depth-cameras) is connected to the computer and that the Gestures Service is running (launch it using the **Microsoft.Gestures.Service** shortcut on your desktop).
 
-In the **Project** window of the Unity editor, browse to the Project Prague prefabs:
+In the **Project** window of the Unity editor, browse to the **Prefabs** directory (under **Project Prague**):
 
 ![Project Prague prefabs](Images\UnityProjectPraguePrefabs.png)
 
-You will use the **GesturesManager** prefab in order to communicate with the [Gestures Service](getting-started-gestures-service.md). Every Unity project that uses Project Prague for gesture input, must have exactly one **GesturesManager** instance in the scene.
+We will use the **GesturesManager** prefab in order to communicate with the [Gestures Service](getting-started-gestures-service.md). Every Unity project that works with gestures, must have exactly one **GesturesManager** instance in the scene.
 
-You will also use the **UIManager** prefab to display useful information about the state of the **GesturesManager**.
+We will also use the **UIManager** prefab to display useful information about the state of the **GesturesManager**.
 
-Drag and drop the prefabs to your scene:
+Drag and drop the corresponding prefabs to your scene:
 
 ![Add prefabs to scene](Images\UnityAddPrefabs.png)
 
-Now run the application using the Ctrl+P keyboard shortcut or pressing the **play** button. If the is able to establish a connection with the Gestures Service, you will see a green icon in the bottom right corner:
+Now run the application by pressing the **play** button or using the Ctrl+P keyboard shortcut. If the application is able to establish a connection with the Gestures Service, you will see a green icon in the bottom right corner:
 
 ![Connection to service](Images\UnityConnectionToService.png)
 
-If you do not see the green icon, you are most likely experiencing camera related issues. Please refer to our [troubleshooting page](troubleshooting-camera.md) for further assistance.
+If you do not see the green icon, you are most likely experiencing camera related problems. Please refer to our [camera troubleshooting page](troubleshooting-camera.md) for further assistance.
 
-## Step 3 - Creating a Script to Generate New 3D-Primitives in the Scene
+## Step 3 - Creating a Script that Generate New 3D-Primitives in the Scene
 
-To demonstrate how gestures can be used in a Unity game, we will now add a Unity game object that has a C#-script function which generates a random 3D-primitive in the scene. We will later use this function as a callback\event-handler that will be executed each time a certain gesture is detected.
+To demonstrate how gestures can be used in a Unity game, we will now add a Unity game object that has a C#-script function that generates a new 3D-primitive in the scene. We will later use this function as a callback\event-handler that will be executed each time a certain gesture is detected.
 
 Use the **GameObject** menu to  **Create Empty** and rename the new object to **PrimitiveFactory**:
 
@@ -81,7 +81,7 @@ Run the application and use your mouse pointer to left-click anywhere in the sce
 
 In this final step, we will create the necessary wiring such that a gesture can be used to perform the 3D-primitive generation.
 
-The purpose of the **GestureTrigger** prefab provided with the [Project Prague Unity Toolkit](https://www.assetstore.unity3d.com/en/) is to designate a function from anywhere in your Unity project as a response to the detection of a certain gesture.
+The purpose of the **GestureTrigger** prefab provided with the [Project Prague Unity Toolkit](https://www.assetstore.unity3d.com/en/) is to designate any function in your Unity project as a response to the detection of a certain gesture.
 
 Drag and drop the **GestureTrigger** prefab from the **Project** window to your scene in the **Hierarchy** window:
 
@@ -91,18 +91,18 @@ Select the newly created **GestureTrigger** object in the **Hierarchy** window a
 
 ![GestureTrigger inspector](Images\UnityGestureTriggerInspector.png)
 
-A brief description of each section:
+The sections numbered 1 to 4 above allow you to configure a gesture and its corresponding handler function:
 
 1. Check this box to specify a custom gesture in XAML language, or
 1. Select a gesture from a set of predefined stock-gestures that we have prepared for your convenience.
 1. Specify which functions need to be executed when the gesture is detected.
-1. Specify which functions need to be executed when a certain state in the gesture state-machine is detected.
+1. Specify which functions need to be executed when a certain state in the gesture state-machine is identified.
 
 Visit our [overview page](index.md#gesture) to read more about the concept and structure of a gesture in Project Prague.
 
-In this tutorial we will focus on the sections numbered 2 and 3 above. Namely, we will wire the predefined **tap** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Sections 1 and 4 of the **GestureTrigger** user interface will be covered in succeeding tutorials.
+In this tutorial we will focus on the sections numbered 2 and 3. Namely, we will wire the predefined **tap** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Sections 1 and 4 of the **GestureTrigger** user interface will be covered in succeeding tutorials.
 
-Select the **tap** gesture from the **Stock Gesture** drop-down in the **Inspector** window (assuming **GestureTrigger** is still selected in the **Hierarchy** window):
+Make sure **GestureTrigger** is still the selected object in the **Hierarchy** window and choose the **tap** gesture from the **Stock Gesture** drop-down list in the **Inspector** window:
 
 ![Set tap as the stock gesture](Images\UnityGestureTriggerTap.png)
 
@@ -110,10 +110,10 @@ To make the functions of **PrimitiveFactory** available for **GestureTrigger**, 
 
 ![Add PrimitiveFactory to objects](Images\UnityAddingEventHandler.png)
 
-Finally, to make **CreateRandomPrimitive()** run every time the **tap** gesture is detected, in the **Inspector** window of **GestureTrigger** - click the **No Function** drop-down, select **PrimitiveFactory** and **CreateRandomPrimitive**:
+Finally, to make **CreateRandomPrimitive()** run every time the **tap** gesture is detected, in the **Inspector** window of **GestureTrigger** - click the **No Function** drop-down, select **PrimitiveFactory** and **CreateRandomPrimitive ()**:
 
 ![Hook CreateRandomPrimitive() event handler](Images\UnityHookingEventHandler.png)
 
-If you run the app now, you should be able to generate new 3D-primitives by either clicking the left mouse button or performing the **tap** gesture with your right hand:
+Run the application now. You should be able to generate new 3D-primitives by either clicking the left mouse button or performing the **tap** gesture with your right hand:
 
 ![Tap gesture animation](Images\UnityTapGesture.gif)
