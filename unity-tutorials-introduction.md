@@ -125,13 +125,13 @@ In this final step, we will create the necessary wiring so that you can use a ge
     ![GestureTrigger inspector](Images\UnityGestureTriggerInspector.png)
 
     The sections of the UI, numbered 1 to 4 above, allow you to configure a gesture and its effect:
-
-    <ol>
-    <li>Check this box to specify a custom gesture in XAML language, or</li>
-    <li>Select a gesture from a set of predefined stock-gestures that we have prepared for your convenience.</li>
-    <li>Specify which method is to be executed when the gesture is detected.</li>
-    <li>Specify which method is to be executed when a certain [state in the gesture state-machine](index.md#gesture) is identified.</li>
-    </ol>
+    
+    <br><table>
+    <tr><td>1</td><td>Check this box to specify a custom gesture in XAML language, or</td></tr>
+    <tr><td>2</td><td>Select a gesture from a set of predefined stock-gestures that we have prepared for your convenience.</td></tr>
+    <tr><td>3</td><td>Specify which method is to be executed when the gesture is detected.</td></tr>
+    <tr><td>4</td><td>Specify which method is to be executed when a certain <a href="index.md#gesture">state in the gesture state-machine</a> is identified.</td></tr>
+    </table>
 
     Visit our [overview page](index.md#gesture) to read more about the concept and structure of a gesture in Project Prague.
 
