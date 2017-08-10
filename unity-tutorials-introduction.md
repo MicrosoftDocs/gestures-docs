@@ -5,11 +5,12 @@ This tutorial will introduce you to adding gestures to a Unity application. You 
 This tutorial assumes you have basic familiarity with the C# programming language. It should take you approximately 20 minutes to complete the tutorial.
 
 The final version of the Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the final  product of this tutorial:
+
 1. Launch Unity, in the **Projects** tab select **Open**.
-2. Browse to the **Unity\GesturesTutorial** directory within the cloned repository.
-3. When the project loads, go to the **Project** window and select the **Assets** directory.
-4. Double-click the **Introduction** scene in the **Assets** directory.
-5. Press the play button (or **Ctrl+P**) to run the scene.
+1. Browse to the **Unity\GesturesTutorial** directory within the cloned repository.
+1. When the project loads, go to the **Project** window and select the **Assets** directory.
+1. Double-click the **Introduction** scene in the **Assets** directory.
+1. Press the play button (or **Ctrl+P**) to run the scene.
 
 ## Prerequisites
 
@@ -149,6 +150,20 @@ In this final step, we will create the necessary wiring so that you can use a ge
 
     ![Hook CreateRandomPrimitive() event handler](Images\UnityHookingEventHandler.png)
 
-1. Run the application now. You should be still able to generate a new 3D-primitive using the left mouse button. Now, you should be also able to do that using the **tap** gesture (perform the gesture with your right hand):
+1. Run the application now. You should be still able to generate a new 3D-primitive using the left mouse button. Now, you should be also able to do that using the **tap** gesture (perform the gesture with your **right** hand):
 
     ![Tap Gesture Animation](Images\UnityTapGesture.png)
+
+## Troubleshooting
+
+If you've reached the end of the tutorial and the **tap** gesture is not working for you, please play the Unity scene, open the **Microsoft Gestures Service** window and verify the following:
+
+![Microsoft Gestures Window](Images\UnityTroubleshooting.png)
+
+1. When you bring your hand close to your depth camera, you can see your hand in the **image** section of the **Microsoft Gestures Service** window, with colorful arrows indicating the estimated positions of the fingers and palm. If you don't see such an image, you are probably experiencing camera issues - please refer to our [camera troubleshooting](troubleshooting-camera.md) page.
+1. **UnityApp** appears in the list of **Clients** and **Unity_TapGesture** appears in the sub-list of gestures associated with the **UnityApp** client. If this is not the case, please verify that
+    - You have the green **Connected** icon in the bottom right corner of your screen in Unity (see [step 2](#step-2---connecting-to-the-gestures-service)).
+    - You have selected the correct gesture, **tap**,  in the **GestureTrigger** user interface (see [step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene)).
+1. When Unity is in the foreground and you execute the **tap** gesture, the **TimeLine** associated with **Unity_TapGesture** should advance. If this is not the case, you are probably not executing the gesture correctly - make sure you are using your **right** hand and performing the **tap** motion with your **thumb** and **index** fingers only.
+
+If you still cannot use the **tap** gesture to generate new 3D-primitives in the scene, please leave a comment on this page, and we will do our best to provide help.
