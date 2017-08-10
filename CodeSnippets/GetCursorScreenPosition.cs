@@ -2,12 +2,12 @@
     {
         if (IsMouseMode)
         {
-            // Chapter 1.a Return mouse screen position
+            // Step 1.5: Return mouse screen position.
             return Input.mousePosition;
         }
         else
         {
-            // Chapter 1.b Replace mouse screen position with Microsoft.Gestures palm position.
+            // Step 1.9: Replace mouse position with palm position.
             var skeleton = GesturesManager.Instance.StableSkeletons[Hand.RightHand];
             if (skeleton == null)
             {
@@ -15,9 +15,9 @@
             }
 
             // Convert PalmPosition to screen space
-            var palmCamPos = Vector3.Scale(skeleton.PalmPosition, PalmUnitsScale) + PalmUnitsOffset;
-            var palmWorldPos = Camera.main.transform.TransformPoint(palmCamPos);
-            var palmScreenPos = (Vector2)Camera.main.WorldToScreenPoint(palmWorldPos);
-            return palmScreenPos;
+            var palmCameraPosition = Vector3.Scale(skeleton.PalmPosition, PalmUnitsScale) + PalmUnitsOffset;
+            var palmWorldPosition = Camera.main.transform.TransformPoint(palmCameraPosition);
+            var palmScreenPosition = (Vector2)Camera.main.WorldToScreenPoint(palmWorldPosition);
+            return palmScreenPosition;
         }
     }

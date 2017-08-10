@@ -24,7 +24,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
 1. We will start by drawing a cursor using the mouse position. Later, we will replace the mouse with the palm.
 
-    Create an empty game object and a corresponding C# script, name both **HandCursor**. To associate them, go to the game object's **Inspector** view and drag the script to the blank area below **Add Component** (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generate-new-3d-primitives-in-the-scene) to read about associating a script with a game object).
+    Create an empty game object and a corresponding C# script, name both **HandCursor**. To associate them, go to the game object's **Inspector** view and drag the script to the blank area below **Add Component** (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generates-a-new-3d-primitive-in-the-scene) to read about associating a script with a game object).
 
 1. Open the **HandCursor** script in Visual Studio (double click the script icon in the **Project** window) and replace its contents with the following code:
 

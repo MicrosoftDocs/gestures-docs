@@ -4,7 +4,7 @@ using Microsoft.Gestures.Toolkit;
 
 public class HandCursor : MonoBehaviour
 {
-    [Tooltip("Set this to true if you wish to use the mouse input instead of the hand skeleton input.")]
+    [Tooltip("When true, cursor will track the mouse position. When false, cursor will track the palm position.")]
     public bool IsMouseMode = true;
 
     [Tooltip("The cursor image that will be displayed on the screen.")]
@@ -18,9 +18,9 @@ public class HandCursor : MonoBehaviour
 
     private Vector3 GetCursorScreenPosition()
     {
-        // Step 1.a Return mouse position on screen.
+        // Step 1.5: Return mouse screen position.
 
-        // Step 1.b Replace mouse position with palm position.
+        // Step 1.9: Replace mouse position with palm position.
 
         return Vector3.zero;
     }
@@ -45,12 +45,12 @@ public class HandCursor : MonoBehaviour
 
     private void OnEnable()
     {
-        // Step 1.b Register to skeleton events
+        // Step 1.8: Register to skeleton events
     }
 
     private void OnDisable()
     {
-        // Step 1.b Unregister from skeleton events
+        // Step 1.8: Unregister from skeleton events
     }
 
     private void Update()
@@ -62,7 +62,7 @@ public class HandCursor : MonoBehaviour
 
     private void OnGUI()
     {
-        // Step 1.a Draw cursor texture at the cursor's position on the screen.
+        // Step 1.5: Draw cursor texture at the cursor's position on the screen.
 
         // Step 3. Change cursor color when grab mode is on.
     }

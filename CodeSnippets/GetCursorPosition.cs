@@ -2,12 +2,12 @@
     {
         if (IsMouseMode)
         {
-            // Step 1.a Return mouse position on screen.
+            // Step 1.5: Return mouse screen position.
             return Input.mousePosition;
         }
         else
         {
-            // Step 1.b Replace mouse position with palm position.
+            // Step 1.9: Replace mouse position with palm position.
             return Vector3.zero;
         }
     }
