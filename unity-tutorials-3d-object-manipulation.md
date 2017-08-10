@@ -20,21 +20,21 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
 1. Open the project you've created in the [introduction tutorial](unity-tutorials-introduction.md#system-requirements). Press **Ctrl+N** to create a new scene and **Ctrl+S** to save the scene, naming it **3D Object Manipulation**.
 
-1. Like in [step 2 from the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service), add the **GestureManager** and **UIManager** prefabs to the scene.
+1. Like in [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service), add the **GestureManager** and **UIManager** prefabs to the scene.
 
-1. We will start by drawing a cursor based on the mouse position. We will later replace the mouse position with the hand position.
+1. We will start by drawing a cursor using the mouse position. Later, we will replace the mouse with the palm.
 
-    Create an empty game object and a corresponding C# script, name both **HandCursor** and associate between them by adding the script as a component to the game object (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3-creating-a-acript-that-generate-new-3d-primitives-in-the-scene) to read about associating a script with a game object).
+    Create an empty game object and a corresponding C# script, name both **HandCursor**. To associate them, go to the game object's **Inspector** view and drag the script to the blank area below **Add Component** (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generate-new-3d-primitives-in-the-scene) to read about associating a script with a game object).
 
 1. Open the **HandCursor** script in Visual Studio (double click the script icon in the **Project** window) and replace its contents with the following code:
 
     [!code-csharp[HandCursor](CodeSnippets\HandCursor.cs)]
 
-    As you can see, for now, the **HandCursor** methods are not yet implemented, they just contain place-holder comments.
+    As you can see, the **HandCursor** methods are not yet implemented. For now, they contain place-holders and comments.
 
-1. To control the cursor using the mouse only, replace the **GetCursorScreenPosition()** method with the following code:
+1. To control the cursor using the mouse only, use the following implementation for the **GetCursorScreenPosition()** method:
 
-    [!code-csharp[GetCursorPosition](CodeSnippets\GetCursorPosition.cs)
+    [!code-csharp[GetCursorPosition](CodeSnippets\GetCursorPosition.cs)]
 
     To draw the cursor in the correct position every time the screen is refreshed, replace the contents of **OnGUI()** with:
 
@@ -44,30 +44,34 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
     ![Set HandCursor Image](Images\UnitySetHandCursorImage.png)
 
-1. Play the scene now. Whenever the mouse pointer is within the scene borders, you will see the red cursor that we have programmed following it:
+1. Play the scene now. Whenever the mouse pointer is within the scene borders, you will see a red cursor following it:
 
     ![Cursor following mouse](Images\UnityMouseCursor.png)
 
-1. In order to use your hand to control the cursor, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes the hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GestureManager** game object in our scene acts as a client of the **Gestures Service**, its **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
+1. In order to use your hand to control the cursor, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GestureManager** game object in our scene acts as a client of the **Gestures Service**. **GestureManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
 
     To receive hand-skeleton information whenever the **HandCursor** game object is active, override its **OnEnbale()** and **OnDisable()** methods with the following code:
 
     [!code-csharp[OnGui](CodeSnippets\OnEnableOnDisable.cs)]
 
-1. The final task for this step is to convert the palm-position of the hand, arriving from the **Gestures Service** in depth-camera 3D coordinates, to the screen 2D coordinates.
+1. The final task for this step is to express the palm position, arriving from the **Gestures Service** in depth-camera (3D) coordinates, in screen (2D) coordinates.
 
     The hand-skeleton is provided in units of millimeters, in the following left-handed coordinate system:
 
     ![Hand skeleton coordinate system](Images\UnityHandSkeletonCoordinates.png)
 
-    Ideally, we would like the **Main Camera** in our scene to see your hand from the perspective of your eyes. If we can achieve this - our 3D cursor's projection to the screen will follow your hand in a way that feels intuitive. 
+    Ideally, we would like the **Main Camera** in our scene to see your hand from the perspective of your eyes. If we can achieve this - the 3D cursor's projection to the screen will follow your hand in a way that feels intuitive.
 
-    In an attempt to approximate the desired perspective, we will use the following constants to map the hand-skeleton, given in depth-camera view-space, to the 3D cursor, given in **Main Camera** view-space. Add these public members to **HandCursor.cs**:
+    In an attempt to approximate the desired perspective, we will use the below coefficients to map the hand-skeleton (which is given in depth-camera view-space) to the 3D cursor (that we want to know in **Main Camera** view-space). Add these public members to **HandCursor.cs**:
 
     [!code-csharp[OnGui](CodeSnippets\ScaleAndOffset.cs)]
 
-    With this preparation, we are ready to compute the actual conversion of the palm-position to cursor position. Update **GetCursorScreenPosition()** with the following contents:
+    With this preparation, we are ready to compute the actual conversion of the palm position to a cursor position. Update **GetCursorScreenPosition()** with the following contents:
 
     [!code-csharp[OnGui](CodeSnippets\GetCursorScreenPosition.cs)]
 
-1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. This will activate the hand-tracking branch of the if-statement in **GetCursorScreenPosition()**. play the scene and raise your right hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
+    Note that the **PalmPosition** property of the **skeleton** corresponds to the location of the center of the hand:
+
+    ![Palm position landmark](Images\UnityPalmPosition.png)
+
+1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. This will activate the "else{...}" branch of the if-statement above. play the scene and raise your right hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
