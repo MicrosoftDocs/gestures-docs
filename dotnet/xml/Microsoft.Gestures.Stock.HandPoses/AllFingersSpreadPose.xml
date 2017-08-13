@@ -1,4 +1,4 @@
-<Type Name="AllFingersSpreadPose" FullName="Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose">
+﻿<Type Name="AllFingersSpreadPose" FullName="Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose">
   <TypeSignature Language="C#" Value="public sealed class AllFingersSpreadPose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AllFingersSpreadPose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.PalmDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

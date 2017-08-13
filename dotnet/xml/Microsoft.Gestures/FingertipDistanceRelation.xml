@@ -1,4 +1,4 @@
-<Type Name="FingertipDistanceRelation" FullName="Microsoft.Gestures.FingertipDistanceRelation">
+﻿<Type Name="FingertipDistanceRelation" FullName="Microsoft.Gestures.FingertipDistanceRelation">
   <TypeSignature Language="C#" Value="public class FingertipDistanceRelation : Microsoft.Gestures.FingersRelation&lt;Microsoft.Gestures.RelativeDistance&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FingertipDistanceRelation extends Microsoft.Gestures.FingersRelation`1&lt;valuetype Microsoft.Gestures.RelativeDistance&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingertipDistanceRelation" />
@@ -14,8 +14,28 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Represents a constraint describing the distance between fingers.
+            </summary>
+    <remarks>
+      <para>The <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint can be used to indicate whether certain fingers are <see cref="F:Microsoft.Gestures.RelativeDistance.Touching" /> or 
+            <see cref="F:Microsoft.Gestures.RelativeDistance.NotTouching" /> each other. For example, to specify a <see cref="T:Microsoft.Gestures.HandPose" /> which will be triggered when the user's thumb is pinching the
+            user's index finger, refer to the following snippet:</para>
+      <code>
+            var pinchPose = new HandPose("Pinch", new FingertipDistanceRelation(Finger.Index, RelativeDistance.Touching, Finger.Thumb)); // the index and thumb tips are touching
+            </code>
+      <para>It is possible to omit the <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" /> of the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint (by setting its value to <c>null</c>).
+            Defining a <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint this way would imply that the fingers mentioned in <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" /> are required to 
+            attain the specified <see cref="P:Microsoft.Gestures.FingertipDistanceRelation.DistanceRelation" /> with respect to themselves. To illustrate this, consider the following code snippet, utilizing the different types of 
+            <see cref="T:Microsoft.Gestures.FingersContext" />:
+            </para>
+      <code>
+            var allTouchAll = new FingertipDistanceRelation(new AllFingersContext(new[] {Finger.Thumb, Finger.Index, Finger.Middle})); // all possible finger pairs are expected to be touching
+            var anyTouchAny = new FingerTipDistanceRelation(new AnyFingersContext(new[] {Finger.Thumb, Finger.Index, Finger.Middle})); // at least one of the possible finger pairs is expected to be touching
+            </code>
+      <para>Note that <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> instances are mutable until the containing <see cref="T:Microsoft.Gestures.Gesture" /> object is registered with the gestures runtime, at which 
+            point it becomes frozen and cannot be modified any longer. </para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -24,11 +44,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Creates a blank instance of <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" />. In order to obtain a meaningful constraint, the values of <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" />,
+            <see cref="P:Microsoft.Gestures.FingertipDistanceRelation.DistanceRelation" /> and optionally <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" /> would have to be set manually.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -38,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,10 +71,13 @@
         <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="finger">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFinger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="finger">The first <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <param name="distanceRelation">The relation that this <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> will impose between <paramref name="finger" /> and <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">The second <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing the <paramref name="distanceRelation" /> relation between <paramref name="finger" /> and
+            <paramref name="otherFinger" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -67,31 +96,41 @@
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="finger">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="finger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> will impose between <paramref name="finger" /> and <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">All fingers enumerated here will be required to comply to the <paramref name="distanceRelation" /> relation with respect to <paramref name="finger" />.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing the <paramref name="distanceRelation" /> relation between <paramref name="finger" /> and
+            each of the <paramref name="otherFingers" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FingertipDistanceRelation (Microsoft.Gestures.FingersContext context, Microsoft.Gestures.RelativeDistance relativeDistance, Microsoft.Gestures.FingersContext otherContext = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext context, valuetype Microsoft.Gestures.RelativeDistance relativeDistance, class Microsoft.Gestures.FingersContext otherContext) cil managed" />
+      <MemberSignature Language="C#" Value="public FingertipDistanceRelation (Microsoft.Gestures.FingersContext context, Microsoft.Gestures.RelativeDistance distanceRelation, Microsoft.Gestures.FingersContext otherContext = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext context, valuetype Microsoft.Gestures.RelativeDistance distanceRelation, class Microsoft.Gestures.FingersContext otherContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.FingersContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="context" Type="Microsoft.Gestures.FingersContext" />
-        <Parameter Name="relativeDistance" Type="Microsoft.Gestures.RelativeDistance" />
+        <Parameter Name="distanceRelation" Type="Microsoft.Gestures.RelativeDistance" />
         <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="relativeDistance">To be added.</param>
-        <param name="otherContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The first <see cref="T:Microsoft.Gestures.FingersContext" /> participating in this constraint.</param>
+        <param name="distanceRelation">The relation that this <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> will impose between <paramref name="context" /> and <paramref name="otherContext" />.
+            </param>
+        <param name="otherContext">The second <see cref="T:Microsoft.Gestures.FingersContext" /> participating in this constraint. If this parameter is null, <paramref name="context" /> will be used in its
+            place and <paramref name="distanceRelation" /> will be applied between the fingers of <paramref name="context" /> and themselves (for more information on finger context types,
+            refer to <seealso cref="T:Microsoft.Gestures.FingersContext" /> documentation).</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing the <paramref name="distanceRelation" /> relation between the fingers indicated by
+            <paramref name="context" /> and the fingers indicated by <paramref name="otherContext" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -109,10 +149,13 @@
         <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="fingers">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFinger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fingers">All fingers enumerated here will be required to comply to the <paramref name="distanceRelation" /> relation with respect to <paramref name="otherFinger" />.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> will impose between <paramref name="fingers" /> and <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing the <paramref name="distanceRelation" /> relation between each of 
+            the <paramref name="fingers" /> and <paramref name="otherFinger" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -130,10 +174,14 @@
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="fingers">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fingers">The first set of fingers participating in the constraint.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> will impose between <paramref name="fingers" /> and <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">The second set of fingers participating in this constraint. If this parameter is null, <paramref name="distanceRelation" /> relation will be imposed on 
+            all pairs of fingers from within <paramref name="fingers" />.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing the <paramref name="distanceRelation" /> relation between each of the 
+            <paramref name="fingers" /> and each of the <paramref name="otherFingers" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingertipDistanceRelation.DistanceRelation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -154,7 +203,10 @@
         <ReturnType>Microsoft.Gestures.RelativeDistance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies the relation this <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> imposes between the fingers indicated by <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" /> and the fingers
+            indicated by <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelation.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="FingertipDistanceRelationListExtension" FullName="Microsoft.Gestures.FingertipDistanceRelationListExtension">
+﻿<Type Name="FingertipDistanceRelationListExtension" FullName="Microsoft.Gestures.FingertipDistanceRelationListExtension">
   <TypeSignature Language="C#" Value="public static class FingertipDistanceRelationListExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FingertipDistanceRelationListExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingertipDistanceRelationListExtension" />
@@ -11,7 +11,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Augments <see cref="T:System.Collections.Generic.ICollection`1" /> with extension methods that are a particularly useful shorthand for adding <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraints to
+            the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> list of an existing <see cref="T:Microsoft.Gestures.HandPose" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,12 +37,23 @@
         <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="finger">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFinger">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="finger">The first <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between <paramref name="finger" /> and 
+            <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">The second <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between <paramref name="finger" /> and <paramref name="otherFinger" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied whenever the index fingertip is not touching the middle fingertip
+            handPose.PoseConstraints.Add(Finger.Index, RelativeDistance.NotTouching, Finger.Middle);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -47,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,12 +75,23 @@
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="finger">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="finger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between <paramref name="finger" /> and 
+            each of <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">All fingers enumerated here will be required to comply to the <paramref name="distanceRelation" /> with respect to <paramref name="finger" />.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between <paramref name="finger" /> and each of the <paramref name="otherFingers" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the thumb is not touching both ring and pinky fingers
+            handPose.PoseConstraints.Add(Finger.Thumb, RelativeDistance.NotTouching, new[] {Finger.Ring, Finger.Pinky});
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -73,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.FingersContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,12 +113,25 @@
         <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="context">The first <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between <paramref name="context" /> and 
+            <paramref name="otherContext" />.</param>
+        <param name="otherContext">The second <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> new constraint. If this parameter is null, 
+            <paramref name="context" /> will be used in its place and <paramref name="distanceRelation" /> will be applied between the fingers of <paramref name="context" /> and themselves 
+            (for more information on finger context types, refer to <seealso cref="T:Microsoft.Gestures.FingersContext" /> documentation).</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" /> between 
+            the fingers in <paramref name="context" /> and the fingers in <paramref name="otherContext" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when either of the non-thumb fingers touches the thumb
+            handPose.PoseConstraints.Add(new AnyFingersContext(), RelativeDistance.Touching, new SingleFingerContext(thumb));
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -99,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,12 +153,23 @@
         <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="fingers">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFinger">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingers">&gt;All fingers enumerated here will be required to comply to the <paramref name="distanceRelation" /> with respect to <paramref name="otherFinger" />.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between each of <paramref name="fingers" /> and 
+            <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between each finger in <paramref name="fingers" /> and <paramref name="otherFinger" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the thumb is not touching both ring and pinky fingers
+            handPose.PoseConstraints.Add(new[] {Finger.Ring, Finger.Pinky}, RelativeDistance.NotTouching, Finger.Thumb);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -125,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,12 +191,24 @@
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="fingers">To be added.</param>
-        <param name="distanceRelation">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingers">The first set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+        <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between each finger in <paramref name="fingers" /> and 
+            each finger in <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">The second set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint. If this parameter is null, 
+            <paramref name="distanceRelation" /> relation will be imposed on all pairs of fingers from within the <paramref name="fingers" /> collection.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between each finger in <paramref name="fingers" /> and each finger in <paramref name="otherFingers" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when neither thumb nor index fingers are touching any of the middle, ring and pinky fingers
+            handPose.PoseConstraints.Add(new[] {Finger.Thumb, Finger.Index}, RelativeDistance.NotTouching, new[] {Finger.Middle, Finger.Ring, Finger.Pinky}); 
+            </code>
+        </remarks>
       </Docs>
     </Member>
   </Members>

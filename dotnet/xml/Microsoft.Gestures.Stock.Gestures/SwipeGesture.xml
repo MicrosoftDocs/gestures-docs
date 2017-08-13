@@ -1,4 +1,4 @@
-<Type Name="SwipeGesture" FullName="Microsoft.Gestures.Stock.Gestures.SwipeGesture">
+﻿<Type Name="SwipeGesture" FullName="Microsoft.Gestures.Stock.Gestures.SwipeGesture">
   <TypeSignature Language="C#" Value="public sealed class SwipeGesture : Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SwipeGesture extends Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.SwipeGesture" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.SwipeGesture.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.SwipeGesture.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.SwipeGesture.FingersRightAngleTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.Gestures.SwipeGesture.PalmDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.SwipeGesture.SpreadTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.SwipeGesture.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

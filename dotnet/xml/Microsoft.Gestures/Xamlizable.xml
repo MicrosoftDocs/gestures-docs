@@ -1,4 +1,4 @@
-<Type Name="Xamlizable" FullName="Microsoft.Gestures.Xamlizable">
+﻿<Type Name="Xamlizable" FullName="Microsoft.Gestures.Xamlizable">
   <TypeSignature Language="C#" Value="public abstract class Xamlizable : Microsoft.Gestures.GesturesFrameworkObject, System.ComponentModel.ISupportInitialize, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Xamlizable extends Microsoft.Gestures.GesturesFrameworkObject implements class System.ComponentModel.ISupportInitialize, class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Xamlizable" />
@@ -28,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Xamlizable.InitializeCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Xamlizable.System#ComponentModel#ISupportInitialize#BeginInit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Xamlizable.System#ComponentModel#ISupportInitialize#EndInit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Xamlizable.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,6 +96,25 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXaml">
+      <MemberSignature Language="C#" Value="public string ToXaml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToXaml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Xamlizable.ToXaml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

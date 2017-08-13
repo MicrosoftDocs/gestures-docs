@@ -1,4 +1,4 @@
-<Type Name="AnyHandExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension">
+﻿<Type Name="AnyHandExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension">
   <TypeSignature Language="C#" Value="public class AnyHandExtension : Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnyHandExtension extends Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension" />
@@ -26,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension.CreateHandContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

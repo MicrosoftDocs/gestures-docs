@@ -1,4 +1,4 @@
-<Type Name="GestureContainer" FullName="Microsoft.Gestures.GestureContainer">
+﻿<Type Name="GestureContainer" FullName="Microsoft.Gestures.GestureContainer">
   <TypeSignature Language="C#" Value="public class GestureContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureContainer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureContainer" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainer.#ctor(Microsoft.Gestures.Gesture,System.Boolean,System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GestureContainer.Gesture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GestureContainer.IsGlobal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureContainer.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GestureContainer.ProcessId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

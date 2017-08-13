@@ -1,4 +1,4 @@
-<Type Name="FingerMotion" FullName="Microsoft.Gestures.FingerMotion">
+﻿<Type Name="FingerMotion" FullName="Microsoft.Gestures.FingerMotion">
   <TypeSignature Language="C#" Value="public class FingerMotion : Microsoft.Gestures.HandPartMotion&lt;Microsoft.Gestures.FingersContext&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FingerMotion extends Microsoft.Gestures.HandPartMotion`1&lt;class Microsoft.Gestures.FingersContext&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingerMotion" />
@@ -24,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.MotionScript)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.MotionScript)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -152,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -190,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.MotionScript)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -209,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -228,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -247,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -266,6 +279,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -293,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -320,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -347,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.String,Microsoft.Gestures.MotionPlane)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -368,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -395,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -422,6 +441,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -449,6 +469,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.String,Microsoft.Gestures.MotionPlane)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -470,6 +491,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -497,6 +519,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -524,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -551,6 +575,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.String,Microsoft.Gestures.MotionPlane)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -572,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotion.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

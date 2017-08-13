@@ -1,4 +1,4 @@
-<Type Name="FingertipPlacementRelation" FullName="Microsoft.Gestures.FingertipPlacementRelation">
+﻿<Type Name="FingertipPlacementRelation" FullName="Microsoft.Gestures.FingertipPlacementRelation">
   <TypeSignature Language="C#" Value="public class FingertipPlacementRelation : Microsoft.Gestures.FingersRelation&lt;Microsoft.Gestures.RelativePlacement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FingertipPlacementRelation extends Microsoft.Gestures.FingersRelation`1&lt;valuetype Microsoft.Gestures.RelativePlacement&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingertipPlacementRelation" />
@@ -14,8 +14,22 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Represents a constraint describing the relative placement of fingers.
+            </summary>
+    <remarks>
+      <para>The <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint can be used to indicate the state of <see cref="T:Microsoft.Gestures.RelativePlacement" /> between fingertips of different fingers. For example, 
+            to specify a <see cref="T:Microsoft.Gestures.HandPose" /> which will be triggered when the user's index fingertip is placed above the user's thumb fingertip, use the following the following syntax:</para>
+      <code>
+            var indexAboveThumbPose = new HandPose("IndexAboveThumb", new FingertipPlacementRelation(Finger.Index, RelativePlacement.Above, Finger.Thumb));
+            </code>
+      <para>A <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint imposes the <see cref="P:Microsoft.Gestures.FingertipPlacementRelation.PlacementRelation" /> relation between the fingers of 
+            <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" /> and the fingers of <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" />. Note that the <see cref="T:Microsoft.Gestures.RelativePlacement" /> 
+            relation is not symmetric. This means that if the values of <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" /> and <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" /> were 
+            to be swapped, the meaning of the entire <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint would be flipped.</para>
+      <para>Note that <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> instances are mutable until the containing <see cref="T:Microsoft.Gestures.Gesture" /> object is registered with the gestures runtime, at which 
+            point it becomes frozen and cannot be modified any longer. </para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -24,116 +38,141 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Creates a blank instance of <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" />. In order to obtain a meaningful constraint, the values of <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" />,
+            <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" /> and <see cref="P:Microsoft.Gestures.FingertipPlacementRelation.PlacementRelation" /> would have to be set manually.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (Microsoft.Gestures.Finger finger, Microsoft.Gestures.RelativePlacement relativePlacement, Microsoft.Gestures.Finger otherFinger);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.RelativePlacement relativePlacement, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
+      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (Microsoft.Gestures.Finger finger, Microsoft.Gestures.RelativePlacement placementRelation, Microsoft.Gestures.Finger otherFinger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.RelativePlacement placementRelation, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
-        <Parameter Name="relativePlacement" Type="Microsoft.Gestures.RelativePlacement" />
+        <Parameter Name="placementRelation" Type="Microsoft.Gestures.RelativePlacement" />
         <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="finger">To be added.</param>
-        <param name="relativePlacement">To be added.</param>
-        <param name="otherFinger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="finger">The first <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <param name="placementRelation">The relation that this <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> will impose between <paramref name="finger" /> and <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">The second <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing the <paramref name="placementRelation" /> relation between <paramref name="finger" /> and
+            <paramref name="otherFinger" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (Microsoft.Gestures.Finger finger, Microsoft.Gestures.RelativePlacement relativePlacement, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.RelativePlacement relativePlacement, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers) cil managed" />
+      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (Microsoft.Gestures.Finger finger, Microsoft.Gestures.RelativePlacement placementRelation, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.RelativePlacement placementRelation, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
-        <Parameter Name="relativePlacement" Type="Microsoft.Gestures.RelativePlacement" />
+        <Parameter Name="placementRelation" Type="Microsoft.Gestures.RelativePlacement" />
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="finger">To be added.</param>
-        <param name="relativePlacement">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="finger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> will impose between <paramref name="finger" /> and <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">The new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose the <paramref name="placementRelation" /> relation between <paramref name="finger" />
+            and all the fingers enumerated by <paramref name="otherFingers" />.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing the <paramref name="placementRelation" /> relation between <paramref name="finger" /> and
+            each of the <paramref name="otherFingers" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (Microsoft.Gestures.FingersContext context, Microsoft.Gestures.RelativePlacement relativePlacement, Microsoft.Gestures.FingersContext otherContext);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext context, valuetype Microsoft.Gestures.RelativePlacement relativePlacement, class Microsoft.Gestures.FingersContext otherContext) cil managed" />
+      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (Microsoft.Gestures.FingersContext context, Microsoft.Gestures.RelativePlacement placementRelation, Microsoft.Gestures.FingersContext otherContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext context, valuetype Microsoft.Gestures.RelativePlacement placementRelation, class Microsoft.Gestures.FingersContext otherContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.FingersContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="context" Type="Microsoft.Gestures.FingersContext" />
-        <Parameter Name="relativePlacement" Type="Microsoft.Gestures.RelativePlacement" />
+        <Parameter Name="placementRelation" Type="Microsoft.Gestures.RelativePlacement" />
         <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
       </Parameters>
       <Docs>
-        <param name="context">To be added.</param>
-        <param name="relativePlacement">To be added.</param>
-        <param name="otherContext">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="context">The first <see cref="T:Microsoft.Gestures.FingersContext" /> participating in this constraint.</param>
+        <param name="placementRelation">The relation that this <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> will impose between <paramref name="context" /> and <paramref name="otherContext" />.</param>
+        <param name="otherContext">The second <see cref="T:Microsoft.Gestures.FingersContext" /> participating in this constraint.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing the <paramref name="placementRelation" /> relation between the fingers indicated by
+            <paramref name="context" /> and the fingers indicated by <paramref name="otherContext" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativePlacement relativePlacement, Microsoft.Gestures.Finger otherFinger);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativePlacement relativePlacement, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
+      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativePlacement placementRelation, Microsoft.Gestures.Finger otherFinger);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativePlacement placementRelation, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
-        <Parameter Name="relativePlacement" Type="Microsoft.Gestures.RelativePlacement" />
+        <Parameter Name="placementRelation" Type="Microsoft.Gestures.RelativePlacement" />
         <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="fingers">To be added.</param>
-        <param name="relativePlacement">To be added.</param>
-        <param name="otherFinger">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fingers">All fingers enumerated here will be required to comply to the <paramref name="placementRelation" /> relation with respect to <paramref name="otherFinger" />.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> will impose between <paramref name="fingers" /> and <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing the <paramref name="placementRelation" /> relation between each of the
+            <paramref name="fingers" /> and <paramref name="otherFinger" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativePlacement relativePlacement, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativePlacement relativePlacement, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers) cil managed" />
+      <MemberSignature Language="C#" Value="public FingertipPlacementRelation (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativePlacement placementRelation, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativePlacement placementRelation, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
-        <Parameter Name="relativePlacement" Type="Microsoft.Gestures.RelativePlacement" />
+        <Parameter Name="placementRelation" Type="Microsoft.Gestures.RelativePlacement" />
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="fingers">To be added.</param>
-        <param name="relativePlacement">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="fingers">The first set of fingers participating in the constraint.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> will impose between <paramref name="fingers" /> and <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">The second set of fingers participating in this constraint.</param>
+        <summary>
+            Creates a new instance of a <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing the <paramref name="placementRelation" /> relation between each of the 
+            <paramref name="fingers" /> and each of the <paramref name="otherFingers" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingertipPlacementRelation.PlacementRelation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -154,7 +194,10 @@
         <ReturnType>Microsoft.Gestures.RelativePlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies the relation this <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> imposes between the fingers indicated by <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" /> and the fingers
+            indicated by <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelation.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

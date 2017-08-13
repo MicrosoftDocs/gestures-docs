@@ -1,4 +1,4 @@
-<Type Name="HandPartPose&lt;ContextType&gt;" FullName="Microsoft.Gestures.HandPartPose&lt;ContextType&gt;">
+﻿<Type Name="HandPartPose&lt;ContextType&gt;" FullName="Microsoft.Gestures.HandPartPose&lt;ContextType&gt;">
   <TypeSignature Language="C#" Value="public abstract class HandPartPose&lt;ContextType&gt; : Microsoft.Gestures.PoseConstraint where ContextType : GestureContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HandPartPose`1&lt;(class Microsoft.Gestures.GestureContext) ContextType&gt; extends Microsoft.Gestures.PoseConstraint" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HandPartPose`1" />
@@ -23,9 +23,32 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <typeparam name="ContextType">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="ContextType">The context which the class is referring to. This is either a <see cref="T:Microsoft.Gestures.HandContext" /> or a <see cref="T:Microsoft.Gestures.FingersContext" />. A <see cref="T:Microsoft.Gestures.HandContext" /> type 
+            parameter is used in <see cref="T:Microsoft.Gestures.PalmPose" /> to imply this child class represents a constraint relating to one or more hands. A <see cref="T:Microsoft.Gestures.FingersContext" /> type parameter is used in 
+            <see cref="T:Microsoft.Gestures.FingerPose" /> to imply this child class represents a constraint relating to one or more fingers. To learn about the various available types of hand and fingers contexts,
+            please refer to <seealso cref="T:Microsoft.Gestures.FingersContext" /> and <seealso cref="T:Microsoft.Gestures.HandContext" />.</typeparam>
+    <summary>
+            An abstract base class representing the pose of a hand part.
+            </summary>
+    <remarks>
+      <para>
+            Child classes of <see cref="T:Microsoft.Gestures.HandPartPose`1" /> are used to specify constraints describing the state of either the palm (e.g.: "the palm of the right hand is facing forward") - 
+            see <seealso cref="T:Microsoft.Gestures.PalmPose" />, or the fingers (e.g. "the index, middle, ring and pinky fingers are folded") - see <seealso cref="T:Microsoft.Gestures.FingerPose" />.
+            </para>
+      <para>
+            Every <see cref="T:Microsoft.Gestures.HandPartPose`1" /> has a <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" /> associated with it. The <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" /> specifies which concrete parts of the hand an instance of
+            <see cref="T:Microsoft.Gestures.HandPartPose`1" /> relates to. For example, when dealing with a <see cref="T:Microsoft.Gestures.PalmPose" /> constraint, a <see cref="T:Microsoft.Gestures.SingleHandContext" /> context instantiated using the 
+            <see cref="M:Microsoft.Gestures.SingleHandContext.#ctor(Microsoft.Gestures.Hand)" /> constructor with a <see cref="F:Microsoft.Gestures.Hand.RightHand" /> input argument would indicate that the <see cref="T:Microsoft.Gestures.PalmPose" /> constraint relates to the right hand. 
+            Similarly, when dealing with a <see cref="T:Microsoft.Gestures.FingerPose" /> constraint, a <see cref="T:Microsoft.Gestures.SingleFingerContext" /> context instantiated using the <see cref="M:Microsoft.Gestures.SingleFingerContext.#ctor(Microsoft.Gestures.Finger)" /> constructor 
+            with <see cref="F:Microsoft.Gestures.Finger.Pinky" /> input argument would indicate that the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint relates to the pinky finger. To learn more about the various available types of 
+            hand and fingers contexts, please refer to <seealso cref="T:Microsoft.Gestures.FingersContext" /> and <seealso cref="T:Microsoft.Gestures.HandContext" />.
+            </para>
+      <para>
+            The <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> property describes the direction at which the hand part is pointing at. When dealing with a <see cref="T:Microsoft.Gestures.PalmPose" /> constraint, the <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" />
+            refers to the palm normal (the direction perpendicular to the palm) and when dealing with a <see cref="T:Microsoft.Gestures.FingerPose" />, it refers to the direction of a finger (which is aligned with
+            the distal phalanx of the finger).
+            </para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -48,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.#ctor(`0,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,19 +86,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Context">
       <MemberSignature Language="C#" Value="public ContextType Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !ContextType Context" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPartPose`1.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>ContextType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Indicates which parts of the hand this constraint refers to: either <see cref="T:Microsoft.Gestures.SingleHandContext" />, <see cref="T:Microsoft.Gestures.AnyHandContext" /> or <see cref="T:Microsoft.Gestures.AllHandsContext" /> in case for a 
+            <see cref="T:Microsoft.Gestures.PalmPose" /> constraint and either <see cref="T:Microsoft.Gestures.SingleFingerContext" />, <see cref="T:Microsoft.Gestures.AnyFingerContext" /> or <see cref="T:Microsoft.Gestures.AllFingersContext" /> for a <see cref="T:Microsoft.Gestures.FingerPose" />
+            constraint.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.DeepFreeze" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.HandPartPose`1.DefaultPoseDirection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPartPose`1.Direction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -131,17 +183,20 @@
         <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The direction of this hand part: Either the palm normal in case of a <see cref="T:Microsoft.Gestures.PalmPose" /> or the direction at which the fingers are pointing in case of a <see cref="T:Microsoft.Gestures.FingerPose" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.Equals(System.Object)" />
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.EqualsInternal(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,30 +212,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetHashCode">
-      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.GetHashCode" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,8 +226,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a string representation of this <see cref="T:Microsoft.Gestures.HandPartPose`1" /> instance.
+            </summary>
+        <returns>A string representation of this <see cref="T:Microsoft.Gestures.HandPartPose`1" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,6 +239,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPose`1.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

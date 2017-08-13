@@ -1,4 +1,4 @@
-<Type Name="IValidatable" FullName="Microsoft.Gestures.IValidatable">
+﻿<Type Name="IValidatable" FullName="Microsoft.Gestures.IValidatable">
   <TypeSignature Language="C#" Value="public interface IValidatable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValidatable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.IValidatable" />
@@ -18,6 +18,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IValidatable.Validate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

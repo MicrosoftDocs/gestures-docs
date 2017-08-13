@@ -1,4 +1,4 @@
-<Type Name="IHandSkeleton" FullName="Microsoft.Gestures.Skeleton.IHandSkeleton">
+﻿<Type Name="IHandSkeleton" FullName="Microsoft.Gestures.Skeleton.IHandSkeleton">
   <TypeSignature Language="C#" Value="public interface IHandSkeleton" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHandSkeleton" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.IHandSkeleton" />
@@ -18,6 +18,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.FingerDirections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.FingerPositions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.Handedness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.IndexDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.IndexPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.MiddleDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.MiddlePosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,6 +162,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PalmDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PalmOrientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PalmPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PinkyDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PinkyPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.RingDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.RingPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.IHandSkeleton.Satisfies(Microsoft.Gestures.HandPose)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,6 +310,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.ThumbDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -311,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.IHandSkeleton.ThumbPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.IHandSkeleton.ToNormalizedSkeleton" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

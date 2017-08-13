@@ -1,4 +1,4 @@
-<Type Name="NestingPath" FullName="Microsoft.Gestures.NestingPath">
+﻿<Type Name="NestingPath" FullName="Microsoft.Gestures.NestingPath">
   <TypeSignature Language="C#" Value="public class NestingPath : System.Collections.Generic.List&lt;Microsoft.Gestures.GestureSegment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NestingPath extends System.Collections.Generic.List`1&lt;class Microsoft.Gestures.GestureSegment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.NestingPath" />
@@ -29,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.NestingPath.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.NestingPath.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.NestingPath.SerializedPathDelimiter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.NestingPath.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

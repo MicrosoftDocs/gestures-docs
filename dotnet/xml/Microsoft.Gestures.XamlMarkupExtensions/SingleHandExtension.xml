@@ -1,4 +1,4 @@
-<Type Name="SingleHandExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension">
+﻿<Type Name="SingleHandExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension">
   <TypeSignature Language="C#" Value="public class SingleHandExtension : Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SingleHandExtension extends Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension" />
@@ -29,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.#ctor(Microsoft.Gestures.Hand)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.CreateHandContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.Hand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

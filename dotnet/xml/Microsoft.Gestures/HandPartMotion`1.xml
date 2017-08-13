@@ -1,4 +1,4 @@
-<Type Name="HandPartMotion&lt;TContextType&gt;" FullName="Microsoft.Gestures.HandPartMotion&lt;TContextType&gt;">
+﻿<Type Name="HandPartMotion&lt;TContextType&gt;" FullName="Microsoft.Gestures.HandPartMotion&lt;TContextType&gt;">
   <TypeSignature Language="C#" Value="public abstract class HandPartMotion&lt;TContextType&gt; : Microsoft.Gestures.MotionConstraint where TContextType : GestureContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HandPartMotion`1&lt;(class Microsoft.Gestures.GestureContext) TContextType&gt; extends Microsoft.Gestures.MotionConstraint" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HandPartMotion`1" />
@@ -34,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -48,6 +49,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.#ctor(`0,Microsoft.Gestures.MotionScript)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -61,12 +63,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Context">
       <MemberSignature Language="C#" Value="public TContextType Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TContextType Context" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPartMotion`1.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.DeepFreeze" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,12 +118,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.Equals(System.Object)" />
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.EqualsInternal(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,30 +140,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetHashCode">
-      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.GetHashCode" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="MotionScript">
       <MemberSignature Language="C#" Value="public Microsoft.Gestures.MotionScript MotionScript { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.MotionScript MotionScript" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPartMotion`1.MotionScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -165,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPartMotion`1.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -190,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPartMotion`1.Speed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartMotion`1.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

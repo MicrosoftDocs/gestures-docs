@@ -1,4 +1,4 @@
-<Type Name="ConstraintAndScore" FullName="Microsoft.Gestures.ConstraintAndScore">
+﻿<Type Name="ConstraintAndScore" FullName="Microsoft.Gestures.ConstraintAndScore">
   <TypeSignature Language="C#" Value="public class ConstraintAndScore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConstraintAndScore extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.ConstraintAndScore" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.ConstraintAndScore.#ctor(Microsoft.Gestures.PoseConstraint,System.Single)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.ConstraintAndScore.Constraint" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.ConstraintAndScore.SatisfactionScore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.ConstraintAndScore.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

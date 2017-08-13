@@ -1,4 +1,4 @@
-<Type Name="GestureContainerCollection" FullName="Microsoft.Gestures.GestureContainerCollection">
+﻿<Type Name="GestureContainerCollection" FullName="Microsoft.Gestures.GestureContainerCollection">
   <TypeSignature Language="C#" Value="public class GestureContainerCollection : Microsoft.Gestures.IGestureContainerCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureContainerCollection extends System.Object implements class Microsoft.Gestures.IGestureContainerCollection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureContainerCollection" />
@@ -25,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainerCollection.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainerCollection.Add(Microsoft.Gestures.GestureContainer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureContainerCollection.Collection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.GestureContainerCollection.CollectionChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainerCollection.Contains(Microsoft.Gestures.Gesture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainerCollection.Remove(Microsoft.Gestures.Gesture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainerCollection.Remove(Microsoft.Gestures.GestureContainer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainerCollection.TriggerNestingPath(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

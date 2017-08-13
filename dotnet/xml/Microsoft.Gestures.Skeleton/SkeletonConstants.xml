@@ -1,4 +1,4 @@
-<Type Name="SkeletonConstants" FullName="Microsoft.Gestures.Skeleton.SkeletonConstants">
+﻿<Type Name="SkeletonConstants" FullName="Microsoft.Gestures.Skeleton.SkeletonConstants">
   <TypeSignature Language="C#" Value="public static class SkeletonConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SkeletonConstants extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.SkeletonConstants" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.SkeletonConstants.PoseSatisfactionThreshold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

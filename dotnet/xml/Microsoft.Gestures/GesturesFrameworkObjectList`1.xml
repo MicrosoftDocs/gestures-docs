@@ -1,4 +1,4 @@
-<Type Name="GesturesFrameworkObjectList&lt;GesturesFrameworkObjectType&gt;" FullName="Microsoft.Gestures.GesturesFrameworkObjectList&lt;GesturesFrameworkObjectType&gt;">
+﻿<Type Name="GesturesFrameworkObjectList&lt;GesturesFrameworkObjectType&gt;" FullName="Microsoft.Gestures.GesturesFrameworkObjectList&lt;GesturesFrameworkObjectType&gt;">
   <TypeSignature Language="C#" Value="public class GesturesFrameworkObjectList&lt;GesturesFrameworkObjectType&gt; : Microsoft.Gestures.FreezableList&lt;GesturesFrameworkObjectType&gt; where GesturesFrameworkObjectType : IFreezable, IValidatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GesturesFrameworkObjectList`1&lt;(class Microsoft.Gestures.IFreezable, class Microsoft.Gestures.IValidatable) GesturesFrameworkObjectType&gt; extends Microsoft.Gestures.FreezableList`1&lt;!GesturesFrameworkObjectType&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GesturesFrameworkObjectList`1" />
@@ -33,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.DeepFreeze" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

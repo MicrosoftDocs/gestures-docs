@@ -1,4 +1,4 @@
-<Type Name="GesturesFrameworkObjectSerializer" FullName="Microsoft.Gestures.GesturesFrameworkObjectSerializer">
+﻿<Type Name="GesturesFrameworkObjectSerializer" FullName="Microsoft.Gestures.GesturesFrameworkObjectSerializer">
   <TypeSignature Language="C#" Value="public static class GesturesFrameworkObjectSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed GesturesFrameworkObjectSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GesturesFrameworkObjectSerializer" />
@@ -15,33 +15,13 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="FindType">
-      <MemberSignature Language="C#" Value="public static Type FindType (string fullyQualifiedTypeName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type FindType(string fullyQualifiedTypeName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FindType(System.String)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Type</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="fullyQualifiedTypeName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="fullyQualifiedTypeName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="FromXaml">
       <MemberSignature Language="C#" Value="public static object FromXaml (string xml);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object FromXaml(string xml) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FromXaml(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FromXaml(System.Uri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.ToXaml``1(``0)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,6 +86,23 @@
         <param name="segment">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXamlInvoked">
+      <MemberSignature Language="C#" Value="public static event EventHandler ToXamlInvoked;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ToXamlInvoked" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.GesturesFrameworkObjectSerializer.ToXamlInvoked" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-<Type Name="ButtonInputBinding" FullName="Microsoft.Gestures.InputBindings.ButtonInputBinding">
+﻿<Type Name="ButtonInputBinding" FullName="Microsoft.Gestures.InputBindings.ButtonInputBinding">
   <TypeSignature Language="C#" Value="public class ButtonInputBinding : Microsoft.Gestures.InputBindings.InputBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ButtonInputBinding extends Microsoft.Gestures.InputBindings.InputBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.ButtonInputBinding" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.ButtonInputBinding.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.ButtonInputBinding.CreateInstanceCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.ButtonInputBinding.OnGestureTrigger(Microsoft.Gestures.InputBindings.GestureTriggerEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

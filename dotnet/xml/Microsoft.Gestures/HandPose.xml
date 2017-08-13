@@ -1,4 +1,4 @@
-<Type Name="HandPose" FullName="Microsoft.Gestures.HandPose">
+﻿<Type Name="HandPose" FullName="Microsoft.Gestures.HandPose">
   <TypeSignature Language="C#" Value="public class HandPose : Microsoft.Gestures.GestureSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandPose extends Microsoft.Gestures.GestureSegment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HandPose" />
@@ -16,8 +16,48 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+             Represents the pose of a user's hand at a given moment. The <see cref="T:Microsoft.Gestures.HandPose" /> contains a detailed description of the state of the hand's palm and fingers.
+             </summary>
+    <remarks>
+      <para>
+             A <see cref="T:Microsoft.Gestures.HandPose" /> describes a momentary snapshot of the user's hand, including details regarding the state of the palm and the fingers. Unlike a <see cref="T:Microsoft.Gestures.Gesture" />,
+             whose detection requires the user to execute a certain sequence of <see cref="T:Microsoft.Gestures.HandPose" />s and <see cref="T:Microsoft.Gestures.HandMotion" />s over a period of time, detecting a <see cref="T:Microsoft.Gestures.HandPose" /> 
+             requires the user to obtain the appropriate hand posture for a brief moment.
+             </para>
+      <para>
+             A <see cref="T:Microsoft.Gestures.HandPose" /> describes the state of all hand parts from the wrist up. The states of the different hand parts are represented by classes deriving from 
+             <see cref="T:Microsoft.Gestures.PoseConstraint" /> as detailed below.
+             <list type="bullet"><item><description>
+                     The palm state (represented by instances of <see cref="T:Microsoft.Gestures.PalmPose" />):
+                     <list type="bullet"><item><description>
+                         The palm direction - the direction (see <see cref="T:Microsoft.Gestures.PoseDirection" /> for directions enumeration) perpendicular to the palm plane.
+                         </description></item><item><description>
+                         The palm orientation - the direction (see <see cref="T:Microsoft.Gestures.PoseDirection" /> for directions enumeration) of the middle finger, had it been stretched out.
+                         </description></item></list></description></item><item><description>
+                     The state of the fingers (represented by instances of <see cref="T:Microsoft.Gestures.FingerPose" />):
+                     <list type="bullet"><item><description>
+                         The finger flexion - describes to what degrees is the finger folded or stretched (see <see cref="T:Microsoft.Gestures.FingerFlexion" /> for flexion states enumeration).
+                         </description></item><item><description>
+                         The finger direction - the direction (see <see cref="T:Microsoft.Gestures.PoseDirection" /> for directions enumeration) at which the finger is pointing.
+                         </description></item></list></description></item><item><description>
+                     The relations between fingers (represented by <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> and <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" />):
+                     <list type="bullet"><item><description>
+                         Distance between fingers - the degree to which fingers are touching or not touching (see <see cref="T:Microsoft.Gestures.RelativeDistance" /> for relative-distance states enumeration).
+                         </description></item><item><description>
+                         Relative placement of fingers - how fingers are positioned relatively to each other (see <see cref="T:Microsoft.Gestures.RelativePlacement" /> for relative-placement states enumeration).
+                         </description></item></list></description></item></list></para>
+             
+             Note that it is mandatory for a given <see cref="T:Microsoft.Gestures.HandPose" /> to contain at least one type of <see cref="T:Microsoft.Gestures.PoseConstraint" />. A meaningful <see cref="T:Microsoft.Gestures.HandPose" /> instance will usually 
+             contain a single <see cref="T:Microsoft.Gestures.PalmPose" /> constraint and at least a single <see cref="T:Microsoft.Gestures.PoseConstraint" /> concerning the fingers.
+            
+             <para>
+             A <see cref="T:Microsoft.Gestures.HandPose" /> instance is mutable until the <see cref="T:Microsoft.Gestures.Gesture" /> object containing it is registered with the gestures runtime, at which point the <see cref="T:Microsoft.Gestures.HandPose" /> 
+             becomes frozen and cannot be modified any longer.
+             </para><para>
+             Note that currently only right hand <see cref="T:Microsoft.Gestures.PalmPose" /> constraints are detected in run-time. Use either <see cref="T:Microsoft.Gestures.AnyHandContext" /> or <see cref="T:Microsoft.Gestures.SingleHandContext" /> created 
+             with a <see cref="F:Microsoft.Gestures.Hand.RightHand" /> when specifying the <see cref="P:Microsoft.Gestures.HandPose.PalmPose" />.
+             </para></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,11 +66,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPose.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Creates a blank <see cref="T:Microsoft.Gestures.HandPose" /> instance. In order to obtain a meaningful <see cref="T:Microsoft.Gestures.HandPose" />, <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects would have to be 
+            added  manually to the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> list.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -40,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPose.#ctor(System.String,Microsoft.Gestures.PoseConstraint[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -53,9 +98,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="constraints">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The desired name for the new <see cref="T:Microsoft.Gestures.HandPose" /> instance. This <see cref="T:System.String" /> will serve as a unique identifier for this <see cref="T:Microsoft.Gestures.HandPose" /> instance in the
+            Gestures Service debugging interface.</param>
+        <param name="constraints">A comma separated list of the <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects which will make up the new <see cref="T:Microsoft.Gestures.HandPose" />.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.Gestures.HandPose" /> instance whose name is <paramref name="name" /> and adds all the <paramref name="constraints" /> to its <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> list.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPose.DeepFreeze" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPose.Equivalent(Microsoft.Gestures.GestureSegment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,9 +141,11 @@
         <Parameter Name="other" Type="Microsoft.Gestures.GestureSegment" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The other <see cref="T:Microsoft.Gestures.GestureSegment" /> to compare this <see cref="T:Microsoft.Gestures.HandPose" /> to.</param>
+        <summary>
+            Executes a deep comparison of this <see cref="T:Microsoft.Gestures.HandPose" /> instance with <paramref name="other" />.
+            </summary>
+        <returns>True if this instance is equivalent to <paramref name="other" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPose.Equivalent(Microsoft.Gestures.HandPose)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -112,9 +165,11 @@
         <Parameter Name="other" Type="Microsoft.Gestures.HandPose" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The other <see cref="T:Microsoft.Gestures.HandPose" /> object to compare this <see cref="T:Microsoft.Gestures.HandPose" /> to.</param>
+        <summary>
+            Executes a deep comparison of this <see cref="T:Microsoft.Gestures.HandPose" /> instance with <paramref name="other" />.
+            </summary>
+        <returns>True if this instance is equivalent to <paramref name="other" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPose.FingerPoses" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -138,7 +194,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Gestures.FingerPose&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A collection of <see cref="T:Microsoft.Gestures.FingerPose" />s describing the state of the fingers, namely - their flexion and direction.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPose.FingertipDistanceRelations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -163,7 +222,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Gestures.FingertipDistanceRelation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A collection of <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" />s describing the relative distance between pairs of fingers, namely - are they touching or not.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPose.FingertipPlacementRelations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -188,7 +250,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Microsoft.Gestures.FingertipPlacementRelation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A collection of <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" />s describing the relative placement between pairs of fingers, namely - is one finger below\behind\etc. the other finger.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPose.PalmPose" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -213,7 +278,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Gestures.PalmPose&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A collection of <see cref="P:Microsoft.Gestures.HandPose.PalmPose" />s describing the palm pose, namely - its direction and orientation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandPose.PoseConstraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -235,7 +303,11 @@
         <ReturnType>Microsoft.Gestures.GesturesFrameworkObjectList&lt;Microsoft.Gestures.PoseConstraint&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A list of all the <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects which are associated with this <see cref="T:Microsoft.Gestures.HandPose" /> instance.
+            Concrete types of <see cref="T:Microsoft.Gestures.PoseConstraint" />: <seealso cref="P:Microsoft.Gestures.HandPose.PalmPose" />, <seealso cref="T:Microsoft.Gestures.FingerPose" />, <seealso cref="T:Microsoft.Gestures.FingertipDistanceRelation" />, 
+            <seealso cref="T:Microsoft.Gestures.FingertipPlacementRelation" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPose.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

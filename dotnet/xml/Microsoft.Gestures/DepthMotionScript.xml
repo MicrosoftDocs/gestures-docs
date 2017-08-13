@@ -1,4 +1,4 @@
-<Type Name="DepthMotionScript" FullName="Microsoft.Gestures.DepthMotionScript">
+﻿<Type Name="DepthMotionScript" FullName="Microsoft.Gestures.DepthMotionScript">
   <TypeSignature Language="C#" Value="public class DepthMotionScript : Microsoft.Gestures.StockMotionSegmentsScript&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DepthMotionScript extends Microsoft.Gestures.StockMotionSegmentsScript`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.DepthMotionScript" />
@@ -24,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.DepthMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.DepthMotionScript.#ctor(Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>

@@ -1,4 +1,4 @@
-<Type Name="StockHandMotion" FullName="Microsoft.Gestures.Stock.HandMotions.StockHandMotion">
+﻿<Type Name="StockHandMotion" FullName="Microsoft.Gestures.Stock.HandMotions.StockHandMotion">
   <TypeSignature Language="C#" Value="public abstract class StockHandMotion : Microsoft.Gestures.HandMotion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StockHandMotion extends Microsoft.Gestures.HandMotion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandMotions.StockHandMotion" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.FingerMotions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.MotionConstraints" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.PalmMotion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

@@ -1,4 +1,4 @@
-<Type Name="AllHandsContext" FullName="Microsoft.Gestures.AllHandsContext">
+﻿<Type Name="AllHandsContext" FullName="Microsoft.Gestures.AllHandsContext">
   <TypeSignature Language="C#" Value="public class AllHandsContext : Microsoft.Gestures.HandContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AllHandsContext extends Microsoft.Gestures.HandContext" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.AllHandsContext" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.AllHandsContext.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.AllHandsContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.AllHandsContext.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

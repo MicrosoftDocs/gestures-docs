@@ -1,4 +1,4 @@
-<Type Name="FingertipPlacementRelationListExtension" FullName="Microsoft.Gestures.FingertipPlacementRelationListExtension">
+﻿<Type Name="FingertipPlacementRelationListExtension" FullName="Microsoft.Gestures.FingertipPlacementRelationListExtension">
   <TypeSignature Language="C#" Value="public static class FingertipPlacementRelationListExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FingertipPlacementRelationListExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingertipPlacementRelationListExtension" />
@@ -11,7 +11,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Augments <see cref="T:System.Collections.Generic.ICollection`1" /> with extension methods that are a particularly useful shorthand for adding <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraints to
+            the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> list of an existing <see cref="T:Microsoft.Gestures.HandPose" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,12 +37,23 @@
         <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="finger">To be added.</param>
-        <param name="placementRelation">To be added.</param>
-        <param name="otherFinger">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="finger">The first <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between <paramref name="finger" /> and 
+            <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">The second <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between <paramref name="finger" /> and <paramref name="otherFinger" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the middle fingertip is above the thumb fingertip
+            handPose.PoseConstraints.Add(Finger.Middle, RelativePlacement.Below, Finger.Thumb);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -47,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,12 +75,24 @@
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="finger">To be added.</param>
-        <param name="placementRelation">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="finger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between <paramref name="finger" /> and 
+            each of <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">The new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose the <paramref name="placementRelation" /> relation between <paramref name="finger" />
+            and all the fingers enumerated by <paramref name="otherFingers" />.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between <paramref name="finger" /> and each of the <paramref name="otherFingers" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the thumb is behind both index and middle fingers
+            handPose.PoseConstraints.Add(Finger.Thumb, RelativePlacement.Behind, new[] {Finger.Middle, Finger.Index}); 
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -73,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.FingersContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,20 +114,32 @@
         <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="context">To be added.</param>
-        <param name="placementRelation">To be added.</param>
-        <param name="otherContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="context">The first <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between <paramref name="context" /> and 
+            <paramref name="otherContext" />.</param>
+        <param name="otherContext">The second <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" /> between 
+            the fingers in <paramref name="context" /> and the fingers in <paramref name="otherContext" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when either the index or the middle finger is right of the thumb
+            handPose.PoseConstraints.Add(new AnyFingersContext(new[] {Finger.Index, Finger.Middle}), RelativePlacement.Right, new SingleFingerContext(Finger.Thumb));
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt; poseConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers, Microsoft.Gestures.RelativePlacement placementRelation, Microsoft.Gestures.Finger finger);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.PoseConstraint&gt; poseConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers, valuetype Microsoft.Gestures.RelativePlacement placementRelation, valuetype Microsoft.Gestures.Finger finger) cil managed" />
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt; poseConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativePlacement placementRelation, Microsoft.Gestures.Finger otherFinger);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.PoseConstraint&gt; poseConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativePlacement placementRelation, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,17 +147,28 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="poseConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt;" RefType="this" />
-        <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
         <Parameter Name="placementRelation" Type="Microsoft.Gestures.RelativePlacement" />
-        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <param name="placementRelation">To be added.</param>
-        <param name="finger">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingers">&gt;All fingers enumerated here will be required to comply to the <paramref name="placementRelation" /> relation with respect to <paramref name="otherFinger" />.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between each of <paramref name="fingers" /> and 
+            <paramref name="otherFinger" />.</param>
+        <param name="otherFinger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between each finger in <paramref name="fingers" /> and <paramref name="otherFinger" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the ring and pinky fingers are right of the thumb finger
+            handPose.PoseConstraints.Add(new[] {Finger.Ring, Finger.Pinky}, RelativeDistance.Right, Finger.Thumb);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -125,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,12 +190,23 @@
         <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="fingers">To be added.</param>
-        <param name="placementRelation">To be added.</param>
-        <param name="otherFingers">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingers">The first set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+        <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between each finger in <paramref name="fingers" /> and 
+            each finger in <paramref name="otherFingers" />.</param>
+        <param name="otherFingers">The second set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between each finger in <paramref name="fingers" /> and each finger in <paramref name="otherFingers" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the index and index fingers are above both the thumb and ring fingers
+            handPose.PoseConstraints.Add(new[] {Finger.Index, Finger.Middle}, RelativePlacement.Above, new[] {Finger.Thumb, Finger.Ring}); 
+            </code>
+        </remarks>
       </Docs>
     </Member>
   </Members>

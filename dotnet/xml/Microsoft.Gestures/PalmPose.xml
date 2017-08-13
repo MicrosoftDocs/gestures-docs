@@ -1,6 +1,6 @@
-<Type Name="PalmPose" FullName="Microsoft.Gestures.PalmPose">
-  <TypeSignature Language="C#" Value="public class PalmPose : Microsoft.Gestures.HandPartPose&lt;Microsoft.Gestures.HandContext&gt;, IEquatable&lt;Microsoft.Gestures.PalmPose&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PalmPose extends Microsoft.Gestures.HandPartPose`1&lt;class Microsoft.Gestures.HandContext&gt; implements class System.IEquatable`1&lt;class Microsoft.Gestures.PalmPose&gt;" />
+﻿<Type Name="PalmPose" FullName="Microsoft.Gestures.PalmPose">
+  <TypeSignature Language="C#" Value="public class PalmPose : Microsoft.Gestures.HandPartPose&lt;Microsoft.Gestures.HandContext&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PalmPose extends Microsoft.Gestures.HandPartPose`1&lt;class Microsoft.Gestures.HandContext&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.PalmPose" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Gestures</AssemblyName>
@@ -12,14 +12,25 @@
       <BaseTypeArgument TypeParamName="ContextType">Microsoft.Gestures.HandContext</BaseTypeArgument>
     </BaseTypeArguments>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>System.IEquatable&lt;Microsoft.Gestures.PalmPose&gt;</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Represents a constraint for the pose of the palm, describing its orientation in space and which hand its associated with.
+            </summary>
+    <remarks>
+      <para>
+            The information contained in a <see cref="T:Microsoft.Gestures.PalmPose" /> constraint describes the following aspects of the palm:
+            <list type="bullets"><item><description><see cref="P:Microsoft.Gestures.HandPartPose`1.Context" /> - which hand the palm is associated with. For example, the right hand palm would use a <see cref="T:Microsoft.Gestures.SingleHandContext" /> constructed
+            using the <see cref="F:Microsoft.Gestures.Hand.RightHand" /> (for further information about hand contexts, see <seealso cref="T:Microsoft.Gestures.HandContext" />).
+            </description></item><item><description><see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> - the direction perpendicular to the palm's face plane.
+            </description></item><item><description><see cref="P:Microsoft.Gestures.PalmPose.Orientation" /> - the direction that would be aligned with the middle finger had it been stretched out.
+            </description></item></list></para>
+      <para>
+            Together, these three properties fix the pose of the palm in an accurate manner. For example, to following configuration of a <see cref="T:Microsoft.Gestures.PalmPose" /> can be used as a constraint
+            for a "stop-sign"  <see cref="T:Microsoft.Gestures.HandPose" />: a <see cref="T:Microsoft.Gestures.SingleHandContext" /> which is associated with the <see cref="F:Microsoft.Gestures.Hand.RightHand" />, a 
+            <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> which is facing <see cref="F:Microsoft.Gestures.PoseDirection.Forward" /> and an <see cref="P:Microsoft.Gestures.PalmPose.Orientation" /> which is facing <see cref="F:Microsoft.Gestures.PoseDirection.Up" />.
+            </para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,11 +39,16 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Creates a blank <see cref="T:Microsoft.Gestures.PalmPose" /> instance. In order to obtain a meaningful constraint, the values of <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" />, 
+            <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> and\or <see cref="P:Microsoft.Gestures.PalmPose.Orientation" /> would have to be set manually.
+            <see cref="F:Microsoft.Gestures.PoseDirection.Undefined" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -42,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -50,40 +67,41 @@
         <Parameter Name="orientation" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="handContext">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="orientation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="handContext">Specifies which <see cref="T:Microsoft.Gestures.HandContext" /> will be used to create the new <see cref="T:Microsoft.Gestures.PalmPose" /><para>Note: At this point left hands are not supported, avoid instantiating <see cref="T:Microsoft.Gestures.HandContext" /> objects with a <see cref="F:Microsoft.Gestures.Hand.LeftHand" />.</para></param>
+        <param name="direction">The direction perpendicular the palm's face plane.</param>
+        <param name="orientation">The direction that would be aligned with the middle finger had it been stretched out.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.PalmPose" /> constraint describing the palm pose of the hand(s) mentioned in <paramref name="handContext" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Gestures.PalmPose other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Gestures.PalmPose other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.Equals(Microsoft.Gestures.PalmPose)" />
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.CalculateHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="other" Type="Microsoft.Gestures.PalmPose" />
-      </Parameters>
+      <Parameters />
       <Docs>
-        <param name="other">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.Equals(System.Object)" />
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.EqualsInternal(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,30 +117,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetHashCode">
-      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.GetHashCode" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Orientation">
       <MemberSignature Language="C#" Value="public Microsoft.Gestures.PoseDirection Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.PoseDirection Orientation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.PalmPose.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -137,7 +138,9 @@
         <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The direction that would be aligned with the middle finger had it been stretched out.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,8 +159,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a <see cref="T:System.String" /> describing this <see cref="T:Microsoft.Gestures.PalmPose" />.
+            </summary>
+        <returns>A <see cref="T:System.String" /> describing this <see cref="T:Microsoft.Gestures.PalmPose" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,6 +172,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPose.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

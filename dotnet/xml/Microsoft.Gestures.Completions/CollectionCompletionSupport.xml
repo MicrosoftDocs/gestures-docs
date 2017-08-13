@@ -1,4 +1,4 @@
-<Type Name="CollectionCompletionSupport" FullName="Microsoft.Gestures.Completions.CollectionCompletionSupport">
+﻿<Type Name="CollectionCompletionSupport" FullName="Microsoft.Gestures.Completions.CollectionCompletionSupport">
   <TypeSignature Language="C#" Value="public abstract class CollectionCompletionSupport : Microsoft.Gestures.Completions.ICompletionSupport" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CollectionCompletionSupport extends System.Object implements class Microsoft.Gestures.Completions.ICompletionSupport" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Completions.CollectionCompletionSupport" />
@@ -25,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.TryGetCollectionCompletions(System.Type,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.TryGetCompletions(System.Type,System.String,System.Int32,System.Int32@,System.Int32@,System.Collections.Generic.IEnumerable{System.String}@)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="RelativePlacement" FullName="Microsoft.Gestures.RelativePlacement">
+﻿<Type Name="RelativePlacement" FullName="Microsoft.Gestures.RelativePlacement">
   <TypeSignature Language="C#" Value="public enum RelativePlacement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelativePlacement extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.RelativePlacement" />
@@ -27,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Above" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Behind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Below" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.InFront" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -102,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

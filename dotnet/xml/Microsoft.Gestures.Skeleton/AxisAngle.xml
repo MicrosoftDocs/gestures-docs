@@ -1,4 +1,4 @@
-<Type Name="AxisAngle" FullName="Microsoft.Gestures.Skeleton.AxisAngle">
+﻿<Type Name="AxisAngle" FullName="Microsoft.Gestures.Skeleton.AxisAngle">
   <TypeSignature Language="C#" Value="public class AxisAngle : Microsoft.Gestures.Skeleton.Vector3" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AxisAngle extends Microsoft.Gestures.Skeleton.Vector3" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.AxisAngle" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.#ctor(Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.#ctor(System.Single,System.Single,System.Single)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.GetAngleBetween(Microsoft.Gestures.Skeleton.AxisAngle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.Interpolate(Microsoft.Gestures.Skeleton.AxisAngle,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.Rotate(System.Single,System.Single,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.AxisAngle.ToQuaternion" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

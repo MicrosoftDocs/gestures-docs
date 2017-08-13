@@ -1,4 +1,4 @@
-<Type Name="SatisfactionReasoning" FullName="Microsoft.Gestures.SatisfactionReasoning">
+﻿<Type Name="SatisfactionReasoning" FullName="Microsoft.Gestures.SatisfactionReasoning">
   <TypeSignature Language="C#" Value="public class SatisfactionReasoning" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SatisfactionReasoning extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.SatisfactionReasoning" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SatisfactionReasoning.#ctor(Microsoft.Gestures.ConstraintAndScore,System.Collections.Generic.ICollection{Microsoft.Gestures.ConstraintAndScore})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.SatisfactionReasoning.ConstraintAndScore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.SatisfactionReasoning.Evidence" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,6 +77,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SatisfactionReasoning.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

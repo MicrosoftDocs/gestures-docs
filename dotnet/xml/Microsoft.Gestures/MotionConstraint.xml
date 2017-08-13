@@ -1,4 +1,4 @@
-<Type Name="MotionConstraint" FullName="Microsoft.Gestures.MotionConstraint">
+﻿<Type Name="MotionConstraint" FullName="Microsoft.Gestures.MotionConstraint">
   <TypeSignature Language="C#" Value="public abstract class MotionConstraint : Microsoft.Gestures.GesturesFrameworkObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MotionConstraint extends Microsoft.Gestures.GesturesFrameworkObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.MotionConstraint" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.MotionConstraint.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />

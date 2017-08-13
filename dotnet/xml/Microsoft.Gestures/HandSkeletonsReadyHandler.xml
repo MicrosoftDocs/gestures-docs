@@ -1,4 +1,4 @@
-<Type Name="HandSkeletonsReadyHandler" FullName="Microsoft.Gestures.HandSkeletonsReadyHandler">
+﻿<Type Name="HandSkeletonsReadyHandler" FullName="Microsoft.Gestures.HandSkeletonsReadyHandler">
   <TypeSignature Language="C#" Value="public delegate void HandSkeletonsReadyHandler(object sender, HandSkeletonsReadyEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HandSkeletonsReadyHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HandSkeletonsReadyHandler" />

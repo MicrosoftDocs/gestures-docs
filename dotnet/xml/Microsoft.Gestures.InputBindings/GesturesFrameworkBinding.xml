@@ -1,4 +1,4 @@
-<Type Name="GesturesFrameworkBinding" FullName="Microsoft.Gestures.InputBindings.GesturesFrameworkBinding">
+﻿<Type Name="GesturesFrameworkBinding" FullName="Microsoft.Gestures.InputBindings.GesturesFrameworkBinding">
   <TypeSignature Language="C#" Value="public class GesturesFrameworkBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi GesturesFrameworkBinding extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.AddGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.AddPreviewGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.GestureTriggerEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.PreviewGestureTriggerEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.RemoveGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.RemovePreviewGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

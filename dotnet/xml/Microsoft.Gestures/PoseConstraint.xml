@@ -1,4 +1,4 @@
-<Type Name="PoseConstraint" FullName="Microsoft.Gestures.PoseConstraint">
+﻿<Type Name="PoseConstraint" FullName="Microsoft.Gestures.PoseConstraint">
   <TypeSignature Language="C#" Value="public abstract class PoseConstraint : Microsoft.Gestures.GesturesFrameworkObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PoseConstraint extends Microsoft.Gestures.GesturesFrameworkObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.PoseConstraint" />
@@ -11,8 +11,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            An abstract base class representing a pose constraint.
+            </summary>
+    <remarks>
+            A <see cref="T:Microsoft.Gestures.PoseConstraint" /> is the basic building block of a <see cref="T:Microsoft.Gestures.HandPose" /> (which is essentially a coherent collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects). A 
+            <see cref="T:Microsoft.Gestures.PoseConstraint" /> represents a certain feature of the hand. This can be either a predicate describing the state of one or more hand parts (e.g.: "the palm of the right hand 
+            is facing forward", "the index, middle, ring and pinky fingers are folded") - see <seealso cref="T:Microsoft.Gestures.HandPartPose`1" />, or a predicate describing the relative state of sets of 
+            fingers (e.g.: "the index and middle fingers are above the thumb finger", "the thumb finger is touching the middle and ring fingers") - see 
+            <seealso cref="T:Microsoft.Gestures.FingersRelation`1" />.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -21,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PoseConstraint.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
