@@ -1,4 +1,4 @@
-<Type Name="Quaternion" FullName="Microsoft.Gestures.Skeleton.Quaternion">
+﻿<Type Name="Quaternion" FullName="Microsoft.Gestures.Skeleton.Quaternion">
   <TypeSignature Language="C#" Value="public class Quaternion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Quaternion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.Quaternion" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -44,6 +45,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.I" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.J" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.K" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,11 +94,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Quaternion op_Multiply (Microsoft.Gestures.Skeleton.Quaternion q1, Microsoft.Gestures.Skeleton.Quaternion q2);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Quaternion operator * (Microsoft.Gestures.Skeleton.Quaternion q1, Microsoft.Gestures.Skeleton.Quaternion q2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Quaternion op_Multiply(class Microsoft.Gestures.Skeleton.Quaternion q1, class Microsoft.Gestures.Skeleton.Quaternion q2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.op_Multiply(Microsoft.Gestures.Skeleton.Quaternion,Microsoft.Gestures.Skeleton.Quaternion)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Quaternion.R" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.Rotate(System.Single,System.Single,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Quaternion.ToAxisAngle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

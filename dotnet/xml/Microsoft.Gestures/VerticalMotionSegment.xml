@@ -1,4 +1,4 @@
-<Type Name="VerticalMotionSegment" FullName="Microsoft.Gestures.VerticalMotionSegment">
+﻿<Type Name="VerticalMotionSegment" FullName="Microsoft.Gestures.VerticalMotionSegment">
   <TypeSignature Language="C#" Value="public class VerticalMotionSegment : Microsoft.Gestures.MotionSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VerticalMotionSegment extends Microsoft.Gestures.MotionSegment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.VerticalMotionSegment" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.AllSegments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcLeftDownward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcLeftUpward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcRightDownward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcRightUpward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcLeftDownward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -123,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcLeftUpward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcRightDownward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcRightUpward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalLeftDownward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -191,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalLeftUpward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -208,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalRightDownward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -225,6 +237,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalRightUpward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Downward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.MotionPlane" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Right" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.VerticalMotionSegment.Upward" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

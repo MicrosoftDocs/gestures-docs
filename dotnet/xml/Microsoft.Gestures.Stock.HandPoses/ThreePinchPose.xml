@@ -1,4 +1,4 @@
-<Type Name="ThreePinchPose" FullName="Microsoft.Gestures.Stock.HandPoses.ThreePinchPose">
+﻿<Type Name="ThreePinchPose" FullName="Microsoft.Gestures.Stock.HandPoses.ThreePinchPose">
   <TypeSignature Language="C#" Value="public sealed class ThreePinchPose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThreePinchPose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose.#ctor(System.String,System.Boolean,Microsoft.Gestures.HandContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose.PinchSpread" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

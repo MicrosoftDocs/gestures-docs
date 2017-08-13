@@ -1,4 +1,4 @@
-<Type Name="SvgMotionScript" FullName="Microsoft.Gestures.SvgMotionScript">
+﻿<Type Name="SvgMotionScript" FullName="Microsoft.Gestures.SvgMotionScript">
   <TypeSignature Language="C#" Value="public class SvgMotionScript : Microsoft.Gestures.MotionScript" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SvgMotionScript extends Microsoft.Gestures.MotionScript" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.SvgMotionScript" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.#ctor(System.String,Microsoft.Gestures.MotionPlane)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,12 +50,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DeepFreeze">
       <MemberSignature Language="C#" Value="protected override void DeepFreeze ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeepFreeze() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.DeepFreeze" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -71,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.SvgMotionScript.DefaultMotionPlane" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,12 +105,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.Equals(System.Object)" />
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.EqualsInternal(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,30 +127,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetHashCode">
-      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.GetHashCode" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetMotionPlaneHashCode">
       <MemberSignature Language="C#" Value="protected override int GetMotionPlaneHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 GetMotionPlaneHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.GetMotionPlaneHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.IsMotionPlaneEquals(Microsoft.Gestures.MotionScript)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -166,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.SvgMotionScript.MotionPlane" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -188,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.SvgMotionScript.Svg" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.ToSvg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SvgMotionScript.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

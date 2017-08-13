@@ -1,4 +1,4 @@
-<Type Name="DismissGesture" FullName="Microsoft.Gestures.Stock.Gestures.DismissGesture">
+﻿<Type Name="DismissGesture" FullName="Microsoft.Gestures.Stock.Gestures.DismissGesture">
   <TypeSignature Language="C#" Value="public sealed class DismissGesture : Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DismissGesture extends Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.DismissGesture" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.DismissGesture.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.DismissGesture.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.DismissGesture.BackHandTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.DismissGesture.ReleaseHandTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

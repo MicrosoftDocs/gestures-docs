@@ -1,4 +1,4 @@
-<Type Name="GesturesFrameworkXamlLanguage" FullName="Microsoft.Gestures.GesturesFrameworkXamlLanguage">
+﻿<Type Name="GesturesFrameworkXamlLanguage" FullName="Microsoft.Gestures.GesturesFrameworkXamlLanguage">
   <TypeSignature Language="C#" Value="public static class GesturesFrameworkXamlLanguage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GesturesFrameworkXamlLanguage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GesturesFrameworkXamlLanguage" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.CollectionSeparator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.ValueConcatenator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.ValueDelimiter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.XmlNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

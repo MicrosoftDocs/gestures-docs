@@ -1,4 +1,4 @@
-<Type Name="RelativeDistance" FullName="Microsoft.Gestures.RelativeDistance">
+﻿<Type Name="RelativeDistance" FullName="Microsoft.Gestures.RelativeDistance">
   <TypeSignature Language="C#" Value="public enum RelativeDistance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelativeDistance extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.RelativeDistance" />
@@ -27,6 +27,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativeDistance.NotTouching" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativeDistance.Touching" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

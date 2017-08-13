@@ -1,4 +1,4 @@
-<Type Name="ClientInfoBuilder" FullName="Microsoft.Gestures.Endpoint.ClientInfoBuilder">
+﻿<Type Name="ClientInfoBuilder" FullName="Microsoft.Gestures.Endpoint.ClientInfoBuilder">
   <TypeSignature Language="C#" Value="public static class ClientInfoBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClientInfoBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.ClientInfoBuilder" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.ClientInfoBuilder.Build" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

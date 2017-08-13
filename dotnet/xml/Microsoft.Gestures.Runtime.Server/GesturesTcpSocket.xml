@@ -1,7 +1,7 @@
-<Type Name="MoriahTcpSocket" FullName="Microsoft.Moriah.Runtime.Server.MoriahTcpSocket">
-  <TypeSignature Language="C#" Value="public class MoriahTcpSocket" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MoriahTcpSocket extends System.Object" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket" />
+﻿<Type Name="GesturesTcpSocket" FullName="Microsoft.Gestures.Runtime.Server.GesturesTcpSocket">
+  <TypeSignature Language="C#" Value="public class GesturesTcpSocket" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GesturesTcpSocket extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,11 +16,12 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MoriahTcpSocket ();" />
+      <MemberSignature Language="C#" Value="public GesturesTcpSocket ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -32,9 +33,10 @@
     <Member MemberName="ConnectionReceived">
       <MemberSignature Language="C#" Value="public event Action&lt;Microsoft.Gestures.Protocol.IConnection&gt; ConnectionReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class Microsoft.Gestures.Protocol.IConnection&gt; ConnectionReceived" />
-      <MemberSignature Language="DocId" Value="E:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.ConnectionReceived" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.ConnectionReceived" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,9 +50,10 @@
     <Member MemberName="Start">
       <MemberSignature Language="C#" Value="public bool Start (int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Start(int32 port) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.Start(System.Int32)" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.Start(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,9 +72,10 @@
     <Member MemberName="Stop">
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.Stop" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.Stop" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="StockGesture" FullName="Microsoft.Gestures.Stock.Gestures.StockGesture">
+﻿<Type Name="StockGesture" FullName="Microsoft.Gestures.Stock.Gestures.StockGesture">
   <TypeSignature Language="C#" Value="public abstract class StockGesture : Microsoft.Gestures.Gesture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StockGesture extends Microsoft.Gestures.Gesture" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.StockGesture" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.StockGesture.#ctor(System.String,Microsoft.Gestures.GestureSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.Gestures.StockGesture.Segments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -74,6 +76,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.Gestures.StockGesture.SegmentsConnections" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

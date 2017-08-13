@@ -1,4 +1,4 @@
-<Type Name="PalmPoseListExtension" FullName="Microsoft.Gestures.PalmPoseListExtension">
+﻿<Type Name="PalmPoseListExtension" FullName="Microsoft.Gestures.PalmPoseListExtension">
   <TypeSignature Language="C#" Value="public static class PalmPoseListExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PalmPoseListExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.PalmPoseListExtension" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Hand,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -33,12 +34,21 @@
         <Parameter Name="orientation" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="hand">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="orientation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" />.</param>
+        <param name="hand">Specifies which hand will be used to create the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+        <param name="direction">Specifies the <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+        <param name="orientation">Specifies the <see cref="P:Microsoft.Gestures.PalmPose.Orientation" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+        <summary>
+            Adds a new <see cref="T:Microsoft.Gestures.PalmPose" /> described by input <paramref name="hand" />, <paramref name="direction" /> and <paramref name="orientation" /> to an existing
+            collection <paramref name="poseConstraints" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.PalmPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            handPose.PoseConstraints.Add(Hand.RightHand, PoseDirection.Forward, PoseDirection.Up);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -47,6 +57,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,12 +70,21 @@
         <Parameter Name="orientation" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="handContext">To be added.</param>
-        <param name="direction">To be added.</param>
-        <param name="orientation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" />.</param>
+        <param name="handContext">Specifies what <see cref="T:Microsoft.Gestures.HandContext" /> will be used to create the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+        <param name="direction">Specifies the <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+        <param name="orientation">Specifies the <see cref="P:Microsoft.Gestures.PalmPose.Orientation" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+        <summary>
+            Adds a new <see cref="T:Microsoft.Gestures.PalmPose" /> described by the input <paramref name="handContext" />, <paramref name="direction" /> and <paramref name="orientation" /> to an existing
+            collection <paramref name="poseConstraints" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.PalmPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            handPose.PoseConstraints.Add(new AnyHandContext(), PoseDirection.Forward, PoseDirection.Up);
+            </code>
+        </remarks>
       </Docs>
     </Member>
   </Members>

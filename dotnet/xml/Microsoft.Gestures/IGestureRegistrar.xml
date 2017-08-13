@@ -1,4 +1,4 @@
-<Type Name="IGestureRegistrar" FullName="Microsoft.Gestures.IGestureRegistrar">
+﻿<Type Name="IGestureRegistrar" FullName="Microsoft.Gestures.IGestureRegistrar">
   <TypeSignature Language="C#" Value="public interface IGestureRegistrar" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGestureRegistrar" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.IGestureRegistrar" />
@@ -18,6 +18,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureRegistrar.Register(Microsoft.Gestures.Gesture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.IGestureRegistrar.Unregister(Microsoft.Gestures.Gesture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

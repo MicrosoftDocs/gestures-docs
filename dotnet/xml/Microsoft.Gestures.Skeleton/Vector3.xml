@@ -1,4 +1,4 @@
-<Type Name="Vector3" FullName="Microsoft.Gestures.Skeleton.Vector3">
+﻿<Type Name="Vector3" FullName="Microsoft.Gestures.Skeleton.Vector3">
   <TypeSignature Language="C#" Value="public class Vector3 : ICloneable, IEquatable&lt;Microsoft.Gestures.Skeleton.Vector3&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Vector3 extends System.Object implements class System.ICloneable, class System.IEquatable`1&lt;class Microsoft.Gestures.Skeleton.Vector3&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.Vector3" />
@@ -28,6 +28,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.#ctor(System.Single[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.#ctor(System.Single,System.Single,System.Single)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -80,6 +83,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.AngleTo(Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -101,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Clone" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -119,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Cross(Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Equals(Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.HasNanEntries" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,6 +187,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Interpolate(Microsoft.Gestures.Skeleton.Vector3,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Vector3.Item(System.Int32)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.NanVector" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,11 +246,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition">
-      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 op_Addition (Microsoft.Gestures.Skeleton.Vector3 from, Microsoft.Gestures.Skeleton.Vector3 to);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator + (Microsoft.Gestures.Skeleton.Vector3 from, Microsoft.Gestures.Skeleton.Vector3 to);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Addition(class Microsoft.Gestures.Skeleton.Vector3 from, class Microsoft.Gestures.Skeleton.Vector3 to) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Addition(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,11 +270,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static float op_Multiply (Microsoft.Gestures.Skeleton.Vector3 vec1, Microsoft.Gestures.Skeleton.Vector3 vec2);" />
+      <MemberSignature Language="C#" Value="public static float operator * (Microsoft.Gestures.Skeleton.Vector3 vec1, Microsoft.Gestures.Skeleton.Vector3 vec2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Multiply(class Microsoft.Gestures.Skeleton.Vector3 vec1, class Microsoft.Gestures.Skeleton.Vector3 vec2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,11 +294,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 op_Multiply (Microsoft.Gestures.Skeleton.Vector3 vec, float scalar);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator * (Microsoft.Gestures.Skeleton.Vector3 vec, float scalar);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Multiply(class Microsoft.Gestures.Skeleton.Vector3 vec, float32 scalar) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(Microsoft.Gestures.Skeleton.Vector3,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -304,11 +318,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
-      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 op_Multiply (float scalar, Microsoft.Gestures.Skeleton.Vector3 vec);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator * (float scalar, Microsoft.Gestures.Skeleton.Vector3 vec);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Multiply(float32 scalar, class Microsoft.Gestures.Skeleton.Vector3 vec) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(System.Single,Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,11 +342,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
-      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 op_Subtraction (Microsoft.Gestures.Skeleton.Vector3 from, Microsoft.Gestures.Skeleton.Vector3 to);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator - (Microsoft.Gestures.Skeleton.Vector3 from, Microsoft.Gestures.Skeleton.Vector3 to);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Subtraction(class Microsoft.Gestures.Skeleton.Vector3 from, class Microsoft.Gestures.Skeleton.Vector3 to) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Subtraction(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -350,11 +366,12 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 op_UnaryNegation (Microsoft.Gestures.Skeleton.Vector3 negated);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator - (Microsoft.Gestures.Skeleton.Vector3 negated);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_UnaryNegation(class Microsoft.Gestures.Skeleton.Vector3 negated) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_UnaryNegation(Microsoft.Gestures.Skeleton.Vector3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -376,6 +393,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Parse(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -397,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.ToFloatArray" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.ToNormalized" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,6 +453,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.ToString(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -454,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.TwoNorm" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,6 +494,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.Vector3.X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -488,6 +511,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.Vector3.Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -504,6 +528,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.Vector3.Z" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

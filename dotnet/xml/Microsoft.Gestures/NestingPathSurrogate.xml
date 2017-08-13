@@ -1,4 +1,4 @@
-<Type Name="NestingPathSurrogate" FullName="Microsoft.Gestures.NestingPathSurrogate">
+﻿<Type Name="NestingPathSurrogate" FullName="Microsoft.Gestures.NestingPathSurrogate">
   <TypeSignature Language="C#" Value="public class NestingPathSurrogate : System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NestingPathSurrogate extends System.Object implements class System.Runtime.Serialization.ISerializationSurrogate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.NestingPathSurrogate" />
@@ -25,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.NestingPathSurrogate.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.NestingPathSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.NestingPathSurrogate.SerializedPathDelimiter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.NestingPathSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

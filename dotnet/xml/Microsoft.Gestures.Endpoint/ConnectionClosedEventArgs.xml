@@ -1,4 +1,4 @@
-<Type Name="ConnectionClosedEventArgs" FullName="Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs">
+﻿<Type Name="ConnectionClosedEventArgs" FullName="Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs">
   <TypeSignature Language="C#" Value="public class ConnectionClosedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionClosedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs.#ctor(System.Threading.Tasks.Task{System.Boolean})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs.ReconnectionTask" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

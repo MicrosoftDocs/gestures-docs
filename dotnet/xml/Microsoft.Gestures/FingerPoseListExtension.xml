@@ -1,4 +1,4 @@
-<Type Name="FingerPoseListExtension" FullName="Microsoft.Gestures.FingerPoseListExtension">
+﻿<Type Name="FingerPoseListExtension" FullName="Microsoft.Gestures.FingerPoseListExtension">
   <TypeSignature Language="C#" Value="public static class FingerPoseListExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FingerPoseListExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingerPoseListExtension" />
@@ -11,7 +11,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Augments <see cref="T:System.Collections.Generic.ICollection`1" /> with extension methods that are a particularly useful shorthand for adding <see cref="T:Microsoft.Gestures.FingerPose" /> constraints to the
+            <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> list of an existing <see cref="T:Microsoft.Gestures.HandPose" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -21,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -32,11 +36,21 @@
         <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="finger">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="finger">The <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /><paramref name="finger" /> is required to be aligned with.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires <paramref name="finger" /> to be aligned with 
+            <paramref name="direction" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the index finger is pointing up
+            handPose.PoseConstraints.Add(Finger.Index, PoseDirection.Up); 
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -45,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,11 +71,21 @@
         <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="fingersContext">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingersContext">Specifies the <see cref="T:Microsoft.Gestures.FingersContext" /> of the fingers participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that is required of the fingers indicated by <paramref name="fingersContext" />.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires the fingers indicated by
+            <paramref name="fingersContext" /> to be aligned with <paramref name="direction" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when at least one of the thumb, index or middle fingers is pointing right
+            handPose.PoseConstraints.Add(new AnyFingersContext(new[] {Finger.Thumb, Finger.Index, Finger.Middle}), PoseDirection.Right);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -69,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -80,11 +106,21 @@
         <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="fingers">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingers">An enumeration of all the fingers that will participate in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> each of the <paramref name="fingers" /> is required to be aligned with.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires each of the <paramref name="fingers" /> to be aligned 
+            with <paramref name="direction" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the thumb, index and middle fingers are all pointing left
+            handPose.PoseConstraints.Add(new[] {Finger.Thumb, Finger.Index, Finger.Middle}, PoseDirection.Left);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -93,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,12 +142,22 @@
         <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="finger">To be added.</param>
-        <param name="flexion">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="finger">The <paramref name="finger" /> participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on <paramref name="finger" />.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /><paramref name="finger" /> is required to be aligned with.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires <paramref name="finger" /> to attain the specified 
+            <paramref name="flexion" /> state and be aligned with <paramref name="direction" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the index finger is open and pointing backward
+            handPose.PoseConstraints.Add(Finger.Index, FingerFlexion.Open, PoseDirection.Backward); 
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -119,6 +166,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,12 +179,22 @@
         <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="fingersContext">To be added.</param>
-        <param name="flexion">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingersContext">Specifies the <see cref="T:Microsoft.Gestures.FingersContext" /> of the fingers participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on the fingers indicated by <paramref name="fingersContext" />.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> required of the fingers indicated by <paramref name="fingersContext" />.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires the fingers indicated by 
+            <paramref name="fingersContext" /> to attain the specified <paramref name="flexion" /> state and to be aligned with the given <paramref name="direction" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when at least one of the thumb, index and middle fingers is folded
+            handPose.PoseConstraints.Add(new AnyFingerContext(new[] {Finger.Thumb, Finger.Index, Finger.Middle}), FingerFlexion.Folded);
+            </code>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -145,6 +203,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -157,12 +216,22 @@
         <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
       </Parameters>
       <Docs>
-        <param name="poseConstraints">To be added.</param>
-        <param name="fingers">To be added.</param>
-        <param name="flexion">To be added.</param>
-        <param name="direction">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+        <param name="fingers">An enumeration of all the fingers which will participate in the new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on each of <paramref name="fingers" />.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that each of <paramref name="fingers" /> is required to be aligned with.</param>
+        <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires each of the <paramref name="fingers" /> to attain 
+            the specified <paramref name="flexion" /> state and to be aligned with the given <paramref name="direction" />.
+            </summary>
+        <remarks>
+          <para>This extension method is a handy way to augment an existing <see cref="T:Microsoft.Gestures.HandPose" /> with a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint:</para>
+          <code>
+            var handPose = new HandPose("MyPose");
+            // will be satisfied when the thumb, index and middle fingers are all open and pointing down
+            handPose.PoseConstraints.Add(new[] {Finger.Thumb, Finger.Index, Finger.Middle}, FingerFlexion.Open, PoseDirection.Down);
+            </code>
+        </remarks>
       </Docs>
     </Member>
   </Members>

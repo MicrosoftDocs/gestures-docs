@@ -1,4 +1,4 @@
-<Type Name="GestureDevice" FullName="Microsoft.Gestures.InputBindings.GestureDevice">
+﻿<Type Name="GestureDevice" FullName="Microsoft.Gestures.InputBindings.GestureDevice">
   <TypeSignature Language="C#" Value="public class GestureDevice : System.Windows.Input.InputDevice" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureDevice extends System.Windows.Input.InputDevice" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.GestureDevice" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.GestureDevice.ActiveSource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.GestureDevice.Primary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.GestureDevice.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

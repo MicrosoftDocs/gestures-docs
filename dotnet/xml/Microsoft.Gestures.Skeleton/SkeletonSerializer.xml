@@ -1,4 +1,4 @@
-<Type Name="SkeletonSerializer" FullName="Microsoft.Gestures.Skeleton.SkeletonSerializer">
+﻿<Type Name="SkeletonSerializer" FullName="Microsoft.Gestures.Skeleton.SkeletonSerializer">
   <TypeSignature Language="C#" Value="public static class SkeletonSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SkeletonSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.SkeletonSerializer" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.DeserializeSkeleton(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.DeserializeSkeletons(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.Serialize(Microsoft.Gestures.Skeleton.IHandSkeleton)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.Serialize(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Skeleton.IHandSkeleton})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

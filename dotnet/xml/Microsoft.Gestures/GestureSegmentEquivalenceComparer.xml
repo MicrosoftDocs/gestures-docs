@@ -1,4 +1,4 @@
-<Type Name="GestureSegmentEquivalenceComparer" FullName="Microsoft.Gestures.GestureSegmentEquivalenceComparer">
+﻿<Type Name="GestureSegmentEquivalenceComparer" FullName="Microsoft.Gestures.GestureSegmentEquivalenceComparer">
   <TypeSignature Language="C#" Value="public class GestureSegmentEquivalenceComparer : System.Collections.Generic.IEqualityComparer&lt;Microsoft.Gestures.GestureSegment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureSegmentEquivalenceComparer extends System.Object implements class System.Collections.Generic.IEqualityComparer`1&lt;class Microsoft.Gestures.GestureSegment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureSegmentEquivalenceComparer" />
@@ -25,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentEquivalenceComparer.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -39,6 +40,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentEquivalenceComparer.Equals(Microsoft.Gestures.GestureSegment,Microsoft.Gestures.GestureSegment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentEquivalenceComparer.GetHashCode(Microsoft.Gestures.GestureSegment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

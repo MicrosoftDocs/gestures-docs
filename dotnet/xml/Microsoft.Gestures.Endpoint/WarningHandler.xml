@@ -1,4 +1,4 @@
-<Type Name="WarningHandler" FullName="Microsoft.Gestures.Endpoint.WarningHandler">
+﻿<Type Name="WarningHandler" FullName="Microsoft.Gestures.Endpoint.WarningHandler">
   <TypeSignature Language="C#" Value="public delegate void WarningHandler(object sender, WarningEventArgs exception);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WarningHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.WarningHandler" />

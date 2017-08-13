@@ -1,4 +1,4 @@
-<Type Name="AllFingersExtensionTypeConverter" FullName="Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter">
+﻿<Type Name="AllFingersExtensionTypeConverter" FullName="Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter">
   <TypeSignature Language="C#" Value="public class AllFingersExtensionTypeConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AllFingersExtensionTypeConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="GestureContext" FullName="Microsoft.Gestures.GestureContext">
+﻿<Type Name="GestureContext" FullName="Microsoft.Gestures.GestureContext">
   <TypeSignature Language="C#" Value="public abstract class GestureContext : Microsoft.Gestures.GesturesFrameworkObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GestureContext extends Microsoft.Gestures.GesturesFrameworkObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureContext" />
@@ -26,6 +26,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContext.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />

@@ -1,4 +1,4 @@
-<Type Name="SingleFingerExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension">
+﻿<Type Name="SingleFingerExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension">
   <TypeSignature Language="C#" Value="public class SingleFingerExtension : Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SingleFingerExtension extends Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension" />
@@ -29,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension.#ctor(Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension.CreateFingersContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

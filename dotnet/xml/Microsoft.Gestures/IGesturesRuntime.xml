@@ -1,4 +1,4 @@
-<Type Name="IGesturesRuntime" FullName="Microsoft.Gestures.IGesturesRuntime">
+﻿<Type Name="IGesturesRuntime" FullName="Microsoft.Gestures.IGesturesRuntime">
   <TypeSignature Language="C#" Value="public interface IGesturesRuntime : Microsoft.Gestures.IGestureRegistrar, Microsoft.Gestures.IHandSkeletonProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGesturesRuntime implements class Microsoft.Gestures.IGestureRegistrar, class Microsoft.Gestures.IHandSkeletonProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.IGesturesRuntime" />

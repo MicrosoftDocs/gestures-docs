@@ -1,4 +1,4 @@
-<Type Name="FrozenObjectModifiedException" FullName="Microsoft.Gestures.FrozenObjectModifiedException">
+﻿<Type Name="FrozenObjectModifiedException" FullName="Microsoft.Gestures.FrozenObjectModifiedException">
   <TypeSignature Language="C#" Value="public class FrozenObjectModifiedException : Microsoft.Gestures.GesturesFrameworkException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FrozenObjectModifiedException extends Microsoft.Gestures.GesturesFrameworkException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FrozenObjectModifiedException" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FrozenObjectModifiedException.#ctor(Microsoft.Gestures.IFreezable,System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FrozenObjectModifiedException.FrozenObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FrozenObjectModifiedException.ViolatingPropertyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

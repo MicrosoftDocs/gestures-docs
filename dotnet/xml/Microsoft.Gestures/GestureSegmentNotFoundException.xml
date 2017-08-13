@@ -1,4 +1,4 @@
-<Type Name="GestureSegmentNotFoundException" FullName="Microsoft.Gestures.GestureSegmentNotFoundException">
+﻿<Type Name="GestureSegmentNotFoundException" FullName="Microsoft.Gestures.GestureSegmentNotFoundException">
   <TypeSignature Language="C#" Value="public class GestureSegmentNotFoundException : Microsoft.Gestures.InvalidGestureSegmentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureSegmentNotFoundException extends Microsoft.Gestures.InvalidGestureSegmentException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureSegmentNotFoundException" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentNotFoundException.#ctor(Microsoft.Gestures.GestureSegment)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>

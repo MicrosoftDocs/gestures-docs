@@ -1,4 +1,4 @@
-<Type Name="ImplodeGesture" FullName="Microsoft.Gestures.Stock.Gestures.ImplodeGesture">
+﻿<Type Name="ImplodeGesture" FullName="Microsoft.Gestures.Stock.Gestures.ImplodeGesture">
   <TypeSignature Language="C#" Value="public sealed class ImplodeGesture : Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImplodeGesture extends Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.ImplodeGesture" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.#ctor(System.String,Microsoft.Gestures.PoseDirection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.AllPinchForwardTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.PalmDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.SpreadTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,4 +1,4 @@
-<Type Name="SingleHandContext" FullName="Microsoft.Gestures.SingleHandContext">
+﻿<Type Name="SingleHandContext" FullName="Microsoft.Gestures.SingleHandContext">
   <TypeSignature Language="C#" Value="public class SingleHandContext : Microsoft.Gestures.AllHandsContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SingleHandContext extends Microsoft.Gestures.AllHandsContext" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.SingleHandContext" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SingleHandContext.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SingleHandContext.#ctor(Microsoft.Gestures.Hand)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SingleHandContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -69,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.SingleHandContext.Hand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SingleHandContext.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SingleHandContext.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

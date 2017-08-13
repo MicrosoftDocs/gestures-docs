@@ -1,4 +1,4 @@
-<Type Name="Finger" FullName="Microsoft.Gestures.Finger">
+﻿<Type Name="Finger" FullName="Microsoft.Gestures.Finger">
   <TypeSignature Language="C#" Value="public enum Finger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Finger extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Finger" />
@@ -23,6 +23,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Index" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -53,6 +55,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Pinky" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Ring" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,6 +87,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Finger.Thumb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

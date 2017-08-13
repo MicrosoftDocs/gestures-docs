@@ -1,4 +1,4 @@
-<Type Name="CounterClockwiseCircleMotion" FullName="Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion">
+﻿<Type Name="CounterClockwiseCircleMotion" FullName="Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion">
   <TypeSignature Language="C#" Value="public sealed class CounterClockwiseCircleMotion : Microsoft.Gestures.Stock.HandMotions.StockHandMotion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CounterClockwiseCircleMotion extends Microsoft.Gestures.Stock.HandMotions.StockHandMotion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion.#ctor(System.String,System.Nullable{Microsoft.Gestures.Hand})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>

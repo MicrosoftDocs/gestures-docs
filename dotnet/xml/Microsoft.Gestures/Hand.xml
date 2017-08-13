@@ -1,4 +1,4 @@
-<Type Name="Hand" FullName="Microsoft.Gestures.Hand">
+﻿<Type Name="Hand" FullName="Microsoft.Gestures.Hand">
   <TypeSignature Language="C#" Value="public enum Hand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Hand extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Hand" />
@@ -22,6 +22,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Hand.LeftHand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Hand.RightHand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

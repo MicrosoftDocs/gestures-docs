@@ -1,4 +1,4 @@
-<Type Name="InputBinding+IElementListener" FullName="Microsoft.Gestures.InputBindings.InputBinding+IElementListener">
+﻿<Type Name="InputBinding+IElementListener" FullName="Microsoft.Gestures.InputBindings.InputBinding+IElementListener">
   <TypeSignature Language="C#" Value="protected interface InputBinding.IElementListener" />
   <TypeSignature Language="ILAsm" Value=".class nested protected interface auto ansi abstract InputBinding/IElementListener" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.InputBinding.IElementListener" />
@@ -18,6 +18,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActive" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActiveChanged" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

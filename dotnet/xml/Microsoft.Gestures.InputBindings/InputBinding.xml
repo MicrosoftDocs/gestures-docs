@@ -1,4 +1,4 @@
-<Type Name="InputBinding" FullName="Microsoft.Gestures.InputBindings.InputBinding">
+﻿<Type Name="InputBinding" FullName="Microsoft.Gestures.InputBindings.InputBinding">
   <TypeSignature Language="C#" Value="public class InputBinding : System.Windows.Input.InputBinding, System.ComponentModel.ISupportInitialize, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi InputBinding extends System.Windows.Input.InputBinding implements class System.ComponentModel.ISupportInitialize, class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.InputBinding" />
@@ -33,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.InputBinding.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.InputBinding.#ctor(System.Windows.Input.ICommand,Microsoft.Gestures.Gesture)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.InputBinding.AttachedElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,6 +86,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.InputBinding.CreateElementListener(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.InputBinding.CreateInstanceCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.InputBindings.InputBinding.GestureTrigger" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.InputBinding.HandGesture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -160,6 +167,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.InputBindings.InputBinding.HandGestureProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.InputBinding.IsRegistered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,6 +202,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.InputBindings.InputBinding.IsRegisteredProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.InputBinding.OnGestureTrigger(Microsoft.Gestures.InputBindings.GestureTriggerEventArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.InputBinding.System#ComponentModel#ISupportInitialize#BeginInit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.InputBinding.System#ComponentModel#ISupportInitialize#EndInit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -263,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.InputBinding.System#Windows#Markup#IUriContext#BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

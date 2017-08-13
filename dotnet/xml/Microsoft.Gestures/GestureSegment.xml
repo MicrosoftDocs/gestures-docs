@@ -1,6 +1,6 @@
-<Type Name="GestureSegment" FullName="Microsoft.Gestures.GestureSegment">
-  <TypeSignature Language="C#" Value="public abstract class GestureSegment : Microsoft.Gestures.Xamlizable, IEquatable&lt;Microsoft.Gestures.GestureSegment&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GestureSegment extends Microsoft.Gestures.Xamlizable implements class System.IEquatable`1&lt;class Microsoft.Gestures.GestureSegment&gt;" />
+﻿<Type Name="GestureSegment" FullName="Microsoft.Gestures.GestureSegment">
+  <TypeSignature Language="C#" Value="public abstract class GestureSegment : Microsoft.Gestures.Xamlizable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GestureSegment extends Microsoft.Gestures.Xamlizable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureSegment" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Gestures</AssemblyName>
@@ -9,11 +9,7 @@
   <Base>
     <BaseTypeName>Microsoft.Gestures.Xamlizable</BaseTypeName>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>System.IEquatable&lt;Microsoft.Gestures.GestureSegment&gt;</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces />
   <Attributes>
     <Attribute>
       <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplay, nq}")</AttributeName>
@@ -33,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -47,6 +44,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.#ctor(System.String)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -58,12 +56,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public virtual Microsoft.Gestures.GestureSegment Clone (string newName = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Gestures.GestureSegment Clone(string newName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.Clone(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,30 +97,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Closure">
-      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;Microsoft.Gestures.GestureSegment&gt; Closure ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class Microsoft.Gestures.GestureSegment&gt; Closure() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.Closure" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Gestures.GestureSegment&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ContainingGesture">
       <MemberSignature Language="C#" Value="public Microsoft.Gestures.Gesture ContainingGesture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Gesture ContainingGesture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureSegment.ContainingGesture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -119,43 +120,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public virtual bool Equals (Microsoft.Gestures.GestureSegment other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Gestures.GestureSegment other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.Equals(Microsoft.Gestures.GestureSegment)" />
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.EqualsInternal(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="Microsoft.Gestures.GestureSegment" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.Equals(System.Object)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="other" Type="System.Object" />
-      </Parameters>
-      <Docs>
-        <param name="other">To be added.</param>
+        <param name="obj">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -167,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.Equivalent(Microsoft.Gestures.GestureSegment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -182,30 +164,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetHashCode">
-      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.GetHashCode" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureSegment.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -223,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureSegment.NestingPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -245,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureSegment.NextSegments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -267,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,6 +253,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.GestureSegment.Triggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -301,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.TriggerEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.TriggerEventAsync(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegment.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

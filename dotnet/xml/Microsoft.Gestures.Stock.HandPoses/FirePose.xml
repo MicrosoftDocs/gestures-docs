@@ -1,4 +1,4 @@
-<Type Name="FirePose" FullName="Microsoft.Gestures.Stock.HandPoses.FirePose">
+﻿<Type Name="FirePose" FullName="Microsoft.Gestures.Stock.HandPoses.FirePose">
   <TypeSignature Language="C#" Value="public sealed class FirePose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FirePose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.FirePose" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.FirePose.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.FirePose.#ctor(System.String,Microsoft.Gestures.HandContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>

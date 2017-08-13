@@ -1,4 +1,4 @@
-<Type Name="HandSkeletonsReadyEventArgs" FullName="Microsoft.Gestures.HandSkeletonsReadyEventArgs">
+﻿<Type Name="HandSkeletonsReadyEventArgs" FullName="Microsoft.Gestures.HandSkeletonsReadyEventArgs">
   <TypeSignature Language="C#" Value="public class HandSkeletonsReadyEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandSkeletonsReadyEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HandSkeletonsReadyEventArgs" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandSkeletonsReadyEventArgs.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Skeleton.IHandSkeleton})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandSkeletonsReadyEventArgs.DefaultHandSkeleton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -55,6 +57,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.HandSkeletonsReadyEventArgs.HandSkeletons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

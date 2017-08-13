@@ -1,4 +1,4 @@
-<Type Name="IndexThumbPointPose" FullName="Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose">
+﻿<Type Name="IndexThumbPointPose" FullName="Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose">
   <TypeSignature Language="C#" Value="public sealed class IndexThumbPointPose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IndexThumbPointPose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.#ctor(System.String,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.HandContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.IndexThumbRelation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

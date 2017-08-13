@@ -1,4 +1,4 @@
-<Type Name="ShootGesture" FullName="Microsoft.Gestures.Stock.Gestures.ShootGesture">
+﻿<Type Name="ShootGesture" FullName="Microsoft.Gestures.Stock.Gestures.ShootGesture">
   <TypeSignature Language="C#" Value="public sealed class ShootGesture : Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ShootGesture extends Microsoft.Gestures.Stock.Gestures.StockGesture" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.ShootGesture" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ShootGesture.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ShootGesture.#ctor(System.String,Microsoft.Gestures.HandContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ShootGesture.AimTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ShootGesture.FireTriggered" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

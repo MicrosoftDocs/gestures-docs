@@ -1,4 +1,4 @@
-<Type Name="HorizontalMotionScript" FullName="Microsoft.Gestures.HorizontalMotionScript">
+﻿<Type Name="HorizontalMotionScript" FullName="Microsoft.Gestures.HorizontalMotionScript">
   <TypeSignature Language="C#" Value="public class HorizontalMotionScript : Microsoft.Gestures.StockMotionSegmentsScript&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HorizontalMotionScript extends Microsoft.Gestures.StockMotionSegmentsScript`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HorizontalMotionScript" />
@@ -24,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HorizontalMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HorizontalMotionScript.#ctor(Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>

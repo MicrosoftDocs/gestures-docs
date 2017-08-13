@@ -1,4 +1,4 @@
-<Type Name="FingersContext" FullName="Microsoft.Gestures.FingersContext">
+﻿<Type Name="FingersContext" FullName="Microsoft.Gestures.FingersContext">
   <TypeSignature Language="C#" Value="public abstract class FingersContext : Microsoft.Gestures.GestureContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FingersContext extends Microsoft.Gestures.GestureContext" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingersContext" />
@@ -29,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -40,12 +41,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersContext.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DeepFreeze">
       <MemberSignature Language="C#" Value="protected override void DeepFreeze ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeepFreeze() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersContext.DeepFreeze" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -57,12 +78,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersContext.Equals(System.Object)" />
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersContext.EqualsInternal(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingersContext.Fingers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -100,30 +123,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetHashCode">
-      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersContext.GetHashCode" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ValidateCore">
       <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersContext.ValidateCore" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

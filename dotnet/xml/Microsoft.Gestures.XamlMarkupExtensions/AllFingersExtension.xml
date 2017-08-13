@@ -1,4 +1,4 @@
-<Type Name="AllFingersExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension">
+﻿<Type Name="AllFingersExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension">
   <TypeSignature Language="C#" Value="public class AllFingersExtension : Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AllFingersExtension extends Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension" />
@@ -29,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -46,6 +47,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -134,6 +139,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.CreateFingersContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

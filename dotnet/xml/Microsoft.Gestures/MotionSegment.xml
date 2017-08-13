@@ -1,4 +1,4 @@
-<Type Name="MotionSegment" FullName="Microsoft.Gestures.MotionSegment">
+﻿<Type Name="MotionSegment" FullName="Microsoft.Gestures.MotionSegment">
   <TypeSignature Language="C#" Value="public abstract class MotionSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MotionSegment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.MotionSegment" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.MotionSegment.DefaultPlane" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.MotionSegment.Equals(System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.MotionSegment.GetAllSegments``1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.MotionSegment.GetHashCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.MotionSegment.MotionPlane" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.MotionSegment.MotionUnit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.MotionSegment.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,6 +161,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.MotionSegment.Parse(System.String)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.MotionSegment.Svg" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.MotionSegment.ToString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

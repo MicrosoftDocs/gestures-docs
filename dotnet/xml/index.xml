@@ -36,7 +36,7 @@
           <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Moriah.Views")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Moriah.Gestlets")</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Gestures.Gestlets")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Moriah.Gestlets.Views")</AttributeName>
@@ -63,19 +63,19 @@
           <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("HandUserControlSample")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Moriah.Workflow.GestureDetectors.GestureSegmentDetectors.MotifHandMotionDetector")</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Gestures.Workflow.GestureDetectors.GestureSegmentDetectors.MotifHandMotionDetector")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("MoriahSkeletonModels")</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Gestures.SkeletonModels")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("MorphModel")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Moriah.Workflow.SensorDataProcessors.MapleDataProcessor.MapleSkeleton")</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Gestures.Workflow.SensorDataProcessors.MapleDataProcessor.MapleSkeleton")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Moriah.Workflow.Sensors.RealSenseSensor.RealSenseSkeleton")</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Gestures.Workflow.Sensors.RealSenseSensor")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("SkeletonViewer")</AttributeName>
@@ -90,7 +90,13 @@
           <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("BenchmarkUtilities")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Moriah.Workflow.SensorDataProcessors.MapleDataProcessor.MapleControl")</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Gestures.Workflow.SensorDataProcessors.MapleDataProcessor.MapleControl")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Gestures.Workflow.Sensors.RealSenseSensor.RealSenseSkeleton")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("GestureAnimator")</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
@@ -231,7 +237,6 @@
       <Type Name="HandMotion" Kind="Class" />
       <Type Name="HandPartMotion`1" DisplayName="HandPartMotion&lt;TContextType&gt;" Kind="Class" />
       <Type Name="HandPartPose`1" DisplayName="HandPartPose&lt;ContextType&gt;" Kind="Class" />
-      <Type Name="HandPartPoseExtensions" Kind="Class" />
       <Type Name="HandPose" Kind="Class" />
       <Type Name="HandSkeletonsReadyEventArgs" Kind="Class" />
       <Type Name="HandSkeletonsReadyHandler" Kind="Delegate" />
@@ -258,7 +263,6 @@
       <Type Name="NullOrEmptyValidationException" Kind="Class" />
       <Type Name="PalmMotion" Kind="Class" />
       <Type Name="PalmPose" Kind="Class" />
-      <Type Name="PalmPoseExtensions" Kind="Class" />
       <Type Name="PalmPoseListExtension" Kind="Class" />
       <Type Name="PassThroughGestureSegment" Kind="Class" />
       <Type Name="PoseConstraint" Kind="Class" />
@@ -306,6 +310,11 @@
       <Type Name="HandGestureConverter" Kind="Class" />
       <Type Name="InputBinding" Kind="Class" />
       <Type Name="InputBinding+IElementListener" Kind="Interface" />
+    </Namespace>
+    <Namespace Name="Microsoft.Gestures.Runtime.Server">
+      <Type Name="EnumeratorExtensions" Kind="Class" />
+      <Type Name="GesturesServiceTcpConnection" Kind="Class" />
+      <Type Name="GesturesTcpSocket" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Gestures.Skeleton">
       <Type Name="AxisAngle" Kind="Class" />
@@ -385,11 +394,6 @@
       <Type Name="FingersContextConverter" Kind="Class" />
       <Type Name="HandContextConverter" Kind="Class" />
       <Type Name="MotionScriptConverter" Kind="Class" />
-    </Namespace>
-    <Namespace Name="Microsoft.Moriah.Runtime.Server">
-      <Type Name="EnumeratorExtensions" Kind="Class" />
-      <Type Name="GesturesServiceTcpConnection" Kind="Class" />
-      <Type Name="MoriahTcpSocket" Kind="Class" />
     </Namespace>
   </Types>
   <Title>Untitled</Title>
@@ -1137,11 +1141,14 @@
           <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="finger">To be added.</param>
-          <param name="flexion">To be added.</param>
-          <param name="direction">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="finger">The <paramref name="finger" /> participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+          <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on <paramref name="finger" />.</param>
+          <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /><paramref name="finger" /> is required to be aligned with.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires <paramref name="finger" /> to attain the specified 
+            <paramref name="flexion" /> state and be aligned with <paramref name="direction" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingerPoseListExtension" Member="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
       </Member>
@@ -1164,10 +1171,13 @@
           <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="finger">To be added.</param>
-          <param name="direction">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="finger">The <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+          <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /><paramref name="finger" /> is required to be aligned with.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires <paramref name="finger" /> to be aligned with 
+            <paramref name="direction" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingerPoseListExtension" Member="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.PoseDirection)" />
       </Member>
@@ -1191,11 +1201,14 @@
           <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="fingersContext">To be added.</param>
-          <param name="flexion">To be added.</param>
-          <param name="direction">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingersContext">Specifies the <see cref="T:Microsoft.Gestures.FingersContext" /> of the fingers participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+          <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on the fingers indicated by <paramref name="fingersContext" />.</param>
+          <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> required of the fingers indicated by <paramref name="fingersContext" />.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires the fingers indicated by 
+            <paramref name="fingersContext" /> to attain the specified <paramref name="flexion" /> state and to be aligned with the given <paramref name="direction" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingerPoseListExtension" Member="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
       </Member>
@@ -1218,10 +1231,13 @@
           <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="fingersContext">To be added.</param>
-          <param name="direction">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingersContext">Specifies the <see cref="T:Microsoft.Gestures.FingersContext" /> of the fingers participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+          <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that is required of the fingers indicated by <paramref name="fingersContext" />.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires the fingers indicated by
+            <paramref name="fingersContext" /> to be aligned with <paramref name="direction" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingerPoseListExtension" Member="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.PoseDirection)" />
       </Member>
@@ -1245,11 +1261,14 @@
           <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="fingers">To be added.</param>
-          <param name="flexion">To be added.</param>
-          <param name="direction">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingers">An enumeration of all the fingers which will participate in the new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+          <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on each of <paramref name="fingers" />.</param>
+          <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that each of <paramref name="fingers" /> is required to be aligned with.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires each of the <paramref name="fingers" /> to attain 
+            the specified <paramref name="flexion" /> state and to be aligned with the given <paramref name="direction" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingerPoseListExtension" Member="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
       </Member>
@@ -1272,10 +1291,13 @@
           <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="fingers">To be added.</param>
-          <param name="direction">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingers">An enumeration of all the fingers that will participate in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+          <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> each of the <paramref name="fingers" /> is required to be aligned with.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires each of the <paramref name="fingers" /> to be aligned 
+            with <paramref name="direction" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingerPoseListExtension" Member="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.PoseDirection)" />
       </Member>
@@ -1299,11 +1321,15 @@
           <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="finger">To be added.</param>
-          <param name="distanceRelation">To be added.</param>
-          <param name="otherFinger">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="finger">The first <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+          <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between <paramref name="finger" /> and 
+            <paramref name="otherFinger" />.</param>
+          <param name="otherFinger">The second <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between <paramref name="finger" /> and <paramref name="otherFinger" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipDistanceRelationListExtension" Member="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
       </Member>
@@ -1327,11 +1353,15 @@
           <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="finger">To be added.</param>
-          <param name="distanceRelation">To be added.</param>
-          <param name="otherFingers">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="finger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+          <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between <paramref name="finger" /> and 
+            each of <paramref name="otherFingers" />.</param>
+          <param name="otherFingers">All fingers enumerated here will be required to comply to the <paramref name="distanceRelation" /> with respect to <paramref name="finger" />.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between <paramref name="finger" /> and each of the <paramref name="otherFingers" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipDistanceRelationListExtension" Member="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       </Member>
@@ -1355,11 +1385,17 @@
           <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="context">To be added.</param>
-          <param name="distanceRelation">To be added.</param>
-          <param name="otherContext">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="context">The first <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+          <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between <paramref name="context" /> and 
+            <paramref name="otherContext" />.</param>
+          <param name="otherContext">The second <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> new constraint. If this parameter is null, 
+            <paramref name="context" /> will be used in its place and <paramref name="distanceRelation" /> will be applied between the fingers of <paramref name="context" /> and themselves 
+            (for more information on finger context types, refer to <seealso cref="T:Microsoft.Gestures.FingersContext" /> documentation).</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" /> between 
+            the fingers in <paramref name="context" /> and the fingers in <paramref name="otherContext" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipDistanceRelationListExtension" Member="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.FingersContext)" />
       </Member>
@@ -1383,11 +1419,15 @@
           <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="fingers">To be added.</param>
-          <param name="distanceRelation">To be added.</param>
-          <param name="otherFinger">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingers">&gt;All fingers enumerated here will be required to comply to the <paramref name="distanceRelation" /> with respect to <paramref name="otherFinger" />.</param>
+          <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between each of <paramref name="fingers" /> and 
+            <paramref name="otherFinger" />.</param>
+          <param name="otherFinger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between each finger in <paramref name="fingers" /> and <paramref name="otherFinger" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipDistanceRelationListExtension" Member="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
       </Member>
@@ -1411,11 +1451,16 @@
           <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="fingers">To be added.</param>
-          <param name="distanceRelation">To be added.</param>
-          <param name="otherFingers">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingers">The first set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint.</param>
+          <param name="distanceRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint will impose between each finger in <paramref name="fingers" /> and 
+            each finger in <paramref name="otherFingers" />.</param>
+          <param name="otherFingers">The second set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint. If this parameter is null, 
+            <paramref name="distanceRelation" /> relation will be imposed on all pairs of fingers from within the <paramref name="fingers" /> collection.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraint, imposing <paramref name="distanceRelation" />
+            between each finger in <paramref name="fingers" /> and each finger in <paramref name="otherFingers" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipDistanceRelationListExtension" Member="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       </Member>
@@ -1439,11 +1484,15 @@
           <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="finger">To be added.</param>
-          <param name="placementRelation">To be added.</param>
-          <param name="otherFinger">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="finger">The first <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+          <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between <paramref name="finger" /> and 
+            <paramref name="otherFinger" />.</param>
+          <param name="otherFinger">The second <see cref="T:Microsoft.Gestures.Finger" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between <paramref name="finger" /> and <paramref name="otherFinger" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipPlacementRelationListExtension" Member="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
       </Member>
@@ -1467,11 +1516,16 @@
           <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="finger">To be added.</param>
-          <param name="placementRelation">To be added.</param>
-          <param name="otherFingers">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="finger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+          <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between <paramref name="finger" /> and 
+            each of <paramref name="otherFingers" />.</param>
+          <param name="otherFingers">The new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose the <paramref name="placementRelation" /> relation between <paramref name="finger" />
+            and all the fingers enumerated by <paramref name="otherFingers" />.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between <paramref name="finger" /> and each of the <paramref name="otherFingers" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipPlacementRelationListExtension" Member="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       </Member>
@@ -1495,11 +1549,15 @@
           <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="context">To be added.</param>
-          <param name="placementRelation">To be added.</param>
-          <param name="otherContext">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="context">The first <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+          <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between <paramref name="context" /> and 
+            <paramref name="otherContext" />.</param>
+          <param name="otherContext">The second <see cref="T:Microsoft.Gestures.FingersContext" /> participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" /> between 
+            the fingers in <paramref name="context" /> and the fingers in <paramref name="otherContext" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipPlacementRelationListExtension" Member="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.FingersContext)" />
       </Member>
@@ -1509,8 +1567,8 @@
         <Target Type="T:System.Collections.Generic.ICollection`1" />
       </Targets>
       <Member MemberName="Add">
-        <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt; poseConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; otherFingers, Microsoft.Gestures.RelativePlacement placementRelation, Microsoft.Gestures.Finger finger);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.PoseConstraint&gt; poseConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; otherFingers, valuetype Microsoft.Gestures.RelativePlacement placementRelation, valuetype Microsoft.Gestures.Finger finger) cil managed" />
+        <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt; poseConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.RelativePlacement placementRelation, Microsoft.Gestures.Finger otherFinger);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.PoseConstraint&gt; poseConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.RelativePlacement placementRelation, valuetype Microsoft.Gestures.Finger otherFinger) cil managed" />
         <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
         <MemberType>ExtensionMethod</MemberType>
         <ReturnValue>
@@ -1518,16 +1576,20 @@
         </ReturnValue>
         <Parameters>
           <Parameter Name="poseConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.PoseConstraint&gt;" RefType="this" />
-          <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+          <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
           <Parameter Name="placementRelation" Type="Microsoft.Gestures.RelativePlacement" />
-          <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+          <Parameter Name="otherFinger" Type="Microsoft.Gestures.Finger" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="otherFingers">To be added.</param>
-          <param name="placementRelation">To be added.</param>
-          <param name="finger">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingers">&gt;All fingers enumerated here will be required to comply to the <paramref name="placementRelation" /> relation with respect to <paramref name="otherFinger" />.</param>
+          <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between each of <paramref name="fingers" /> and 
+            <paramref name="otherFinger" />.</param>
+          <param name="otherFinger">A <see cref="T:Microsoft.Gestures.Finger" /> participating in this constraint.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between each finger in <paramref name="fingers" /> and <paramref name="otherFinger" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipPlacementRelationListExtension" Member="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
       </Member>
@@ -1551,11 +1613,15 @@
           <Parameter Name="otherFingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="fingers">To be added.</param>
-          <param name="placementRelation">To be added.</param>
-          <param name="otherFingers">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be the <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" /> property.</param>
+          <param name="fingers">The first set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+          <param name="placementRelation">The relation that the new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint will impose between each finger in <paramref name="fingers" /> and 
+            each finger in <paramref name="otherFingers" />.</param>
+          <param name="otherFingers">The second set of fingers participating in the <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint.</param>
+          <summary>
+            Creates and adds to the <paramref name="poseConstraints" /> collection a new <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraint, imposing <paramref name="placementRelation" />
+            between each finger in <paramref name="fingers" /> and each finger in <paramref name="otherFingers" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.FingertipPlacementRelationListExtension" Member="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
       </Member>
@@ -1592,58 +1658,6 @@
     </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
-        <Target Type="T:Microsoft.Gestures.HandPartPose`1" />
-      </Targets>
-      <Member MemberName="DirectionOrUndefined&lt;TContext&gt;">
-        <MemberSignature Language="C#" Value="public static Microsoft.Gestures.PoseDirection DirectionOrUndefined&lt;TContext&gt; (this Microsoft.Gestures.HandPartPose&lt;TContext&gt; palmPose) where TContext : Microsoft.Gestures.GestureContext;" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Gestures.PoseDirection DirectionOrUndefined&lt;(class Microsoft.Gestures.GestureContext) TContext&gt;(class Microsoft.Gestures.HandPartPose`1&lt;!!TContext&gt; palmPose) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandPartPoseExtensions.DirectionOrUndefined``1(Microsoft.Gestures.HandPartPose{``0})" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="TContext">
-            <Constraints>
-              <BaseTypeName>Microsoft.Gestures.GestureContext</BaseTypeName>
-            </Constraints>
-          </TypeParameter>
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="palmPose" Type="Microsoft.Gestures.HandPartPose&lt;TContext&gt;" RefType="this" />
-        </Parameters>
-        <Docs>
-          <typeparam name="TContext">To be added.</typeparam>
-          <param name="palmPose">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Gestures.HandPartPoseExtensions" Member="M:Microsoft.Gestures.HandPartPoseExtensions.DirectionOrUndefined``1(Microsoft.Gestures.HandPartPose{``0})" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:Microsoft.Gestures.PalmPose" />
-      </Targets>
-      <Member MemberName="OrientationOrUndefined">
-        <MemberSignature Language="C#" Value="public static Microsoft.Gestures.PoseDirection OrientationOrUndefined (this Microsoft.Gestures.PalmPose palmPose);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Gestures.PoseDirection OrientationOrUndefined(class Microsoft.Gestures.PalmPose palmPose) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.PalmPoseExtensions.OrientationOrUndefined(Microsoft.Gestures.PalmPose)" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
-        </ReturnValue>
-        <Parameters>
-          <Parameter Name="palmPose" Type="Microsoft.Gestures.PalmPose" RefType="this" />
-        </Parameters>
-        <Docs>
-          <param name="palmPose">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Gestures.PalmPoseExtensions" Member="M:Microsoft.Gestures.PalmPoseExtensions.OrientationOrUndefined(Microsoft.Gestures.PalmPose)" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
         <Target Type="T:System.Collections.Generic.ICollection`1" />
       </Targets>
       <Member MemberName="Add">
@@ -1661,11 +1675,14 @@
           <Parameter Name="orientation" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="hand">To be added.</param>
-          <param name="direction">To be added.</param>
-          <param name="orientation">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" />.</param>
+          <param name="hand">Specifies which hand will be used to create the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+          <param name="direction">Specifies the <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+          <param name="orientation">Specifies the <see cref="P:Microsoft.Gestures.PalmPose.Orientation" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+          <summary>
+            Adds a new <see cref="T:Microsoft.Gestures.PalmPose" /> described by input <paramref name="hand" />, <paramref name="direction" /> and <paramref name="orientation" /> to an existing
+            collection <paramref name="poseConstraints" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.PalmPoseListExtension" Member="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Hand,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
       </Member>
@@ -1689,13 +1706,42 @@
           <Parameter Name="orientation" Type="Microsoft.Gestures.PoseDirection" />
         </Parameters>
         <Docs>
-          <param name="poseConstraints">To be added.</param>
-          <param name="handContext">To be added.</param>
-          <param name="direction">To be added.</param>
-          <param name="orientation">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="poseConstraints">An existing collection of <see cref="T:Microsoft.Gestures.PoseConstraint" /> objects, this will often be <see cref="P:Microsoft.Gestures.HandPose.PoseConstraints" />.</param>
+          <param name="handContext">Specifies what <see cref="T:Microsoft.Gestures.HandContext" /> will be used to create the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+          <param name="direction">Specifies the <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+          <param name="orientation">Specifies the <see cref="P:Microsoft.Gestures.PalmPose.Orientation" /> of the new <see cref="T:Microsoft.Gestures.PalmPose" />.</param>
+          <summary>
+            Adds a new <see cref="T:Microsoft.Gestures.PalmPose" /> described by the input <paramref name="handContext" />, <paramref name="direction" /> and <paramref name="orientation" /> to an existing
+            collection <paramref name="poseConstraints" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Gestures.PalmPoseListExtension" Member="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.Collections.Generic.IEnumerator`1" />
+      </Targets>
+      <Member MemberName="GetSafeEnumerable&lt;T&gt;">
+        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetSafeEnumerable&lt;T&gt; (this System.Collections.Generic.IEnumerator&lt;T&gt; enumerator);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetSafeEnumerable&lt;T&gt;(class System.Collections.Generic.IEnumerator`1&lt;!!T&gt; enumerator) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+        </ReturnValue>
+        <TypeParameters>
+          <TypeParameter Name="T" />
+        </TypeParameters>
+        <Parameters>
+          <Parameter Name="enumerator" Type="System.Collections.Generic.IEnumerator&lt;T&gt;" RefType="this" />
+        </Parameters>
+        <Docs>
+          <typeparam name="T">To be added.</typeparam>
+          <param name="enumerator">To be added.</param>
+          <summary>To be added.</summary>
+        </Docs>
+        <Link Type="Microsoft.Gestures.Runtime.Server.EnumeratorExtensions" Member="M:Microsoft.Gestures.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
       </Member>
     </ExtensionMethod>
     <ExtensionMethod>
@@ -1816,32 +1862,6 @@
           <summary>To be added.</summary>
         </Docs>
         <Link Type="Microsoft.Gestures.Skeleton.SkeletonSerializer" Member="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.Serialize(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Skeleton.IHandSkeleton})" />
-      </Member>
-    </ExtensionMethod>
-    <ExtensionMethod>
-      <Targets>
-        <Target Type="T:System.Collections.Generic.IEnumerator`1" />
-      </Targets>
-      <Member MemberName="GetSafeEnumerable&lt;T&gt;">
-        <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetSafeEnumerable&lt;T&gt; (this System.Collections.Generic.IEnumerator&lt;T&gt; enumerator);" />
-        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetSafeEnumerable&lt;T&gt;(class System.Collections.Generic.IEnumerator`1&lt;!!T&gt; enumerator) cil managed" />
-        <MemberSignature Language="DocId" Value="M:Microsoft.Moriah.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
-        <MemberType>ExtensionMethod</MemberType>
-        <ReturnValue>
-          <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
-        </ReturnValue>
-        <TypeParameters>
-          <TypeParameter Name="T" />
-        </TypeParameters>
-        <Parameters>
-          <Parameter Name="enumerator" Type="System.Collections.Generic.IEnumerator&lt;T&gt;" RefType="this" />
-        </Parameters>
-        <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="enumerator">To be added.</param>
-          <summary>To be added.</summary>
-        </Docs>
-        <Link Type="Microsoft.Moriah.Runtime.Server.EnumeratorExtensions" Member="M:Microsoft.Moriah.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
       </Member>
     </ExtensionMethod>
   </ExtensionMethods>

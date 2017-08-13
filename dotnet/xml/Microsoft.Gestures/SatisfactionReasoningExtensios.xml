@@ -1,4 +1,4 @@
-<Type Name="SatisfactionReasoningExtensios" FullName="Microsoft.Gestures.SatisfactionReasoningExtensios">
+﻿<Type Name="SatisfactionReasoningExtensios" FullName="Microsoft.Gestures.SatisfactionReasoningExtensios">
   <TypeSignature Language="C#" Value="public static class SatisfactionReasoningExtensios" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SatisfactionReasoningExtensios extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.SatisfactionReasoningExtensios" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.SatisfactionReasoningExtensios._reasoningString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SatisfactionReasoningExtensios.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.ConstraintAndScore},Microsoft.Gestures.PoseConstraint,System.Single)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SatisfactionReasoningExtensios.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.SatisfactionReasoning},Microsoft.Gestures.PoseConstraint,System.Single,System.Collections.Generic.ICollection{Microsoft.Gestures.ConstraintAndScore})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SatisfactionReasoningExtensios.ReasonForPoseRejection(System.Collections.Generic.IReadOnlyCollection{Microsoft.Gestures.SatisfactionReasoning})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

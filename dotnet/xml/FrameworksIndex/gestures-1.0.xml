@@ -136,9 +136,8 @@
       <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.PoseDirection)" />
       <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
       <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.PoseDirection)" />
-      <Member Id="M:Microsoft.Gestures.FingerPose.Equals(Microsoft.Gestures.FingerPose)" />
-      <Member Id="M:Microsoft.Gestures.FingerPose.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.FingerPose.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.FingerPose.ToString" />
       <Member Id="M:Microsoft.Gestures.FingerPose.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.FingerPose.Flexion" />
@@ -153,9 +152,9 @@
     </Type>
     <Type Name="Microsoft.Gestures.FingersContext" Id="T:Microsoft.Gestures.FingersContext">
       <Member Id="M:Microsoft.Gestures.FingersContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingersContext.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.FingersContext.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.FingersContext.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.FingersContext.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.FingersContext.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.FingersContext.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.FingersContext.Fingers" />
     </Type>
@@ -163,10 +162,9 @@
       <Member Id="F:Microsoft.Gestures.FingersRelation`1._relation" />
       <Member Id="M:Microsoft.Gestures.FingersRelation`1.#ctor" />
       <Member Id="M:Microsoft.Gestures.FingersRelation`1.#ctor(Microsoft.Gestures.FingersContext,`0,Microsoft.Gestures.FingersContext)" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.FingersRelation`1.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.FingersRelation`1.Equals(Microsoft.Gestures.FingersRelation{`0})" />
-      <Member Id="M:Microsoft.Gestures.FingersRelation`1.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.FingersRelation`1.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.FingersRelation`1.ToString" />
       <Member Id="M:Microsoft.Gestures.FingersRelation`1.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.FingersRelation`1.Context" />
@@ -212,13 +210,13 @@
       <Member Id="M:Microsoft.Gestures.FreezableList`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.Add(`0)" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.Clear" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.Contains(`0)" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.CopyTo(`0[],System.Int32)" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.FreezableList`1.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.GetEnumerator" />
-      <Member Id="M:Microsoft.Gestures.FreezableList`1.GetHashCode" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.IndexOf(`0)" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.Insert(System.Int32,`0)" />
       <Member Id="M:Microsoft.Gestures.FreezableList`1.Remove(`0)" />
@@ -257,13 +255,12 @@
       <Member Id="M:Microsoft.Gestures.Gesture.AddSubPath(Microsoft.Gestures.GestureSegment[])" />
       <Member Id="M:Microsoft.Gestures.Gesture.AddTriggeringPath(Microsoft.Gestures.GestureSegment[])" />
       <Member Id="M:Microsoft.Gestures.Gesture.AddTriggeringPath(System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+      <Member Id="M:Microsoft.Gestures.Gesture.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.Gesture.Clone(System.String)" />
-      <Member Id="M:Microsoft.Gestures.Gesture.Closure" />
       <Member Id="M:Microsoft.Gestures.Gesture.DeepFreeze" />
       <Member Id="M:Microsoft.Gestures.Gesture.Equivalent(Microsoft.Gestures.Gesture)" />
       <Member Id="M:Microsoft.Gestures.Gesture.Equivalent(Microsoft.Gestures.GestureSegment)" />
       <Member Id="M:Microsoft.Gestures.Gesture.FindName(System.String)" />
-      <Member Id="M:Microsoft.Gestures.Gesture.GetHashCode" />
       <Member Id="M:Microsoft.Gestures.Gesture.InitializeCore" />
       <Member Id="M:Microsoft.Gestures.Gesture.RegisterName(System.String,System.Object)" />
       <Member Id="M:Microsoft.Gestures.Gesture.System#Windows#Markup#INameScope#FindName(System.String)" />
@@ -273,7 +270,6 @@
       <Member Id="M:Microsoft.Gestures.Gesture.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.Gesture.IdleGestureSegment" />
       <Member Id="P:Microsoft.Gestures.Gesture.Item(Microsoft.Gestures.GestureSegment)" />
-      <Member Id="P:Microsoft.Gestures.Gesture.Item(System.Collections.Generic.IEnumerable{System.String})" />
       <Member Id="P:Microsoft.Gestures.Gesture.Item(System.String)" />
       <Member Id="P:Microsoft.Gestures.Gesture.Segments" />
       <Member Id="P:Microsoft.Gestures.Gesture.SegmentsConnections" />
@@ -302,12 +298,10 @@
       <Member Id="E:Microsoft.Gestures.GestureSegment.Triggered" />
       <Member Id="M:Microsoft.Gestures.GestureSegment.#ctor" />
       <Member Id="M:Microsoft.Gestures.GestureSegment.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.GestureSegment.Clone(System.String)" />
-      <Member Id="M:Microsoft.Gestures.GestureSegment.Closure" />
-      <Member Id="M:Microsoft.Gestures.GestureSegment.Equals(Microsoft.Gestures.GestureSegment)" />
-      <Member Id="M:Microsoft.Gestures.GestureSegment.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.GestureSegment.Equivalent(Microsoft.Gestures.GestureSegment)" />
-      <Member Id="M:Microsoft.Gestures.GestureSegment.GetHashCode" />
       <Member Id="M:Microsoft.Gestures.GestureSegment.ToString" />
       <Member Id="M:Microsoft.Gestures.GestureSegment.TriggerEvent" />
       <Member Id="M:Microsoft.Gestures.GestureSegment.TriggerEventAsync(System.Int32)" />
@@ -352,8 +346,10 @@
     </Type>
     <Type Name="Microsoft.Gestures.GesturesFrameworkObject" Id="T:Microsoft.Gestures.GesturesFrameworkObject">
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.#ctor" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.DeepFreeze" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.Freeze" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.GetHashCode" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.Microsoft#Gestures#IValidatable#Validate" />
@@ -368,7 +364,7 @@
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.ValidateCore" />
     </Type>
     <Type Name="Microsoft.Gestures.GesturesFrameworkObjectSerializer" Id="T:Microsoft.Gestures.GesturesFrameworkObjectSerializer">
-      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FindType(System.String)" />
+      <Member Id="E:Microsoft.Gestures.GesturesFrameworkObjectSerializer.ToXamlInvoked" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FromXaml(System.String)" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FromXaml(System.Uri)" />
       <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.ToXaml``1(``0)" />
@@ -398,9 +394,9 @@
     </Type>
     <Type Name="Microsoft.Gestures.HandContext" Id="T:Microsoft.Gestures.HandContext">
       <Member Id="M:Microsoft.Gestures.HandContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandContext.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.HandContext.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.HandContext.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.HandContext.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.HandContext.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.HandContext.op_Implicit(Microsoft.Gestures.Hand)~Microsoft.Gestures.HandContext" />
       <Member Id="M:Microsoft.Gestures.HandContext.op_Implicit(Microsoft.Gestures.Hand[])~Microsoft.Gestures.HandContext" />
       <Member Id="M:Microsoft.Gestures.HandContext.ValidateCore" />
@@ -428,9 +424,9 @@
     <Type Name="Microsoft.Gestures.HandPartMotion`1" Id="T:Microsoft.Gestures.HandPartMotion`1">
       <Member Id="M:Microsoft.Gestures.HandPartMotion`1.#ctor" />
       <Member Id="M:Microsoft.Gestures.HandPartMotion`1.#ctor(`0,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.HandPartMotion`1.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.HandPartMotion`1.ToString" />
       <Member Id="M:Microsoft.Gestures.HandPartMotion`1.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.HandPartMotion`1.Context" />
@@ -442,16 +438,13 @@
       <Member Id="F:Microsoft.Gestures.HandPartPose`1.DefaultPoseDirection" />
       <Member Id="M:Microsoft.Gestures.HandPartPose`1.#ctor" />
       <Member Id="M:Microsoft.Gestures.HandPartPose`1.#ctor(`0,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.HandPartPose`1.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.HandPartPose`1.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.HandPartPose`1.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.HandPartPose`1.ToString" />
       <Member Id="M:Microsoft.Gestures.HandPartPose`1.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.HandPartPose`1.Context" />
       <Member Id="P:Microsoft.Gestures.HandPartPose`1.Direction" />
-    </Type>
-    <Type Name="Microsoft.Gestures.HandPartPoseExtensions" Id="T:Microsoft.Gestures.HandPartPoseExtensions">
-      <Member Id="M:Microsoft.Gestures.HandPartPoseExtensions.DirectionOrUndefined``1(Microsoft.Gestures.HandPartPose{``0})" />
     </Type>
     <Type Name="Microsoft.Gestures.HandPose" Id="T:Microsoft.Gestures.HandPose">
       <Member Id="M:Microsoft.Gestures.HandPose.#ctor" />
@@ -499,7 +492,6 @@
     <Type Name="Microsoft.Gestures.IdleGestureSegment" Id="T:Microsoft.Gestures.IdleGestureSegment">
       <Member Id="M:Microsoft.Gestures.IdleGestureSegment.#ctor" />
       <Member Id="M:Microsoft.Gestures.IdleGestureSegment.#ctor(Microsoft.Gestures.Gesture)" />
-      <Member Id="M:Microsoft.Gestures.IdleGestureSegment.Closure" />
       <Member Id="M:Microsoft.Gestures.IdleGestureSegment.DeepFreeze" />
       <Member Id="M:Microsoft.Gestures.IdleGestureSegment.Equivalent(Microsoft.Gestures.GestureSegment)" />
       <Member Id="M:Microsoft.Gestures.IdleGestureSegment.ValidateCore" />
@@ -550,8 +542,8 @@
     </Type>
     <Type Name="Microsoft.Gestures.MotionScript" Id="T:Microsoft.Gestures.MotionScript">
       <Member Id="M:Microsoft.Gestures.MotionScript.#ctor" />
-      <Member Id="M:Microsoft.Gestures.MotionScript.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.MotionScript.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.MotionScript.GetMotionPlaneHashCode" />
       <Member Id="M:Microsoft.Gestures.MotionScript.IsMotionPlaneEquals(Microsoft.Gestures.MotionScript)" />
       <Member Id="M:Microsoft.Gestures.MotionScript.ToPath" />
@@ -632,15 +624,11 @@
     <Type Name="Microsoft.Gestures.PalmPose" Id="T:Microsoft.Gestures.PalmPose">
       <Member Id="M:Microsoft.Gestures.PalmPose.#ctor" />
       <Member Id="M:Microsoft.Gestures.PalmPose.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
-      <Member Id="M:Microsoft.Gestures.PalmPose.Equals(Microsoft.Gestures.PalmPose)" />
-      <Member Id="M:Microsoft.Gestures.PalmPose.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.PalmPose.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.PalmPose.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.PalmPose.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.PalmPose.ToString" />
       <Member Id="M:Microsoft.Gestures.PalmPose.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.PalmPose.Orientation" />
-    </Type>
-    <Type Name="Microsoft.Gestures.PalmPoseExtensions" Id="T:Microsoft.Gestures.PalmPoseExtensions">
-      <Member Id="M:Microsoft.Gestures.PalmPoseExtensions.OrientationOrUndefined(Microsoft.Gestures.PalmPose)" />
     </Type>
     <Type Name="Microsoft.Gestures.PalmPoseListExtension" Id="T:Microsoft.Gestures.PalmPoseListExtension">
       <Member Id="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Hand,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
@@ -649,7 +637,6 @@
     <Type Name="Microsoft.Gestures.PassThroughGestureSegment" Id="T:Microsoft.Gestures.PassThroughGestureSegment">
       <Member Id="M:Microsoft.Gestures.PassThroughGestureSegment.#ctor" />
       <Member Id="M:Microsoft.Gestures.PassThroughGestureSegment.#ctor(System.String)" />
-      <Member Id="M:Microsoft.Gestures.PassThroughGestureSegment.Closure" />
       <Member Id="M:Microsoft.Gestures.PassThroughGestureSegment.DeepFreeze" />
     </Type>
     <Type Name="Microsoft.Gestures.PoseConstraint" Id="T:Microsoft.Gestures.PoseConstraint">
@@ -691,9 +678,9 @@
     <Type Name="Microsoft.Gestures.SegmentConnections" Id="T:Microsoft.Gestures.SegmentConnections">
       <Member Id="M:Microsoft.Gestures.SegmentConnections.#ctor" />
       <Member Id="M:Microsoft.Gestures.SegmentConnections.#ctor(Microsoft.Gestures.GestureSegment,System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.SegmentConnections.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.SegmentConnections.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.SegmentConnections.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.SegmentConnections.ToString" />
       <Member Id="M:Microsoft.Gestures.SegmentConnections.ValidateCore" />
       <Member Id="P:Microsoft.Gestures.SegmentConnections.From" />
@@ -716,9 +703,9 @@
       <Member Id="P:Microsoft.Gestures.SingleHandContext.Hand" />
     </Type>
     <Type Name="Microsoft.Gestures.StockMotionSegmentsScript`1" Id="T:Microsoft.Gestures.StockMotionSegmentsScript`1">
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.GetMotionPlaneHashCode" />
       <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.IsMotionPlaneEquals(Microsoft.Gestures.MotionScript)" />
       <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.ToString" />
@@ -731,9 +718,9 @@
       <Member Id="F:Microsoft.Gestures.SvgMotionScript.DefaultMotionPlane" />
       <Member Id="M:Microsoft.Gestures.SvgMotionScript.#ctor" />
       <Member Id="M:Microsoft.Gestures.SvgMotionScript.#ctor(System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.CalculateHashCode" />
       <Member Id="M:Microsoft.Gestures.SvgMotionScript.DeepFreeze" />
-      <Member Id="M:Microsoft.Gestures.SvgMotionScript.Equals(System.Object)" />
-      <Member Id="M:Microsoft.Gestures.SvgMotionScript.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.EqualsInternal(System.Object)" />
       <Member Id="M:Microsoft.Gestures.SvgMotionScript.GetMotionPlaneHashCode" />
       <Member Id="M:Microsoft.Gestures.SvgMotionScript.IsMotionPlaneEquals(Microsoft.Gestures.MotionScript)" />
       <Member Id="M:Microsoft.Gestures.SvgMotionScript.ToString" />
@@ -770,6 +757,7 @@
       <Member Id="M:Microsoft.Gestures.Xamlizable.InitializeCore" />
       <Member Id="M:Microsoft.Gestures.Xamlizable.System#ComponentModel#ISupportInitialize#BeginInit" />
       <Member Id="M:Microsoft.Gestures.Xamlizable.System#ComponentModel#ISupportInitialize#EndInit" />
+      <Member Id="M:Microsoft.Gestures.Xamlizable.ToXaml" />
       <Member Id="P:Microsoft.Gestures.Xamlizable.System#Windows#Markup#IUriContext#BaseUri" />
     </Type>
   </Namespace>
@@ -898,6 +886,28 @@
     <Type Name="Microsoft.Gestures.InputBindings.InputBinding/IElementListener" Id="T:Microsoft.Gestures.InputBindings.InputBinding.IElementListener">
       <Member Id="E:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActiveChanged" />
       <Member Id="P:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActive" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Runtime.Server">
+    <Type Name="Microsoft.Gestures.Runtime.Server.EnumeratorExtensions" Id="T:Microsoft.Gestures.Runtime.Server.EnumeratorExtensions">
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection" Id="T:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection">
+      <Member Id="E:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Closed" />
+      <Member Id="E:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Message" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.#ctor(System.Net.Sockets.TcpClient,System.Boolean)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Dispose" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.IsConnected" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Send(System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Send(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.StartListening" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Runtime.Server.GesturesTcpSocket" Id="T:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket">
+      <Member Id="E:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.ConnectionReceived" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.Start(System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.Stop" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Gestures.Skeleton">
@@ -1205,12 +1215,13 @@
     </Type>
     <Type Name="Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose" Id="T:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose">
       <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.#ctor" />
-      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.#ctor(System.String,System.Boolean,System.Boolean,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.#ctor(System.String,System.Boolean,System.Boolean,Microsoft.Gestures.PoseDirection,System.Boolean)" />
       <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.Direction" />
       <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsHorizontalSwipe" />
       <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsIndexSwiped" />
       <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsMiddleSwiped" />
-      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.SwipeDirection" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsOthersFolded" />
     </Type>
     <Type Name="Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose" Id="T:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose">
       <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.#ctor" />
@@ -1367,28 +1378,6 @@
       <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Moriah.Runtime.Server">
-    <Type Name="Microsoft.Moriah.Runtime.Server.EnumeratorExtensions" Id="T:Microsoft.Moriah.Runtime.Server.EnumeratorExtensions">
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
-    </Type>
-    <Type Name="Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection" Id="T:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection">
-      <Member Id="E:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.Closed" />
-      <Member Id="E:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.Message" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.#ctor(System.Net.Sockets.TcpClient,System.Boolean)" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.Dispose" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.Dispose(System.Boolean)" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.IsConnected" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.Send(System.Collections.Generic.Dictionary{System.String,System.String})" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.Send(System.String)" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.GesturesServiceTcpConnection.StartListening" />
-    </Type>
-    <Type Name="Microsoft.Moriah.Runtime.Server.MoriahTcpSocket" Id="T:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket">
-      <Member Id="E:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.ConnectionReceived" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.#ctor" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.Start(System.Int32)" />
-      <Member Id="M:Microsoft.Moriah.Runtime.Server.MoriahTcpSocket.Stop" />
     </Type>
   </Namespace>
 </Framework>

@@ -1,4 +1,4 @@
-<Type Name="GesturesServiceEndpointFactory" FullName="Microsoft.Gestures.Endpoint.GesturesServiceEndpointFactory">
+﻿<Type Name="GesturesServiceEndpointFactory" FullName="Microsoft.Gestures.Endpoint.GesturesServiceEndpointFactory">
   <TypeSignature Language="C#" Value="public static class GesturesServiceEndpointFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GesturesServiceEndpointFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.GesturesServiceEndpointFactory" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpointFactory.Create(System.Int32)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

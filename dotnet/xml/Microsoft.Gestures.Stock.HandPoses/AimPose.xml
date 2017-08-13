@@ -1,4 +1,4 @@
-<Type Name="AimPose" FullName="Microsoft.Gestures.Stock.HandPoses.AimPose">
+﻿<Type Name="AimPose" FullName="Microsoft.Gestures.Stock.HandPoses.AimPose">
   <TypeSignature Language="C#" Value="public sealed class AimPose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AimPose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.AimPose" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.AimPose.#ctor" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.AimPose.#ctor(System.String,Microsoft.Gestures.HandContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>

@@ -1,4 +1,4 @@
-<Type Name="FingerMotionListExtension" FullName="Microsoft.Gestures.FingerMotionListExtension">
+﻿<Type Name="FingerMotionListExtension" FullName="Microsoft.Gestures.FingerMotionListExtension">
   <TypeSignature Language="C#" Value="public static class FingerMotionListExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FingerMotionListExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingerMotionListExtension" />
@@ -21,6 +21,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.MotionScript)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -45,6 +46,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.MotionScript)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,6 +196,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.MotionScript)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,6 +246,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,6 +271,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,6 +296,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,6 +321,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,6 +354,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -373,6 +387,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -405,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.String,Microsoft.Gestures.MotionPlane)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -431,6 +447,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -463,6 +480,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -495,6 +513,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -527,6 +546,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.String,Microsoft.Gestures.MotionPlane)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -553,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -585,6 +606,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -617,6 +639,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -649,6 +672,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.String,Microsoft.Gestures.MotionPlane)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

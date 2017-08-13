@@ -1,4 +1,4 @@
-<Type Name="TcpConnectionFactory" FullName="Microsoft.Gestures.Endpoint.TcpConnectionFactory">
+﻿<Type Name="TcpConnectionFactory" FullName="Microsoft.Gestures.Endpoint.TcpConnectionFactory">
   <TypeSignature Language="C#" Value="public class TcpConnectionFactory : Microsoft.Gestures.Endpoint.IConnectionFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TcpConnectionFactory extends System.Object implements class Microsoft.Gestures.Endpoint.IConnectionFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Endpoint.TcpConnectionFactory" />
@@ -25,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.TcpConnectionFactory.#ctor(System.Int32)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -42,6 +43,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Endpoint.TcpConnectionFactory.Create" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures.Endpoint</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>

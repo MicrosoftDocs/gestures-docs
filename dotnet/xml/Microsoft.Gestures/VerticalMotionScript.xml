@@ -1,4 +1,4 @@
-<Type Name="VerticalMotionScript" FullName="Microsoft.Gestures.VerticalMotionScript">
+﻿<Type Name="VerticalMotionScript" FullName="Microsoft.Gestures.VerticalMotionScript">
   <TypeSignature Language="C#" Value="public class VerticalMotionScript : Microsoft.Gestures.StockMotionSegmentsScript&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VerticalMotionScript extends Microsoft.Gestures.StockMotionSegmentsScript`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.VerticalMotionScript" />
@@ -24,6 +24,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.VerticalMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -41,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.VerticalMotionScript.#ctor(Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
