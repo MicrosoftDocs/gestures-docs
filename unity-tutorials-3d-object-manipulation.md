@@ -78,37 +78,43 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
 ## Step 2 - Highlight Object under Cursor
 
-We would like to use our cursor to move around objects in the scene. We will now implement a feature that will help us recognize which object is currently under the cursor by highlighting that object.
+We would like to use our cursor to move objects in the scene. On this step of the tutorial, we implement a feature that will help us recognize which object is currently under the cursor by highlighting that object.
 
-1. We will start by filling the scene with several primitive objects. First, attain the viewpoint of the the **Main Camera**: select it in the **Hierarchy** window, go to the **GameObject** menu and select **Align View with Selected**. To instantiate new primitives, go to the **GameObject** menu again, select **3D Object** and pick one of the primitives in the sub-menu (**Cube**, **Sphere**, etc.). Repeat this process several times, moving each new primitive to a different location in space:
+1. We will start by filling the scene with several primitive objects.
+
+    For convenience, we recommend you attain the viewpoint of the the **Main Camera** before you start adding new objects to the scene. Select the **Main Camera** in the **Hierarchy** window, then go to the **GameObject** menu and select **Align View with Selected**.
+
+    To instantiate new primitives, go to the **GameObject** menu again, select **3D Object** and pick one of the primitives in the sub-menu (**Cube**, **Sphere**, etc.). Repeat this process several times, moving each new primitive to a different location in space:
 
     ![Fill scene with primitives](Images\UnityPopulateSceneWithPrimitives.png)
 
 > [!TIP]
 > To move an object, click on it, press **w** and than drag it using the [**Move** gizmo](https://docs.unity3d.com/Manual/PositioningGameObjects.html#move).
 
-1. Add a private member to the **HandCursor** class. This member will store the game object currently under the cursor:
+1. Add a private member to the **HandCursor** class. We will use this member to store the game object currently under the cursor. For brevity, we will refer to this object as "the hovered object":
 
     [!code-csharp[OnGui](CodeSnippets\HoveredGameObject.cs)]
 
-    Also add the following public members we will be using for the hover feature:
+    Also add the following public members. We will soon use them to highlight the hovered object:
 
     [!code-csharp[OnGui](CodeSnippets\HovePublicMembers.cs)]
 
-    To find the object currently under the cursor, add the **GetHoveredObject()** private method:
+    To find the object currently under the cursor, we will use the following implementation for the **GetHoveredObject()** private method:
 
     [!code-csharp[OnGui](CodeSnippets\GetHoveredObject.cs)]
 
-    To make the object under the cursor glow, replace the contents of **Update()** with the following:
+    To highlight the hovered object, replace the contents of **Update()** with the following:
 
     [!code-csharp[OnGui](CodeSnippets\Update.cs)]
 
     Save all changes to the **HandCursor.cs** script.
 
-1. We will use the **OuterGlow.mat** material, provided with the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage), as the material mimicking the glow effect. Select the **HandCursor** game object in the **Hierarchy** window, locate the **OuterGlow.mat** under **MicrosoftGesturesToolkit/Materials** in the **Project** window and drag-and-drop it to the **Highlight Material** box in the **Inspector** window:
+1. We will use the **OuterGlow.mat** material, provided with the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage), to highlight the hovered object.
+
+    Select the **HandCursor** game object in the **Hierarchy** window, locate the **OuterGlow.mat** material under **MicrosoftGesturesToolkit/Materials** in the **Project** window and drag-and-drop it to the **Highlight Material** box in the **Inspector** window:
 
     ![Add the highlight material](Images\UnityAddHighlightMaterial.png)
 
-1. Play the scene and move your hand to control the cursor. Every time an object is under the cursor, it will glow with a bluish light:
+1. Play the scene and move your hand to control the cursor. Every time an object is under the cursor, it will glow with a bluish halo:
 
     ![Play scene with glow effect](Images\UnityGlowScene.png)
