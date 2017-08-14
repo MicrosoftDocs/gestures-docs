@@ -121,57 +121,67 @@ We would like to use our cursor to move objects in the scene. On this step of th
 
 ## Step 3 - Move Object in 2D Using the Mouse
 
-On this step we will enable our cursor to "grab" an object and move it in space. For now, the motion will be implemented to a 2D surface (a plane perpendicular to the **Main Camera**). As before, we will first implement this feature to work with mouse input and then move on to support hand input.
+On this step we will enable our cursor to "grab" an object and move it in space. For now, the motion will be restricted to a 2D plane. In the [final step](#Step-5---move-object-in-3d-space) we will add support for motion in the third dimension. As before, we will first implement this feature to work with mouse input and then move on to support hand input.
 
-1. In the **HandCursor.cs** script, add the following private members:
+1. In the **HandCursor.cs** script, prepare the following private member:
 
     [!code-csharp[Object Grabbing - private members](CodeSnippets\ObjectGrabbingPrivateMembers.cs)]
 
-    and the following public Member:
+    And the following public Member:
 
     [!code-csharp[Object gerabbing - private members](CodeSnippets\ObjectGrabbingPublicMember.cs)]
-
-    We will make use of the new members in the object grabbing and moving logic.
 
 1. Replace the assignment to **GUI.color** in the **OnGUI()** method with:
 
     [!code-csharp[Object grabbing - change cursor color](CodeSnippets\ObjectGrabbingChangeCursorColor.cs)]
 
-    This will cause the cursor to change color once we enter grab mode.
+    This will cause the cursor to change color when it enters grab mode.
 
-1. We will now implement the **StartGrab()** and **StopGrab()** methods. We will use this methods when we want to enter or leave the grab mode:
+1. We are now ready to implement the **StartGrab()** and **StopGrab()** methods:
 
     [!code-csharp[Start and stop grab](CodeSnippets\StartAndStopGrab.cs)]
 
-1. In the **Update** method, we will now decide whether to enter or leave grab mode based on mouse-click input. And, if we are in grab mode - we will move the hovered object:
+1. In the **Update()** method, we would like to add the following functionality:
+    - Enter (leave) grab mode whenever the left mouse button is pressed (released) while an object is being hovered.
+    - When in grab mode - the hovered object should follow the cursor.
+
+    To achieve this, modify the **Update()** method as follows:
 
     [!code-csharp[Update method - grab related code](CodeSnippets\UpdateGrab.cs)]
 
-    As you can see, the motion of the grabbed object is currently limited to a plane. We will add support for motion in the depth direction in the next step of the tutorial.
+    In the **Inspector** window of the **HandCursor** game object, enable the **"Is Mouse Mode"** checkbox. Run the scene now, hover over an object and move it by pressing the left mouse button and dragging. Note that the color of the cursor changes to green in grab mode.
 
-    In the **Inspector** window of the **HandCursor** game object, enable the **"Is Mouse Mode"** checkbox. Run the scene now, hover over an object and move it by clicking-and-dragging with the left mouse button. Note how the color of the cursor changes in grab mode.
+## Step 4 - Move Object in 2D Using the Hand
 
-## Step 4 - Move object in 2D Using the Hand
+In addition to using the mouse, we will now introduce a gesture to enter and leave the cursor grab mode.
 
-On this step we will introduce a hand gesture that will act as the trigger to enter and leave grab mode.
-
-1. In the **Project** window, locate the **GestureTrigger** prefab under **MicrosoftGesturesToolkit\Prefabs**. Drag and drop it to the **Hierarchy** window to create a new game object your scene.
+1. In the **Project** window, locate the **GestureTrigger** prefab under **MicrosoftGesturesToolkit\Prefabs**. Drag and drop it to the **Hierarchy** window to create a new **GestureTrigger** game object in your scene.
 
 1. Examine the **GestureTrigger** game object in the **Inspector** window, select the **Use XAML** checkbox, expand the **Gesture XAML** section and paste in the following gesture definition:
 
-    [!code[Grab Release Gesture](CodeSnippets\GrabReleaseGesture.xaml)]
+    [!code-xml[Grab Release Gesture](CodeSnippets\GrabReleaseGesture.xaml)]
 
     You should arrive at the following result:
 
     ![GrabReleaseGesture gesture definition](Images\UnityGrabReleaseGesture.png)
 
-    <!--here should come an illustration and a discussion of the GrabRelease gesture segments and the trick of using Index-...-Pinky only-->
+    > [!TIP]
+    > To generate a XAML representation of a gesture, create a [C# gesture object](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture) and call its [ToXaml()](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.xamlizable.toxaml#Microsoft_Gestures_Xamlizable_ToXaml) method.
+
+    The **GrabReleaseGesture** is made up of 3 poses as illustrated in the state-machine below:
+
+    ![GrabReleaseGesture](Images\UnityGrabReleaseGestureStateMachine.png)
+
+    To learn more about the concept of a gesture as a state machine, please visit our [overview page](index.md#gesture).
 
 1. We would like to use the **GrabReleaseGesture** in the following manner
    - **GrabPose** detection will cause the cursor to enter grab mode, i.e., it should trigger **StartGrab()**.
    - **Idle** detection will cause the cursor to leave grab mode, i.e., it should trigger **StopGrab()**.
 
-    To implement the wiring of gesture segment detection to method invocation, click twice on the **Add Gesture Segment Event** button in the **GestureTrigger** **Inspector** user interface. You've created two new user interface sections, each will serve to wire a different segment to its corresponding method:
+    > [!NOTE]
+    > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state of every gesture. Whenever the user performs a gesture to completion, the gesture state-machine returns to the **idle** state. Whenever the user begins a gesture and abandons it without completing, the gesture state-machine will also return to the **idle** state.
+
+    Examine the **GestureTrigger** game object in the **Inspector** window and press the **Add Gesture Segment Event Button** *twice*. This should generate two new interfaces, **Segment #1** and **Segment #2**.
 
     - In the **Segment #1** drop down list, select the **GrabPose**, Then click the **+** sign in the **On Trigger ()** section of the UI, drag the **HandCursor** object to the **None (Object)** box and select the **StartGrab()** method from the **No Function** drop-down list:
 
@@ -181,18 +191,34 @@ On this step we will introduce a hand gesture that will act as the trigger to en
 
     ![Idle gesture trigger](Images\UnityIdleGestureTrigger.png)
 
-1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. Run the scene now, hover over an object, grab it by clinching your hand into a fist, move the object to a new location and release it by spreading your fingers apart.
+1. In the **Inspector** view of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox and run the scene.
+
+    To test the new feature:
+    - Hover over an object.
+    - Grab it by clinching your hand into a fist.
+    - Move the object to a new location.
+    - Release the object by spreading your fingers apart.
 
 ## Step 5 - Move Object in 3D Space
 
-In this step, we will add the depth dimension to the motion. Since the mouse is inherently a 2D input device, we will be using the scroll wheel to simulate the depth motion.
+On this step, we will enable the grabbed object to move in the depth direction. Unlike the hand, the mouse is inherently a 2D input device. To overcome this, we will use the scroll wheel to simulate the motion of the hand towards and away from the camera.
 
-1. Add the following private method to the **HandCursor.cs** script:
+1. Add the following private member to **HandCursor.cs**:
+
+    [!code-csharp[LastPalmDepth member](CodeSnippets\LastPalmDepth.cs)]
+
+    This member needs to be initialized every time an object is grabbed. Add the following lines at the end of the **StartGrab()** method:
+
+    [!code-csharp[LastPalmDepth member](CodeSnippets\InitializeLastPalmDepth.cs)]
+
+    And the following private method to the **HandCursor.cs** script:
 
     [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GetCursorDepthDelta.cs)]
 
-    And update the code to move the grabbed object in the **Update()** method:
+1. We will now update the code that moves the grabbed object to take the cursor's "depth delta" into account. In the **Update()** method, replace the **IsGrabbing** if-block with:
 
     [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GrabbingBlockOfUpdate.cs)]
 
-1. Now play the scene, both in **Mouse Mode** and not. Now the objects can move in all 3 directions.
+1. Try running the scene now, both in **Mouse Mode** and not. You should be able to move the grabbed object in all three dimensions:
+    - Using the scroll-wheel in case of the mouse input and
+    - Moving your hand towards\away from the camera in case of the hand input.

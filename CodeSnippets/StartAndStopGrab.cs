@@ -1,15 +1,13 @@
     public void StartGrab()
     {
         // Step 3.3:   Begin grab mode. 
-        //             Setup initial values needed for translation manipulation 
-        //             that occur on the Update method.
         if (!_hoveredGameObject)
         {
             return;
         }
 
         _isGrabbing = true;
-        _lastPalmDepth = GetPalmCameraPosition().z;
+        // step 5.1: save last value of hand depth
     }
 
     public void StopGrab()

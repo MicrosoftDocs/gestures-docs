@@ -19,6 +19,7 @@ public class HandCursor : MonoBehaviour
     private Vector3 GetPalmCameraPosition()
     {
         // Step 1.9: Convert palm position from depth-camera space to Main-Camera space
+        
         return Vector3.zero;
     }
 

@@ -1,0 +1,1 @@
+private float _lastPalmDepth;

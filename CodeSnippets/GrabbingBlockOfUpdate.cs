@@ -2,6 +2,6 @@
             var ray = Camera.main.ScreenPointToRay(GetCursorScreenPosition());
             float distanceFromCamera;
             plane.Raycast(ray, out distanceFromCamera);
-            // Step #.#: scale depth according to cursor's depth delta
+            // Step 5.1: scale depth according to cursor's depth delta
             distanceFromCamera *= 1 + GetCursorDepthDelta();
             _hoveredGO.transform.position = ray.GetPoint(distanceFromCamera);

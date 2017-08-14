@@ -29,7 +29,8 @@
         }
 
         if (_isGrabbing)
-        {            
+        {    
+            // move hovered object to follow the cursor position, while staying in the same plane
             var plane = new Plane(Camera.main.transform.forward, _hoveredGO.transform.position);
             var ray = Camera.main.ScreenPointToRay(GetCursorScreenPosition());
             float distanceFromCamera;
