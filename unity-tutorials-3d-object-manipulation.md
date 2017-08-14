@@ -159,7 +159,31 @@ In addition to using the mouse, we will now introduce a gesture to enter and lea
 
 1. Examine the **GestureTrigger** game object in the **Inspector** window, select the **Use XAML** checkbox, expand the **Gesture XAML** section and paste in the following gesture definition:
 
-    [!code-xml[Grab Release Gesture](CodeSnippets\GrabReleaseGesture.xaml)]
+    ```xml
+    <Gesture Name="GrabReleaseGesture" xmlns="http://schemas.microsoft.com/gestures/2015/xaml">
+        <Gesture.Segments>
+            <IdleGestureSegment Name="Idle" />
+            <HandPose Name="InitSpreadPose">
+                <PalmPose Context="{AnyHand}" Direction="Forward|Down" />
+                <FingerPose Context="Index, Middle, Ring, Pinky" Flexion="Open" />
+            </HandPose>
+            <HandPose Name="GrabPose">
+                <PalmPose Context="{AnyHand}" />
+                <FingerPose Context="Index, Middle, Ring, Pinky" Flexion="Folded" />
+            </HandPose>
+            <HandPose Name="FinalSpreadPose">
+                <PalmPose Context="{AnyHand}" />
+                <FingerPose Context="Index, Middle, Ring, Pinky" Flexion="Open" />
+            </HandPose>
+        </Gesture.Segments>
+        <Gesture.SegmentsConnections>
+            <SegmentConnections From="Idle" To="Idle, InitSpreadPose" />
+            <SegmentConnections From="InitSpreadPose" To="GrabPose" />
+            <SegmentConnections From="GrabPose" To="FinalSpreadPose" />
+            <SegmentConnections From="FinalSpreadPose" To="Idle" />
+        </Gesture.SegmentsConnections>
+    </Gesture>
+    ```
 
     You should arrive at the following result:
 
