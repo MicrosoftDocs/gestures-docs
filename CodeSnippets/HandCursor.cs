@@ -16,6 +16,12 @@ public class HandCursor : MonoBehaviour
     [Tooltip("The color of the cursor in normal mode.")]
     public Color CursorTint = Color.red;
 
+    private Vector3 GetPalmCameraPosition()
+    {
+        // Step 1.9: Convert palm position from depth-camera space to Main-Camera space
+        return Vector3.zero;
+    }
+
     private Vector3 GetCursorScreenPosition()
     {
         // Step 1.5: Return mouse screen position.

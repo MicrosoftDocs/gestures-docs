@@ -1,0 +1,23 @@
+<Gesture Name="GrabReleaseGesture" xmlns="http://schemas.microsoft.com/gestures/2015/xaml">
+  <Gesture.Segments>
+    <IdleGestureSegment Name="Idle" />
+    <HandPose Name="InitSpreadPose">
+      <PalmPose Context="{AnyHand}" Direction="Forward|Down" />
+      <FingerPose Context="Index, Middle, Ring, Pinky" Flexion="Open" />
+    </HandPose>
+    <HandPose Name="GrabPose">
+      <PalmPose Context="{AnyHand}" />
+      <FingerPose Context="Index, Middle, Ring, Pinky" Flexion="Folded" />
+    </HandPose>
+    <HandPose Name="FinalSpreadPose">
+      <PalmPose Context="{AnyHand}" />
+      <FingerPose Context="Index, Middle, Ring, Pinky" Flexion="Open" />
+    </HandPose>
+  </Gesture.Segments>
+  <Gesture.SegmentsConnections>
+    <SegmentConnections From="Idle" To="Idle, InitSpreadPose" />
+    <SegmentConnections From="InitSpreadPose" To="GrabPose" />
+    <SegmentConnections From="GrabPose" To="FinalSpreadPose" />
+    <SegmentConnections From="FinalSpreadPose" To="Idle" />
+  </Gesture.SegmentsConnections>
+</Gesture>
