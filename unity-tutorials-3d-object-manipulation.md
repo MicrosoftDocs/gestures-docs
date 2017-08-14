@@ -203,7 +203,7 @@ In addition to using the mouse, we will now introduce a gesture to enter and lea
    - **Idle** detection will cause the cursor to leave grab mode, i.e., it should trigger **StopGrab()**.
 
     > [!NOTE]
-    > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state of every gesture. Whenever the user performs a gesture to completion, the gesture state-machine returns to the **idle** state. Whenever the user begins a gesture and abandons it without completing, the gesture state-machine will also return to the **idle** state.
+    > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state of every gesture. Whenever the user performs a gesture to completion or begins a gesture and abandons it without completing, the gesture state-machine returns to the **idle** state.
 
     Examine the **GestureTrigger** game object in the **Inspector** window and press the **Add Gesture Segment Event Button** *twice*. This should generate two new interfaces, **Segment #1** and **Segment #2**.
 
