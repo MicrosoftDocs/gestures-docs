@@ -1,7 +1,7 @@
     private void Update()
     {
-        // Chapter 2.a Add highlight material to hovered object
-        // Chapter 3. Do not change hover object when grabbing
+        // Step 2.2: Add highlight material to hovered object
+        // Step 3:   Do not change hover object when grabbing
         if (HighlightMaterial && !_isGrabbing)
         {
             // Stop highlighting old hover object
@@ -16,7 +16,7 @@
                 _hoveredGameObject.AppendMaterial(HighlightMaterial);
         }
 
-        // Chapter 3. Handle Grabbing
+        // Step 3: Handle Grabbing
         if (IsMouseMode)
         {
             // Start grabbing object when left mouse button is down
