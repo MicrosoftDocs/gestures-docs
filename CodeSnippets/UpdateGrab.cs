@@ -5,15 +5,15 @@
         if (HighlightMaterial && !_isGrabbing)
         {
             // Stop highlighting old hover object
-            if (_hoveredGO)
-                _hoveredGO.RemoveMaterial(HighlightMaterial);
+            if (_hoveredGameObject)
+                _hoveredGameObject.RemoveMaterial(HighlightMaterial);
 
             // Raycast and find object under cursor
-            _hoveredGO = GetHoverObject();
+            _hoveredGameObject = GetHoveredObject();
 
             // Add highlight material to hovered object
-            if (_hoveredGO)
-                _hoveredGO.AppendMaterial(HighlightMaterial);
+            if (_hoveredGameObject)
+                _hoveredGameObject.AppendMaterial(HighlightMaterial);
         }
 
         // Chapter 3. Handle Grabbing
@@ -31,10 +31,10 @@
         if (_isGrabbing)
         {    
             // move hovered object to follow the cursor position, while staying in the same plane
-            var plane = new Plane(Camera.main.transform.forward, _hoveredGO.transform.position);
+            var plane = new Plane(Camera.main.transform.forward, _hoveredGameObject.transform.position);
             var ray = Camera.main.ScreenPointToRay(GetCursorScreenPosition());
             float distanceFromCamera;
             plane.Raycast(ray, out distanceFromCamera);
-            _hoveredGO.transform.position = ray.GetPoint(distanceFromCamera);
+            _hoveredGameObject.transform.position = ray.GetPoint(distanceFromCamera);
         }
     }

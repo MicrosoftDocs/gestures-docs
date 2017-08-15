@@ -20,7 +20,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
 1. Open the project you've created in the [introduction tutorial](unity-tutorials-introduction.md#system-requirements). Press **Ctrl+N** to create a new scene and **Ctrl+S** to save the scene, naming it **3D Object Manipulation**.
 
-1. Like in [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service), add the **GestureManager** and **UIManager** prefabs to the scene.
+1. Like in [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service), add the **GesturesManager** and **UIManager** prefabs to the scene.
 
 1. We will start by drawing a cursor using the mouse position. Later, we will replace the mouse with the palm.
 
@@ -48,7 +48,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
     ![Cursor following mouse](Images\UnityMouseCursor.png)
 
-1. In order to use your hand to control the cursor, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GestureManager** game object in our scene acts as a client of the **Gestures Service**. **GestureManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
+1. In order to use your hand to control the cursor, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GesturesManager** game object in our scene acts as a client of the **Gestures Service**. **GesturesManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
 
     To receive hand-skeleton information whenever the **HandCursor** game object is active, override its **OnEnbale()** and **OnDisable()** methods with the following code:
 
@@ -66,6 +66,8 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
     [!code-csharp[OnGui](CodeSnippets\ScaleAndOffset.cs)]
 
+    Note that this mapping also performs a scale-down by a factor of 10, which is in fact a unit conversion from millimeters to centimeters. We do this because we want all the objects in the scene, including the cursor, to be of similar size, ranging between 1 and 10 in Unity units.
+
     With this preparation, we are ready to compute the actual conversion of the palm position to a cursor position. Update **GetPalmCameraPosition()** and **GetCursorScreenPosition()** with the following contents:
 
     [!code-csharp[OnGui](CodeSnippets\GetCursorScreenPosition.cs)]
@@ -74,7 +76,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
     ![Palm position landmark](Images\UnityPalmPosition.png)
 
-1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. This will activate the "else{...}" branch of the if-statement above. play the scene and raise your right hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
+1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. This will activate the "else{...}" branch of the if-statement above. Play the scene and raise your right hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
 
 ## Step 2 - Highlight Object under Cursor
 
@@ -93,19 +95,19 @@ We would like to use our cursor to move objects in the scene. On this step of th
 
 1. Add a private member to the **HandCursor** class. We will use this member to store the game object currently under the cursor. For brevity, we will refer to this object as "the hovered object":
 
-    [!code-csharp[OnGui](CodeSnippets\HoveredGameObject.cs)]
+    [!code-csharp[HoveredGameObject](CodeSnippets\HoveredGameObject.cs)]
 
     Also add the following public members. We will soon use them to highlight the hovered object:
 
-    [!code-csharp[OnGui](CodeSnippets\HovePublicMembers.cs)]
+    [!code-csharp[HovePublicMembers](CodeSnippets\HovePublicMembers.cs)]
 
     To find the object currently under the cursor, we will use the following implementation for the **GetHoveredObject()** private method:
 
-    [!code-csharp[OnGui](CodeSnippets\GetHoveredObject.cs)]
+    [!code-csharp[GetHoveredObject](CodeSnippets\GetHoveredObject.cs)]
 
     To highlight the hovered object, replace the contents of **Update()** with the following:
 
-    [!code-csharp[OnGui](CodeSnippets\Update.cs)]
+    [!code-csharp[Update](CodeSnippets\Update.cs)]
 
     Save all changes to the **HandCursor.cs** script.
 
@@ -157,10 +159,11 @@ In addition to using the mouse, we will now introduce a gesture to enter and lea
 
 1. In the **Project** window, locate the **GestureTrigger** prefab under **MicrosoftGesturesToolkit\Prefabs**. Drag and drop it to the **Hierarchy** window to create a new **GestureTrigger** game object in your scene.
 
-1. Examine the **GestureTrigger** game object in the **Inspector** window, select the **Use XAML** checkbox, expand the **Gesture XAML** section and paste in the following gesture definition:
+1. Examine the **GestureTrigger** game object in the **Inspector** window, select the **XAML Gesture** radio button, expand the **Gesture XAML** section and paste in the following gesture definition:
 
     ```xml
-    <Gesture Name="GrabReleaseGesture" xmlns="http://schemas.microsoft.com/gestures/2015/xaml">
+    <Gesture Name="GrabReleaseGesture"
+             xmlns="http://schemas.microsoft.com/gestures/2015/xaml">
         <Gesture.Segments>
             <IdleGestureSegment Name="Idle" />
             <HandPose Name="InitSpreadPose">

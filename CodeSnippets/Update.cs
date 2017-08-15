@@ -11,7 +11,7 @@
             }
 
             // Raycast to find the object currently under the cursor
-            _hoveredGameObject =  GetHoverObject();
+            _hoveredGameObject =  GetHoveredObject();
 
             // Add highlight material to hovered object
             if (_hoveredGameObject)

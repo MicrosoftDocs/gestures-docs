@@ -39,6 +39,11 @@ public class HandCursor : MonoBehaviour
         return null;
     }
 
+    private float GetCursorDepthDelta()
+    {
+        // Step 5. Compute the change in cursor depth with respect to previous frame 
+    }
+
     private void StartGrab()
     {
         // Step 3.   Begin grab mode. 
@@ -65,6 +70,8 @@ public class HandCursor : MonoBehaviour
         // Step 2. Add highlighted material to hovered object
 
         // Step 3. Handle Grabbing
+
+        // Step 5. scale depth according to cursor's depth delta
     }
 
     private void OnGUI()

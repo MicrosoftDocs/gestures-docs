@@ -1,5 +1,6 @@
     private float GetCursorDepthDelta()
     {
+        // Step 5. Compute the change in cursor depth with respect to previous frame 
         float delta;
         if (IsMouseMode)
         {

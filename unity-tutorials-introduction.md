@@ -129,10 +129,9 @@ In this final step, we will create the necessary wiring so that you can use a ge
     The sections of the UI (user interface), numbered 1 to 4 above, allow you to configure a gesture and its effect:
 
     <br><table>
-    <tr><td>1</td><td>Check this box to specify a custom gesture in XAML language, or</td></tr>
-    <tr><td>2</td><td>Select a gesture from a set of predefined stock-gestures that we have prepared for your convenience.</td></tr>
-    <tr><td>3</td><td>Specify which method is to be executed when the gesture is detected.</td></tr>
-    <tr><td>4</td><td>Specify which method is to be executed when a certain <a href="index.md#gesture">state in the gesture state-machine</a> is identified.</td></tr>
+    <tr><td>1</td><td>Select in which way you would like to specify your gesture - either pick a gesture from a list of predefined "stock" gestures or specify a custom gesture in XAML language.</td></tr>
+    <tr><td>2</td><td>Specify which method is to be executed when the gesture is detected.</td></tr>
+    <tr><td>3</td><td>Specify which method is to be executed when a certain <a href="index.md#gesture">state in the gesture state-machine</a> is identified.</td></tr>
     </table>
 
     Visit our [overview page](index.md#gesture) to read more about the concept and structure of a gesture in Project Prague.
