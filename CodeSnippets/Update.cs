@@ -1,7 +1,6 @@
     private void Update()
     {
         // Step 2.2: Add highlight material to hovered object
-        // Step 3:   TODO, do not change hover object when grabbing
         if (HighlightMaterial)
         {
             // Stop highlighting previous hovered object

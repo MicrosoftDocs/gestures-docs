@@ -50,7 +50,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
 1. In order to use your hand to control the cursor, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GesturesManager** game object in our scene acts as a client of the **Gestures Service**. **GesturesManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
 
-    To receive hand-skeleton information whenever the **HandCursor** game object is active, override its **OnEnbale()** and **OnDisable()** methods with the following code:
+    To receive hand-skeleton information whenever the **HandCursor** game object is active, we implement its [**OnEnable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnEnable.html) and [**OnDisable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnDisable.html) methods in the following manner:
 
     [!code-csharp[OnGui](CodeSnippets\OnEnableOnDisable.cs)]
 
@@ -76,7 +76,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
     ![Palm position landmark](Images\UnityPalmPosition.png)
 
-1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. This will activate the "else{...}" branch of the if-statement above. Play the scene and raise your right hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
+1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. Play the scene and raise your right hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
 
 ## Step 2 - Highlight Object under Cursor
 

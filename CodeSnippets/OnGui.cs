@@ -13,7 +13,6 @@
         var originalColor = GUI.color;
 
         // Step 3. Change cursor color when grab mode is on.
-        // TODO Add a condition when setting GUI.color
         GUI.color = CursorTint;
         GUI.DrawTexture(bounds, CursorImage);
         GUI.color = originalColor;
