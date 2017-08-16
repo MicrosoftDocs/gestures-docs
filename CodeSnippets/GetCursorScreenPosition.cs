@@ -16,12 +16,10 @@
             // Step 1.5: Return mouse screen position.
             return Input.mousePosition;
         }
-        else
-        {
-            // Step 1.9: Replace mouse position with palm position.
-            var palmCameraPosition = GetPalmCameraPosition();
-            var palmWorldPosition = Camera.main.transform.TransformPoint(palmCameraPosition);
-            var palmScreenPosition = (Vector2)Camera.main.WorldToScreenPoint(palmWorldPosition);
-            return palmScreenPosition;
-        }
+        
+        // Step 1.9: Replace mouse position with palm position.
+        var palmCameraPosition = GetPalmCameraPosition();
+        var palmWorldPosition = Camera.main.transform.TransformPoint(palmCameraPosition);
+        var palmScreenPosition = (Vector2)Camera.main.WorldToScreenPoint(palmWorldPosition);
+        return palmScreenPosition;
     }

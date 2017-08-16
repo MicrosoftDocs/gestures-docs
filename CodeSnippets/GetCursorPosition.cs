@@ -5,9 +5,7 @@
             // Step 1.5: Return mouse screen position.
             return Input.mousePosition;
         }
-        else
-        {
-            // Step 1.9: Replace mouse position with palm position.
-            return Vector3.zero;
-        }
+        
+        // Step 1.9: Replace mouse position with palm position.
+        return Vector3.zero;
     }

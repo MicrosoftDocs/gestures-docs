@@ -1,6 +1,6 @@
 # 3D Object Manipulation
 
-This tutorial will introduce you to using gesture and skeleton input to enrich the user interface of the games and applications you make with Unity. In this tutorial we will create a 3D cursor controlled by the hand. We will use this cursor to select objects and move them in 3D space.
+This tutorial will introduce you to using gesture and skeleton input to enrich the user interface of the games and applications you make with Unity. We will create a 3D cursor that you can control with hand gestures. You will use this cursor to select objects in the scene and move them in 3D space.
 
 The final version of the Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the final  product of this tutorial:
 
@@ -22,21 +22,35 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
 1. Like in [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service), add the **GesturesManager** and **UIManager** prefabs to the scene.
 
-1. We will start by drawing a cursor using the mouse position. Later, we will replace the mouse with the palm.
+1. We will start by drawing a cursor that will track the mouse position. Later, we will have the cursor track the palm position.
 
     Create an empty game object and a corresponding C# script, name both **HandCursor**. To associate them, go to the game object's **Inspector** view and drag the script to the blank area below **Add Component** (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generates-a-new-3d-primitive-in-the-scene) to read about associating a script with a game object).
 
 1. Open the **HandCursor** script in Visual Studio (double click the script icon in the **Project** window) and replace its contents with the following code:
 
-    [!code-csharp[HandCursor](CodeSnippets\HandCursor.cs)]
+    <!-- [!code-csharp[HandCursor](CodeSnippets\HandCursor.cs)] -->
+    > [!div class="tabbedCodeSnippets"]
+    ```cs
+    private Vector3 GetCursorScreenPosition()
+    {
+        if (IsMouseMode)
+        {
+            // Step 1.5: Return mouse screen position.
+            return Input.mousePosition;
+        }
+
+        // Step 1.9: Replace mouse position with palm position.
+        return Vector3.zero;
+    }
+    ```
 
     As you can see, the **HandCursor** methods are not yet implemented. For now, they contain place-holders and comments.
 
-1. To control the cursor using the mouse only, use the following implementation for the **GetCursorScreenPosition()** method:
+1. To make the cursor follow the mouse pointer, replace the **GetCursorScreenPosition()** method in **HandCursor.cs** with the following contents:
 
     [!code-csharp[GetCursorPosition](CodeSnippets\GetCursorPosition.cs)]
 
-    To draw the cursor in the correct position every time the screen is refreshed, replace the contents of **OnGUI()** with:
+    To draw the cursor in the correct position every time the screen is refreshed, replace the contents of **OnGUI()** in **HandCursor.cs** with:
 
     [!code-csharp[OnGui](CodeSnippets\OnGui.cs)]
 
@@ -155,7 +169,7 @@ On this step we will enable our cursor to "grab" an object and move it in space.
 
 ## Step 4 - Move Object in 2D Using the Hand
 
-In addition to using the mouse, we will now introduce a gesture to enter and leave the cursor grab mode.
+We will now introduce a gesture to enter and leave the cursor grab mode.
 
 1. In the **Project** window, locate the **GestureTrigger** prefab under **MicrosoftGesturesToolkit\Prefabs**. Drag and drop it to the **Hierarchy** window to create a new **GestureTrigger** game object in your scene.
 

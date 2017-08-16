@@ -41,7 +41,9 @@ public class HandCursor : MonoBehaviour
 
     private float GetCursorDepthDelta()
     {
-        // Step 5. Compute the change in cursor depth with respect to previous frame 
+        // Step 5. Compute the change in cursor depth with respect to previous frame
+        
+        return 0;
     }
 
     private void StartGrab()
