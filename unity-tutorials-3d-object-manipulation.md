@@ -28,21 +28,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
 1. Open the **HandCursor** script in Visual Studio (double click the script icon in the **Project** window) and replace its contents with the following code:
 
-    <!-- [!code-csharp[HandCursor](CodeSnippets\HandCursor.cs)] -->
-    > [!div class="tabbedCodeSnippets"]
-    ```cs
-    private Vector3 GetCursorScreenPosition()
-    {
-        if (IsMouseMode)
-        {
-            // Step 1.5: Return mouse screen position.
-            return Input.mousePosition;
-        }
-
-        // Step 1.9: Replace mouse position with palm position.
-        return Vector3.zero;
-    }
-    ```
+    [!code-csharp[HandCursor](CodeSnippets\HandCursor.cs)] 
 
     As you can see, the **HandCursor** methods are not yet implemented. For now, they contain place-holders and comments.
 
