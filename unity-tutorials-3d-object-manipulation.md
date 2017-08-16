@@ -76,7 +76,7 @@ Complete the [introduction tutorial](unity-tutorials-introduction.md#system-requ
 
     ![Palm position landmark](Images\UnityPalmPosition.png)
 
-1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. Play the scene and raise your right hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
+1. In the **Inspector** window of the **HandCursor** game object, disable the **"Is Mouse Mode"** checkbox. Play the scene and raise your **right** hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
 
 ## Step 2 - Highlight Object under Cursor
 

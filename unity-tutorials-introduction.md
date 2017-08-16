@@ -4,7 +4,7 @@ This tutorial will introduce you to adding gestures to a Unity application. You 
 
 This tutorial assumes you have basic familiarity with the C# programming language. We do not assume you are familiar with the Unity editor. It should take you approximately 20 minutes to complete the tutorial.
 
-The final version of the Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the final  product of this tutorial:
+The final version of the Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the final product of this tutorial:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
 1. Browse to the **Unity\GesturesTutorial** directory within the cloned repository.
@@ -68,7 +68,7 @@ We will now establish a connection between our Unity application and the [Gestur
 
     ![Add prefabs to scene](Images\UnityAddPrefabs.png)
 
-1. Now run the application by pressing the **play** button or using the **Ctrl+P** keyboard shortcut. If the application is able to establish a connection with the Gestures Service, you will see a green icon in the bottom right corner:
+1. Now play the scene by pressing the **play** button or using the **Ctrl+P** keyboard shortcut. If the application is able to establish a connection with the Gestures Service, you will see a green icon in the bottom right corner:
 
     ![Connection to service](Images\UnityConnectionToService.png)
 
@@ -105,7 +105,7 @@ To demonstrate how gestures can be used in a Unity game, we will now add a Unity
 
     [!code-csharp[PrimitiveFactory](CodeSnippets\PrimitiveFactory.cs)]
 
-1. Run the application and use your mouse pointer to left-click anywhere within the scene frame. Every click will instantiate a new randomly generated 3D-primitive:
+1. Play the scene and use your mouse pointer to left-click anywhere within the scene frame. Every click will instantiate a new randomly generated 3D-primitive:
 
     ![Ptimitives being generateded](Images\UnityObjectSpawn.png)
 
@@ -114,7 +114,7 @@ To demonstrate how gestures can be used in a Unity game, we will now add a Unity
 
 ## Step 4 - Using a Gesture to Generate New 3D-Primitives in the Scene
 
-In this final step, we will create the necessary wiring so that you can use a gesture to trigger the 3D-primitive generation.
+On this step, we will create the necessary wiring so that you can use a gesture to trigger the 3D-primitive generation.
 
 1. The **GestureTrigger** prefab provided with our Unity toolkit allows you to designate a method in your project to be executed whenever some gesture is detected.
 
@@ -136,34 +136,67 @@ In this final step, we will create the necessary wiring so that you can use a ge
 
     Visit our [overview page](index.md#gesture) to read more about the concept and structure of a gesture in Project Prague.
 
-    In this tutorial we will focus on sections 2 and 3. Namely, we will wire the predefined **"tap"** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Sections 1 and 4 of the **GestureTrigger** user interface will be covered in subsequent tutorials.
+    In this tutorial we will focus on sections 2 and 3. Namely, we will wire the predefined **"Tap"** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Sections 1 and 4 of the **GestureTrigger** user interface will be covered in subsequent tutorials.
 
-1. Make sure **GestureTrigger** is still the selected object in the **Hierarchy** window and choose the **tap** gesture from the **Stock Gesture** drop-down list in the **Inspector** window:
+1. Make sure **GestureTrigger** is still the selected object in the **Hierarchy** window and choose the **Tap** gesture from the **Stock Gesture** drop-down list in the **Inspector** window:
 
-    ![Set tap as the stock gesture](Images\UnityGestureTriggerTap.png)
+    ![Set Tap as the stock gesture](Images\UnityGestureTriggerTap.png)
 
 1. To make the functions of **PrimitiveFactory** available for **GestureTrigger**, click the **+** sign in the **On Trigger ()** pane, then drag and drop the **PrimitiveFactory** game object from the **Hierarchy** window to the **None (object)** box in the **Inspector**:
 
     ![Add PrimitiveFactory to objects](Images\UnityAddingEventHandler.png)
 
-    Finally, to designate **CreateRandomPrimitive()** as the handler method for the **tap** gesture, click the **No Function** drop-down in the **Inspector** window of **GestureTrigger**, select **PrimitiveFactory** and **CreateRandomPrimitive ()**:
+    Finally, to designate **CreateRandomPrimitive()** as the handler method for the **Tap** gesture, click the **No Function** drop-down in the **Inspector** window of **GestureTrigger**, select **PrimitiveFactory** and **CreateRandomPrimitive ()**:
 
     ![Hook CreateRandomPrimitive() event handler](Images\UnityHookingEventHandler.png)
 
-1. Run the application now. You should be still able to generate a new 3D-primitive using the left mouse button. Now, you should be also able to do that using the **tap** gesture (perform the gesture with your **right** hand):
+1. Play the scene now. You should still be able to generate a new 3D-primitive using the left mouse button. Now, you should be also able to do that using the **Tap** gesture (perform the gesture with your **right** hand):
 
     ![Tap Gesture Animation](Images\UnityTapGesture.png)
 
+    If you are not able to use the **Tap** gesture to generate new primitives in the scene, please refer to the [troubleshooting section](#Troubleshooting).
+
+## Step 5 - Using a Gesture to Destroy all 3D-Primitives in the Scene
+
+On this step, we will add a gesture to clear all previously generated 3D-primitives from the scene.
+
+1. First, we will add a method named **DestroyAllPrimitives()** to our **PrimitiveFactory** script. Paste the following code in the PrimitiveFactory.cs file (you should still have it open in Visual Studio):
+
+    [!code-csharp[DestroyAllPrimitives](CodeSnippets\DestroyAllPrimitives.cs)]
+
+1. Before we wire the new method to a gesture, we will test it using the right mouse button. Paste the following code in place of the **Update()** method in the **PrimitiveFactory** script:
+
+    [!code-csharp[UpdateDestroyPrimitives](CodeSnippets\UpdateDestroyPrimitives.cs)]
+
+1. Play the scene. Create several primitives by clicking on the left mouse button and then erase them all by click the right button.
+
+1. We will now wire the **Finger Snap** gesture to invoke the **DestroyAllPrimitives()** method, like we did in [step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene):
+
+    - Add another **GestureTrigger** game object to the scene. 
+    - In the **Inspector** view of the **GestureTrigger** game object, select the **Finger Snap** gesture from the **Stock Gesture** drop-down list.
+    - In the **On Trigger ()** UI, create a new element by pressing **+** sign. Drag and drop the **PrimitiveFactory** game object to the **None (Object)** box to associate it with the new **On Trigger ()** element.
+    - Finally, click on the **No Function** drop-down list and select the **DestroyAllPrimitives()** of the **PrimitiveFactory** object.
+
+1. In case you are running **Microsoft.Gestures.DiscoveryClient** - disable it by clicking on the Project Prague tray icon and choosing **Disable**:
+
+    ![Disable the Discovery Client](Images\UnityDisableDiscoClient.png)
+
+    The Discovery Client makes use of the **Finger Snap** gesture to open the start menu. Since we are also using this gesture in our Unity application, we don't want it to have any side-effects outside of Unity.
+
+1. Now run the scene. Generate a few primitives using the **Tap** gesture and destroy them all using the **Finger Snap** gesture:
+
+    ![Snap gesture state machine](Images\UnitySnapGesture.png)    
+
 ## Troubleshooting
 
-If you've reached the end of the tutorial and the **tap** gesture is not working for you, please play the Unity scene, open the **Microsoft Gestures Service** window and verify the following:
+If you've reached the end of [Step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene) and the **Tap** gesture is not working for you, please play the Unity scene, open the **Microsoft Gestures Service** window and verify the following:
 
 ![Microsoft Gestures Window](Images\UnityTroubleshooting.png)
 
 1. When you bring your hand close to your depth camera, you can see your hand in the **image** section of the **Microsoft Gestures Service** window, with colorful arrows indicating the estimated positions of the fingers and palm. If you don't see such an image, you are probably experiencing camera issues - please refer to our [camera troubleshooting](troubleshooting-camera.md) page.
 1. **UnityApp** appears in the list of **Clients** and **Unity_TapGesture** appears in the sub-list of gestures associated with the **UnityApp** client. If this is not the case, please verify that
     - You have the green **Connected** icon in the bottom right corner of your screen in Unity (see [step 2](#step-2---connecting-to-the-gestures-service)).
-    - You have selected the correct gesture, **tap**,  in the **GestureTrigger** user interface (see [step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene)).
-1. When Unity is in the foreground and you execute the **tap** gesture, the **TimeLine** associated with **Unity_TapGesture** should advance. If this is not the case, you are probably not executing the gesture correctly - make sure you are using your **right** hand and performing the **tap** motion with your **thumb** and **index** fingers only.
+    - You have selected the correct gesture, **Tap**,  in the **GestureTrigger** user interface (see [step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene)).
+1. When Unity is in the foreground and you execute the **Tap** gesture, the **TimeLine** associated with **Unity_TapGesture** should advance. If this is not the case, you are probably not executing the gesture correctly - make sure you are using your **right** hand and performing the **Tap** motion with your **thumb** and **index** fingers only.
 
-If you still cannot use the **tap** gesture to generate new 3D-primitives in the scene, please leave a comment on this page, and we will do our best to provide help.
+If you still cannot use the **Tap** gesture to generate new 3D-primitives in the scene, please leave a comment on this page, and we will do our best to provide help.
