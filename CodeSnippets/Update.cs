@@ -18,6 +18,4 @@
                 _hoveredGameObject.AppendMaterial(HighlightMaterial);
             }
         }
-
-        // Step 3: Handle Grabbing
     }

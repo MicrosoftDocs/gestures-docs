@@ -99,7 +99,7 @@ We would like to use our cursor to move objects in the scene. On this step of th
 
     Also add the following public members. We will soon use them to highlight the hovered object:
 
-    [!code-csharp[HovePublicMembers](CodeSnippets\HovePublicMembers.cs)]
+    [!code-csharp[HovePublicMembers](CodeSnippets\HoverPublicMembers.cs)]
 
     To find the object currently under the cursor, we will use the following implementation for the **GetHoveredObject()** private method:
 

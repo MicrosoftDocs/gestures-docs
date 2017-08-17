@@ -7,7 +7,6 @@
         }
 
         _isGrabbing = true;
-        // step 5.1: save last value of hand depth
     }
 
     public void StopGrab()

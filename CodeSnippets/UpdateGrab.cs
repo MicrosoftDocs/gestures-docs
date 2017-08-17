@@ -1,7 +1,7 @@
     private void Update()
     {
         // Step 2.2: Add highlight material to hovered object
-        // Step 3:   Do not change hover object when grabbing
+        // Step 3.4: Do not change hovered object when grabbing
         if (HighlightMaterial && !_isGrabbing)
         {
             // Stop highlighting old hover object
@@ -16,18 +16,15 @@
                 _hoveredGameObject.AppendMaterial(HighlightMaterial);
         }
 
-        // Step 3: Handle Grabbing
-        if (IsMouseMode)
-        {
-            // Start grabbing object when left mouse button is down
-            if (Input.GetMouseButtonDown(0))
-                StartGrab();
+        // Start grabbing object when left mouse button is down
+        if (Input.GetMouseButtonDown(0))
+            StartGrab();
 
-            // Stop grabbing object when left mouse button is up
-            if (Input.GetMouseButtonUp(0))
-                StopGrab();
-        }
+        // Stop grabbing object when left mouse button is up
+        if (Input.GetMouseButtonUp(0))
+            StopGrab();
 
+        // Handle motion
         if (_isGrabbing)
         {    
             // move hovered object to follow the cursor position, while staying in the same plane

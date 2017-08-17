@@ -10,10 +10,9 @@
         var bounds = new Rect(cursorPosition - 0.5f * CursorSize, CursorSize);
 
         // Change the tint color to match our cursor mode
-        var originalColor = GUI.color;
-
-        // Step 3. Change cursor color when grab mode is on.
+        var originalColor = GUI.color;        
         GUI.color = CursorTint;
         GUI.DrawTexture(bounds, CursorImage);
+
         GUI.color = originalColor;
     }

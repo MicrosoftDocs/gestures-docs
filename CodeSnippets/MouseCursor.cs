@@ -2,7 +2,7 @@ using UnityEngine;
 using Microsoft.Gestures.UnitySdk;
 using Microsoft.Gestures.Toolkit;
 
-public class HandCursor : MonoBehaviour
+public class MouseCursor : MonoBehaviour
 {
     [Tooltip("The cursor image that will be displayed on the screen.")]
     public Texture2D CursorImage;
@@ -20,7 +20,7 @@ public class HandCursor : MonoBehaviour
         return Vector3.zero;
     }
 
-    private GameObject GetHoverObject()
+    private GameObject GetHoveredObject()
     {
         // Step 2: Raycast a ray from camera to object under cursor.
 
@@ -29,7 +29,7 @@ public class HandCursor : MonoBehaviour
 
     private float GetCursorDepthDelta()
     {
-        // Step 4: Compute the change in cursor depth with respect to previous frame
+        // Step 3: Compute the change in cursor depth with respect to previous frame
 
         return 0;
     }
@@ -50,7 +50,7 @@ public class HandCursor : MonoBehaviour
 
         // Step 3: Handle Grabbing
 
-        // Step 4: scale depth according to cursor's depth delta
+        // Step 3: scale depth according to cursor's depth delta
     }
 
     private void OnGUI()
