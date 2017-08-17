@@ -5,7 +5,7 @@ This tutorial serves as a preparation for the [3D Object Manipulation (Hand)](un
 The final version of the Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the final product of this tutorial:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
-1. Browse to the **Unity\GesturesTutorial** directory within the cloned repository.
+1. Browse to the [**Unity\GesturesTutorial**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/GesturesTutorial) directory within the cloned repository.
 1. When the project loads, go to the **Project** window and select the **Assets** directory.
 1. Double-click the **3D Object Manipulation (Mouse)** scene in the **Assets** directory.
 1. Press the play button (or **Ctrl+P**) to run the scene.
@@ -16,7 +16,7 @@ This tutorial assumes you have basic familiarity with the C# programming languag
 
 ## Step 1 - Create the MouseCursor Game Object
 
-1. Open the project you've created in the [introduction tutorial](unity-tutorials-introduction.md#system-requirements) or create a new Unity project. If you choose to create a new project - refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) to import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage).
+1. Open the project you've created in the [introduction tutorial](unity-tutorials-introduction.md#system-requirements) or create a new Unity project. If you choose to create a new project - please import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) to learn how to import the package).
 
 1. Press **Ctrl+N** to create a new scene and **Ctrl+S** to save the scene, naming it **3D Object Manipulation (Mouse)**.
 
@@ -26,13 +26,13 @@ This tutorial assumes you have basic familiarity with the C# programming languag
 
     [!code-csharp[MouseCursor](CodeSnippets\MouseCursor.cs)]
 
-    As you can see, the **MouseCursor** methods are not yet implemented - they contain place-holders and comments.
+    As you can see, none of the **MouseCursor** methods are implemented. For now, they contain place-holders and comments.
 
 1. To make the cursor follow the mouse pointer, replace the **GetCursorScreenPosition()** method in **MouseCursor.cs** with the following contents:
 
     [!code-csharp[GetCursorPosition](CodeSnippets\GetCursorPosition.cs)]
 
-    To draw the cursor in the correct position every time the screen is refreshed, replace the contents of **OnGUI()** in **MouseCursor.cs** with:
+    To draw the cursor in the correct position every time the screen is refreshed, replace the contents of **OnGUI()** method in **MouseCursor.cs** with:
 
     [!code-csharp[OnGui](CodeSnippets\OnGui.cs)]
 
@@ -46,20 +46,18 @@ This tutorial assumes you have basic familiarity with the C# programming languag
 
 ## Step 2 - Highlight Object under Cursor
 
-We would like to use our cursor to move objects in the scene. On this step of the tutorial, we implement a feature that will help us recognize which object is currently under the cursor by highlighting that object.
+We would like to use our cursor to move objects in the scene. In order to recognize which object is currently under the cursor, we will highlight that object by creating an aura around it. On the following step we will be using our cursor to move the highlighted object.
 
-1. We will start by filling the scene with several primitive objects.
+1. We will start by filling the scene with several primitive objects. For convenience, we recommend you attain the viewpoint of the the **Main Camera** before you start adding new objects to the scene. Select the **Main Camera** in the **Hierarchy** window, then go to the **GameObject** menu and select **Align View with Selected**.
 
-    For convenience, we recommend you attain the viewpoint of the the **Main Camera** before you start adding new objects to the scene. Select the **Main Camera** in the **Hierarchy** window, then go to the **GameObject** menu and select **Align View with Selected**.
-
-    To instantiate new primitives, go to the **GameObject** menu again, select **3D Object** and pick one of the primitives in the sub-menu (**Cube**, **Sphere**, etc.). Repeat this process several times, moving each new primitive to a different location in space:
+    To instantiate new primitives, go to the **GameObject** menu again, select **3D Object** and pick one of the primitives in the sub-menu (**Cube**, **Sphere**, etc.). Repeat this process several times, moving each new primitive to a different location in the scene:
 
     ![Fill scene with primitives](Images\UnityPopulateSceneWithPrimitives.png)
 
-> [!TIP]
-> To move an object, click on it, press **w** and than drag it using the [**Move** gizmo](https://docs.unity3d.com/Manual/PositioningGameObjects.html#move).
+    > [!TIP]
+    > To move an object, click on it, press **w** and then drag it using the [**Move** gizmo](https://docs.unity3d.com/Manual/PositioningGameObjects.html#move).
 
-1. Add a private member to the **MouseCursor** class. We will use this member to store the game object currently under the cursor. For brevity, we will refer to this object as "the hovered object":
+1. Add a private member to the **MouseCursor** class. We will use this member to store the game object currently under the cursor. We will refer to this object as "the hovered object":
 
     [!code-csharp[HoveredGameObject](CodeSnippets\HoveredGameObject.cs)]
 
@@ -67,7 +65,7 @@ We would like to use our cursor to move objects in the scene. On this step of th
 
     [!code-csharp[HovePublicMembers](CodeSnippets\HoverPublicMembers.cs)]
 
-    To find the object currently under the cursor, we will use the following implementation for the **GetHoveredObject()** private method:
+    To identify which object is currently under the cursor, replace the contents of the **GetHoveredObject()** private method with the following implementation:
 
     [!code-csharp[GetHoveredObject](CodeSnippets\GetHoveredObject.cs)]
 
@@ -83,13 +81,13 @@ We would like to use our cursor to move objects in the scene. On this step of th
 
     ![Add the highlight material](Images\UnityAddHighlightMaterial.png)
 
-1. Play the scene and move around with the cursor. Every time an object is under the cursor, it will glow with a bluish halo:
+1. Play the scene and move the cursor across the screen. Every time an object is under the cursor, it will glow with a bluish aura:
 
     ![Play scene with glow effect](Images\UnityGlowScene.png)
 
 ## Step 3 - Move Object in 3D Using the Mouse
 
-On this step we will enable our cursor to "grab" an object and move it in space. For now, the motion will be restricted to a 2D plane. In the [final step](#Step-5---move-object-in-3d-space) we will add support for motion in the third dimension.
+On this step we will enable our cursor to "grab" an object and move it in space.
 
 1. In the **MouseCursor.cs** script, prepare the following private member:
 
@@ -103,13 +101,14 @@ On this step we will enable our cursor to "grab" an object and move it in space.
 
     [!code-csharp[Object grabbing - change cursor color](CodeSnippets\ObjectGrabbingChangeCursorColor.cs)]
 
-    This will cause the cursor to change color to **GrabCursorTint** when it enters grab mode.
+    This will cause the cursor to change color to **GrabCursorTint** when it enters "grab mode".
 
 1. We are now ready to implement the **StartGrab()** and **StopGrab()** methods:
 
     [!code-csharp[Start and stop grab](CodeSnippets\StartAndStopGrab.cs)]
 
 1. In the **Update()** method, we would like to add the following functionality:
+
     - Enter (leave) grab mode whenever the left mouse button is pressed (released) while an object is being hovered.
     - When in grab mode - the hovered object should follow the cursor.
 
@@ -117,15 +116,17 @@ On this step we will enable our cursor to "grab" an object and move it in space.
 
     [!code-csharp[Update method - grab related code](CodeSnippets\UpdateGrab.cs)]
 
-1. Run the scene now, hover over an object and move it by pressing the left mouse button and dragging. Note that the color of the cursor changes to green in grab mode.
+1. Run the scene now, hover over an object and move it by pressing the left mouse button and dragging. Note that the color of the cursor changes when you enter grab mode:
 
-1. We will enable the grabbed object to move in the depth dimension. We will use the scroll wheel to control this dimension.
+    ![Play scene with grab mode](Images\UnityGrabMode.png)
+
+1. We will use the scroll wheel to control the movement of the grabbed object in the depth dimension.
 
     Replace the contents of **GetCursorDepthDelta()** with the following:
 
     [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GetCursorDepthDelta.cs)]
 
-1. We will now update the code that moves the grabbed object to take the cursor's "depth delta" into account. In the **Update()** method, replace the **IsGrabbing** if-block with:
+1. We will now update the code that moves the grabbed object to take the cursor's "depth delta" into account. In the **Update()** method, replace the contents of the **IsGrabbing** if-block with:
 
     [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GrabbingBlockOfUpdate.cs)]
 

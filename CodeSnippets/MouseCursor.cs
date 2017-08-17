@@ -16,14 +16,12 @@ public class MouseCursor : MonoBehaviour
     private Vector3 GetCursorScreenPosition()
     {
         // Step 1: Return mouse screen position.
-
         return Vector3.zero;
     }
 
     private GameObject GetHoveredObject()
     {
         // Step 2: Raycast a ray from camera to object under cursor.
-
         return null;
     }
 

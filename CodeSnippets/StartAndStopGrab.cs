@@ -1,6 +1,6 @@
     public void StartGrab()
     {
-        // Step 3.3:   Begin grab mode. 
+        // Step 3.3:   Start grab mode. 
         if (!_hoveredGameObject)
         {
             return;
