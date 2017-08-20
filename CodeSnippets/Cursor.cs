@@ -21,34 +21,33 @@ public class Cursor : MonoBehaviour
 
     private GameObject GetHoveredObject()
     {
-        // Step 2: Raycast a ray from camera to object under cursor.
+        // Step 2: Cast a ray from camera to object under cursor.
         return null;
     }
 
     private float GetCursorDepthDelta()
     {
         // Step 3: Compute the change in cursor depth with respect to previous frame
-
         return 0;
     }
 
     private void StartGrab()
     {
-        // Step 3:   Begin grab mode. 
+        // Step 3: Begin grab mode. 
     }
 
     private void StopGrab()
     {
-        // Step 3:   Stop grab mode.
+        // Step 3: Stop grab mode.
     }
 
     private void Update()
     {
-        // Step 2: Add highlighted material to hovered object
+        // Step 2: Add highlighting material to hovered object
 
         // Step 3: Handle Grabbing
 
-        // Step 3: scale depth according to cursor's depth delta
+        // Step 3: Scale depth according to cursor's depth delta
     }
 
     private void OnGUI()

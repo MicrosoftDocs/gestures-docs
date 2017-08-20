@@ -1,6 +1,6 @@
     private void Update()
     {
-        // Step 2.2: Add highlight material to hovered object
+        // Step 2.2: Add highlighting material to hovered object
         if (HighlightMaterial)
         {
             // Stop highlighting previous hovered object
@@ -12,7 +12,7 @@
             // Raycast to find the object currently under the cursor
             _hoveredGameObject =  GetHoveredObject();
 
-            // Add highlight material to hovered object
+            // Add highlighting material to hovered object
             if (_hoveredGameObject)
             {
                 _hoveredGameObject.AppendMaterial(HighlightMaterial);

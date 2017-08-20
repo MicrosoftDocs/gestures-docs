@@ -105,7 +105,7 @@ On this step we will enable our cursor to "grab" an object and move it in space.
 
     [!code-csharp[Object gerabbing - private members](CodeSnippets\ObjectGrabbingPublicMember.cs)]
 
-1. Replace **OnGUI()** method with:
+1. Replace the **OnGUI()** method with the following snippet, conditionally changing the value of **GUI.color**:
 
     [!code-csharp[Object grabbing - change cursor color](CodeSnippets\ObjectGrabbingChangeCursorColor.cs)]
 
