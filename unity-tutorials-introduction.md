@@ -2,12 +2,16 @@
 
 This tutorial will introduce you to adding gestures to a Unity application. You will create a simple Unity project that generates a random 3D-primitive every time the user executes a certain gesture.
 
-This tutorial assumes you have basic familiarity with the C# programming language. We do not assume you are familiar with the Unity editor. It should take you approximately 20 minutes to complete the tutorial.
+This tutorial assumes you have basic familiarity with the C# programming language. We do not assume you are familiar with the Unity editor.
 
-The final version of the Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the final product of this tutorial:
+This tutorial will take approximately 20 minutes to complete.
+
+## Download the Final Result
+
+The final Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the application:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
-1. Browse to the **Unity\GesturesTutorial** directory within the cloned repository.
+1. Browse to the [**Unity\Tutorials\Introduction**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/Tutorials/Introduction) directory within the cloned repository.
 1. When the project loads, go to the **Project** window and select the **Assets** directory.
 1. Double-click the **Introduction** scene in the **Assets** directory.
 1. Press the play button (or **Ctrl+P**) to run the scene.

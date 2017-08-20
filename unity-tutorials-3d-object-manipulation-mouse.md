@@ -1,44 +1,52 @@
 # 3D Object Manipulation (Mouse)
 
-This tutorial serves as a preparation for the [3D Object Manipulation (Hand)](unity-tutorials-3d-object-manipulation.md) tutorial. In this tutorial, we will use existing Unity features to create a mouse-controlled cursor capable of moving objects in a 3D scene. In the [3D Object Manipulation (Hand)](unity-tutorials-3d-object-manipulation.md) tutorial, we will replace the mouse for hand gestures and motions.
+This tutorial serves as a preparation for the [**3D Object Manipulation (Hand)**](unity-tutorials-3d-object-manipulation.md) tutorial. In this tutorial, we will use only existing Unity features to create a mouse-controlled cursor capable of moving objects in a 3D scene. In the **3D Object Manipulation (Hand)** tutorial, we will replace the mouse for hand gestures and motions.
 
-The final version of the Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the final product of this tutorial:
+If you wish to focus on using gestures with Unity, feel free to download the final version of the project created in this tutorial (see instructions below) and skip ahead to  **3D Object Manipulation (Hand)**.
+
+This tutorial will take approximately 30 minutes to complete.
+
+## Download the Final Result
+
+The final Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the application:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
-1. Browse to the [**Unity\GesturesTutorial**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/GesturesTutorial) directory within the cloned repository.
+1. Browse to the [**Unity\Tutorials\3D Object Manipulation (Mouse)**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/Tutorials/3D-Object-Manipulation-Mouse) directory within the cloned repository.
 1. When the project loads, go to the **Project** window and select the **Assets** directory.
 1. Double-click the **3D Object Manipulation (Mouse)** scene in the **Assets** directory.
 1. Press the play button (or **Ctrl+P**) to run the scene.
 
 ## Prerequisites
 
-This tutorial assumes you have basic familiarity with the C# programming language and some experience with the Unity IDE - we expect you to know how to create projects, scenes, game objects and scripts. The tutorial will take approximately 30 minutes to complete.
+This tutorial assumes you have basic familiarity with the C# programming language and some experience with the Unity IDE - we expect you to know how to create projects, scenes, game objects and scripts.
 
-## Step 1 - Create the MouseCursor Game Object
+It is recommended, but not mandatory, that you complete the [**Introduction**](unity-tutorials-introduction.md) tutorial before starting this tutorial.
 
-1. Open the project you've created in the [introduction tutorial](unity-tutorials-introduction.md#system-requirements) or create a new Unity project. If you choose to create a new project - please import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) to learn how to import the package).
+## Step 1 - Create the Cursor Game Object
+
+1. If you've completed the [introduction tutorial](unity-tutorials-introduction.md#system-requirements), open the project you've created there. Otherwise, create a new Unity project and import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) for instructions).
 
 1. Press **Ctrl+N** to create a new scene and **Ctrl+S** to save the scene, naming it **3D Object Manipulation (Mouse)**.
 
-1. Create an empty game object and a corresponding C# script, name both **MouseCursor**. To associate them, go to the game object's **Inspector** view and drag the script to the blank area below the **Add Component** button (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generates-a-new-3d-primitive-in-the-scene) to read about associating a script with a game object).
+1. Create an empty game object and name it **Cursor**. Create a corresponding C# script and name it **Cursor**. To associate the game object with the script, go to the game object's **Inspector** view and drag the script to the blank area below the **Add Component** button (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generates-a-new-3d-primitive-in-the-scene) to read about associating a script with a game object).
 
-1. Open the **MouseCursor** script in Visual Studio (double click the script icon in the **Project** window) and replace its contents with the following code:
+1. Open the **Cursor** script in Visual Studio (double click the script icon in the **Project** window) and replace its contents with the following code:
 
-    [!code-csharp[MouseCursor](CodeSnippets\MouseCursor.cs)]
+    [!code-csharp[Cursor](CodeSnippets\Cursor.cs)]
 
-    As you can see, none of the **MouseCursor** methods are implemented. For now, they contain place-holders and comments.
+    As you can see, none of the **Cursor** methods are implemented. For now, they contain place-holders and comments.
 
-1. To make the cursor follow the mouse pointer, replace the **GetCursorScreenPosition()** method in **MouseCursor.cs** with the following contents:
+1. To make the cursor follow the mouse pointer, replace the **GetCursorScreenPosition()** method in **Cursor.cs** with the following contents:
 
     [!code-csharp[GetCursorPosition](CodeSnippets\GetCursorPosition.cs)]
 
-    To draw the cursor in the correct position every time the screen is refreshed, replace the contents of **OnGUI()** method in **MouseCursor.cs** with:
+    To draw the cursor in the correct position every time the screen is refreshed, replace the contents of **OnGUI()** method in **Cursor.cs** with:
 
     [!code-csharp[OnGui](CodeSnippets\OnGui.cs)]
 
-1. We will use the **PragueCursor.png** texture, provided with the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage), as our cursor image. Select the **MouseCursor** game object in the **Hierarchy** window, locate the **PragueCursor.png** under **MicrosoftGesturesToolkit/Textures** in the **Project** window and drag-and-drop it to the **Cursor Image** box in the **Inspector** window:
+1. We will use the **PragueCursor.png** texture, provided with the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage), as our cursor image. Select the **Cursor** game object in the **Hierarchy** window, locate the **PragueCursor.png** under **MicrosoftGesturesToolkit/Textures** in the **Project** window and drag-and-drop it to the **Cursor Image** box in the **Inspector** window:
 
-    ![Set MouseCursor Image](Images\UnitySetMouseCursorImage.png)
+    ![Set Cursor Image](Images\UnitySetCursorImage.png)
 
 1. Play the scene now. Whenever the mouse pointer is within the scene borders, you will see a red cursor following it:
 
@@ -57,7 +65,7 @@ We would like to use our cursor to move objects in the scene. In order to recogn
     > [!TIP]
     > To move an object, click on it, press **w** and then drag it using the [**Move** gizmo](https://docs.unity3d.com/Manual/PositioningGameObjects.html#move).
 
-1. Add a private member to the **MouseCursor** class. We will use this member to store the game object currently under the cursor. We will refer to this object as "the hovered object":
+1. Add a private member to the **Cursor** class. We will use this member to store the game object currently under the cursor. We will refer to this object as "the hovered object":
 
     [!code-csharp[HoveredGameObject](CodeSnippets\HoveredGameObject.cs)]
 
@@ -73,11 +81,11 @@ We would like to use our cursor to move objects in the scene. In order to recogn
 
     [!code-csharp[Update](CodeSnippets\Update.cs)]
 
-    Save all changes to the **MouseCursor.cs** script.
+    Save all changes to the **Cursor.cs** script.
 
 1. We will use the **OuterGlow.mat** material, provided with the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage), to highlight the hovered object.
 
-    Select the **MouseCursor** game object in the **Hierarchy** window, locate the **OuterGlow.mat** material under **MicrosoftGesturesToolkit/Materials** in the **Project** window and drag-and-drop it to the **Highlight Material** box in the **Inspector** window:
+    Select the **Cursor** game object in the **Hierarchy** window, locate the **OuterGlow.mat** material under **MicrosoftGesturesToolkit/Materials** in the **Project** window and drag-and-drop it to the **Highlight Material** box in the **Inspector** window:
 
     ![Add the highlight material](Images\UnityAddHighlightMaterial.png)
 
@@ -89,7 +97,7 @@ We would like to use our cursor to move objects in the scene. In order to recogn
 
 On this step we will enable our cursor to "grab" an object and move it in space.
 
-1. In the **MouseCursor.cs** script, prepare the following private member:
+1. In the **Cursor.cs** script, prepare the following private member:
 
     [!code-csharp[Object Grabbing - private members](CodeSnippets\ObjectGrabbingPrivateMembers.cs)]
 

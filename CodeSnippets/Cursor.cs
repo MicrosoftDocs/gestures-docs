@@ -2,7 +2,7 @@ using UnityEngine;
 using Microsoft.Gestures.UnitySdk;
 using Microsoft.Gestures.Toolkit;
 
-public class MouseCursor : MonoBehaviour
+public class Cursor : MonoBehaviour
 {
     [Tooltip("The cursor image that will be displayed on the screen.")]
     public Texture2D CursorImage;
