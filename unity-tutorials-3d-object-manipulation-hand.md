@@ -9,24 +9,22 @@ This tutorial will take approximately 30 minutes to complete.
 The final Unity project obtained in this tutorial can be found in our open-source [samples GitHub repository](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the application:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
-1. Browse to the [**Unity\GesturesTutorial**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/GesturesTutorial) directory within the cloned repository.
-1. When the project loads, go to the **Project** window and select the **Assets** directory.
-1. Double-click the **3D Object Manipulation (Hand)** scene in the **Assets** directory.
+1. Browse to the [**Unity\Tutorials\3D Object Manipulation (Hand)**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/GesturesTutorial) directory within the cloned repository.
 1. Press the play button (or **Ctrl+P**) to run the scene.
 
 ## Prerequisites
 
-This tutorial assumes you have basic familiarity with the C# programming language and some experience with the Unity IDE - we expect you to know how to create projects, scenes, game objects and scripts.
+This tutorial assumes you have basic familiarity with the C# programming language and some experience with the Unity environment - we expect you to know how to create projects, scenes, game objects and scripts.
 
 It is recommended that you complete the [**Introduction**](unity-tutorials-introduction.md) tutorial before starting this tutorial, as we assume you are familiar with the [**Project Prague toolkit for Unity**](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) prefabs discussed there.
 
 ## Step 1 - Hand Cursor
 
-1. Open the project you've created in the [**3D Object Manipulation (Mouse)**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. If you've skipped that tutorial, follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product; We recommend you play the scene (**Ctrl+P**) and make sure you are able to "grab" an object under the cursor (using the left mouse button) and to move it around in all 3 dimensions (dragging in 2D by moving the mouse and using the scroll-wheel to adjust the depth).
+1. Open the project you've created in the [**3D Object Manipulation (Mouse)**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. If you've skipped that tutorial, follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product; We recommend you play the scene (**Ctrl+P**) and make sure you are able to "grab" an object with the cursor (using the left mouse button) and to move it in all 3 dimensions (using the scroll-wheel to adjust the depth).
 
 1. Add the **GesturesManager** and **UIManager** prefabs to the scene. Refer to [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service) for guidance.
 
-1. In order to use your hand to control the cursor, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GesturesManager** game object in our scene acts as a client of the **Gestures Service**. **GesturesManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
+1. In order to control the cursor with your hand, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GesturesManager** game object in our scene acts as a client of the **Gestures Service**. **GesturesManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
 
     We would like to receive hand-skeleton information whenever the **Cursor** game object is active. Please add the [**OnEnable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnEnable.html) and [**OnDisable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnDisable.html) methods to the **Cursor** script:
 
@@ -37,7 +35,7 @@ It is recommended that you complete the [**Introduction**](unity-tutorials-intro
     The hand-skeleton is provided in units of millimeters, in the following left-handed coordinate system:
 
     ![Hand skeleton coordinate system](Images\UnityHandSkeletonCoordinates.png)
-    *We used a RealSense™ camera here to demonstrate the coordinate system axes. Note that the same coordinate system applies to the Kinect for Windows v2.*
+    *We used a RealSense™ camera here to demonstrate the coordinate system axes. Note that the same coordinate system applies to all [depth-cameras](index.md#supported-depth-cameras) supported by Project Prague.*
 
     Ideally, we would like the **Main Camera** in our scene to see your hand from the perspective of your eyes. If we can achieve this - the 3D cursor's projection to the screen will follow your hand in a way that feels natural.
 
@@ -45,9 +43,9 @@ It is recommended that you complete the [**Introduction**](unity-tutorials-intro
 
     [!code-csharp[ScaleAndOffset](CodeSnippets\ScaleAndOffset.cs)]
 
-    Note that this mapping also performs a scale-down by a factor of 10, which is in fact a unit conversion from millimeters to centimeters. We do this because we want the dynamic range of the cursor position coordinates to be appropriate for the size of the objects in the scene, which is on the order of magnitude of ~1 in Unity units.
+    Note that this mapping also performs a scale-down by a factor of 10, which in fact is a unit conversion from millimeters to centimeters. We do this because we want the dynamic range of the cursor position to be appropriate for the size of objects in the scene, which is on the order of magnitude of ~1 Unity units.
 
-    With this preparation, we are ready to compute the actual conversion of the palm position to a cursor position. And add the **GetPalmCameraPosition()** method to the **Cursor** script:
+    With this preparation, we are ready to compute the actual conversion of the palm position to a cursor position. Add the **GetPalmCameraPosition()** method to the **Cursor** script:
 
     [!code-csharp[GetCursorScreenPosition](CodeSnippets\GetPalmCameraPosition.cs)]
 
@@ -55,13 +53,13 @@ It is recommended that you complete the [**Introduction**](unity-tutorials-intro
 
     [!code-csharp[GetPalmCameraPosition](CodeSnippets\GetCursorScreenPosition.cs)]
 
+    Note the use of the **LatestDefaultSkeleton** in **GetPalmCameraPosition()**. This property provides a smoothed version (over the last several frames) of the hand skeleton currently seen by the depth-camera.
+
     Note that the **PalmPosition** property of the **skeleton** corresponds to the location of the center of the hand:
 
     ![Palm position landmark](Images\UnityPalmPosition.png)
 
-    Note the use of the **StableSkeletons** property in **GetPalmCameraPosition()**. This property provides the smoothed (over time) hand skeletons currently seen by the depth-camera. <!-- TODO@Yoni - correct this as soon as Moshe refactors the API. -->
-
-1. Make sure you have the **Gestures Service** running. Play the scene and raise your **right** hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
+1. Make sure you have the **Gestures Service** running. Play the scene and bring your **right** hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
 
 ## Step 2 - Move Object in 2D Using the Hand
 
@@ -116,10 +114,10 @@ We will now introduce a gesture and use it to enter and leave the cursor "grab m
    - **Idle** detection will cause the cursor to leave grab mode, i.e., it should trigger **StopGrab()**.
 
     > [!NOTE]
-    > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state of every gesture. Whenever the user performs a gesture to completion or begins a gesture and abandons it without completing, the gesture state-machine falls back to the **idle** state.
+    > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state of every gesture. Whenever a user performs a gesture to completion or abandons a gesture in the middle of its execution, the state-machine falls back to the **idle** state.
 
     Examine the **GestureTrigger** game object in the **Inspector** window and press the **Add Gesture Segment Event Button** *twice*. This should generate two new UI (user interface) sections, **Segment #1** and **Segment #2**.
-
+    <br>
     - In the **Segment #1** drop down list, select the **GrabPose** (1), then click the **+** sign in the **On Trigger ()** area (2). Drag the **Cursor** object to the **None (Object)** box (3) and select the **Cursor > StartGrab()** method from the **No Function** drop-down list (4):
 
     ![GrabPose gesture trigger](Images\UnityGrabGestureTrigger.png)
@@ -130,9 +128,9 @@ We will now introduce a gesture and use it to enter and leave the cursor "grab m
 
 1. Run the scene. To test the feature we've added on this step:
 
-    - Hover over an object.
-    - Grab it by clinching your hand into a fist.
-    - Move the object to a new location.
+    - Hover over an object with the cursor,
+    - Grab it by clinching your hand into a fist,
+    - Move the object to a new location,
     - Release the object by spreading your fingers apart.
 
 ## Step 3 - Move Object in 3D Space
@@ -153,9 +151,7 @@ On this step, we will enable the grabbed object to move in the depth dimension a
 
     As you can see, we simply use the difference in the cursor's depth (z) position relative to the previous frame, divided by 10. The 10 factor is an arbitrary value that scales the **delta** to a range appropriate for the size of objects in our scene.
 
-1. Try running the scene. You should be able to move the grabbed object in all three dimensions now.
-
-    Grab an object and move your hand towards or away from the depth-camera. The object in the scene should follow your hand, and move respectively to the **Main Camera** in the scene.
+1. Try running the scene. Grab an object and move your hand towards or away from the depth-camera. The object in the scene should follow your hand, moving accordingly in the virtual scene.
 
     > [!TIP]
-    > Don't hold your hand too close to the depth-camera. The camera has a constant angular field-of-view. As you bring your hand closer, the area where your it is detectible becomes smaller, leaving you with less range of motion to manipulate objects in the scene.
+    > Don't hold your hand too close to the depth-camera. The camera has a [frustum](https://en.wikipedia.org/wiki/Viewing_frustum) shaped field-of-view. As you bring your hand closer, the area where it is detectible becomes smaller, leaving you with less range of motion to manipulate objects in the scene.

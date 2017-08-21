@@ -12,8 +12,6 @@ The final Unity project obtained in this tutorial can be found in our open-sourc
 
 1. Launch Unity, in the **Projects** tab select **Open**.
 1. Browse to the [**Unity\Tutorials\Introduction**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/Tutorials/Introduction) directory within the cloned repository.
-1. When the project loads, go to the **Project** window and select the **Assets** directory.
-1. Double-click the **Introduction** scene in the **Assets** directory.
 1. Press the play button (or **Ctrl+P**) to run the scene.
 
 ## Prerequisites
