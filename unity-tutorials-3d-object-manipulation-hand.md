@@ -116,8 +116,7 @@ We will now introduce a gesture and use it to enter and leave the cursor "grab m
     > [!NOTE]
     > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state of every gesture. Whenever a user performs a gesture to completion or abandons a gesture in the middle of its execution, the state-machine falls back to the **idle** state.
 
-    Examine the **GestureTrigger** game object in the **Inspector** window and press the **Add Gesture Segment Event Button** *twice*. This should generate two new UI (user interface) sections, **Segment #1** and **Segment #2**.
-    <br>
+    Examine the **GestureTrigger** game object in the **Inspector** window and press the **Add Gesture Segment Event Button** *twice*. This should generate two new UI (user interface) sections, **Segment #1** and **Segment #2**.    
     - In the **Segment #1** drop down list, select the **GrabPose** (1), then click the **+** sign in the **On Trigger ()** area (2). Drag the **Cursor** object to the **None (Object)** box (3) and select the **Cursor > StartGrab()** method from the **No Function** drop-down list (4):
 
     ![GrabPose gesture trigger](Images\UnityGrabGestureTrigger.png)
