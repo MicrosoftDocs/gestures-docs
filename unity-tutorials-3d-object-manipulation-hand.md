@@ -153,6 +153,9 @@ On this step, we will enable the grabbed object to move in the depth dimension a
 
     As you can see, we simply use the difference in the cursor's depth (z) position relative to the previous frame, divided by 10. The 10 factor is an arbitrary value that scales the **delta** to a range appropriate for the size of objects in our scene.
 
-1. Try running the scene now. You should be able to move the grabbed object in all three dimensions:
-    - Using the scroll-wheel in case of the mouse input and
-    - Moving your hand towards\away from the camera in case of the hand input.
+1. Try running the scene. You should be able to move the grabbed object in all three dimensions now.
+
+    Grab an object and move your hand towards or away from the depth-camera. The object in the scene should follow your hand, and move respectively to the **Main Camera** in the scene.
+
+    > [!TIP]
+    > Don't hold your hand too close to the depth-camera. The camera has a constant angular field-of-view. As you bring your hand closer, the area where your it is detectible becomes smaller, leaving you with less range of motion to manipulate objects in the scene.
