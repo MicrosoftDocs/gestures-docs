@@ -110,6 +110,7 @@ We will now introduce a gesture and use it to enter and leave the cursor "grab m
     To learn more about the concept of a gesture as a state machine, please visit our [overview page](index.md#gesture).
 
 1. We would like to use the **GrabReleaseGesture** in the following manner
+
    - **GrabPose** detection will cause the cursor to enter grab mode, i.e., it should trigger **StartGrab()**.
    - **Idle** detection will cause the cursor to leave grab mode, i.e., it should trigger **StopGrab()**.
 
