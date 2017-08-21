@@ -176,8 +176,8 @@ On this step, we will add a gesture to clear all previously generated 3D-primiti
 
 1. We will now wire the **Finger Snap** gesture to invoke the **DestroyAllPrimitives()** method, like we did in [step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene):
 
-    - Add another **GestureTrigger** game object to the scene. 
-    - In the **Inspector** view of the **GestureTrigger** game object, select the **Finger Snap** gesture from the **Stock Gesture** drop-down list.
+    - Add another **GestureTrigger** game object to the scene.
+    - In the **Inspector** view of the new **GestureTrigger** game object, select the **Finger Snap** gesture from the **Stock Gesture** drop-down list.
     - In the **On Trigger ()** UI, create a new element by pressing **+** sign. Drag and drop the **PrimitiveFactory** game object to the **None (Object)** box to associate it with the new **On Trigger ()** element.
     - Finally, click on the **No Function** drop-down list and select the **DestroyAllPrimitives()** of the **PrimitiveFactory** object.
 
@@ -189,7 +189,7 @@ On this step, we will add a gesture to clear all previously generated 3D-primiti
 
 1. Now run the scene. Generate a few primitives using the **Tap** gesture and destroy them all using the **Finger Snap** gesture:
 
-    ![Snap gesture state machine](Images\UnitySnapGesture.png)    
+    ![Snap gesture state machine](Images\UnitySnapGesture.png)
 
 ## Troubleshooting
 

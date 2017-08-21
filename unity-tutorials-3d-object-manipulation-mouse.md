@@ -24,9 +24,9 @@ It is recommended, but not mandatory, that you complete the [**Introduction**](u
 
 ## Step 1 - Create the Cursor Game Object
 
-1. If you've completed the [introduction tutorial](unity-tutorials-introduction.md#system-requirements), open the project you've created there. Otherwise, create a new Unity project and import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) for instructions).
+1. If you've completed the [introduction tutorial](unity-tutorials-introduction.md#system-requirements), open the project you've created on that tutorial and press **Ctrl+N** to create a new scene. Otherwise, create a new Unity project and import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) for instructions).
 
-1. Press **Ctrl+N** to create a new scene and **Ctrl+S** to save the scene, naming it **3D Object Manipulation (Mouse)**.
+1. Press **Ctrl+S** to save the scene, naming it **3D Object Manipulation (Mouse)**.
 
 1. Create an empty game object and name it **Cursor**. Create a corresponding C# script and name it **Cursor**. To associate the game object with the script, go to the game object's **Inspector** view and drag the script to the blank area below the **Add Component** button (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generates-a-new-3d-primitive-in-the-scene) to read about associating a script with a game object).
 

@@ -1,6 +1,6 @@
     private Vector3 GetPalmCameraPosition()
     {
-        // Step 1.3: Convert palm position from depth-camera space to Main-Camera space
+        // Step 1.4: Convert palm position from depth-camera space to Main-Camera space
         var skeleton = GesturesManager.Instance.StableSkeletons[Hand.RightHand];
         if (skeleton == null)
         {

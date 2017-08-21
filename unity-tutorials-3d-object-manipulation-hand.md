@@ -22,11 +22,13 @@ It is recommended that you complete the [**Introduction**](unity-tutorials-intro
 
 ## Step 1 - Hand Cursor
 
-1. Open the project you've created in the [**3D Object Manipulation (Mouse)**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. If you've skipped that tutorial, follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product; We recommend you play the scene (**Ctrl+P**) and make sure you can use the left mouse button and the mouse scroll wheel to move objects in all 3 dimensions.
+1. Open the project you've created in the [**3D Object Manipulation (Mouse)**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. If you've skipped that tutorial, follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product; We recommend you play the scene (**Ctrl+P**) and make sure you are able to "grab" an object under the cursor (using the left mouse button) and to move it around in all 3 dimensions (dragging in 2D by moving the mouse and using the scroll-wheel to adjust the depth).
+
+1. Add the **GesturesManager** and **UIManager** prefabs to the scene. Refer to [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service) for guidance.
 
 1. In order to use your hand to control the cursor, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GesturesManager** game object in our scene acts as a client of the **Gestures Service**. **GesturesManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
 
-    We would like to receive hand-skeleton information whenever the **Cursor** game object is active. Please add the [**OnEnable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnEnable.html) and [**OnDisable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnDisable.html) methods to the **HandCurosr** script:
+    We would like to receive hand-skeleton information whenever the **Cursor** game object is active. Please add the [**OnEnable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnEnable.html) and [**OnDisable()**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnDisable.html) methods to the **Cursor** script:
 
     [!code-csharp[OnEnableOnDisable](CodeSnippets\OnEnableOnDisable.cs)]
 
@@ -47,11 +49,11 @@ It is recommended that you complete the [**Introduction**](unity-tutorials-intro
 
     With this preparation, we are ready to compute the actual conversion of the palm position to a cursor position. And add the **GetPalmCameraPosition()** method to the **Cursor** script:
 
-    [!code-csharp[GetCursorScreenPosition](CodeSnippets\GetCursorScreenPosition.cs)]
+    [!code-csharp[GetCursorScreenPosition](CodeSnippets\GetPalmCameraPosition.cs)]
 
     And replace the **GetCursorScreenPosition()** with the following contents:
 
-    [!code-csharp[GetPalmCameraPosition](CodeSnippets\GetPalmCameraPosition.cs)]
+    [!code-csharp[GetPalmCameraPosition](CodeSnippets\GetCursorScreenPosition.cs)]
 
     Note that the **PalmPosition** property of the **skeleton** corresponds to the location of the center of the hand:
 
@@ -149,7 +151,7 @@ On this step, we will enable the grabbed object to move in the depth dimension a
 
     [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GetPalmDepthDelta.cs)]
 
-    As you can see, we simply use the difference in the cursor's depth (z) position relative to the previous frame, divided by 10. The 10 factor is an arbitrary value that scales the **delta** to a value appropriate for the size of objects in our scene.
+    As you can see, we simply use the difference in the cursor's depth (z) position relative to the previous frame, divided by 10. The 10 factor is an arbitrary value that scales the **delta** to a range appropriate for the size of objects in our scene.
 
 1. Try running the scene now. You should be able to move the grabbed object in all three dimensions:
     - Using the scroll-wheel in case of the mouse input and

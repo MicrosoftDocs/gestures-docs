@@ -1,7 +1,9 @@
     private float GetCursorDepthDelta()
     {
-        // Step 3.1: return palm depth delta
+        // Step 3.1: Compute palm depth delta
         var currentDepth = GetPalmCameraPosition().z;
-        delta = (currentDepth - _lastPalmDepth) / 10;
+        var delta = currentDepth - _lastPalmDepth;
         _lastPalmDepth = currentDepth;
+
+        return delta / 10;
     }
