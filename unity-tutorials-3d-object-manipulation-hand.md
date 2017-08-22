@@ -111,8 +111,8 @@ We will now introduce a gesture and use it to enter and leave the cursor "grab m
 
 1. We would like to use the **GrabReleaseGesture** in the following manner
 
-   - **GrabPose** detection will cause the cursor to enter grab mode, i.e., it should trigger **StartGrab()**.
-   - **Idle** detection will cause the cursor to leave grab mode, i.e., it should trigger **StopGrab()**.
+   * **GrabPose** detection will cause the cursor to enter grab mode, i.e., it should trigger **StartGrab()**.
+   * **Idle** detection will cause the cursor to leave grab mode, i.e., it should trigger **StopGrab()**.
 
     > [!NOTE]
     > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state of every gesture. Whenever a user performs a gesture to completion or abandons a gesture in the middle of its execution, the state-machine falls back to the **idle** state.
