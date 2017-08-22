@@ -1,6 +1,6 @@
     private void OnGUI()
     {
-        // Step 1.5: Draw cursor texture at the cursor's position on the screen.
+        // Draw cursor texture at the cursor's position on the screen.
         var cursorPosition = (Vector2)GetCursorScreenPosition();
 
         // Invert y direction

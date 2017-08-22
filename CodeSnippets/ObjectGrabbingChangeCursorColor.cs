@@ -1,6 +1,6 @@
     private void OnGUI()
     {
-        // Step 1.4: Draw cursor texture at the cursor's position on the screen.
+        // Draw cursor texture at the cursor's position on the screen.
         var cursorPosition = (Vector2)GetCursorScreenPosition();
 
         // Invert y direction
@@ -11,7 +11,7 @@
 
         // Change the tint color to match our cursor mode
         var originalColor = GUI.color;
-        // Step 3.2: Add a condition when setting GUI.color
+        // Add a condition when setting GUI.color
         GUI.color = _isGrabbing ? GrabCursorTint : CursorTint;
         GUI.DrawTexture(bounds, CursorImage);
 

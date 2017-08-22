@@ -1,2 +1,2 @@
-    // step 3.1: save last value of hand depth
+    // Save last value of hand depth
     _lastPalmDepth = GetPalmCameraPosition().z;
