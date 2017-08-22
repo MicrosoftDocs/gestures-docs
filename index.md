@@ -18,6 +18,7 @@ Brand | Gesture Detection Range
 ------|------
 [Intel® RealSense™ SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html) | 20-60 [cm]
 [Kinect for Windows v2](https://developer.microsoft.com/en-us/windows/kinect/hardware) | 60-110 [cm]
+Intel® RealSense™ F200 camera | 20-60 [cm]
 
 For optimal performance, we recommend to **use the Intel® RealSense™ SR300 camera**.
 

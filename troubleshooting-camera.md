@@ -6,5 +6,5 @@ Gesture detection may work intermittently or stop completely whenever our [Gestu
 
 To overcome this problem, refer to the following pages:
 
-- [Intel® RealSense™ SR300 troubleshooting](troubleshooting-RealSense-camera.md)
+- [Intel® RealSense™ troubleshooting](troubleshooting-RealSense-camera.md)
 - Kinect for Windows v2 troubleshooting
