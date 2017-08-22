@@ -53,7 +53,7 @@ It is recommended that you complete the [**Introduction**](unity-tutorials-intro
 
     [!code-csharp[GetPalmCameraPosition](CodeSnippets\GetCursorScreenPosition.cs)]
 
-    Note the use of the **LatestDefaultSkeleton** in **GetPalmCameraPosition()**. This property provides a smoothed version (over the last several frames) of the hand skeleton currently seen by the depth-camera.
+    Note the use of the **SmoothDefaultSkeleton** property in **GetPalmCameraPosition()**. This property provides a smoothed version of the hand skeleton currently seen by the depth-camera. The smoothing is achieved by averaging the skeletons received in the last several frames. You can control the number of frames used for averaging by examining **GesturesManager** in the **Inspector** window and modifying the **Smooth Moving Average Window Size** field.
 
     Note that the **PalmPosition** property of the **skeleton** corresponds to the location of the center of the hand:
 
