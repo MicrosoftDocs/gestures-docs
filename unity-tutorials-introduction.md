@@ -199,6 +199,6 @@ If you've reached the end of [Step 4](#step-4---using-a-gesture-to-generate-new-
 1. **UnityApp** appears in the list of **Clients** and **Unity_TapGesture** appears in the sub-list of gestures associated with the **UnityApp** client. If this is not the case, please verify that
     - You have the green **Connected** icon in the bottom right corner of your screen in Unity (see [step 2](#step-2---connecting-to-the-gestures-service)).
     - You have selected the correct gesture, **Tap**,  in the **GestureTrigger** user interface (see [step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene)).
-1. When Unity is in the foreground and you execute the **Tap** gesture, the **TimeLine** associated with **Unity_TapGesture** should advance. If this is not the case, you are probably not executing the gesture correctly - make sure you are using your **right** hand and performing the **Tap** motion with your **thumb** and **index** fingers only.
+1. When the Unity window is in the foreground and you execute the **Tap** gesture, the **TimeLine** associated with **Unity_TapGesture** should advance. If this is not the case, you are probably not executing the gesture correctly - make sure you are using your **right** hand and performing the **Tap** motion with your **thumb** and **index** fingers only.
 
 If you still cannot use the **Tap** gesture to generate new 3D-primitives in the scene, please leave a comment on this page, and we will do our best to provide help.
