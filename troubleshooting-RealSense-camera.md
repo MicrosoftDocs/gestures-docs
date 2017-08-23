@@ -1,7 +1,7 @@
 # RealSense™ Troubleshooting
 
 > [!NOTE]
-> This troubleshooting page applies to both the **SR300** and **F200** models of **Intel® RealSense™**. Any reference to **SR300** in the images below is interchangeable with **F200**.
+> This troubleshooting page applies to both the **SR300** and **F200** models of **Intel® RealSense™**.
 
 The Intel® RealSense™ camera must be plugged in to an **SS USB 3.0** port:
 
@@ -15,6 +15,7 @@ Note that sometimes, the SS USB 3.0 port is colored blue and the power USB 3.0 p
 You should see **3 Intel® RealSense™ Camera devices** appearing in the **Imaging devices** category of your Device Manager:
 
 ![Device Manager](Images\RealSenseDeviceManager.png)
+<!-- *SR300 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F200* -->
 
 If your camera is connected and you don't see these 3 devices, please follow the instructions below to re-install the Intel® RealSense™ camera driver.
 
@@ -25,6 +26,10 @@ To fix an erroneous Intel® RealSense™ camera driver installation, make sure y
 1. **Uninstall all "Intel® RealSense™ Camera" devices** appearing in the **Imaging device** category of your Device Manager. Check the "Delete the driver software for this device." checkbox before you click the "Uninstall" button:
 
     ![Uninstall RealSense devices](Images\RealSenseUninstallDevice.png)
+    *SR300*
+
+    ![Uninstall RealSense devices](Images\RealSenseUninstallDeviceF200.png)
+    *F200*
 
     If you are suggested to restart your machine, agree and proceed with the instructions.
 
