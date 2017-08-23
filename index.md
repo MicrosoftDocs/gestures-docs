@@ -14,10 +14,11 @@ Using Project Prague, you will enable your users to use hand gestures to intuiti
 
 To run Project Prague on your machine, you must acquire a depth camera. We currently support the following brands:
 
-Brand | Gesture Detection Range
-------|------
-[Intel® RealSense™ SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html) | 20-60 [cm]
-[Kinect for Windows v2](https://developer.microsoft.com/en-us/windows/kinect/hardware) | 60-110 [cm]
+Brand | Gesture Detection Range | Experience
+------|------|--------|
+[Intel® RealSense™ SR300 camera](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html) | 20-60 [cm] | **Best**
+Intel® RealSense™ F200 camera | 20-60 [cm] | Good
+[Kinect for Windows v2](https://developer.microsoft.com/en-us/windows/kinect/hardware) | 60-110 [cm] | Good
 
 For optimal performance, we recommend to **use the Intel® RealSense™ SR300 camera**.
 
@@ -25,11 +26,11 @@ For optimal performance, we recommend to **use the Intel® RealSense™ SR300 ca
 
 Please make sure your system meets the following requirements before you proceed to set up Project Prague:
 
-Category     | Minimal | Recommended
+Category     | Recommended | Minimal
 ------------ | ------------ | -------------
-CPU | Intel® Core™ i5 series, 4 logical cores | Intel® Core™ i7 series, 8 logical cores
-Free RAM | 1GB | 2GB or more
-Operating System | Windows 10 | Windows 10 with Creator Update installed
+CPU | Intel® Core™ i7 series, 8 logical cores | Intel® Core™ i5 series, 4 logical cores
+Free RAM | 2GB or more | 1GB
+Operating System | Windows 10 with Creator Update installed | Windows 10
 
 ### Setting up Project Prague on your machine
 
