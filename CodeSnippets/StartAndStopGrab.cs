@@ -7,6 +7,7 @@
         }
 
         _isGrabbing = true;
+        _lastObjectDistance = Vector3.Distance(Camera.main.transform.position, _hoveredGameObject.transform.position);
     }
 
     public void StopGrab()

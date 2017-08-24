@@ -1,1 +1,1 @@
-private float _lastPalmDepth;
+    private float _lastPalmDistance;

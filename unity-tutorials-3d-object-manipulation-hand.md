@@ -142,15 +142,15 @@ On this step, we will enable the grabbed object to move in the depth dimension a
 
     [!code-csharp[LastPalmDepth member](CodeSnippets\LastPalmDepth.cs)]
 
-    This member needs to be initialized every time an object is grabbed. Add the following lines at the end of the **StartGrab()** method:
+    This member needs to be initialized every time an object is grabbed. To do that, add the following line at the end of the **StartGrab()** method:
 
     [!code-csharp[LastPalmDepth member](CodeSnippets\InitializeLastPalmDepth.cs)]
 
-    Replace the contents of the **GetCursorDepthDelta()** method in **Cursor.cs** with the following:
+1. Replace the contents of the **GetCursorDistanceCoefficient()** method in **Cursor.cs** with the following:
 
     [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GetPalmDepthDelta.cs)]
 
-    As you can see, we simply use the difference in the cursor's depth (z) position relative to the previous frame, divided by 10. The 10 factor is an arbitrary value that scales the **delta** to a range appropriate for the size of objects in our scene.
+    As you can see, we simply use the ratio of the cursor's distance relative to the previous frame.
 
 1. Try running the scene. Grab an object and move your hand towards or away from the depth-camera. The object in the scene should follow your hand, moving accordingly in the virtual scene.
 

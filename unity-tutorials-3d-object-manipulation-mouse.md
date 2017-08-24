@@ -95,7 +95,7 @@ We would like to use our cursor to move objects in the scene. In order to recogn
 
 On this step we will enable our cursor to "grab" an object and move it in space.
 
-1. In the **Cursor.cs** script, prepare the following private member:
+1. In the **Cursor.cs** script, prepare the following private members:
 
     [!code-csharp[Object Grabbing - private members](CodeSnippets\ObjectGrabbingPrivateMembers.cs)]
 
@@ -126,14 +126,8 @@ On this step we will enable our cursor to "grab" an object and move it in space.
 
     ![Play scene with grab mode](Images\UnityGrabMode.png)
 
-1. We will use the scroll wheel to control the movement of the grabbed object in the depth dimension.
-
-    Replace the contents of **GetCursorDistanceCoefficient()** with the following:
-
-    [!code-csharp[GetCursorDistanceCoefficient() method](CodeSnippets\GetCursorDistanceCoefficient.cs)]
-
 1. We will now update the code that moves the grabbed object to take the cursor's "distance coefficient" into account. In the **Update()** method, replace the contents of the **IsGrabbing** if-block with:
 
     [!code-csharp[GetCursorDistanceCoefficient() method](CodeSnippets\GrabbingBlockOfUpdate.cs)]
 
-1. Try running the scene now. You should be able to move the grabbed object in all three dimensions, using the scroll wheel to move in the depth dimension.
+1. Try running the scene now. You should be able to move the grabbed object in all three dimensions, using the scroll wheel to move it in the radial direction.

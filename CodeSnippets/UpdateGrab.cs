@@ -35,11 +35,8 @@
         // Handle motion
         if (_isGrabbing)
         {    
-            // move hovered object to follow the cursor position, while staying in the same plane
-            var plane = new Plane(Camera.main.transform.forward, _hoveredGameObject.transform.position);
             var ray = Camera.main.ScreenPointToRay(GetCursorScreenPosition());
-            float distanceFromCamera;
-            plane.Raycast(ray, out distanceFromCamera);
-            _hoveredGameObject.transform.position = ray.GetPoint(distanceFromCamera);
+            _lastObjectDistance *= GetCursorDistanceCoefficient();
+            _hoveredGameObject.transform.position = ray.GetPoint(_lastObjectDistance);
         }
     }

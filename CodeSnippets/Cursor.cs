@@ -27,8 +27,8 @@ public class Cursor : MonoBehaviour
 
     private float GetCursorDistanceCoefficient()
     {
-        // Step 3: Compute the change in cursor distance with respect to previous frame
-        return 0;
+        // Step 3: Compute the ratio in cursor distance with respect to previous frame
+        return 1;
     }
 
     private void StartGrab()
