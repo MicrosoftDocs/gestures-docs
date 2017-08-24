@@ -128,12 +128,12 @@ On this step we will enable our cursor to "grab" an object and move it in space.
 
 1. We will use the scroll wheel to control the movement of the grabbed object in the depth dimension.
 
-    Replace the contents of **GetCursorDepthDelta()** with the following:
+    Replace the contents of **GetCursorDistanceCoefficient()** with the following:
 
-    [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GetCursorDepthDelta.cs)]
+    [!code-csharp[GetCursorDistanceCoefficient() method](CodeSnippets\GetCursorDistanceCoefficient.cs)]
 
-1. We will now update the code that moves the grabbed object to take the cursor's "depth delta" into account. In the **Update()** method, replace the contents of the **IsGrabbing** if-block with:
+1. We will now update the code that moves the grabbed object to take the cursor's "distance coefficient" into account. In the **Update()** method, replace the contents of the **IsGrabbing** if-block with:
 
-    [!code-csharp[GetCursorDepthDelta() method](CodeSnippets\GrabbingBlockOfUpdate.cs)]
+    [!code-csharp[GetCursorDistanceCoefficient() method](CodeSnippets\GrabbingBlockOfUpdate.cs)]
 
 1. Try running the scene now. You should be able to move the grabbed object in all three dimensions, using the scroll wheel to move in the depth dimension.

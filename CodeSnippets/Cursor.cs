@@ -25,9 +25,9 @@ public class Cursor : MonoBehaviour
         return null;
     }
 
-    private float GetCursorDepthDelta()
+    private float GetCursorDistanceCoefficient()
     {
-        // Step 3: Compute the change in cursor depth with respect to previous frame
+        // Step 3: Compute the change in cursor distance with respect to previous frame
         return 0;
     }
 
@@ -47,7 +47,7 @@ public class Cursor : MonoBehaviour
 
         // Step 3: Handle Grabbing
 
-        // Step 3: Scale depth according to cursor's depth delta
+        // Step 3: Scale distance according to cursor's distance coefficient
     }
 
     private void OnGUI()

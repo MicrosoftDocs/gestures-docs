@@ -2,6 +2,6 @@
             var ray = Camera.main.ScreenPointToRay(GetCursorScreenPosition());
             float distanceFromCamera;
             plane.Raycast(ray, out distanceFromCamera);
-            // scale depth according to cursor's depth delta
-            distanceFromCamera *= 1 + GetCursorDepthDelta();
+            // Scale distance according to cursor's distance coefficient
+            distanceFromCamera *= GetCursorDistanceCoefficient();
             _hoveredGameObject.transform.position = ray.GetPoint(distanceFromCamera);
