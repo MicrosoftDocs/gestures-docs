@@ -189,6 +189,26 @@ On this step, we will add a gesture to clear all previously generated 3D-primiti
 
     ![Snap gesture state machine](Images\UnitySnapGesture.png)
 
+## Step 6 - Using a Gesture to Control the Camera
+
+On this step, using another Project Prague toolkit prefab, we will perform camera tumble and dolly with gestures.
+
+1. In the **Project** window, locate the **CameraGestures** prefab under the **MicrosoftGesturesToolkit\Prefabs** directory and drag-and-drop to add a corresponding game object to your scene:
+
+    <!-- Image that I'll take after Moshe renames the prefab -->
+
+1. Play the scene. Now, in addition to creating and destroying objects, you can control the camera using the following **right hand** gesture:
+
+    ![GrabReleaseGesture](Images\UnityGrabReleaseGestureStateMachine.png)
+
+    Clinching your hand into a fist (**InitSpreadPose** → **GrabPose** transition) will cause the camera to "snap" to the hand - allowing you to tumble and dolly the camera by moving your fist through space.
+
+    Spreading your fingers apart to release the clinch (**GrabPose** → **FinalSpreadPose** transition) will cause the camera to stop tracking your hand.
+
+1. If you are curious, examine the **CameraGestures** game object in the **Inspector** window. Note that it has a **Gesture Trigger** component. We used this component to wire the different states in the above **GrabReleaseGesture** to methods of the **CameraManipulation** script (found in **MicrosoftGesturesToolkit\Scripts** directory).
+
+    To learn more about specifying custom gestures with XAML and wiring their states to methods in a game object, refer to [step 2](unity-tutorials-3d-object-manipulation-hand.md#step-2---move-object-in-2d-using-the-hand) of the [3D Object Manipulation (Hand) tutorial](unity-tutorials-3d-object-manipulation-hand.md).
+
 ## Troubleshooting
 
 If you've reached the end of [Step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene) and the **Tap** gesture is not working for you, please play the Unity scene, open the **Microsoft Gestures Service** window and verify the following:
