@@ -70,15 +70,25 @@ We will now establish a connection between our Unity application and the [**Gest
 
     ![Add prefabs to scene](Images\UnityAddPrefabs.png)
 
-1. Now play the scene by pressing the **play** button or using the **Ctrl+P** keyboard shortcut. If the application is able to establish a connection with the Gestures Service, you will see a green icon in the bottom right corner:
+1. Now play the scene by pressing the **play** button or using the **Ctrl+P** keyboard shortcut. Make sure that the icon in the bottom right corner is in the **Detecting** state:
 
     ![Connection to service](Images\UnityConnectionToService.png)
 
-    If, instead of the green icon, what you are seeing is the red icon
+    This indicates that our application was able to establish a connection with the **Gestures Service** and that gesture detection is active.
+    
+    If, instead, the reported state is **Disconnected**:
 
     ![Unity disconnected icon](Images\UnityDisconnectedIcon.png)
 
-    please make sure your **Gestures Service** is running. The connection will be established automatically several seconds after you launch the **Gestures Service**.
+    Please launch your **Gestures Service** (use the **Microsoft.Gestures.Service** desktop shortcut). The state should change to **Detecting** within several seconds of launching.
+
+    If the reported state is **Connected**:
+
+    ![Unity connected icon](Images\UnityConnected.png)
+
+    Please make sure that the **Enable Detection** checkbox in the **Microsoft Gestures Service** window is checked:
+
+    ![Gestures Service - enable detection](Images\UnityGesturesServiceEnableDetection.png)
 
 > [!IMPORTANT]
 > Don't forget to exit the play mode (by pressing the **play** button or **Ctrl+P** again) before you move to the next step. Any changes you make to the scene while it is playing will be discarded once you exit play mode.
