@@ -1,4 +1,4 @@
-    private float GetCursorDistanceCoefficient()
+    private float GetCursorDistanceScalingFactor()
     {
         var currentPalmDistance = GetPalmCameraPosition().magnitude;
         var coefficient = currentPalmDistance / _lastPalmDistance;
