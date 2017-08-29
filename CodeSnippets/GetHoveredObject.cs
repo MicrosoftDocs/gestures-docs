@@ -1,6 +1,6 @@
     private GameObject GetHoveredObject()
     {
-        // Cast a ray from camera towards the cursor.
+        // Cast a ray from the camera towards the cursor.
         var cursorPosition = GetCursorScreenPosition();
         var ray = Camera.main.ScreenPointToRay(cursorPosition);
         RaycastHit hit;

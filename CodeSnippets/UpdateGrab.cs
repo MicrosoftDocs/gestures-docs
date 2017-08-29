@@ -36,7 +36,7 @@
         if (_isGrabbing)
         {    
             var ray = Camera.main.ScreenPointToRay(GetCursorScreenPosition());
-            _lastObjectDistance *= GetCursorDistanceCoefficient();
+            _lastObjectDistance *= GetCursorDistanceScalingFactor();
             _hoveredGameObject.transform.position = ray.GetPoint(_lastObjectDistance);
         }
     }

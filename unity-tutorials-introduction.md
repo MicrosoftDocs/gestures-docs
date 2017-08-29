@@ -172,11 +172,11 @@ On this step, we will create the necessary wiring so that you can use a gesture 
 
 On this step, we will add a gesture to clear all previously generated 3D-primitives from the scene.
 
-1. First, we will add a method named **DestroyAllPrimitives()** to our **PrimitiveFactory** script. Paste the following code in the PrimitiveFactory.cs file (you should still have it open in Visual Studio):
+1. First, add a method named **DestroyAllPrimitives()** to our **PrimitiveFactory** script (PrimitiveFactory.cs should still be open in Visual Studio):
 
     [!code-csharp[DestroyAllPrimitives](CodeSnippets\DestroyAllPrimitives.cs)]
 
-1. Before we wire the new method to a gesture, we will test it using the right mouse button. Paste the following code in place of the **Update()** method in the **PrimitiveFactory** script:
+1. Before we wire the new method to a gesture, we will test it using the right mouse button. Replace the existing **Update()** method in the **PrimitiveFactory** script with the following code:
 
     [!code-csharp[UpdateDestroyPrimitives](CodeSnippets\UpdateDestroyPrimitives.cs)]
 

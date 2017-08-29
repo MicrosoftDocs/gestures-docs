@@ -1,6 +1,5 @@
     private void Update()
     {
-        // Add highlighting material to hovered object
         if (HighlightMaterial)
         {
             // Stop highlighting previous hovered object

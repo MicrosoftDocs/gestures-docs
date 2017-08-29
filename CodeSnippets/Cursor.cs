@@ -25,9 +25,9 @@ public class Cursor : MonoBehaviour
         return null;
     }
 
-    private float GetCursorDistanceCoefficient()
+    private float GetCursorDistanceScalingFactor()
     {
-        // Step 3: Compute the ratio in cursor distance with respect to previous frame
+        // Step 3: Compute the scaling factor of cursor distance: (current-frame-distance / previous-frame-distance)
         return 1;
     }
 
