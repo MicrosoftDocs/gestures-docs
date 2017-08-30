@@ -54,7 +54,7 @@ We recommend that you complete the [**Introduction**](unity-tutorials-introducti
 
 We would like to use our cursor to move objects in the scene. In order to recognize which object is currently under the cursor, we will highlight that object's outline.
 
-1.Start by filling the scene with several primitive objects. For convenience, we recommend you attain the viewpoint of the the **Main Camera** before adding any new primitives to the scene: Select the **Main Camera** in the **Hierarchy** window, go to the **GameObject** menu and select **Align View with Selected**.
+1. Start by filling the scene with several primitive objects. For convenience, we recommend you attain the viewpoint of the the **Main Camera** before adding any new primitives to the scene: Select the **Main Camera** in the **Hierarchy** window, go to the **GameObject** menu and select **Align View to Selected**.
 
     To instantiate new primitives, go to the **GameObject** menu again, select **3D Object** and pick one of the primitives in the sub-menu (**Cube**, **Sphere**, etc.). Repeat this process several times, moving each new primitive to a different location in the scene:
 
