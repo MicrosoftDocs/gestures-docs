@@ -28,6 +28,8 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
     ![Grabbing and moving instructions](Images\Unity3dCursorMouseInstructions.png)
 
+    On [step 3](#step-3---grab-and-move-object-using-gestures) we will learn how to do drag an object (**number 2** in the figure above) using the hand, and on [step 4](#step-4---move-object-away-or-towards-camera) we will learn to move an object away and towards the camera (**number 3** in the figure above) using the hand.
+
 ## Step 2 - Hand Cursor
 
 1. Add the **GesturesManager** and **UIManager** prefabs to the scene (from **MicrosoftGesturesToolkit\Prefabs**). We will use these prefabs to communicate with the [**Gestures Service**](getting-started-gestures-service.md). Refer to [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2---connecting-to-the-gestures-service) for more details.
@@ -69,7 +71,7 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
 1. Make sure you have the **Gestures Service** running. Play the scene and bring your **right** hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
 
-## Step 3 - Move Object in 2D
+## Step 3 - Grab and Move Object Using Gestures
 
 We will now introduce a gesture and use it to trigger the cursor to enter and leave "grab mode". When in grab mode, the grabbed object follows the cursor (which follows your hand), allowing you to move it to a new location.
 
@@ -142,7 +144,7 @@ We will now introduce a gesture and use it to trigger the cursor to enter and le
     - Move the object to a new location,
     - Release the object by spreading your fingers apart.
 
-## Step 4 - Move Object in 3D
+## Step 4 - Move Object Away or Towards Camera
 
 On this step, we will enable the grabbed object to move in the radial direction as well.
 
