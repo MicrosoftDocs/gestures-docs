@@ -1,6 +1,6 @@
-# 3D Object Manipulation (Hand)
+# 3D Object Manipulation
 
-This tutorial will introduce you to using gesture and skeleton input to enrich the user interface of the games and applications you make with Unity. We will create a 3D cursor that is controlled by hand gestures. We will then use this cursor to select objects in the scene and move them in 3D space.
+This tutorial will introduce you to using gesture and skeleton input to enrich the user interface of the games and applications you make with Unity. We will create a 3D cursor that is controlled by hand gestures. We will use this cursor to select objects in the scene and move them in 3D space.
 
 This tutorial will take approximately 30 minutes to complete.
 
@@ -9,7 +9,7 @@ This tutorial will take approximately 30 minutes to complete.
 The final Unity project obtained in this tutorial can be found in our open-source samples repository on [GitHub](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the application:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
-1. Browse to the [**Unity\Tutorials\3D Object Manipulation (Hand)**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/GesturesTutorial) directory within the cloned repository.
+1. Browse to the [**Unity\Tutorials\3D Object Manipulation**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/3D%20Object%20Manipulation) directory within the cloned repository.
 1. Press the play button (or **Ctrl+P**) to run the scene.
 
 ## Prerequisites
@@ -20,9 +20,9 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
 ## Step 1 - Hand Cursor
 
-1. Open the project you've created in the [**3D Object Manipulation (Mouse)**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. If you've skipped that tutorial, follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product; We recommend you play the scene (**Ctrl+P**) and make sure you are able to "grab" an object with the cursor (using the left mouse button) and to move it in all 3 dimensions (using the scroll-wheel to adjust the distance from camera).
+1. Open the project you've created in the [**3D Object Manipulation - Scene Preparation**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. If you've skipped that tutorial, follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product; We recommend you play the scene (**Ctrl+P**) and make sure you are able to "grab" an object with the cursor (using the left mouse button) and to move it in all 3 dimensions (using the scroll-wheel to adjust the distance from camera).
 
-1. Add the **GesturesManager** and **UIManager** prefabs to the scene. Refer to [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2-connecting-to-the-gestures-service) for guidance.
+1. Add the **GesturesManager** and **UIManager** prefabs to the scene (from **MicrosoftGesturesToolkit\Prefabs**). Refer to [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2---connecting-to-the-gestures-service) for guidance.
 
 1. In order to control the cursor with your hand, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GesturesManager** game object in our scene acts as a client of the **Gestures Service**. **GesturesManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
 

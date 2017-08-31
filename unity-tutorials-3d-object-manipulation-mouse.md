@@ -1,8 +1,8 @@
-# 3D Object Manipulation (Mouse)
+# 3D Object Manipulation - Scene Preparation
 
-This tutorial serves as a preparation for the [**3D Object Manipulation (Hand)**](unity-tutorials-3d-object-manipulation.md) tutorial. In this tutorial, we will use existing Unity features to create a mouse-controlled cursor capable of moving objects in the 3D scene. In the **3D Object Manipulation (Hand)** tutorial, we will replace the mouse input device for hand gestures and motions.
+This tutorial serves as a preparation for the [**3D Object Manipulation**](unity-tutorials-3d-object-manipulation-hand.md) tutorial. In this tutorial, we will use existing Unity features to create a mouse-controlled cursor capable of moving objects in the 3D scene. In the [**3D Object Manipulation**](unity-tutorials-3d-object-manipulation-hand.md) tutorial, we will replace the mouse input device for hand gestures and motions.
 
-If you wish to focus on learning how to use gestures with Unity, feel free to skip ahead to the **3D Object Manipulation (Hand)** tutorial.
+If you wish to focus only on learning how to use gestures with Unity, feel free to skip ahead to the [**3D Object Manipulation**](unity-tutorials-3d-object-manipulation-hand.md) tutorial.
 
 This tutorial will take approximately 30 minutes to complete.
 
@@ -11,7 +11,7 @@ This tutorial will take approximately 30 minutes to complete.
 The final Unity project obtained in this tutorial can be found in our open-source samples repository on [GitHub](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the application:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
-1. Browse to the [**Unity\Tutorials\3D Object Manipulation (Mouse)**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/Tutorials/3D-Object-Manipulation-Mouse) directory within the cloned repository.
+1. Browse to the [**Unity\Tutorials\3D Object Manipulation - Scene Preparation**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/3D%20Object%20Manipulation%20-%20Scene%20Preparation) directory within the cloned repository.
 1. Press the play button (or **Ctrl+P**) to run the scene.
 
 ## Prerequisites
@@ -24,7 +24,7 @@ We recommend that you complete the [**Introduction**](unity-tutorials-introducti
 
 1. If you've completed the [introduction tutorial](unity-tutorials-introduction.md#system-requirements), open the project you've created in that tutorial and press **Ctrl+N** to create a new scene. Otherwise, create a new Unity project and import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) for instructions).
 
-1. Press **Ctrl+S** to save the scene, naming it **3D Object Manipulation (Mouse)**.
+1. Press **Ctrl+S** to save the scene, naming it **3D Object Manipulation**.
 
 1. Create an empty game object and name it **Cursor**. Create a corresponding C# script with the same name. To associate the game object with the script, go to the game object's **Inspector** view and drag the script to the blank area below the **Add Component** button (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generates-a-new-3d-primitive-in-the-scene) to read about associating a script with a game object).
 
