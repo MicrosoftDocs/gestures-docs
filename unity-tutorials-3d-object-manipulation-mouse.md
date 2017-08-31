@@ -26,7 +26,7 @@ We recommend that you complete the [**Introduction**](unity-tutorials-introducti
 
 1. Press **Ctrl+S** to save the scene, naming it **3D Object Manipulation**.
 
-1. Create an empty game object and name it **Cursor**. Create a corresponding C# script with the same name. To associate the game object with the script, go to the game object's **Inspector** view and drag the script to the blank area below the **Add Component** button (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-that-generates-a-new-3d-primitive-in-the-scene) to read about associating a script with a game object).
+1. Create an empty game object and name it **Cursor**. Create a corresponding C# script with the same name. To associate the game object with the script, go to the game object's **Inspector** view and drag the script to the blank area below the **Add Component** button (refer to [step 3 in the introduction tutorial](unity-tutorials-introduction.md#step-3---creating-a-script-to-generate-3d-primitives-in-the-scene) to read about associating a script with a game object).
 
 1. Open the **Cursor** script in Visual Studio (double click the script icon in the **Project** window) and replace its contents with the following code:
 

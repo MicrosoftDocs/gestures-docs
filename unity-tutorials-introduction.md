@@ -217,7 +217,7 @@ On this step we will use a Project Prague toolkit prefab to control the position
 
 1. If you are curious, examine the **CameraGesturesController** game object in the **Inspector** window. Note that it has a **Gesture Trigger** component. We used this component to wire the different states in the **GrabReleaseGesture** to various methods in the **CameraManipulation** script (found in **MicrosoftGesturesToolkit\Scripts** directory).
 
-    To learn more about specifying custom gestures with XAML and wiring their states to methods in a game object, refer to [step 2](unity-tutorials-3d-object-manipulation-hand.md#step-2---move-object-in-2d-using-the-hand) of the [3D Object Manipulation (Hand) tutorial](unity-tutorials-3d-object-manipulation-hand.md).
+    To learn more about specifying custom gestures with XAML and wiring their states to methods in a game object, refer to [step 3](unity-tutorials-3d-object-manipulation-hand.md#step-3---grab-and-move-object-using-gestures) of the [3D Object Manipulation tutorial](unity-tutorials-3d-object-manipulation-hand.md).
 
 ## Troubleshooting
 
