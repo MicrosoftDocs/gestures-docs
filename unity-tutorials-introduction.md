@@ -11,7 +11,7 @@ This tutorial will take approximately 30 minutes to complete.
 The final Unity project obtained in this tutorial can be found in our open-source samples repository on [GitHub](https://github.com/Microsoft/Gestures-Samples). After you clone the repository, follow these steps to run the application:
 
 1. Launch Unity, in the **Projects** tab select **Open**.
-1. Browse to the [**Unity\Tutorials\Introduction**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/Tutorials/Introduction) directory within the cloned repository.
+1. Browse to the [**Unity\Tutorials\Introduction**](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity/Introduction) directory within the cloned repository.
 1. Press the play button (or **Ctrl+P**) to run the scene.
 
 ## Prerequisites
@@ -35,7 +35,7 @@ Refer to our [FAQ page](faq.md#i-have-visual-studio-2017-and-i-would-like-to-use
 
     ![Name the new Project](Images\UnityNameNewProject.png)
 
-1. Clone our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples/tree/Unity), and import our [toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) to your project - from the **Assets** menu, select **Import Package** and **Custom Package...**:
+1. Clone our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity), and import our [toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) to your project - from the **Assets** menu, select **Import Package** and **Custom Package...**:
 
     ![Import Project Prague toolkit](Images\UnityImportPackageMenu.png)
 
@@ -148,7 +148,7 @@ On this step, we will create the necessary wiring so that you can use a gesture 
 
     Visit our [overview page](index.md#gesture) to read more about the concept and structure of a gesture in Project Prague.
 
-    In this tutorial we will focus on sections 1 and 2. Namely, we will wire the predefined **"Tap"** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Using XAML to specify gestures and section 3 of the **GestureTrigger** UI will be covered in the [3D Object Manipulation (Hand)](unity-tutorials-3d-object-manipulation-hand.md) tutorial.
+    In this tutorial we will focus on sections 1 and 2. Namely, we will wire the predefined **"Tap"** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Using XAML to specify gestures and section 3 of the **GestureTrigger** UI will be covered in the [3D Object Manipulation tutorial](unity-tutorials-3d-object-manipulation-hand.md) tutorial.
 
 1. Make sure **GestureTrigger** is still the selected object in the **Hierarchy** window and choose the **Tap** gesture from the **Stock Gesture** drop-down list in the **Inspector** window:
 
@@ -166,7 +166,7 @@ On this step, we will create the necessary wiring so that you can use a gesture 
 
     ![Tap Gesture Animation](Images\UnityTapGesture.png)
 
-    If you cannot successfullly use the **Tap** gesture to generate new primitives in the scene, please refer to the [troubleshooting section](#Troubleshooting).
+    If you cannot successfullly use the **Tap** gesture to generate new primitives in the scene, please refer to the [troubleshooting section](#troubleshooting).
 
 ## Step 5 - Using a Gesture to Destroy all 3D-Primitives in the Scene
 
