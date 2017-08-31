@@ -189,11 +189,11 @@ On this step, we will add a gesture to clear all previously generated 3D-primiti
     - In the **On Trigger ()** pane, create a new element by pressing **+** sign. Drag and drop the **PrimitiveFactory** game object to the **None (Object)** box to associate it with the new **On Trigger ()** element.
     - Finally, click on the **No Function** drop-down list and select the **DestroyAllPrimitives()** of the **PrimitiveFactory** object.
 
-1. In case you are running **Microsoft.Gestures.DiscoveryClient** - disable it by clicking on the Project Prague tray icon and choosing **Disable**:
+1. Our **Discovery Client** demo application uses the **Finger Snap** gesture to open the start menu. Note that we are also using this gesture in our Unity application. You should disable or close the **Discovery Client** because we don't want **Finger Snap** to have any side-effects outside of Unity. To disable - click on the Project Prague tray icon and choose **Disable**:
 
     ![Disable the Discovery Client](Images\UnityDisableDiscoClient.png)
 
-    The **Discovery Client** uses the **Finger Snap** gesture to open the start menu. Note that we are also using this gesture in our Unity application. We disable the **Discovery Client** because we don't want **Finger Snap** to have any side-effects outside of Unity.
+    You can always follow the same steps to re-enable the **Discovery Client**.
 
 1. Now run the scene. Generate a few primitives using the **Tap** gesture and destroy them using the **Finger Snap** gesture (perform with your **right** hand):
 
