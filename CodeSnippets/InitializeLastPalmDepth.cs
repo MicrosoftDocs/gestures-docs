@@ -1,0 +1,1 @@
+        _lastPalmDistance = GetPalmCameraPosition().magnitude;
