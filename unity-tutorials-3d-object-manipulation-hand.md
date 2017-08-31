@@ -18,11 +18,19 @@ This tutorial assumes you have basic familiarity with the C# programming languag
 
 We recommend you complete the [**Introduction**](unity-tutorials-introduction.md) tutorial before starting this tutorial, we assume you are familiar with the [**Project Prague toolkit for Unity**](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) prefabs discussed there.
 
-## Step 1 - Hand Cursor
+## Step 1 - Scene Preparation
 
-1. Open the project you've created in the [**3D Object Manipulation - Scene Preparation**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. If you've skipped that tutorial, follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product; We recommend you play the scene (**Ctrl+P**) and make sure you are able to "grab" an object with the cursor (using the left mouse button) and to move it in all 3 dimensions (using the scroll-wheel to adjust the distance from camera).
+1. We start this tutorial with the scene obtained in the [**3D Object Manipulation - Scene Preparation**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. This scene contains a mouse-controlled cursor that allows you to hover over objects, "grab" them and move them to a new location in space. In our current tutorial, we will replace the mouse for gestures and motions, and use our hand to control the cursor instead.
 
-1. Add the **GesturesManager** and **UIManager** prefabs to the scene (from **MicrosoftGesturesToolkit\Prefabs**). Refer to [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2---connecting-to-the-gestures-service) for guidance.
+    Please either complete the [**3D Object Manipulation - Scene Preparation**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial, or follow [these instructions](unity-tutorials-3d-object-manipulation-mouse.md#download-the-final-result) to obtain its final product. Note that the [**3D Object Manipulation - Scene Preparation**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial does not cover any material related to the [**Project Prague toolkit for Unity**](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) and you should feel free to skip it.
+
+1. In Unity, load the final project created in the [**3D Object Manipulation - Scene Preparation**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. Play the **3D Object Manipulation** scene. Make sure you can grab and move objects using the mouse:
+
+    ![Grabbing and moving instructions](Images\Unity3dCursorMouseInstructions.png)
+
+## Step 2 - Hand Cursor
+
+1. Add the **GesturesManager** and **UIManager** prefabs to the scene (from **MicrosoftGesturesToolkit\Prefabs**). We will use these prefabs to communicate with the [**Gestures Service**](getting-started-gestures-service.md). Refer to [step 2 of the introduction tutorial](unity-tutorials-introduction.md#step-2---connecting-to-the-gestures-service) for more details.
 
 1. In order to control the cursor with your hand, we first need to obtain access to the hand-skeleton information. The [**Gestures Service**](getting-started-gestures-service.md) computes a hand-skeleton and communicates it to all subscribing clients on a frame-by-frame basis. The **GesturesManager** game object in our scene acts as a client of the **Gestures Service**. **GesturesManager**'s **RegisterToSkeleton()** and **UnregisterFromSkeleton()** methods allow us to subscribe and unsubscribe to the hand-skeleton stream.
 
@@ -61,7 +69,7 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
 1. Make sure you have the **Gestures Service** running. Play the scene and bring your **right** hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
 
-## Step 2 - Move Object in 2D
+## Step 3 - Move Object in 2D
 
 We will now introduce a gesture and use it to trigger the cursor to enter and leave "grab mode". When in grab mode, the grabbed object follows the cursor (which follows your hand), allowing you to move it to a new location.
 
@@ -134,7 +142,7 @@ We will now introduce a gesture and use it to trigger the cursor to enter and le
     - Move the object to a new location,
     - Release the object by spreading your fingers apart.
 
-## Step 3 - Move Object in 3D
+## Step 4 - Move Object in 3D
 
 On this step, we will enable the grabbed object to move in the radial direction as well.
 
