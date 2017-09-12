@@ -17,7 +17,7 @@ You should see **3 Intel® RealSense™ Camera devices** appearing in the **Imag
 ![Device Manager](Images\RealSenseDeviceManager.png)
 *SR300<img hspace="267"/>F200*
 
-If your camera is connected and you don't see these 3 devices, please follow the instructions below to re-install the Intel® RealSense™ camera driver.
+If your camera is connected and you don't see these 3 devices, please follow the instructions below to **re-install the Intel® RealSense™ camera driver**. Otherwise, if the camera is plugged in to the right port, the drivers are installed correctly and the **Gestures Service** is still displaying snow in the "Image" section, try [Troubleshooting Connectivity and Power Issues with Intel® RealSense™ Cameras](https://www.intel.com/content/www/us/en/support/emerging-technologies/intel-realsense-technology/000023560.html).
 
 ## Re-install camera driver
 
