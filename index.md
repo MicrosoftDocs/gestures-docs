@@ -90,7 +90,7 @@ Using too many constraints when you define a hand pose (i.e., overfitting) can p
 
 ### Hand motion
 
-As you move your hand - one of your fingertips or, alternatively, the center of your palm, traces a curve through space. We refer to this curve as a "hand motion". In our API, a hand motion is represented by the [HandMotion](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handmotion) class. A hand motion is associated with a hand part (either the center of the palm one of the fingertips) and made up of a sequence of motion building blocks. The available building blocks are illustrated below:
+As you move your hand - one of your fingertips or, alternatively, the center of your palm, traces a curve through space. We refer to this curve as a "hand motion". In our API, a hand motion is represented by the [HandMotion](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handmotion) class. A hand motion is associated with a hand part (either the center of the palm or one of the fingertips) and made up of a sequence of motion building blocks. The available building blocks are illustrated below:
 
 ![HandMotion building blocks](Images\HandMotionScript.png)
 
@@ -117,7 +117,7 @@ The "Slingshot" gesture in the example is made up of a single hand motion, named
 We will now give an example illustrating how to program a simple gesture using the Project Prague API.
 
 > [!IMPORTANT]
-> The root namespace for all Project Prague .NET entities is Microsoft.Gestures
+> The root **namespace** for all Project Prague .NET entities is **Microsoft.Gestures**
 
 The gesture we will implement is called "RotateRight":
 
