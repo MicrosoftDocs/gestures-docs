@@ -22,7 +22,7 @@ We recommend that you complete the [**Introduction**](unity-tutorials-introducti
 
 ## Step 1 - Create the Cursor Game Object
 
-1. If you've completed the [introduction tutorial](unity-tutorials-introduction.md#system-requirements), open the project you've created in that tutorial and press **Ctrl+N** to create a new scene. Otherwise, create a new Unity project and import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) for instructions).
+1. If you've completed the [introduction tutorial](unity-tutorials-introduction.md), open the project you've created in that tutorial and press **Ctrl+N** to create a new scene. Otherwise, create a new Unity project and import the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) (refer to [step 1 in the introduction tutorial](unity-tutorials-introduction.md#step-1---create-and-configure-a-new-unity-project) for instructions).
 
 1. Press **Ctrl+S** to save the scene, naming it **3D Object Manipulation**.
 
