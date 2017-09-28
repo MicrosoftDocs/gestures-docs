@@ -108,7 +108,7 @@ In our API, a gesture is represented by the [Gesture](https://docs.microsoft.com
 
 ![Gesture example](Images\GestureExample.png)
 
-**The "Slingshot" gesture in the example is made up of a single hand motion, named "Retract", and three hand poses - two instances of "NotPinching" and one instance of "Pinch"**. The "Slingshot" gesture corresponds to the following action sequence: Imagine you are holding a slingshot in your left hand, now grasp its pocket with the thumb and index fingers of your right hand and pull it back to stretch the slingshot band, finally - spread the index and thumb fingers apart to release the pocket and let the imaginary projectile fly. By following these instructions you will have executed the "Slingshot" gesture with your right hand.
+**The Slingshot gesture in the example is made up of a single hand motion, named Retract, and three hand poses - two instances of NotPinching and one instance of Pinch**. The **Slingshot** gesture corresponds to the following action sequence: Imagine you are holding a slingshot in your left hand, now grasp its pocket with the thumb and index fingers of your right hand and pull it back to stretch the slingshot band, finally - spread the index and thumb fingers apart to release the pocket and let the imaginary projectile fly.
 
 ## Creating gestures in Project Prague
 
@@ -127,23 +127,23 @@ The following code demonstrates the **suggested way to define the RotateRight ge
 
 [!code-csharp[RotateRight gesture](CodeSnippets\RotateRightGesture.cs)]
 
-Whe specify the "RotateRight" gesture as a sequence of two hand poses - "RotateSet" and "RotateGo". Both poses require the thumb and index to be open, pointing forward and not touching each other. The difference between the poses is that "RotateSet" specifies that the index finger should be above the thumb and "RotateGo" specifies it should be right of the thumb. The transition between "RotateSet" and "RotateRight", therefore, corresponds to a rotation of the hand to the right.
+Whe specify the **RotateRight** gesture as a sequence of two hand poses - **RotateSet** and **RotateGo**. Both poses require the thumb and index to be open, pointing forward and not touching each other. The difference between the poses is that **RotateSet** specifies that the index finger should be above the thumb and **RotateGo** specifies it should be right of the thumb. The transition between **RotateSet** and **RotateRight**, therefore, corresponds to a rotation of the hand to the right.
 
-Note that the middle, ring and pinky fingers do not participate in the definition of the "RotateRight" gesture. This makes sense because we do not wish to constrain the state of these fingers in any way. In other words, these fingers are free to assume any pose during the execution of the "RotateRight" gesture.
+Note that the middle, ring and pinky fingers do not participate in the definition of the **RotateRight** gesture. This makes sense because we do not wish to constrain the state of these fingers in any way. In other words, these fingers are free to assume any pose during the execution of the **RotateRight** gesture.
 
 Having defined the gesture, you need to **hook up the event indicating gesture detection to the appropriate handler** in your target application:
 
 [!code-csharp[RotateRight triggered event subscription](CodeSnippets\RotateRightTriggeredEvent.cs)]
 
-**The detection itself is performed in the Microsoft.Gestures.Service.exe process** (associated with the "Microsoft Gestures Service" window discussed above). This process runs in the background and acts as a service for gesture detection. We provide you with the [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) class in order to communicate with the service. The following code snippet **instantiates a [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) object and registers the "RotateRight" gesture** for detection:
+**The detection itself is performed in the Microsoft.Gestures.Service.exe process** (associated with the "Microsoft Gestures Service" window discussed above). This process runs in the background and acts as a service for gesture detection. We provide you with the [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) class in order to communicate with the service. The following code snippet **instantiates a [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) object and registers the RotateRight gesture** for detection:
 
 [!code-csharp[Connect to end-point](CodeSnippets\ConnectToEndPoint.cs)]
 
-When you wish to stop the detection of the "RotateRight" gesture, you can **un-register** it as follows:
+When you wish to stop the detection of the **RotateRight** gesture, you can **un-register** it as follows:
 
 [!code-csharp[Un-register gesture](CodeSnippets\UnregisterGesture.cs)]
 
-And your handler will no longer be triggered when the user executes the "RotateRight" gesture.
+And your handler will no longer be triggered when the user executes the **RotateRight** gesture.
 
 When you are finished working with gestures, you should dispose of the [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) object:
 
@@ -155,4 +155,4 @@ Please note that in order for the above code to compile, you will need to refere
 * Microsoft.Gestures.Endpoint.dll
 * Microsoft.Gestures.Protocol.dll
 
-To experiment with a full sample of a use case for the "RotateRight" gesture, please refer to the "RotateSample" in our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples). In this repository, you will also find other samples displaying more advanced applications for gestures.
+To experiment with a complete open source code sample utilizing the the **RotateRight** gesture, please refer to the **RotateSample** in our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples). You can also find more advanced samples in this repository, demonstrating applications for gestures.
