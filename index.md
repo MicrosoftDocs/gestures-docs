@@ -62,7 +62,7 @@ To get Project Prague running on your machine you will need to:
     * **Microsoft.Gestures.Sync** - keeps the [Gestures Service](getting-started-gestures-service.md) running and pulls updates when we publish them.
     * **Microsoft.Gestures.DiscoveryClient** - provides gesture integration for various contexts: Windows shell, PowerPoint, Skype, YouTube, Photos and Visual Studio.
 
-You can modify this configuration any time in the Startup tab of the Task Manager.
+    You can modify this configuration any time in the Startup tab of the Task Manager.
 
 ## Understanding gestures in Project Prague
 
@@ -102,7 +102,7 @@ Once you've decided which hand part should execute the motion and chosen a plane
 
 ### Gesture
 
-Think of a gesture as **a state-machine whose states represent hand poses, hand motions, or even other gestures**. In the state-machine there are initial states and receiving states. A path starting with an initial state and ending with a receiving state represents a sequence of actions (hand poses, hand motions and hand gestures) the user must carry out in order to trigger the detection of the corresponding gesture.
+We think of a gesture as **a state-machine whose states represent hand poses, hand motions, or even other gestures**. In this state-machine there are initial states and receiving states. A path starting with an initial state and ending with a receiving state represents a sequence of actions (hand poses, hand motions and hand gestures) the user must carry out in order to trigger the detection of the corresponding gesture.
 
 In our API, a gesture is represented by the [Gesture](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture) class. The following example illustrates a gesture whose state-machine is a simple sequence of hand poses and hand motions:
 
