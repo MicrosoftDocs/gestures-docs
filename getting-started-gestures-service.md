@@ -107,7 +107,7 @@ There are three columns in the **Gesture Detection** section of the UI:
   - ![vulcan salute](images\VulcanSalute.png) indicates that the entire gesture was successfully detected
 - **Current** - specifies the name of the current [gesture segment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesturesegment) (state) within the gesture state-machine
 
-#### Log section
+#### **Log section**
 
 The Log section displays a stream of messages produced by the **Gestures Service** in real-time. You will find here various information about the internal state of the **Gestures Service** process. When the **Gestures Service** is not behaving as expected, try looking for an indication of an error in the log. **Contact [gestures@microsoft.com](http://aka.ms/gestures) for support** in case you cannot resolve the problem on your own.
 
