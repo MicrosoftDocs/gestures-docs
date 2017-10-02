@@ -97,15 +97,16 @@ Following is a snapshot of the Gesture Detection section. Each line corresponds 
 
 There are three columns in the **Gesture Detection** section of the UI:
 
-- **Gesture** - displays the gesture name and its state
-  - ![green triangle](images\GreenTriangle.png) indicates the gesture is currently registered
-  - ![red square](images\RedSquare.png) indicates the gesture is currently de-registered
-- **TimeLine** - displays the history of events associated with the corresponding gesture
-  - ![green triangle](images\GreenTriangle.png) indicates a gesture registration event
-  - ![red square](images\RedSquare.png) indicates a gesture de-registration event
-  - ![blue circle](images\BlueCircle.png) indicates that the gesture state-machine advanced due to a successful detection of the following [gesture segment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesturesegment) (state)
-  - ![vulcan salute](images\VulcanSalute.png) indicates that the entire gesture was successfully detected
-- **Current** - specifies the name of the current [gesture segment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesturesegment) (state) within the gesture state-machine
+- **Gesture** - displays the gesture name and its state.
+  - ![green triangle](images\GreenTriangle.png) - indicates the gesture is currently registered.
+  - ![red square](images\RedSquare.png) - indicates the gesture is currently de-registered.
+- **TimeLine** - displays the history of events associated with the corresponding gesture.
+  - ![green triangle](images\GreenTriangle.png) - indicates a gesture registration event.
+  - ![red square](images\RedSquare.png) - indicates a gesture de-registration event.
+  - ![blue circle](images\BlueCircle.png) - indicates that the gesture state-machine advanced due to a successful detection of the following [gesture segment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesturesegment) (state).
+  - ![gray circle](images\GrayCircle.png) - indicates that the gesture state-machine was reset to the [idle](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.IdleGestureSegment) state, meaning the gesture was either performed to completion or abandoned.
+  - ![vulcan salute](images\VulcanSalute.png) - indicates that the entire gesture was successfully detected.
+- **Current** - specifies the name of the current [gesture segment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesturesegment) (state) within the gesture state-machine.
 
 #### **Log section**
 
