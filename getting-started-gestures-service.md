@@ -12,7 +12,7 @@ The **Gestures Service** has a UI displaying information about [gesture](index.m
 
 ### Running and terminating the Gestures Service
 
-To launch the **Gestures Service**, double-click the ![Gestures Service shortcut](images\GesturesServiceIcon.png) **Microsoft.Gestures.Service** shortcut on your desktop:
+To launch the **Gestures Service**, double-click the ![Gestures Service shortcut](images\GesturesServiceIcon.png) **Microsoft.Gestures.Service** shortcut on your desktop.
 
 To hide the **Gestures Service UI** simply close its window using the **X** button on the top right corner.
 
