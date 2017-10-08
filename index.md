@@ -2,7 +2,7 @@
 
 ## What is Project Prague?
 
-Project Prague is an **SDK** (software development kit) that allows you to create **NUI** (natural user interface) experiences based on **hand gesture** input. **We provide a .NET API** (application programming interface) enabling you to easily design and implement your own customized hand gestures and integrate them into your applications.
+Project Prague is an **SDK** (software development kit) that allows you to create **NUI** (natural user interface) experiences based on **hand gesture** input. We provide APIs (application programming interfaces) for **C#, C++ (including UWP and .Net Core flavors)**, enabling you to easily design and implement your own customized hand gestures and integrate them into your applications. Visit our [**GitHub samples repository**](https://aka.ms/gestures/samples) to explore some hand gesture experiences and get acquainted with our programming model.
 
 **The building blocks of a gesture are hand poses and hand motions**. Using simple constraints specified in an intuitive language, we allow you to define any hand pose and any hand motion you like. You can **string together a sequence of hand poses and hand motions to specify a gesture**. Once your gesture is defined and registered with our runtime, we will notify you every time we detect that your user has performed the gesture with their hand. At this point you can run the desired logic to respond to the detected gesture.
 
@@ -115,7 +115,7 @@ In our API, a gesture is represented by the [Gesture](https://docs.microsoft.com
 We will now give an example illustrating how to program a simple gesture using the Project Prague API.
 
 > [!IMPORTANT]
-> The root **namespace** for all Project Prague .NET entities is **Microsoft.Gestures**
+> The root **namespace** for all Project Prague .NET entities is **Microsoft.Gestures** and, accordingly, **Microsoft::Gestures** for all native entities.
 
 We will implement the **RotateRight** gesture:
 
@@ -155,4 +155,4 @@ Please note that in order for the above code to compile, you will need to refere
 * Microsoft.Gestures.Endpoint.dll
 * Microsoft.Gestures.Protocol.dll
 
-To experiment with a complete open source code sample utilizing the the **RotateRight** gesture, please refer to the **RotateSample** in our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples). You can also find more advanced samples in this repository, demonstrating applications for gestures.
+To experiment with a complete open source code sample utilizing the the **RotateRight** gesture, please refer to the **RotateSample** in our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples). You can also find more advanced samples in this repository, demonstrating applications for gestures in C# and C++ (including UWP and .Net Core flavors).
