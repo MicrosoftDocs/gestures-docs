@@ -33,7 +33,7 @@ Note that every section has a **maximization button** in its top right corner, a
 
 #### **System section**
 
-The System section is the command-and-control center of the **Gestures Service UI**:
+The **System** section is the command-and-control center of the **Gestures Service UI**:
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_System.png)
 
@@ -44,10 +44,11 @@ The checkboxes and their corresponding functionality are listed in the following
 checkbox     | Functionality
 ------------- | ------------
 **Enable detection** | Halt or resume the **Gestures Service**
+**Enable two hands [Experimental]** | Enable left hand detection in addition to right hand detection (which is always on). Enabling left hand detection incurs a small increase in CPU consumption.
 **Enable detection at Windows Startup** | Specify whether the **Gestures Service** will be launched next time Windows starts
 **Enable toast notifications** | Specify whether the **Gestures Service** will display toast notifications
 **Update UI** | Halt or resume the **Gestures Service UI**
-**Show log** | Toggle the visibility of the log section in the **Gestures Service UI**
+**Show log** | Toggle the visibility of the **Log** section in the **Gestures Service UI**
 
 Note that when the **Show log** checkbox is enabled, you can clear the log of its contents by pressing the **Clear log** link.
 
@@ -89,11 +90,13 @@ Here there is only a single client and the following information is displayed fo
 
 #### **Gesture Detection section**
 
-The Gesture Detection section depicts the detection history of all registered gestures. Recall that [every gesture is represented as a state-machine](index.md#gesture). A correct execution of a given gesture corresponds to a sequence of states in its state-machine, such that the first state in the sequence is an initial state and the final state is a receiving state.
+The **Gesture Detection** section depicts the detection history of all registered gestures. Recall that [every gesture is represented as a state-machine](index.md#gesture). A correct execution of a given gesture corresponds to a sequence of states in its state-machine, such that the first state in the sequence is an initial state and the final state is a receiving state.
 
-Following is a snapshot of the Gesture Detection section. Each line corresponds to a different gesture that was registered at some point in time. The highlighted lines at the top correspond to gestures currently registered and the grayed out lines at the bottom correspond to gestures that are currently de-registered.
+Following is a snapshot of the **Gesture Detection** section. Every gesture that was registered at some point in time corresponds to a couple of lines in the UI - one line for each hand. The highlighted lines at the top correspond to gestures currently registered and the grayed out lines at the bottom correspond to gestures that are currently de-registered.
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Timeline.png)
+
+Depending on its definition, a gesture can be executed by a specific designated hand (right or left) or by either one of the hands (you can specify this when defining [HandPoses](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handpose) associated with the gesture, assigning them a [PalmPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.palmpose) constraint constructed using either [SingleHandContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.singlehandcontext) or [AnyHandContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.anyhandcontext)). For a given gesture, the **[Right]** (**Left**) line details the history of execution by the right (left) hand. Only when the **Enable two hands [Experimental]** box in the **System** section of the UI is checked, left hand detection is enabled and the **[Left]** lines will become highlighted.
 
 There are three columns in the **Gesture Detection** section of the UI:
 
