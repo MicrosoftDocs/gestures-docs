@@ -69,7 +69,7 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
     [!code-csharp[GetPalmCameraPosition](CodeSnippets\GetCursorScreenPosition.cs)]
 
-1. Make sure you have the **Gestures Service** running. Play the scene and bring your **right** hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
+1. Make sure you have the **Gestures Service** running. Play the scene and bring either hand in front of the depth-camera. You should be able to control the cursor by moving your hand.
 
 ## Step 3 - Grab and Move Object Using Gestures
 

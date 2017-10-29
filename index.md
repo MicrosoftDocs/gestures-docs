@@ -53,9 +53,12 @@ To get Project Prague running on your machine you will need to:
     <div><img align="center" src="Images\GesturesCameraIcon.png"><span> Microsoft.Gestures.Camera.Viewer</span></div> | Displays the RGB stream from the camera, adding gesture-triggered <br> animated overlays
     <div><img align="center" src="Images\WolflyIcon.png"><span> Wolfly</span></div> | Runs a gestures driven game made with Unity®
 
-1. When installation is complete, a window titled **Microsoft Gestures Service** will be launched. This is our real-time **gesture and pose detection dashboard**.  Make sure that your fingers are detected successfully, as demonstrated below:
+1. When installation is complete, a window titled **Microsoft Gestures Service** will be launched. This is our real-time **gesture and pose detection dashboard**. Make sure that your fingers are detected successfully, as demonstrated below:
 
     ![Gesture Detection Dashboard](Images\MicrosoftGesturesService.png)
+
+> [!NOTE]
+> By default, only right hand detection is enabled. To enable both hands, check the **Enable two hands** box in the **System** section of the Gestures Service window.
 
 1. Note that Project Prague setup has configured the following two applications to **launch on Windows startup and run in the background**:
 

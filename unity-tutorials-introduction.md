@@ -162,7 +162,7 @@ On this step, we will create the necessary wiring so that you can use a gesture 
 
     ![Hook CreateRandomPrimitive() event handler](Images\UnityHookingEventHandler.png)
 
-1. Play the scene now. You should still be able to generate a new 3D-primitive using the left mouse button. In addition, you should now be able to do that with the **Tap** gesture (perform with your **right** hand):
+1. Play the scene now. You should still be able to generate a new 3D-primitive using the left mouse button. In addition, you should now be able to do that with the **Tap** gesture (perform with either hand):
 
     ![Tap Gesture Animation](Images\UnityTapGesture.png)
 
@@ -195,7 +195,7 @@ On this step, we will add a gesture to clear all previously generated 3D-primiti
 
     You can always follow the same steps to re-enable the **Discovery Client**.
 
-1. Now run the scene. Generate a few primitives using the **Tap** gesture and destroy them using the **Finger Snap** gesture (perform with your **right** hand):
+1. Now run the scene. Generate a few primitives using the **Tap** gesture and destroy them using the **Finger Snap** gesture (perform with either hand):
 
     ![Snap gesture state machine](Images\UnitySnapGesture.png)
 
@@ -207,7 +207,7 @@ On this step we will use a Project Prague toolkit prefab to control the position
 
     <!-- Image that I'll take after Moshe renames the prefab -->
 
-1. Play the scene. Now, in addition to creating and destroying objects, you can control the camera using the following **right hand** gesture:
+1. Play the scene. Now, in addition to creating and destroying objects, you can control the camera using the following gesture (perform with either hand):
 
     ![GrabReleaseGesture](Images\UnityGrabReleaseGestureStateMachine.png)
 
@@ -225,10 +225,10 @@ If you've reached the end of [Step 4](#step-4---using-a-gesture-to-generate-new-
 
 ![Microsoft Gestures Window](Images\UnityTroubleshooting.png)
 
-1. When you bring your hand close to your depth camera, you can see your hand in the **image** section of the **Microsoft Gestures Service** window, with colorful arrows indicating the estimated positions of the fingers and palm. If you don't see such an image, you are probably experiencing camera issues - please refer to our [camera troubleshooting](troubleshooting-camera.md) page.
-1. **UnityApp** appears in the list of **Clients** and **Unity_TapGesture** appears in the sub-list of gestures associated with the **UnityApp** client. If this is not the case, please verify that
-    - You have the green **Connected** icon in the bottom right corner of your screen in Unity (see [step 2](#step-2---connecting-to-the-gestures-service)).
+1. When you bring your hand close to the depth camera, you can see it in the **image** section of the **Microsoft Gestures Service** window, with colorful arrows indicating the estimated positions of the fingers and palm. If you don't see such an image, you are probably experiencing camera issues - please refer to our [camera troubleshooting](troubleshooting-camera.md) page.
+1. **Unity** appears in the list of **Clients** and **Unity_TapGesture** appears in the sub-list of gestures associated with the **Unity** client. If this is not the case, please verify that
+    - The icon in the bottom right corner of your **Game** window in Unity displays the **Detecting** state (see [step 2](#step-2---connecting-to-the-gestures-service)).
     - You have selected the correct gesture, **Tap**,  in the **GestureTrigger** user interface (see [step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene)).
-1. When the Unity window is in the foreground and you execute the **Tap** gesture, the **TimeLine** associated with **Unity_TapGesture** should advance. If this is not the case, you are probably not executing the gesture correctly - make sure you are using your **right** hand and performing the **Tap** motion with your **thumb** and **index** fingers only.
+1. When the Unity window is in the foreground and you execute the **Tap** gesture, the **TimeLine** associated with **Unity_TapGesture** should advance. If this is not the case, you are probably not executing the gesture correctly - make sure to perform the **Tap** motion with your **thumb** and **index** fingers only.
 
 If you still cannot use the **Tap** gesture to generate new 3D-primitives in the scene, please leave a comment on this page, and we will do our best to provide help.
