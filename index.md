@@ -158,4 +158,4 @@ Please note that in order for the above code to compile, you will need to refere
 * Microsoft.Gestures.Endpoint.dll
 * Microsoft.Gestures.Protocol.dll
 
-To experiment with a complete open source code sample utilizing the the **RotateRight** gesture, please refer to the **RotateSample** in our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples). You can also find more advanced samples in this repository, demonstrating applications for gestures in C# and C++ (including UWP and .Net Core flavors).
+To experiment with a complete open source code sample utilizing the **RotateRight** gesture, please refer to the **RotateSample** in our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples). You can also find more advanced samples in this repository, demonstrating applications for gestures in C# and C++ (including UWP and .Net Core flavors).
