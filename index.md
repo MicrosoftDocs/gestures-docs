@@ -2,7 +2,7 @@
 
 ## What is Project Prague?
 
-Project Prague is an **SDK** (software development kit) that allows you to create **NUI** (natural user interface) experiences based on **hand gesture** input. We provide APIs (application programming interfaces) for **C#, C++ (including UWP and .Net Core flavors)**, enabling you to easily design and implement your own customized hand gestures and integrate them into your applications. Visit our [**GitHub samples repository**](https://aka.ms/gestures/samples) to explore some hand gesture experiences and get acquainted with our programming model.
+Project Prague is an **SDK** (software development kit) that allows you to create **NUI** (natural user interface) experiences based on **hand gesture** input. We provide APIs (application programming interfaces) for **C#, C++ (including UWP and .NET Core flavors)**, enabling you to easily design and implement your own customized hand gestures and integrate them into your applications. Visit our [**GitHub samples repository**](https://aka.ms/gestures/samples) to explore some hand gesture experiences and get acquainted with our programming model.
 
 **The building blocks of a gesture are hand poses and hand motions**. Using simple constraints specified in an intuitive language, we allow you to define any hand pose and any hand motion you like. You can **string together a sequence of hand poses and hand motions to specify a gesture**. Once your gesture is defined and registered with our runtime, we will notify you every time we detect that your user has performed the gesture with their hand. At this point you can run the desired logic to respond to the detected gesture.
 
