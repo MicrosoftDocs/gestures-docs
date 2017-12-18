@@ -1,0 +1,113 @@
+﻿<Type Name="InvalidGestureSegmentException" FullName="Microsoft.Gestures.InvalidGestureSegmentException">
+  <TypeSignature Language="C#" Value="public class InvalidGestureSegmentException : Microsoft.Gestures.GesturesFrameworkException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InvalidGestureSegmentException extends Microsoft.Gestures.GesturesFrameworkException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InvalidGestureSegmentException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.GesturesFrameworkException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidGestureSegmentException (string messageFormatString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string messageFormatString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InvalidGestureSegmentException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageFormatString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageFormatString">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidGestureSegmentException (string messageFormatString, Microsoft.Gestures.GestureSegment gestureSegment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string messageFormatString, class Microsoft.Gestures.GestureSegment gestureSegment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InvalidGestureSegmentException.#ctor(System.String,Microsoft.Gestures.GestureSegment)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageFormatString" Type="System.String" />
+        <Parameter Name="gestureSegment" Type="Microsoft.Gestures.GestureSegment" />
+      </Parameters>
+      <Docs>
+        <param name="messageFormatString">To be added.</param>
+        <param name="gestureSegment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidGestureSegmentException (string messageFormatString, string gestureSegmentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string messageFormatString, string gestureSegmentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InvalidGestureSegmentException.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageFormatString" Type="System.String" />
+        <Parameter Name="gestureSegmentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageFormatString">To be added.</param>
+        <param name="gestureSegmentName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidGestureSegment">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.GestureSegment InvalidGestureSegment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.GestureSegment InvalidGestureSegment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InvalidGestureSegmentException.InvalidGestureSegment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.GestureSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidGestureSegmentName">
+      <MemberSignature Language="C#" Value="public string InvalidGestureSegmentName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InvalidGestureSegmentName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InvalidGestureSegmentException.InvalidGestureSegmentName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

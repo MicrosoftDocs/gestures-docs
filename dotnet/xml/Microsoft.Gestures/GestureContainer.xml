@@ -1,0 +1,110 @@
+﻿<Type Name="GestureContainer" FullName="Microsoft.Gestures.GestureContainer">
+  <TypeSignature Language="C#" Value="public class GestureContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureContainer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureContainer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GestureContainer (Microsoft.Gestures.Gesture gesture, bool isGlobal, int processId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.Gesture gesture, bool isGlobal, int32 processId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureContainer.#ctor(Microsoft.Gestures.Gesture,System.Boolean,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+        <Parameter Name="isGlobal" Type="System.Boolean" />
+        <Parameter Name="processId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="gesture">To be added.</param>
+        <param name="isGlobal">To be added.</param>
+        <param name="processId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gesture">
+      <MemberSignature Language="C#" Value="public readonly Microsoft.Gestures.Gesture Gesture;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly class Microsoft.Gestures.Gesture Gesture" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GestureContainer.Gesture" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Gesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGlobal">
+      <MemberSignature Language="C#" Value="public readonly bool IsGlobal;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly bool IsGlobal" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GestureContainer.IsGlobal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureContainer.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessId">
+      <MemberSignature Language="C#" Value="public readonly int ProcessId;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly int32 ProcessId" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GestureContainer.ProcessId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

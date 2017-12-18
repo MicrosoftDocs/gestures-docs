@@ -1,0 +1,1383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="gestures-1.0">
+  <Namespace Name="Microsoft.Gestures">
+    <Type Name="Microsoft.Gestures.AllFingersContext" Id="T:Microsoft.Gestures.AllFingersContext">
+      <Member Id="M:Microsoft.Gestures.AllFingersContext.#ctor" />
+      <Member Id="M:Microsoft.Gestures.AllFingersContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.AllFingersContext.ToString" />
+    </Type>
+    <Type Name="Microsoft.Gestures.AllHandsContext" Id="T:Microsoft.Gestures.AllHandsContext">
+      <Member Id="M:Microsoft.Gestures.AllHandsContext.#ctor" />
+      <Member Id="M:Microsoft.Gestures.AllHandsContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.AllHandsContext.ToString" />
+    </Type>
+    <Type Name="Microsoft.Gestures.AnyFingerContext" Id="T:Microsoft.Gestures.AnyFingerContext">
+      <Member Id="M:Microsoft.Gestures.AnyFingerContext.#ctor" />
+      <Member Id="M:Microsoft.Gestures.AnyFingerContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.AnyFingerContext.ToString" />
+    </Type>
+    <Type Name="Microsoft.Gestures.AnyHandContext" Id="T:Microsoft.Gestures.AnyHandContext">
+      <Member Id="M:Microsoft.Gestures.AnyHandContext.#ctor" />
+      <Member Id="M:Microsoft.Gestures.AnyHandContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.AnyHandContext.ToString" />
+    </Type>
+    <Type Name="Microsoft.Gestures.ClosureExtension" Id="T:Microsoft.Gestures.ClosureExtension">
+      <Member Id="M:Microsoft.Gestures.ClosureExtension.Closure(System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.CollectionChanged`1" Id="T:Microsoft.Gestures.CollectionChanged`1" />
+    <Type Name="Microsoft.Gestures.CollectionChangedEventArgs`1" Id="T:Microsoft.Gestures.CollectionChangedEventArgs`1">
+      <Member Id="F:Microsoft.Gestures.CollectionChangedEventArgs`1.IsAdded" />
+      <Member Id="F:Microsoft.Gestures.CollectionChangedEventArgs`1.Item" />
+      <Member Id="M:Microsoft.Gestures.CollectionChangedEventArgs`1.#ctor(`0,System.Boolean)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.ConstraintAndScore" Id="T:Microsoft.Gestures.ConstraintAndScore">
+      <Member Id="M:Microsoft.Gestures.ConstraintAndScore.#ctor(Microsoft.Gestures.PoseConstraint,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.ConstraintAndScore.ToString" />
+      <Member Id="P:Microsoft.Gestures.ConstraintAndScore.Constraint" />
+      <Member Id="P:Microsoft.Gestures.ConstraintAndScore.SatisfactionScore" />
+    </Type>
+    <Type Name="Microsoft.Gestures.DepthMotionScript" Id="T:Microsoft.Gestures.DepthMotionScript">
+      <Member Id="M:Microsoft.Gestures.DepthMotionScript.#ctor(Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.DepthMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.DepthMotionSegment" Id="T:Microsoft.Gestures.DepthMotionSegment">
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.AllSegments" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.Backward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcBackwardDownward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcBackwardUpward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcForwardDownward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.ClockwiseArcForwardUpward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcBackwardDownward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcBackwardUpward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcForwardDownward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.CounterClockwiseArcForwardUpward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.DiagonalBackwardDownward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.DiagonalBackwardUpward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.DiagonalForwardDownward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.DiagonalForwardUpward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.Downward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.Forward" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.MotionPlane" />
+      <Member Id="P:Microsoft.Gestures.DepthMotionSegment.Upward" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Finger" Id="T:Microsoft.Gestures.Finger">
+      <Member Id="F:Microsoft.Gestures.Finger.Index" />
+      <Member Id="F:Microsoft.Gestures.Finger.Middle" />
+      <Member Id="F:Microsoft.Gestures.Finger.Pinky" />
+      <Member Id="F:Microsoft.Gestures.Finger.Ring" />
+      <Member Id="F:Microsoft.Gestures.Finger.Thumb" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingerFlexion" Id="T:Microsoft.Gestures.FingerFlexion">
+      <Member Id="F:Microsoft.Gestures.FingerFlexion.Folded" />
+      <Member Id="F:Microsoft.Gestures.FingerFlexion.FoldedTucked" />
+      <Member Id="F:Microsoft.Gestures.FingerFlexion.Open" />
+      <Member Id="F:Microsoft.Gestures.FingerFlexion.OpenStretched" />
+      <Member Id="F:Microsoft.Gestures.FingerFlexion.Undefined" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingerMotion" Id="T:Microsoft.Gestures.FingerMotion">
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.Finger,System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(Microsoft.Gestures.FingersContext,System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotion.ValidateCore" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingerMotionListExtension" Id="T:Microsoft.Gestures.FingerMotionListExtension">
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.String,Microsoft.Gestures.MotionPlane)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingerPose" Id="T:Microsoft.Gestures.FingerPose">
+      <Member Id="M:Microsoft.Gestures.FingerPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.ToString" />
+      <Member Id="M:Microsoft.Gestures.FingerPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.FingerPose.Flexion" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingerPoseListExtension" Id="T:Microsoft.Gestures.FingerPoseListExtension">
+      <Member Id="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.FingerPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.PoseDirection)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingersContext" Id="T:Microsoft.Gestures.FingersContext">
+      <Member Id="M:Microsoft.Gestures.FingersContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingersContext.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.FingersContext.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.FingersContext.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FingersContext.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.FingersContext.Fingers" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingersRelation`1" Id="T:Microsoft.Gestures.FingersRelation`1">
+      <Member Id="F:Microsoft.Gestures.FingersRelation`1._relation" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.#ctor" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.#ctor(Microsoft.Gestures.FingersContext,`0,Microsoft.Gestures.FingersContext)" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.ToString" />
+      <Member Id="M:Microsoft.Gestures.FingersRelation`1.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.FingersRelation`1.Context" />
+      <Member Id="P:Microsoft.Gestures.FingersRelation`1.OtherContext" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingertipDistanceRelation" Id="T:Microsoft.Gestures.FingertipDistanceRelation">
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.FingersContext)" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelation.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.FingertipDistanceRelation.DistanceRelation" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingertipDistanceRelationListExtension" Id="T:Microsoft.Gestures.FingertipDistanceRelationListExtension">
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.FingersContext)" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipDistanceRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativeDistance,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingertipPlacementRelation" Id="T:Microsoft.Gestures.FingertipPlacementRelation">
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.FingersContext)" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelation.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelation.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.FingertipPlacementRelation.PlacementRelation" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FingertipPlacementRelationListExtension" Id="T:Microsoft.Gestures.FingertipPlacementRelationListExtension">
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.FingersContext)" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.FingertipPlacementRelationListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.RelativePlacement,System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FreezableList`1" Id="T:Microsoft.Gestures.FreezableList`1">
+      <Member Id="F:Microsoft.Gestures.FreezableList`1._items" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.#ctor" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.Add(`0)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.AddRange(System.Collections.Generic.IEnumerable{`0})" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.Clear" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.Contains(`0)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.CopyTo(`0[],System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.GetEnumerator" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.IndexOf(`0)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.Insert(System.Int32,`0)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.Remove(`0)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.RemoveAt(System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IList#Add(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IList#Clear" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IList#Contains(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IList#IndexOf(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IList#Remove(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.System#Collections#IList#RemoveAt(System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.FreezableList`1.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.Count" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.Item(System.Int32)" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.System#Collections#Generic#ICollection&lt;ItemType&gt;#IsReadOnly" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.System#Collections#ICollection#Count" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.System#Collections#ICollection#SyncRoot" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.System#Collections#IList#IsFixedSize" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.System#Collections#IList#IsReadOnly" />
+      <Member Id="P:Microsoft.Gestures.FreezableList`1.System#Collections#IList#Item(System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.FrozenObjectModifiedException" Id="T:Microsoft.Gestures.FrozenObjectModifiedException">
+      <Member Id="M:Microsoft.Gestures.FrozenObjectModifiedException.#ctor(Microsoft.Gestures.IFreezable,System.String)" />
+      <Member Id="P:Microsoft.Gestures.FrozenObjectModifiedException.FrozenObject" />
+      <Member Id="P:Microsoft.Gestures.FrozenObjectModifiedException.ViolatingPropertyName" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Gesture" Id="T:Microsoft.Gestures.Gesture">
+      <Member Id="E:Microsoft.Gestures.Gesture.IdleTriggered" />
+      <Member Id="M:Microsoft.Gestures.Gesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Gesture.#ctor(Microsoft.Gestures.GestureSegment[])" />
+      <Member Id="M:Microsoft.Gestures.Gesture.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.#ctor(System.String,Microsoft.Gestures.GestureSegment[])" />
+      <Member Id="M:Microsoft.Gestures.Gesture.AddSubPath(Microsoft.Gestures.GestureSegment[])" />
+      <Member Id="M:Microsoft.Gestures.Gesture.AddTriggeringPath(Microsoft.Gestures.GestureSegment[])" />
+      <Member Id="M:Microsoft.Gestures.Gesture.AddTriggeringPath(System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+      <Member Id="M:Microsoft.Gestures.Gesture.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.Gesture.Clone(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.Gesture.Equivalent(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.Equivalent(Microsoft.Gestures.GestureSegment)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.FindName(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.InitializeCore" />
+      <Member Id="M:Microsoft.Gestures.Gesture.RegisterName(System.String,System.Object)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.System#Windows#Markup#INameScope#FindName(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.System#Windows#Markup#INameScope#RegisterName(System.String,System.Object)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.System#Windows#Markup#INameScope#UnregisterName(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.UnregisterName(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Gesture.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Gesture.IdleGestureSegment" />
+      <Member Id="P:Microsoft.Gestures.Gesture.Item(Microsoft.Gestures.GestureSegment)" />
+      <Member Id="P:Microsoft.Gestures.Gesture.Item(System.String)" />
+      <Member Id="P:Microsoft.Gestures.Gesture.Segments" />
+      <Member Id="P:Microsoft.Gestures.Gesture.SegmentsConnections" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureContainer" Id="T:Microsoft.Gestures.GestureContainer">
+      <Member Id="F:Microsoft.Gestures.GestureContainer.Gesture" />
+      <Member Id="F:Microsoft.Gestures.GestureContainer.IsGlobal" />
+      <Member Id="F:Microsoft.Gestures.GestureContainer.ProcessId" />
+      <Member Id="M:Microsoft.Gestures.GestureContainer.#ctor(Microsoft.Gestures.Gesture,System.Boolean,System.Int32)" />
+      <Member Id="P:Microsoft.Gestures.GestureContainer.Name" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureContainerCollection" Id="T:Microsoft.Gestures.GestureContainerCollection">
+      <Member Id="E:Microsoft.Gestures.GestureContainerCollection.CollectionChanged" />
+      <Member Id="M:Microsoft.Gestures.GestureContainerCollection.#ctor" />
+      <Member Id="M:Microsoft.Gestures.GestureContainerCollection.Add(Microsoft.Gestures.GestureContainer)" />
+      <Member Id="M:Microsoft.Gestures.GestureContainerCollection.Contains(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.GestureContainerCollection.Remove(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.GestureContainerCollection.Remove(Microsoft.Gestures.GestureContainer)" />
+      <Member Id="M:Microsoft.Gestures.GestureContainerCollection.TriggerNestingPath(System.String)" />
+      <Member Id="P:Microsoft.Gestures.GestureContainerCollection.Collection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureContext" Id="T:Microsoft.Gestures.GestureContext">
+      <Member Id="M:Microsoft.Gestures.GestureContext.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureSegment" Id="T:Microsoft.Gestures.GestureSegment">
+      <Member Id="E:Microsoft.Gestures.GestureSegment.Triggered" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.#ctor" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.Clone(System.String)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.Equivalent(Microsoft.Gestures.GestureSegment)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.ToString" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.TriggerEvent" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.TriggerEventAsync(System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegment.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.GestureSegment.ContainingGesture" />
+      <Member Id="P:Microsoft.Gestures.GestureSegment.Name" />
+      <Member Id="P:Microsoft.Gestures.GestureSegment.NestingPath" />
+      <Member Id="P:Microsoft.Gestures.GestureSegment.NextSegments" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureSegmentConnections" Id="T:Microsoft.Gestures.GestureSegmentConnections">
+      <Member Id="M:Microsoft.Gestures.GestureSegmentConnections.#ctor" />
+      <Member Id="M:Microsoft.Gestures.GestureSegmentConnections.#ctor(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegmentConnections.ToString" />
+      <Member Id="M:Microsoft.Gestures.GestureSegmentConnections.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.GestureSegmentConnections.Item(Microsoft.Gestures.GestureSegment)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureSegmentEquivalenceComparer" Id="T:Microsoft.Gestures.GestureSegmentEquivalenceComparer">
+      <Member Id="M:Microsoft.Gestures.GestureSegmentEquivalenceComparer.#ctor" />
+      <Member Id="M:Microsoft.Gestures.GestureSegmentEquivalenceComparer.Equals(Microsoft.Gestures.GestureSegment,Microsoft.Gestures.GestureSegment)" />
+      <Member Id="M:Microsoft.Gestures.GestureSegmentEquivalenceComparer.GetHashCode(Microsoft.Gestures.GestureSegment)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureSegmentNotFoundException" Id="T:Microsoft.Gestures.GestureSegmentNotFoundException">
+      <Member Id="M:Microsoft.Gestures.GestureSegmentNotFoundException.#ctor(Microsoft.Gestures.GestureSegment)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GestureSegmentTriggeredEventArgs" Id="T:Microsoft.Gestures.GestureSegmentTriggeredEventArgs">
+      <Member Id="M:Microsoft.Gestures.GestureSegmentTriggeredEventArgs.#ctor(Microsoft.Gestures.GestureSegment,Microsoft.Gestures.NestingPath)" />
+      <Member Id="P:Microsoft.Gestures.GestureSegmentTriggeredEventArgs.GestureSegment" />
+      <Member Id="P:Microsoft.Gestures.GestureSegmentTriggeredEventArgs.NestingPath" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkBindingException" Id="T:Microsoft.Gestures.GesturesFrameworkBindingException">
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkBindingException.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkException" Id="T:Microsoft.Gestures.GesturesFrameworkException">
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkException.#ctor(System.Exception,System.String,System.Object[])" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkException.#ctor(System.String,System.Object[])" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkFormatException" Id="T:Microsoft.Gestures.GesturesFrameworkFormatException">
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkFormatException.#ctor(System.Exception,System.String,System.Object[])" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkFormatException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkFormatException.#ctor(System.String,System.Object[])" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkObject" Id="T:Microsoft.Gestures.GesturesFrameworkObject">
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.#ctor" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.Freeze" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.Microsoft#Gestures#IValidatable#Validate" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.ValidateCore" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObject.VerifyNotFrozen(System.String)" />
+      <Member Id="P:Microsoft.Gestures.GesturesFrameworkObject.IsFrozen" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkObjectList`1" Id="T:Microsoft.Gestures.GesturesFrameworkObjectList`1">
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.#ctor" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectList`1.ValidateCore" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkObjectSerializer" Id="T:Microsoft.Gestures.GesturesFrameworkObjectSerializer">
+      <Member Id="E:Microsoft.Gestures.GesturesFrameworkObjectSerializer.ToXamlInvoked" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FromXaml(System.String)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.FromXaml(System.Uri)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectSerializer.ToXaml``1(``0)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkObjectValidationException" Id="T:Microsoft.Gestures.GesturesFrameworkObjectValidationException">
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.#ctor(System.Linq.Expressions.Expression{System.Func{System.Object}},System.String)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.#ctor(System.Object,System.Linq.Expressions.Expression{System.Func{System.Object}},System.String)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.#ctor(System.Object,System.String)" />
+      <Member Id="M:Microsoft.Gestures.GesturesFrameworkObjectValidationException.CreateException(System.Object,System.Linq.Expressions.Expression{System.Func{System.Object}},System.String)" />
+      <Member Id="P:Microsoft.Gestures.GesturesFrameworkObjectValidationException.InvalidContainingObject" />
+      <Member Id="P:Microsoft.Gestures.GesturesFrameworkObjectValidationException.InvalidVariableName" />
+      <Member Id="P:Microsoft.Gestures.GesturesFrameworkObjectValidationException.InvalidVariableValue" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesFrameworkXamlLanguage" Id="T:Microsoft.Gestures.GesturesFrameworkXamlLanguage">
+      <Member Id="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.CollectionSeparator" />
+      <Member Id="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.ValueConcatenator" />
+      <Member Id="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.ValueDelimiter" />
+      <Member Id="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.XmlNamespace" />
+    </Type>
+    <Type Name="Microsoft.Gestures.GesturesRuntimeStub" Id="T:Microsoft.Gestures.GesturesRuntimeStub">
+      <Member Id="M:Microsoft.Gestures.GesturesRuntimeStub.#ctor" />
+      <Member Id="P:Microsoft.Gestures.GesturesRuntimeStub.GesturesRuntime" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Hand" Id="T:Microsoft.Gestures.Hand">
+      <Member Id="F:Microsoft.Gestures.Hand.LeftHand" />
+      <Member Id="F:Microsoft.Gestures.Hand.RightHand" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HandContext" Id="T:Microsoft.Gestures.HandContext">
+      <Member Id="M:Microsoft.Gestures.HandContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandContext.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.HandContext.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.HandContext.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.HandContext.op_Implicit(Microsoft.Gestures.Hand)~Microsoft.Gestures.HandContext" />
+      <Member Id="M:Microsoft.Gestures.HandContext.op_Implicit(Microsoft.Gestures.Hand[])~Microsoft.Gestures.HandContext" />
+      <Member Id="M:Microsoft.Gestures.HandContext.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.HandContext.Hands" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HandMotion" Id="T:Microsoft.Gestures.HandMotion">
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,Microsoft.Gestures.DepthMotionSegment,System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,Microsoft.Gestures.Hand)" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,Microsoft.Gestures.HorizontalMotionSegment,System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,Microsoft.Gestures.MotionConstraint[])" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,Microsoft.Gestures.VerticalMotionSegment,System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.#ctor(System.String,System.String,Microsoft.Gestures.MotionPlane,System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.Equivalent(Microsoft.Gestures.GestureSegment)" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.Equivalent(Microsoft.Gestures.HandMotion)" />
+      <Member Id="M:Microsoft.Gestures.HandMotion.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.HandMotion.FingerMotions" />
+      <Member Id="P:Microsoft.Gestures.HandMotion.MotionConstraints" />
+      <Member Id="P:Microsoft.Gestures.HandMotion.PalmMotion" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HandPartMotion`1" Id="T:Microsoft.Gestures.HandPartMotion`1">
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.#ctor" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.#ctor(`0,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.ToString" />
+      <Member Id="M:Microsoft.Gestures.HandPartMotion`1.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.HandPartMotion`1.Context" />
+      <Member Id="P:Microsoft.Gestures.HandPartMotion`1.MotionScript" />
+      <Member Id="P:Microsoft.Gestures.HandPartMotion`1.Size" />
+      <Member Id="P:Microsoft.Gestures.HandPartMotion`1.Speed" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HandPartPose`1" Id="T:Microsoft.Gestures.HandPartPose`1">
+      <Member Id="F:Microsoft.Gestures.HandPartPose`1.DefaultPoseDirection" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.#ctor" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.#ctor(`0,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.ToString" />
+      <Member Id="M:Microsoft.Gestures.HandPartPose`1.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.HandPartPose`1.Context" />
+      <Member Id="P:Microsoft.Gestures.HandPartPose`1.Direction" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HandPose" Id="T:Microsoft.Gestures.HandPose">
+      <Member Id="M:Microsoft.Gestures.HandPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.HandPose.#ctor(System.String,Microsoft.Gestures.PoseConstraint[])" />
+      <Member Id="M:Microsoft.Gestures.HandPose.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.HandPose.Equivalent(Microsoft.Gestures.GestureSegment)" />
+      <Member Id="M:Microsoft.Gestures.HandPose.Equivalent(Microsoft.Gestures.HandPose)" />
+      <Member Id="M:Microsoft.Gestures.HandPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.HandPose.FingerPoses" />
+      <Member Id="P:Microsoft.Gestures.HandPose.FingertipDistanceRelations" />
+      <Member Id="P:Microsoft.Gestures.HandPose.FingertipPlacementRelations" />
+      <Member Id="P:Microsoft.Gestures.HandPose.PalmPose" />
+      <Member Id="P:Microsoft.Gestures.HandPose.PoseConstraints" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HandSkeletonsReadyEventArgs" Id="T:Microsoft.Gestures.HandSkeletonsReadyEventArgs">
+      <Member Id="F:Microsoft.Gestures.HandSkeletonsReadyEventArgs.HandSkeletons" />
+      <Member Id="M:Microsoft.Gestures.HandSkeletonsReadyEventArgs.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Skeleton.IHandSkeleton})" />
+      <Member Id="P:Microsoft.Gestures.HandSkeletonsReadyEventArgs.DefaultHandSkeleton" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HandSkeletonsReadyHandler" Id="T:Microsoft.Gestures.HandSkeletonsReadyHandler" />
+    <Type Name="Microsoft.Gestures.HorizontalMotionScript" Id="T:Microsoft.Gestures.HorizontalMotionScript">
+      <Member Id="M:Microsoft.Gestures.HorizontalMotionScript.#ctor(Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.HorizontalMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.HorizontalMotionSegment" Id="T:Microsoft.Gestures.HorizontalMotionSegment">
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.AllSegments" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.Backward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcLeftBackward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcLeftForward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcRightBackward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.ClockwiseArcRightForward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcLeftBackward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcLeftForward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcRightBackward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.CounterClockwiseArcRightForward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalLeftBackward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalLeftForward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalRightBackward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.DiagonalRightForward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.Forward" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.Left" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.MotionPlane" />
+      <Member Id="P:Microsoft.Gestures.HorizontalMotionSegment.Right" />
+    </Type>
+    <Type Name="Microsoft.Gestures.IdleGestureSegment" Id="T:Microsoft.Gestures.IdleGestureSegment">
+      <Member Id="M:Microsoft.Gestures.IdleGestureSegment.#ctor" />
+      <Member Id="M:Microsoft.Gestures.IdleGestureSegment.#ctor(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.IdleGestureSegment.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.IdleGestureSegment.Equivalent(Microsoft.Gestures.GestureSegment)" />
+      <Member Id="M:Microsoft.Gestures.IdleGestureSegment.ValidateCore" />
+    </Type>
+    <Type Name="Microsoft.Gestures.IFreezable" Id="T:Microsoft.Gestures.IFreezable">
+      <Member Id="M:Microsoft.Gestures.IFreezable.Freeze" />
+      <Member Id="P:Microsoft.Gestures.IFreezable.IsFrozen" />
+    </Type>
+    <Type Name="Microsoft.Gestures.IGestureContainerCollection" Id="T:Microsoft.Gestures.IGestureContainerCollection">
+      <Member Id="E:Microsoft.Gestures.IGestureContainerCollection.CollectionChanged" />
+      <Member Id="M:Microsoft.Gestures.IGestureContainerCollection.Add(Microsoft.Gestures.GestureContainer)" />
+      <Member Id="M:Microsoft.Gestures.IGestureContainerCollection.Contains(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.IGestureContainerCollection.Remove(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.IGestureContainerCollection.Remove(Microsoft.Gestures.GestureContainer)" />
+      <Member Id="M:Microsoft.Gestures.IGestureContainerCollection.TriggerNestingPath(System.String)" />
+      <Member Id="P:Microsoft.Gestures.IGestureContainerCollection.Collection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.IGestureRegistrar" Id="T:Microsoft.Gestures.IGestureRegistrar">
+      <Member Id="M:Microsoft.Gestures.IGestureRegistrar.Register(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.IGestureRegistrar.Unregister(Microsoft.Gestures.Gesture)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.IGesturesRuntime" Id="T:Microsoft.Gestures.IGesturesRuntime" />
+    <Type Name="Microsoft.Gestures.IHandSkeletonProvider" Id="T:Microsoft.Gestures.IHandSkeletonProvider">
+      <Member Id="E:Microsoft.Gestures.IHandSkeletonProvider.HandSkeletonsReady" />
+    </Type>
+    <Type Name="Microsoft.Gestures.InvalidGestureException" Id="T:Microsoft.Gestures.InvalidGestureException">
+      <Member Id="M:Microsoft.Gestures.InvalidGestureException.#ctor(System.Exception,System.String,System.Object[])" />
+      <Member Id="M:Microsoft.Gestures.InvalidGestureException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.InvalidGestureException.#ctor(System.String,System.Object[])" />
+    </Type>
+    <Type Name="Microsoft.Gestures.InvalidGestureSegmentException" Id="T:Microsoft.Gestures.InvalidGestureSegmentException">
+      <Member Id="M:Microsoft.Gestures.InvalidGestureSegmentException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.InvalidGestureSegmentException.#ctor(System.String,Microsoft.Gestures.GestureSegment)" />
+      <Member Id="M:Microsoft.Gestures.InvalidGestureSegmentException.#ctor(System.String,System.String)" />
+      <Member Id="P:Microsoft.Gestures.InvalidGestureSegmentException.InvalidGestureSegment" />
+      <Member Id="P:Microsoft.Gestures.InvalidGestureSegmentException.InvalidGestureSegmentName" />
+    </Type>
+    <Type Name="Microsoft.Gestures.IValidatable" Id="T:Microsoft.Gestures.IValidatable">
+      <Member Id="M:Microsoft.Gestures.IValidatable.Validate" />
+    </Type>
+    <Type Name="Microsoft.Gestures.MotionConstraint" Id="T:Microsoft.Gestures.MotionConstraint">
+      <Member Id="M:Microsoft.Gestures.MotionConstraint.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Gestures.MotionPlane" Id="T:Microsoft.Gestures.MotionPlane">
+      <Member Id="F:Microsoft.Gestures.MotionPlane.Depth" />
+      <Member Id="F:Microsoft.Gestures.MotionPlane.Horizontal" />
+      <Member Id="F:Microsoft.Gestures.MotionPlane.Vertical" />
+    </Type>
+    <Type Name="Microsoft.Gestures.MotionScript" Id="T:Microsoft.Gestures.MotionScript">
+      <Member Id="M:Microsoft.Gestures.MotionScript.#ctor" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.GetMotionPlaneHashCode" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.IsMotionPlaneEquals(Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.ToPath" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.ToPoints" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.ToString" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.ToSvg" />
+      <Member Id="M:Microsoft.Gestures.MotionScript.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.MotionScript.MotionPlane" />
+      <Member Id="P:Microsoft.Gestures.MotionScript.Still" />
+    </Type>
+    <Type Name="Microsoft.Gestures.MotionSegment" Id="T:Microsoft.Gestures.MotionSegment">
+      <Member Id="F:Microsoft.Gestures.MotionSegment.DefaultPlane" />
+      <Member Id="F:Microsoft.Gestures.MotionSegment.MotionUnit" />
+      <Member Id="M:Microsoft.Gestures.MotionSegment.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.MotionSegment.GetAllSegments``1" />
+      <Member Id="M:Microsoft.Gestures.MotionSegment.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.MotionSegment.Parse(System.String)" />
+      <Member Id="M:Microsoft.Gestures.MotionSegment.ToString" />
+      <Member Id="P:Microsoft.Gestures.MotionSegment.MotionPlane" />
+      <Member Id="P:Microsoft.Gestures.MotionSegment.Name" />
+      <Member Id="P:Microsoft.Gestures.MotionSegment.Svg" />
+    </Type>
+    <Type Name="Microsoft.Gestures.MotionSize" Id="T:Microsoft.Gestures.MotionSize">
+      <Member Id="F:Microsoft.Gestures.MotionSize.Large" />
+      <Member Id="F:Microsoft.Gestures.MotionSize.Normal" />
+    </Type>
+    <Type Name="Microsoft.Gestures.MotionSpeed" Id="T:Microsoft.Gestures.MotionSpeed">
+      <Member Id="F:Microsoft.Gestures.MotionSpeed.Abrupt" />
+      <Member Id="F:Microsoft.Gestures.MotionSpeed.Normal" />
+    </Type>
+    <Type Name="Microsoft.Gestures.NestingPath" Id="T:Microsoft.Gestures.NestingPath">
+      <Member Id="F:Microsoft.Gestures.NestingPath.SerializedPathDelimiter" />
+      <Member Id="M:Microsoft.Gestures.NestingPath.#ctor" />
+      <Member Id="M:Microsoft.Gestures.NestingPath.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+      <Member Id="M:Microsoft.Gestures.NestingPath.ToString" />
+    </Type>
+    <Type Name="Microsoft.Gestures.NestingPathSurrogate" Id="T:Microsoft.Gestures.NestingPathSurrogate">
+      <Member Id="F:Microsoft.Gestures.NestingPathSurrogate.SerializedPathDelimiter" />
+      <Member Id="M:Microsoft.Gestures.NestingPathSurrogate.#ctor" />
+      <Member Id="M:Microsoft.Gestures.NestingPathSurrogate.GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="M:Microsoft.Gestures.NestingPathSurrogate.SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.NullGestureSegmentException" Id="T:Microsoft.Gestures.NullGestureSegmentException">
+      <Member Id="M:Microsoft.Gestures.NullGestureSegmentException.#ctor(System.Linq.Expressions.Expression{System.Func{System.Object}})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.NullOrEmptyValidationException" Id="T:Microsoft.Gestures.NullOrEmptyValidationException">
+      <Member Id="M:Microsoft.Gestures.NullOrEmptyValidationException.#ctor(System.Linq.Expressions.Expression{System.Func{System.Object}})" />
+      <Member Id="M:Microsoft.Gestures.NullOrEmptyValidationException.#ctor(System.Object,System.Linq.Expressions.Expression{System.Func{System.Object}})" />
+      <Member Id="M:Microsoft.Gestures.NullOrEmptyValidationException.CreateException(System.Object,System.Linq.Expressions.Expression{System.Func{System.Object}})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.PalmMotion" Id="T:Microsoft.Gestures.PalmMotion">
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.Hand,System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HandContext,System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <Member Id="M:Microsoft.Gestures.PalmMotion.#ctor(System.String,Microsoft.Gestures.MotionPlane)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.PalmPose" Id="T:Microsoft.Gestures.PalmPose">
+      <Member Id="M:Microsoft.Gestures.PalmPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.PalmPose.#ctor(Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.PalmPose.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.PalmPose.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.PalmPose.ToString" />
+      <Member Id="M:Microsoft.Gestures.PalmPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.PalmPose.Orientation" />
+    </Type>
+    <Type Name="Microsoft.Gestures.PalmPoseListExtension" Id="T:Microsoft.Gestures.PalmPoseListExtension">
+      <Member Id="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.Hand,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.PalmPoseListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.PoseConstraint},Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.PoseDirection)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.PassThroughGestureSegment" Id="T:Microsoft.Gestures.PassThroughGestureSegment">
+      <Member Id="M:Microsoft.Gestures.PassThroughGestureSegment.#ctor" />
+      <Member Id="M:Microsoft.Gestures.PassThroughGestureSegment.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Gestures.PassThroughGestureSegment.DeepFreeze" />
+    </Type>
+    <Type Name="Microsoft.Gestures.PoseConstraint" Id="T:Microsoft.Gestures.PoseConstraint">
+      <Member Id="M:Microsoft.Gestures.PoseConstraint.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Gestures.PoseDirection" Id="T:Microsoft.Gestures.PoseDirection">
+      <Member Id="F:Microsoft.Gestures.PoseDirection.Backward" />
+      <Member Id="F:Microsoft.Gestures.PoseDirection.Down" />
+      <Member Id="F:Microsoft.Gestures.PoseDirection.Forward" />
+      <Member Id="F:Microsoft.Gestures.PoseDirection.Left" />
+      <Member Id="F:Microsoft.Gestures.PoseDirection.Right" />
+      <Member Id="F:Microsoft.Gestures.PoseDirection.Undefined" />
+      <Member Id="F:Microsoft.Gestures.PoseDirection.Up" />
+    </Type>
+    <Type Name="Microsoft.Gestures.RelativeDistance" Id="T:Microsoft.Gestures.RelativeDistance">
+      <Member Id="F:Microsoft.Gestures.RelativeDistance.NotTouching" />
+      <Member Id="F:Microsoft.Gestures.RelativeDistance.Touching" />
+    </Type>
+    <Type Name="Microsoft.Gestures.RelativePlacement" Id="T:Microsoft.Gestures.RelativePlacement">
+      <Member Id="F:Microsoft.Gestures.RelativePlacement.Above" />
+      <Member Id="F:Microsoft.Gestures.RelativePlacement.Behind" />
+      <Member Id="F:Microsoft.Gestures.RelativePlacement.Below" />
+      <Member Id="F:Microsoft.Gestures.RelativePlacement.InFront" />
+      <Member Id="F:Microsoft.Gestures.RelativePlacement.Left" />
+      <Member Id="F:Microsoft.Gestures.RelativePlacement.Right" />
+    </Type>
+    <Type Name="Microsoft.Gestures.SatisfactionReasoning" Id="T:Microsoft.Gestures.SatisfactionReasoning">
+      <Member Id="M:Microsoft.Gestures.SatisfactionReasoning.#ctor(Microsoft.Gestures.ConstraintAndScore,System.Collections.Generic.ICollection{Microsoft.Gestures.ConstraintAndScore})" />
+      <Member Id="M:Microsoft.Gestures.SatisfactionReasoning.ToString" />
+      <Member Id="P:Microsoft.Gestures.SatisfactionReasoning.ConstraintAndScore" />
+      <Member Id="P:Microsoft.Gestures.SatisfactionReasoning.Evidence" />
+    </Type>
+    <Type Name="Microsoft.Gestures.SatisfactionReasoningExtensios" Id="T:Microsoft.Gestures.SatisfactionReasoningExtensios">
+      <Member Id="F:Microsoft.Gestures.SatisfactionReasoningExtensios._reasoningString" />
+      <Member Id="M:Microsoft.Gestures.SatisfactionReasoningExtensios.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.ConstraintAndScore},Microsoft.Gestures.PoseConstraint,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.SatisfactionReasoningExtensios.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.SatisfactionReasoning},Microsoft.Gestures.PoseConstraint,System.Single,System.Collections.Generic.ICollection{Microsoft.Gestures.ConstraintAndScore})" />
+      <Member Id="M:Microsoft.Gestures.SatisfactionReasoningExtensios.ReasonForPoseRejection(System.Collections.Generic.IReadOnlyCollection{Microsoft.Gestures.SatisfactionReasoning})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.SegmentConnections" Id="T:Microsoft.Gestures.SegmentConnections">
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.#ctor" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.#ctor(Microsoft.Gestures.GestureSegment,System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.ToString" />
+      <Member Id="M:Microsoft.Gestures.SegmentConnections.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.SegmentConnections.From" />
+      <Member Id="P:Microsoft.Gestures.SegmentConnections.To" />
+    </Type>
+    <Type Name="Microsoft.Gestures.SingleFingerContext" Id="T:Microsoft.Gestures.SingleFingerContext">
+      <Member Id="M:Microsoft.Gestures.SingleFingerContext.#ctor" />
+      <Member Id="M:Microsoft.Gestures.SingleFingerContext.#ctor(Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.SingleFingerContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.SingleFingerContext.ToString" />
+      <Member Id="M:Microsoft.Gestures.SingleFingerContext.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.SingleFingerContext.Finger" />
+    </Type>
+    <Type Name="Microsoft.Gestures.SingleHandContext" Id="T:Microsoft.Gestures.SingleHandContext">
+      <Member Id="M:Microsoft.Gestures.SingleHandContext.#ctor" />
+      <Member Id="M:Microsoft.Gestures.SingleHandContext.#ctor(Microsoft.Gestures.Hand)" />
+      <Member Id="M:Microsoft.Gestures.SingleHandContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.SingleHandContext.ToString" />
+      <Member Id="M:Microsoft.Gestures.SingleHandContext.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.SingleHandContext.Hand" />
+    </Type>
+    <Type Name="Microsoft.Gestures.StockMotionSegmentsScript`1" Id="T:Microsoft.Gestures.StockMotionSegmentsScript`1">
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.GetMotionPlaneHashCode" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.IsMotionPlaneEquals(Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.ToString" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.ToSvg" />
+      <Member Id="M:Microsoft.Gestures.StockMotionSegmentsScript`1.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.StockMotionSegmentsScript`1.MotionPlane" />
+      <Member Id="P:Microsoft.Gestures.StockMotionSegmentsScript`1.MotionSegments" />
+    </Type>
+    <Type Name="Microsoft.Gestures.SvgMotionScript" Id="T:Microsoft.Gestures.SvgMotionScript">
+      <Member Id="F:Microsoft.Gestures.SvgMotionScript.DefaultMotionPlane" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.#ctor" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.#ctor(System.String,Microsoft.Gestures.MotionPlane)" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.CalculateHashCode" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.DeepFreeze" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.EqualsInternal(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.GetMotionPlaneHashCode" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.IsMotionPlaneEquals(Microsoft.Gestures.MotionScript)" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.ToString" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.ToSvg" />
+      <Member Id="M:Microsoft.Gestures.SvgMotionScript.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.SvgMotionScript.MotionPlane" />
+      <Member Id="P:Microsoft.Gestures.SvgMotionScript.Svg" />
+    </Type>
+    <Type Name="Microsoft.Gestures.VerticalMotionScript" Id="T:Microsoft.Gestures.VerticalMotionScript">
+      <Member Id="M:Microsoft.Gestures.VerticalMotionScript.#ctor(Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <Member Id="M:Microsoft.Gestures.VerticalMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.VerticalMotionSegment" Id="T:Microsoft.Gestures.VerticalMotionSegment">
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.AllSegments" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcLeftDownward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcLeftUpward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcRightDownward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.ClockwiseArcRightUpward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcLeftDownward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcLeftUpward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcRightDownward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.CounterClockwiseArcRightUpward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalLeftDownward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalLeftUpward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalRightDownward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.DiagonalRightUpward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.Downward" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.Left" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.MotionPlane" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.Right" />
+      <Member Id="P:Microsoft.Gestures.VerticalMotionSegment.Upward" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Xamlizable" Id="T:Microsoft.Gestures.Xamlizable">
+      <Member Id="M:Microsoft.Gestures.Xamlizable.InitializeCore" />
+      <Member Id="M:Microsoft.Gestures.Xamlizable.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <Member Id="M:Microsoft.Gestures.Xamlizable.System#ComponentModel#ISupportInitialize#EndInit" />
+      <Member Id="M:Microsoft.Gestures.Xamlizable.ToXaml" />
+      <Member Id="P:Microsoft.Gestures.Xamlizable.System#Windows#Markup#IUriContext#BaseUri" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Completions">
+    <Type Name="Microsoft.Gestures.Completions.CollectionCompletionSupport" Id="T:Microsoft.Gestures.Completions.CollectionCompletionSupport">
+      <Member Id="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.TryGetCollectionCompletions(System.Type,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <Member Id="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.TryGetCompletions(System.Type,System.String,System.Int32,System.Int32@,System.Int32@,System.Collections.Generic.IEnumerable{System.String}@)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Completions.CompletionSupportAttribute" Id="T:Microsoft.Gestures.Completions.CompletionSupportAttribute">
+      <Member Id="M:Microsoft.Gestures.Completions.CompletionSupportAttribute.#ctor(System.Type)" />
+      <Member Id="P:Microsoft.Gestures.Completions.CompletionSupportAttribute.Type" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Completions.FingersContextCompletionSupport" Id="T:Microsoft.Gestures.Completions.FingersContextCompletionSupport">
+      <Member Id="M:Microsoft.Gestures.Completions.FingersContextCompletionSupport.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Completions.FingersContextCompletionSupport.TryGetCollectionCompletions(System.Type,System.Collections.Generic.IEnumerable{System.String}@)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Completions.HandContextCompletionSupport" Id="T:Microsoft.Gestures.Completions.HandContextCompletionSupport">
+      <Member Id="M:Microsoft.Gestures.Completions.HandContextCompletionSupport.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Completions.HandContextCompletionSupport.TryGetCollectionCompletions(System.Type,System.Collections.Generic.IEnumerable{System.String}@)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Completions.ICompletionSupport" Id="T:Microsoft.Gestures.Completions.ICompletionSupport">
+      <Member Id="M:Microsoft.Gestures.Completions.ICompletionSupport.TryGetCompletions(System.Type,System.String,System.Int32,System.Int32@,System.Int32@,System.Collections.Generic.IEnumerable{System.String}@)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Endpoint">
+    <Type Name="Microsoft.Gestures.Endpoint.ClientInfoBuilder" Id="T:Microsoft.Gestures.Endpoint.ClientInfoBuilder">
+      <Member Id="M:Microsoft.Gestures.Endpoint.ClientInfoBuilder.Build" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs" Id="T:Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs">
+      <Member Id="M:Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs.#ctor(System.Threading.Tasks.Task{System.Boolean})" />
+      <Member Id="P:Microsoft.Gestures.Endpoint.ConnectionClosedEventArgs.ReconnectionTask" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.ConnectionClosedHandler" Id="T:Microsoft.Gestures.Endpoint.ConnectionClosedHandler" />
+    <Type Name="Microsoft.Gestures.Endpoint.EndpointStatus" Id="T:Microsoft.Gestures.Endpoint.EndpointStatus">
+      <Member Id="F:Microsoft.Gestures.Endpoint.EndpointStatus.Connected" />
+      <Member Id="F:Microsoft.Gestures.Endpoint.EndpointStatus.Disconnected" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.GesturesServiceEndpoint" Id="T:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint">
+      <Member Id="E:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.ConnectionClosed" />
+      <Member Id="E:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.StatusChanged" />
+      <Member Id="E:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.WarningLog" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.#ctor(Microsoft.Gestures.Endpoint.IConnectionFactory,Microsoft.Gestures.IGestureContainerCollection)" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.ConnectAsync" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.ConnectAsync(Microsoft.Gestures.Endpoint.IConnectionFactory,System.Int32,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.Disconnect" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.Dispose" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.IsRegistered(Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.RegisterGesture(Microsoft.Gestures.Gesture,System.Boolean)" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.RegisterToSkeleton(Microsoft.Gestures.HandSkeletonsReadyHandler)" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.UnregisterFromSkeleton" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.UnregisterGesture(Microsoft.Gestures.Gesture)" />
+      <Member Id="P:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.DelayBetweenRetries" />
+      <Member Id="P:Microsoft.Gestures.Endpoint.GesturesServiceEndpoint.Status" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.GesturesServiceEndpointFactory" Id="T:Microsoft.Gestures.Endpoint.GesturesServiceEndpointFactory">
+      <Member Id="M:Microsoft.Gestures.Endpoint.GesturesServiceEndpointFactory.Create(System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.IConnectionFactory" Id="T:Microsoft.Gestures.Endpoint.IConnectionFactory">
+      <Member Id="M:Microsoft.Gestures.Endpoint.IConnectionFactory.Create" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.StatusChangedEventArgs" Id="T:Microsoft.Gestures.Endpoint.StatusChangedEventArgs">
+      <Member Id="M:Microsoft.Gestures.Endpoint.StatusChangedEventArgs.#ctor(Microsoft.Gestures.Endpoint.EndpointStatus)" />
+      <Member Id="P:Microsoft.Gestures.Endpoint.StatusChangedEventArgs.Status" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.StatusChangedHandler" Id="T:Microsoft.Gestures.Endpoint.StatusChangedHandler" />
+    <Type Name="Microsoft.Gestures.Endpoint.TcpConnectionFactory" Id="T:Microsoft.Gestures.Endpoint.TcpConnectionFactory">
+      <Member Id="M:Microsoft.Gestures.Endpoint.TcpConnectionFactory.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.Endpoint.TcpConnectionFactory.Create" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.WarningEventArgs" Id="T:Microsoft.Gestures.Endpoint.WarningEventArgs">
+      <Member Id="M:Microsoft.Gestures.Endpoint.WarningEventArgs.#ctor(System.Exception)" />
+      <Member Id="P:Microsoft.Gestures.Endpoint.WarningEventArgs.Exception" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Endpoint.WarningHandler" Id="T:Microsoft.Gestures.Endpoint.WarningHandler" />
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.InputBindings">
+    <Type Name="Microsoft.Gestures.InputBindings.ButtonInputBinding" Id="T:Microsoft.Gestures.InputBindings.ButtonInputBinding">
+      <Member Id="M:Microsoft.Gestures.InputBindings.ButtonInputBinding.#ctor" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.ButtonInputBinding.CreateInstanceCore" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.ButtonInputBinding.OnGestureTrigger(Microsoft.Gestures.InputBindings.GestureTriggerEventArgs)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.InputBindings.GestureDevice" Id="T:Microsoft.Gestures.InputBindings.GestureDevice">
+      <Member Id="P:Microsoft.Gestures.InputBindings.GestureDevice.ActiveSource" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.GestureDevice.Primary" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.GestureDevice.Target" />
+    </Type>
+    <Type Name="Microsoft.Gestures.InputBindings.GesturesFrameworkBinding" Id="T:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding">
+      <Member Id="F:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.GestureTriggerEvent" />
+      <Member Id="F:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.PreviewGestureTriggerEvent" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.#ctor" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.AddGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.AddPreviewGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.RemoveGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.GesturesFrameworkBinding.RemovePreviewGestureTriggerHandler(System.Windows.DependencyObject,Microsoft.Gestures.InputBindings.GestureTriggerEventHandler)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.InputBindings.GestureTriggerEventArgs" Id="T:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs">
+      <Member Id="M:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs.#ctor(Microsoft.Gestures.InputBindings.GestureDevice,System.Int32,Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs.Gesture" />
+    </Type>
+    <Type Name="Microsoft.Gestures.InputBindings.GestureTriggerEventHandler" Id="T:Microsoft.Gestures.InputBindings.GestureTriggerEventHandler" />
+    <Type Name="Microsoft.Gestures.InputBindings.HandGestureConverter" Id="T:Microsoft.Gestures.InputBindings.HandGestureConverter">
+      <Member Id="M:Microsoft.Gestures.InputBindings.HandGestureConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.HandGestureConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.HandGestureConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.InputBindings.InputBinding" Id="T:Microsoft.Gestures.InputBindings.InputBinding">
+      <Member Id="E:Microsoft.Gestures.InputBindings.InputBinding.GestureTrigger" />
+      <Member Id="F:Microsoft.Gestures.InputBindings.InputBinding.HandGestureProperty" />
+      <Member Id="F:Microsoft.Gestures.InputBindings.InputBinding.IsRegisteredProperty" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.InputBinding.#ctor" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.InputBinding.#ctor(System.Windows.Input.ICommand,Microsoft.Gestures.Gesture)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.InputBinding.CreateElementListener(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.InputBinding.CreateInstanceCore" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.InputBinding.OnGestureTrigger(Microsoft.Gestures.InputBindings.GestureTriggerEventArgs)" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.InputBinding.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <Member Id="M:Microsoft.Gestures.InputBindings.InputBinding.System#ComponentModel#ISupportInitialize#EndInit" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.InputBinding.AttachedElement" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.InputBinding.HandGesture" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.InputBinding.IsRegistered" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.InputBinding.System#Windows#Markup#IUriContext#BaseUri" />
+    </Type>
+  </Namespace>
+  <Namespace Name="">
+    <Type Name="Microsoft.Gestures.InputBindings.InputBinding/IElementListener" Id="T:Microsoft.Gestures.InputBindings.InputBinding.IElementListener">
+      <Member Id="E:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActiveChanged" />
+      <Member Id="P:Microsoft.Gestures.InputBindings.InputBinding.IElementListener.IsActive" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Runtime.Server">
+    <Type Name="Microsoft.Gestures.Runtime.Server.EnumeratorExtensions" Id="T:Microsoft.Gestures.Runtime.Server.EnumeratorExtensions">
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.EnumeratorExtensions.GetSafeEnumerable``1(System.Collections.Generic.IEnumerator{``0})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection" Id="T:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection">
+      <Member Id="E:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Closed" />
+      <Member Id="E:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Message" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.#ctor(System.Net.Sockets.TcpClient,System.Boolean)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Dispose" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.IsConnected" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Send(System.Collections.Generic.Dictionary{System.String,System.String})" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.Send(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesServiceTcpConnection.StartListening" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Runtime.Server.GesturesTcpSocket" Id="T:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket">
+      <Member Id="E:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.ConnectionReceived" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.Start(System.Int32)" />
+      <Member Id="M:Microsoft.Gestures.Runtime.Server.GesturesTcpSocket.Stop" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Skeleton">
+    <Type Name="Microsoft.Gestures.Skeleton.AxisAngle" Id="T:Microsoft.Gestures.Skeleton.AxisAngle">
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.#ctor(Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.#ctor(System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.GetAngleBetween(Microsoft.Gestures.Skeleton.AxisAngle)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.GetHashCode" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.Interpolate(Microsoft.Gestures.Skeleton.AxisAngle,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.Rotate(System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.AxisAngle.ToQuaternion" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Skeleton.HandSkeleton" Id="T:Microsoft.Gestures.Skeleton.HandSkeleton">
+      <Member Id="M:Microsoft.Gestures.Skeleton.HandSkeleton.#ctor(Microsoft.Gestures.Skeleton.IHandSkeleton)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.HandSkeleton.#ctor(System.Guid,Microsoft.Gestures.Hand,Microsoft.Gestures.Skeleton.Vector3[])" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.HandSkeleton.Satisfies(Microsoft.Gestures.HandPose)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.HandSkeleton.ToNormalizedSkeleton" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.HandSkeleton.ToVector3Array(Microsoft.Gestures.Skeleton.IHandSkeleton)" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.FingerDirections" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.FingerPositions" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.Handedness" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.Id" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.IndexDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.IndexPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.MiddleDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.MiddlePosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.PalmDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.PalmOrientation" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.PalmPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.PinkyDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.PinkyPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.RingDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.RingPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.ThumbDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.HandSkeleton.ThumbPosition" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Skeleton.IHandSkeleton" Id="T:Microsoft.Gestures.Skeleton.IHandSkeleton">
+      <Member Id="M:Microsoft.Gestures.Skeleton.IHandSkeleton.Satisfies(Microsoft.Gestures.HandPose)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.IHandSkeleton.ToNormalizedSkeleton" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.FingerDirections" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.FingerPositions" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.Handedness" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.Id" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.IndexDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.IndexPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.MiddleDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.MiddlePosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PalmDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PalmOrientation" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PalmPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PinkyDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.PinkyPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.RingDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.RingPosition" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.ThumbDirection" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.IHandSkeleton.ThumbPosition" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Skeleton.Quaternion" Id="T:Microsoft.Gestures.Skeleton.Quaternion">
+      <Member Id="M:Microsoft.Gestures.Skeleton.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Quaternion.op_Multiply(Microsoft.Gestures.Skeleton.Quaternion,Microsoft.Gestures.Skeleton.Quaternion)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Quaternion.Rotate(System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Quaternion.ToAxisAngle" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.Quaternion.I" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.Quaternion.J" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.Quaternion.K" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.Quaternion.R" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Skeleton.SkeletonConstants" Id="T:Microsoft.Gestures.Skeleton.SkeletonConstants">
+      <Member Id="F:Microsoft.Gestures.Skeleton.SkeletonConstants.PoseSatisfactionThreshold" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Skeleton.SkeletonSerializer" Id="T:Microsoft.Gestures.Skeleton.SkeletonSerializer">
+      <Member Id="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.DeserializeSkeleton(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.DeserializeSkeletons(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.Serialize(Microsoft.Gestures.Skeleton.IHandSkeleton)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.Serialize(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Skeleton.IHandSkeleton})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Skeleton.Vector3" Id="T:Microsoft.Gestures.Skeleton.Vector3">
+      <Member Id="F:Microsoft.Gestures.Skeleton.Vector3.X" />
+      <Member Id="F:Microsoft.Gestures.Skeleton.Vector3.Y" />
+      <Member Id="F:Microsoft.Gestures.Skeleton.Vector3.Z" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.#ctor(System.Single,System.Single,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.#ctor(System.Single[])" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.AngleTo(Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.Clone" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.Cross(Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.Equals(Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.HasNanEntries" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.Interpolate(Microsoft.Gestures.Skeleton.Vector3,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.NanVector" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.op_Addition(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(Microsoft.Gestures.Skeleton.Vector3,System.Single)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(System.Single,Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.op_Subtraction(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.op_UnaryNegation(Microsoft.Gestures.Skeleton.Vector3)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.Parse(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.ToFloatArray" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.ToNormalized" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.ToString(System.String)" />
+      <Member Id="M:Microsoft.Gestures.Skeleton.Vector3.TwoNorm" />
+      <Member Id="P:Microsoft.Gestures.Skeleton.Vector3.Item(System.Int32)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Stock.Gestures">
+    <Type Name="Microsoft.Gestures.Stock.Gestures.AlignLeftGesture" Id="T:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.MoveLeftTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.SpreadLeftTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.AlignLeftGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.AlignRightGesture" Id="T:Microsoft.Gestures.Stock.Gestures.AlignRightGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.AlignRightGesture.MoveRightTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.AlignRightGesture.SpreadRightTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.AlignRightGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.AlignRightGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.CutGesture" Id="T:Microsoft.Gestures.Stock.Gestures.CutGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.CutGesture.ScissorsCloseTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.CutGesture.ScissorsOpenTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.CutGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.CutGesture.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.DismissGesture" Id="T:Microsoft.Gestures.Stock.Gestures.DismissGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DismissGesture.BackHandTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DismissGesture.ReleaseHandTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.DismissGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.DismissGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.DragItemGesture" Id="T:Microsoft.Gestures.Stock.Gestures.DragItemGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DragItemGesture.MoveDownTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DragItemGesture.MoveLeftTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DragItemGesture.MoveRightTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DragItemGesture.MoveUpTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DragItemGesture.PinchSpreadPoseTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DragItemGesture.PinchTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.DragItemGesture.ReleaseTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.DragItemGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.DragItemGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.ExpandGesture" Id="T:Microsoft.Gestures.Stock.Gestures.ExpandGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ExpandGesture.PinchSpreadTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ExpandGesture.PinchTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ExpandGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ExpandGesture.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.ExplodeGesture" Id="T:Microsoft.Gestures.Stock.Gestures.ExplodeGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ExplodeGesture.AllPinchForwardTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ExplodeGesture.SpreadTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ExplodeGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ExplodeGesture.#ctor(System.String,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ExplodeGesture.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.Gestures.ExplodeGesture.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.FingerSnapGesture" Id="T:Microsoft.Gestures.Stock.Gestures.FingerSnapGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.FingerSnapGesture.FignerSetTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.FingerSnapGesture.SnapTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.FingerSnapGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.FingerSnapGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.GrabGesture" Id="T:Microsoft.Gestures.Stock.Gestures.GrabGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.GrabGesture.FistForwardTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.GrabGesture.SpreadForwardTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.GrabGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.GrabGesture.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.GrabGesture.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.Gestures.GrabGesture.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.HangUpGesture" Id="T:Microsoft.Gestures.Stock.Gestures.HangUpGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.HangUpGesture.OnPhoneDownTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.HangUpGesture.OnPhoneTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.HangUpGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.HangUpGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.ImplodeGesture" Id="T:Microsoft.Gestures.Stock.Gestures.ImplodeGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.AllPinchForwardTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.SpreadTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.#ctor(System.String,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.Gestures.ImplodeGesture.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.RotateRightGesture" Id="T:Microsoft.Gestures.Stock.Gestures.RotateRightGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.RotateRightGesture.LockObjectTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.RotateRightGesture.RotateObjectTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.RotateRightGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.RotateRightGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.ShootGesture" Id="T:Microsoft.Gestures.Stock.Gestures.ShootGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ShootGesture.AimTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ShootGesture.FireTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ShootGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ShootGesture.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.StockGesture" Id="T:Microsoft.Gestures.Stock.Gestures.StockGesture">
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.StockGesture.#ctor(System.String,Microsoft.Gestures.GestureSegment[])" />
+      <Member Id="P:Microsoft.Gestures.Stock.Gestures.StockGesture.Segments" />
+      <Member Id="P:Microsoft.Gestures.Stock.Gestures.StockGesture.SegmentsConnections" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.SwipeGesture" Id="T:Microsoft.Gestures.Stock.Gestures.SwipeGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.SwipeGesture.FingersRightAngleTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.SwipeGesture.SpreadTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.SwipeGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.SwipeGesture.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.SwipeGesture.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.Gestures.SwipeGesture.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.TapGesture" Id="T:Microsoft.Gestures.Stock.Gestures.TapGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.TapGesture.PinchSpreadPoseTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.TapGesture.PinchTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.TapGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.TapGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture" Id="T:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.ThreePinchSpreadTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.ThreePinchTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.ThrowLeftGesture" Id="T:Microsoft.Gestures.Stock.Gestures.ThrowLeftGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThrowLeftGesture.ForehandTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThrowLeftGesture.InwardFistTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThrowLeftGesture.ThumbsUpTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ThrowLeftGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ThrowLeftGesture.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.Gestures.ThrowRightGesture" Id="T:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture">
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.ForehandTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.InwardFistTriggered" />
+      <Member Id="E:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.ThumbsUpTriggered" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.Gestures.ThrowRightGesture.#ctor(System.String)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Stock.HandMotions">
+    <Type Name="Microsoft.Gestures.Stock.HandMotions.CheckMarkMotion" Id="T:Microsoft.Gestures.Stock.HandMotions.CheckMarkMotion">
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.CheckMarkMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.CheckMarkMotion.#ctor(System.String,System.Nullable{Microsoft.Gestures.Hand})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandMotions.ClockwiseCircleMotion" Id="T:Microsoft.Gestures.Stock.HandMotions.ClockwiseCircleMotion">
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.ClockwiseCircleMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.ClockwiseCircleMotion.#ctor(System.String,System.Nullable{Microsoft.Gestures.Hand})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion" Id="T:Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion">
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.CounterClockwiseCircleMotion.#ctor(System.String,System.Nullable{Microsoft.Gestures.Hand})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandMotions.InfinityMotion" Id="T:Microsoft.Gestures.Stock.HandMotions.InfinityMotion">
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.InfinityMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.InfinityMotion.#ctor(System.String,System.Nullable{Microsoft.Gestures.Hand})" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandMotions.StockHandMotion" Id="T:Microsoft.Gestures.Stock.HandMotions.StockHandMotion">
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.#ctor(System.String,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment},System.Nullable{Microsoft.Gestures.Hand})" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.FingerMotions" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.MotionConstraints" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandMotions.StockHandMotion.PalmMotion" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandMotions.XMotion" Id="T:Microsoft.Gestures.Stock.HandMotions.XMotion">
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.XMotion.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandMotions.XMotion.#ctor(System.String,System.Nullable{Microsoft.Gestures.Hand})" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.Stock.HandPoses">
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.AimPose" Id="T:Microsoft.Gestures.Stock.HandPoses.AimPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AimPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AimPose.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose" Id="T:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.AllFingersSpreadPose.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.AllPinchPose" Id="T:Microsoft.Gestures.Stock.HandPoses.AllPinchPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AllPinchPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AllPinchPose.#ctor(System.String,Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AllPinchPose.#ctor(System.String,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.AllPinchPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.AllPinchPose.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.ClamPose" Id="T:Microsoft.Gestures.Stock.HandPoses.ClamPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ClamPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ClamPose.#ctor(System.String,System.Boolean,Microsoft.Gestures.HandContext)" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.ClamPose.ClamOpen" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose" Id="T:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.FirePose" Id="T:Microsoft.Gestures.Stock.HandPoses.FirePose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FirePose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FirePose.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.FistPose" Id="T:Microsoft.Gestures.Stock.HandPoses.FistPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FistPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FistPose.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.FistPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.FistPose.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose" Id="T:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.#ctor(System.String,System.Boolean,System.Boolean,Microsoft.Gestures.PoseDirection,System.Boolean)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.Direction" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsHorizontalSwipe" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsIndexSwiped" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsMiddleSwiped" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexMiddleSwipePose.IsOthersFolded" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose" Id="T:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.#ctor(System.String,Microsoft.Gestures.RelativePlacement,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.IndexThumbPointPose.IndexThumbRelation" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.InwardFistPose" Id="T:Microsoft.Gestures.Stock.HandPoses.InwardFistPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.InwardFistPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.InwardFistPose.#ctor(System.String,Microsoft.Gestures.Hand)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.LeftForehandPose" Id="T:Microsoft.Gestures.Stock.HandPoses.LeftForehandPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.LeftForehandPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.LeftForehandPose.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.OnPhonePose" Id="T:Microsoft.Gestures.Stock.HandPoses.OnPhonePose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.OnPhonePose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.OnPhonePose.#ctor(System.String,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.OnPhonePose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.OnPhonePose.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.PinchPose" Id="T:Microsoft.Gestures.Stock.HandPoses.PinchPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.PinchPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.PinchPose.#ctor(System.String,Microsoft.Gestures.Finger,System.Boolean,Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.PinchPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.PinchPose.Finger" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.PinchPose.PinchSpread" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.PointingFingerPose" Id="T:Microsoft.Gestures.Stock.HandPoses.PointingFingerPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.PointingFingerPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.PointingFingerPose.#ctor(System.String,Microsoft.Gestures.Finger,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.PointingFingerPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.PointingFingerPose.PointingFinger" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.RightForehandPose" Id="T:Microsoft.Gestures.Stock.HandPoses.RightForehandPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.RightForehandPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.RightForehandPose.#ctor(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.ScissorsPose" Id="T:Microsoft.Gestures.Stock.HandPoses.ScissorsPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ScissorsPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ScissorsPose.#ctor(System.String,System.Boolean,Microsoft.Gestures.HandContext)" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.ScissorsPose.ScissorsOpen" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.SpreadPose" Id="T:Microsoft.Gestures.Stock.HandPoses.SpreadPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.SpreadPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.SpreadPose.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.SpreadPose.ValidateCore" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.SpreadPose.PalmDirection" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.StockHandPose" Id="T:Microsoft.Gestures.Stock.HandPoses.StockHandPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.StockHandPose.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.StockHandPose.#ctor(System.String,Microsoft.Gestures.PoseConstraint[])" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.StockHandPose.FingerPoses" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.StockHandPose.FingertipDistanceRelations" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.StockHandPose.FingertipPlacementRelations" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.StockHandPose.PalmPose" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.StockHandPose.PoseConstraints" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.ThreePinchPose" Id="T:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose.#ctor(System.String,System.Boolean,Microsoft.Gestures.HandContext)" />
+      <Member Id="P:Microsoft.Gestures.Stock.HandPoses.ThreePinchPose.PinchSpread" />
+    </Type>
+    <Type Name="Microsoft.Gestures.Stock.HandPoses.ThumbsUpPose" Id="T:Microsoft.Gestures.Stock.HandPoses.ThumbsUpPose">
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ThumbsUpPose.#ctor" />
+      <Member Id="M:Microsoft.Gestures.Stock.HandPoses.ThumbsUpPose.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.XamlMarkupExtensions">
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtension.CreateFingersContext" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter" Id="T:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllFingersExtensionTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.AllHandsExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.AllHandsExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllHandsExtension.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AllHandsExtension.CreateHandContext" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension.#ctor(Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger,Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtension.CreateFingersContext" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtensionTypeConverter" Id="T:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtensionTypeConverter">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtensionTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtensionTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyFingerExtensionTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension.CreateHandContext" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension.CreateFingersContext" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension.ProvideValue(System.IServiceProvider)" />
+      <Member Id="P:Microsoft.Gestures.XamlMarkupExtensions.FingersContextExtension.Fingers" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension.CreateHandContext" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension.ProvideValue(System.IServiceProvider)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension.#ctor(Microsoft.Gestures.Finger)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtension.CreateFingersContext" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtensionTypeConverter" Id="T:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtensionTypeConverter">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtensionTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtensionTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleFingerExtensionTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension" Id="T:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.#ctor(Microsoft.Gestures.Hand)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.CreateHandContext" />
+      <Member Id="P:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.Hand" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtensionTypeConverter" Id="T:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtensionTypeConverter">
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtensionTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtensionTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtensionTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Gestures.XamlTypeConverters">
+    <Type Name="Microsoft.Gestures.XamlTypeConverters.FingersContextConverter" Id="T:Microsoft.Gestures.XamlTypeConverters.FingersContextConverter">
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.FingersContextConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.FingersContextConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.FingersContextConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.FingersContextConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.FingersContextConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlTypeConverters.HandContextConverter" Id="T:Microsoft.Gestures.XamlTypeConverters.HandContextConverter">
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.HandContextConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.HandContextConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.HandContextConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.HandContextConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.HandContextConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+    </Type>
+    <Type Name="Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter" Id="T:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter">
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.#ctor" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <Member Id="M:Microsoft.Gestures.XamlTypeConverters.MotionScriptConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+    </Type>
+  </Namespace>
+</Framework>

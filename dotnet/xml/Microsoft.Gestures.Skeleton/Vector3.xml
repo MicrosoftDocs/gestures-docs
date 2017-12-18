@@ -1,0 +1,543 @@
+﻿<Type Name="Vector3" FullName="Microsoft.Gestures.Skeleton.Vector3">
+  <TypeSignature Language="C#" Value="public class Vector3 : ICloneable, IEquatable&lt;Microsoft.Gestures.Skeleton.Vector3&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Vector3 extends System.Object implements class System.ICloneable, class System.IEquatable`1&lt;class Microsoft.Gestures.Skeleton.Vector3&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.Vector3" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Gestures.Skeleton.Vector3&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector3 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector3 (float[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.#ctor(System.Single[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="System.Single[]" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector3 (float x, float y, float z);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 x, float32 y, float32 z) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.#ctor(System.Single,System.Single,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="z" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="z">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AngleTo">
+      <MemberSignature Language="C#" Value="public float AngleTo (Microsoft.Gestures.Skeleton.Vector3 other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 AngleTo(class Microsoft.Gestures.Skeleton.Vector3 other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.AngleTo(Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>Angle between this and <param name="other" /> in degrees</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cross">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 Cross (Microsoft.Gestures.Skeleton.Vector3 other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Gestures.Skeleton.Vector3 Cross(class Microsoft.Gestures.Skeleton.Vector3 other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Cross(Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Gestures.Skeleton.Vector3 other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Gestures.Skeleton.Vector3 other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Equals(Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasNanEntries">
+      <MemberSignature Language="C#" Value="public bool HasNanEntries ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasNanEntries() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.HasNanEntries" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interpolate">
+      <MemberSignature Language="C#" Value="public void Interpolate (Microsoft.Gestures.Skeleton.Vector3 target, float factor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Interpolate(class Microsoft.Gestures.Skeleton.Vector3 target, float32 factor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Interpolate(Microsoft.Gestures.Skeleton.Vector3,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.Gestures.Skeleton.Vector3" />
+        <Parameter Name="factor" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="factor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public float this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.Vector3.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NanVector">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 NanVector ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Gestures.Skeleton.Vector3 NanVector() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.NanVector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator + (Microsoft.Gestures.Skeleton.Vector3 from, Microsoft.Gestures.Skeleton.Vector3 to);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Addition(class Microsoft.Gestures.Skeleton.Vector3 from, class Microsoft.Gestures.Skeleton.Vector3 to) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Addition(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="Microsoft.Gestures.Skeleton.Vector3" />
+        <Parameter Name="to" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="from">To be added.</param>
+        <param name="to">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static float operator * (Microsoft.Gestures.Skeleton.Vector3 vec1, Microsoft.Gestures.Skeleton.Vector3 vec2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float32 op_Multiply(class Microsoft.Gestures.Skeleton.Vector3 vec1, class Microsoft.Gestures.Skeleton.Vector3 vec2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vec1" Type="Microsoft.Gestures.Skeleton.Vector3" />
+        <Parameter Name="vec2" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="vec1">To be added.</param>
+        <param name="vec2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator * (Microsoft.Gestures.Skeleton.Vector3 vec, float scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Multiply(class Microsoft.Gestures.Skeleton.Vector3 vec, float32 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(Microsoft.Gestures.Skeleton.Vector3,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vec" Type="Microsoft.Gestures.Skeleton.Vector3" />
+        <Parameter Name="scalar" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="vec">To be added.</param>
+        <param name="scalar">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator * (float scalar, Microsoft.Gestures.Skeleton.Vector3 vec);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Multiply(float32 scalar, class Microsoft.Gestures.Skeleton.Vector3 vec) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Multiply(System.Single,Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalar" Type="System.Single" />
+        <Parameter Name="vec" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="scalar">To be added.</param>
+        <param name="vec">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator - (Microsoft.Gestures.Skeleton.Vector3 from, Microsoft.Gestures.Skeleton.Vector3 to);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_Subtraction(class Microsoft.Gestures.Skeleton.Vector3 from, class Microsoft.Gestures.Skeleton.Vector3 to) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_Subtraction(Microsoft.Gestures.Skeleton.Vector3,Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="Microsoft.Gestures.Skeleton.Vector3" />
+        <Parameter Name="to" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="from">To be added.</param>
+        <param name="to">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_UnaryNegation">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 operator - (Microsoft.Gestures.Skeleton.Vector3 negated);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.Skeleton.Vector3 op_UnaryNegation(class Microsoft.Gestures.Skeleton.Vector3 negated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.op_UnaryNegation(Microsoft.Gestures.Skeleton.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="negated" Type="Microsoft.Gestures.Skeleton.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="negated">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3 Parse (string vectorString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Gestures.Skeleton.Vector3 Parse(string vectorString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vectorString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="vectorString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToFloatArray">
+      <MemberSignature Language="C#" Value="public float[] ToFloatArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32[] ToFloatArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.ToFloatArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNormalized">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 ToNormalized ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Gestures.Skeleton.Vector3 ToNormalized() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.ToNormalized" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (string numberFormat = &quot;F2&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string numberFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.ToString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="numberFormat" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="numberFormat">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoNorm">
+      <MemberSignature Language="C#" Value="public float TwoNorm ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 TwoNorm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.Vector3.TwoNorm" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public float X;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 X" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.Vector3.X" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public float Y;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 Y" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.Vector3.Y" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Z">
+      <MemberSignature Language="C#" Value="public float Z;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 Z" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.Vector3.Z" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

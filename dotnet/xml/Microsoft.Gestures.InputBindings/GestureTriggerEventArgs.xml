@@ -1,0 +1,82 @@
+﻿<Type Name="GestureTriggerEventArgs" FullName="Microsoft.Gestures.InputBindings.GestureTriggerEventArgs">
+  <TypeSignature Language="C#" Value="public class GestureTriggerEventArgs : System.Windows.Input.InputEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureTriggerEventArgs extends System.Windows.Input.InputEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.InputEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GestureTriggerEventArgs (Microsoft.Gestures.InputBindings.GestureDevice gestureDevice, int timestamp, Microsoft.Gestures.Gesture gesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.InputBindings.GestureDevice gestureDevice, int32 timestamp, class Microsoft.Gestures.Gesture gesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs.#ctor(Microsoft.Gestures.InputBindings.GestureDevice,System.Int32,Microsoft.Gestures.Gesture)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gestureDevice" Type="Microsoft.Gestures.InputBindings.GestureDevice" />
+        <Parameter Name="timestamp" Type="System.Int32" />
+        <Parameter Name="gesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="gestureDevice">To be added.</param>
+        <param name="timestamp">To be added.</param>
+        <param name="gesture">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gesture">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Gesture Gesture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Gesture Gesture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs.Gesture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Gesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.InputBindings.GestureTriggerEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

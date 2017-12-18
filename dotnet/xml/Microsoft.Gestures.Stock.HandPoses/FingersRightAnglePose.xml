@@ -1,0 +1,97 @@
+﻿<Type Name="FingersRightAnglePose" FullName="Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose">
+  <TypeSignature Language="C#" Value="public sealed class FingersRightAnglePose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FingersRightAnglePose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.Stock.HandPoses.StockHandPose</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingersRightAnglePose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingersRightAnglePose (string name, Microsoft.Gestures.PoseDirection handDirection = Microsoft.Gestures.PoseDirection.Forward, Microsoft.Gestures.HandContext hand = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype Microsoft.Gestures.PoseDirection handDirection, class Microsoft.Gestures.HandContext hand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.#ctor(System.String,Microsoft.Gestures.PoseDirection,Microsoft.Gestures.HandContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="handDirection" Type="Microsoft.Gestures.PoseDirection" />
+        <Parameter Name="hand" Type="Microsoft.Gestures.HandContext" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="handDirection">To be added.</param>
+        <param name="hand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PalmDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.PoseDirection PalmDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.PoseDirection PalmDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.PalmDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.FingersRightAnglePose.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

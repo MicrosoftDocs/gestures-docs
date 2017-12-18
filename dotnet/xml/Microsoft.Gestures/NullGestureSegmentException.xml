@@ -1,0 +1,37 @@
+﻿<Type Name="NullGestureSegmentException" FullName="Microsoft.Gestures.NullGestureSegmentException">
+  <TypeSignature Language="C#" Value="public class NullGestureSegmentException : Microsoft.Gestures.NullOrEmptyValidationException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NullGestureSegmentException extends Microsoft.Gestures.NullOrEmptyValidationException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.NullGestureSegmentException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.NullOrEmptyValidationException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NullGestureSegmentException (System.Linq.Expressions.Expression&lt;Func&lt;object&gt;&gt; variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`1&lt;object&gt;&gt; variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.NullGestureSegmentException.#ctor(System.Linq.Expressions.Expression{System.Func{System.Object}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,75 @@
+﻿<Type Name="FrozenObjectModifiedException" FullName="Microsoft.Gestures.FrozenObjectModifiedException">
+  <TypeSignature Language="C#" Value="public class FrozenObjectModifiedException : Microsoft.Gestures.GesturesFrameworkException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FrozenObjectModifiedException extends Microsoft.Gestures.GesturesFrameworkException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FrozenObjectModifiedException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.GesturesFrameworkException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FrozenObjectModifiedException (Microsoft.Gestures.IFreezable frozenObj, string violatingPropertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.IFreezable frozenObj, string violatingPropertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FrozenObjectModifiedException.#ctor(Microsoft.Gestures.IFreezable,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="frozenObj" Type="Microsoft.Gestures.IFreezable" />
+        <Parameter Name="violatingPropertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="frozenObj">To be added.</param>
+        <param name="violatingPropertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrozenObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.IFreezable FrozenObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.IFreezable FrozenObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FrozenObjectModifiedException.FrozenObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.IFreezable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViolatingPropertyName">
+      <MemberSignature Language="C#" Value="public string ViolatingPropertyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ViolatingPropertyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FrozenObjectModifiedException.ViolatingPropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,131 @@
+﻿<Type Name="GestureSegmentConnections" FullName="Microsoft.Gestures.GestureSegmentConnections">
+  <TypeSignature Language="C#" Value="public class GestureSegmentConnections : Microsoft.Gestures.GesturesFrameworkObjectList&lt;Microsoft.Gestures.SegmentConnections&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureSegmentConnections extends Microsoft.Gestures.GesturesFrameworkObjectList`1&lt;class Microsoft.Gestures.SegmentConnections&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GestureSegmentConnections" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.GesturesFrameworkObjectList&lt;Microsoft.Gestures.SegmentConnections&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="GesturesFrameworkObjectType">Microsoft.Gestures.SegmentConnections</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplay, nq}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents the list of all possible transitions (<see cref="T:Microsoft.Gestures.SegmentConnections" />) in a given <see cref="T:Microsoft.Gestures.Gesture" /> instance's state-machine.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GestureSegmentConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentConnections.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a blank <see cref="T:Microsoft.Gestures.GestureSegmentConnections" /> instance, not associated with any <see cref="T:Microsoft.Gestures.Gesture" /> and not holding information regarding any 
+            <see cref="T:Microsoft.Gestures.SegmentConnections" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GestureSegmentConnections (Microsoft.Gestures.Gesture containingGesture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.Gesture containingGesture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentConnections.#ctor(Microsoft.Gestures.Gesture)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="containingGesture" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="containingGesture">The <see cref="T:Microsoft.Gestures.Gesture" /> object this <see cref="T:Microsoft.Gestures.GestureSegmentConnections" /> instance will be associated with.</param>
+        <summary>
+            Creates a blank <see cref="T:Microsoft.Gestures.GestureSegmentConnections" /> instance and associates it with <paramref name="containingGesture" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt; this[Microsoft.Gestures.GestureSegment gestureSegment] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.GestureSegment&gt; Item(class Microsoft.Gestures.GestureSegment)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.GestureSegmentConnections.Item(Microsoft.Gestures.GestureSegment)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gestureSegment" Type="Microsoft.Gestures.GestureSegment" />
+      </Parameters>
+      <Docs>
+        <param name="gestureSegment">The <see cref="T:Microsoft.Gestures.GestureSegment" /> whose descendant states are queried.</param>
+        <summary>
+            Lists all the <see cref="T:Microsoft.Gestures.GestureSegment" />s that are possible consequent states of <paramref name="gestureSegment" /> in the containing <see cref="T:Microsoft.Gestures.Gesture" /> object.
+            </summary>
+        <value>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> listing all the possible consequent states of <paramref name="gestureSegment" /> in the containing <see cref="T:Microsoft.Gestures.Gesture" /> 
+            object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentConnections.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a string description of all the <see cref="T:Microsoft.Gestures.SegmentConnections" /> stored in this instance.
+            </summary>
+        <returns>A string description of all the <see cref="T:Microsoft.Gestures.SegmentConnections" /> stored in this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.GestureSegmentConnections.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,88 @@
+﻿<Type Name="ThreeUnpinchGesture" FullName="Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture">
+  <TypeSignature Language="C#" Value="public sealed class ThreeUnpinchGesture : Microsoft.Gestures.Stock.Gestures.StockGesture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThreeUnpinchGesture extends Microsoft.Gestures.Stock.Gestures.StockGesture" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.Stock.Gestures.StockGesture</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThreeUnpinchGesture ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThreeUnpinchGesture (string name, Microsoft.Gestures.HandContext hand = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Gestures.HandContext hand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.#ctor(System.String,Microsoft.Gestures.HandContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="hand" Type="Microsoft.Gestures.HandContext" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="hand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreePinchSpreadTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ThreePinchSpreadTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ThreePinchSpreadTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.ThreePinchSpreadTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreePinchTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ThreePinchTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; ThreePinchTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Stock.Gestures.ThreeUnpinchGesture.ThreePinchTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

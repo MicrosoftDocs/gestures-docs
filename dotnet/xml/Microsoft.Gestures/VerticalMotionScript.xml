@@ -1,0 +1,66 @@
+﻿<Type Name="VerticalMotionScript" FullName="Microsoft.Gestures.VerticalMotionScript">
+  <TypeSignature Language="C#" Value="public class VerticalMotionScript : Microsoft.Gestures.StockMotionSegmentsScript&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VerticalMotionScript extends Microsoft.Gestures.StockMotionSegmentsScript`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.VerticalMotionScript" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.StockMotionSegmentsScript&lt;Microsoft.Gestures.VerticalMotionSegment&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TPlaneSegment">Microsoft.Gestures.VerticalMotionSegment</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerticalMotionScript (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.VerticalMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerticalMotionScript (Microsoft.Gestures.VerticalMotionSegment motionSegment, Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.VerticalMotionSegment motionSegment, class Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.VerticalMotionScript.#ctor(Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.VerticalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.VerticalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,432 @@
+﻿<Type Name="HandSkeleton" FullName="Microsoft.Gestures.Skeleton.HandSkeleton">
+  <TypeSignature Language="C#" Value="public class HandSkeleton : Microsoft.Gestures.Skeleton.IHandSkeleton" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandSkeleton extends System.Object implements class Microsoft.Gestures.Skeleton.IHandSkeleton" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.HandSkeleton" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Gestures.Skeleton.IHandSkeleton</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HandSkeleton (Microsoft.Gestures.Skeleton.IHandSkeleton skeleton);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.Skeleton.IHandSkeleton skeleton) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.HandSkeleton.#ctor(Microsoft.Gestures.Skeleton.IHandSkeleton)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="skeleton" Type="Microsoft.Gestures.Skeleton.IHandSkeleton" />
+      </Parameters>
+      <Docs>
+        <param name="skeleton">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HandSkeleton (Guid id, Microsoft.Gestures.Hand handedness, Microsoft.Gestures.Skeleton.Vector3[] vectors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id, valuetype Microsoft.Gestures.Hand handedness, class Microsoft.Gestures.Skeleton.Vector3[] vectors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.HandSkeleton.#ctor(System.Guid,Microsoft.Gestures.Hand,Microsoft.Gestures.Skeleton.Vector3[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+        <Parameter Name="handedness" Type="Microsoft.Gestures.Hand" />
+        <Parameter Name="vectors" Type="Microsoft.Gestures.Skeleton.Vector3[]" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <param name="handedness">To be added.</param>
+        <param name="vectors">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FingerDirections">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Gestures.Finger,Microsoft.Gestures.Skeleton.Vector3&gt; FingerDirections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;valuetype Microsoft.Gestures.Finger, class Microsoft.Gestures.Skeleton.Vector3&gt; FingerDirections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.FingerDirections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Gestures.Finger,Microsoft.Gestures.Skeleton.Vector3&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FingerPositions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Gestures.Finger,Microsoft.Gestures.Skeleton.Vector3&gt; FingerPositions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;valuetype Microsoft.Gestures.Finger, class Microsoft.Gestures.Skeleton.Vector3&gt; FingerPositions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.FingerPositions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.Gestures.Finger,Microsoft.Gestures.Skeleton.Vector3&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handedness">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Hand Handedness { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.Hand Handedness" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.Handedness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Hand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Guid Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 IndexDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 IndexDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.IndexDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 IndexPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 IndexPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.IndexPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 MiddleDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 MiddleDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.MiddleDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddlePosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 MiddlePosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 MiddlePosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.MiddlePosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PalmDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 PalmDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 PalmDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.PalmDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PalmOrientation">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 PalmOrientation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 PalmOrientation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.PalmOrientation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PalmPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 PalmPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 PalmPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.PalmPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinkyDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 PinkyDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 PinkyDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.PinkyDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinkyPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 PinkyPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 PinkyPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.PinkyPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RingDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 RingDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 RingDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.RingDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RingPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 RingPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 RingPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.RingPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Satisfies">
+      <MemberSignature Language="C#" Value="public float Satisfies (Microsoft.Gestures.HandPose singleHandPose);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 Satisfies(class Microsoft.Gestures.HandPose singleHandPose) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.HandSkeleton.Satisfies(Microsoft.Gestures.HandPose)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="singleHandPose" Type="Microsoft.Gestures.HandPose" />
+      </Parameters>
+      <Docs>
+        <param name="singleHandPose">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 ThumbDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 ThumbDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.ThumbDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.Vector3 ThumbPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.Skeleton.Vector3 ThumbPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Skeleton.HandSkeleton.ThumbPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNormalizedSkeleton">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Skeleton.IHandSkeleton ToNormalizedSkeleton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Gestures.Skeleton.IHandSkeleton ToNormalizedSkeleton() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.HandSkeleton.ToNormalizedSkeleton" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.IHandSkeleton</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector3Array">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.Vector3[] ToVector3Array (Microsoft.Gestures.Skeleton.IHandSkeleton skeleton);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Gestures.Skeleton.Vector3[] ToVector3Array(class Microsoft.Gestures.Skeleton.IHandSkeleton skeleton) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.HandSkeleton.ToVector3Array(Microsoft.Gestures.Skeleton.IHandSkeleton)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.Vector3[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="skeleton" Type="Microsoft.Gestures.Skeleton.IHandSkeleton" />
+      </Parameters>
+      <Docs>
+        <param name="skeleton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

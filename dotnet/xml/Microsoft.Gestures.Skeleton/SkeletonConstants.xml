@@ -1,0 +1,37 @@
+﻿<Type Name="SkeletonConstants" FullName="Microsoft.Gestures.Skeleton.SkeletonConstants">
+  <TypeSignature Language="C#" Value="public static class SkeletonConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SkeletonConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.SkeletonConstants" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PoseSatisfactionThreshold">
+      <MemberSignature Language="C#" Value="public const float PoseSatisfactionThreshold = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float32 PoseSatisfactionThreshold = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Skeleton.SkeletonConstants.PoseSatisfactionThreshold" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

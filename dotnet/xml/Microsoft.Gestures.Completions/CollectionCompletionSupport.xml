@@ -1,0 +1,94 @@
+﻿<Type Name="CollectionCompletionSupport" FullName="Microsoft.Gestures.Completions.CollectionCompletionSupport">
+  <TypeSignature Language="C#" Value="public abstract class CollectionCompletionSupport : Microsoft.Gestures.Completions.ICompletionSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CollectionCompletionSupport extends System.Object implements class Microsoft.Gestures.Completions.ICompletionSupport" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Completions.CollectionCompletionSupport" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Gestures.Completions.ICompletionSupport</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CollectionCompletionSupport ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetCollectionCompletions">
+      <MemberSignature Language="C#" Value="protected abstract bool TryGetCollectionCompletions (Type collectionType, out System.Collections.Generic.IEnumerable&lt;string&gt; completions);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryGetCollectionCompletions(class System.Type collectionType, class System.Collections.Generic.IEnumerable`1&lt;string&gt; completions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.TryGetCollectionCompletions(System.Type,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collectionType" Type="System.Type" />
+        <Parameter Name="completions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="collectionType">To be added.</param>
+        <param name="completions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetCompletions">
+      <MemberSignature Language="C#" Value="public bool TryGetCompletions (Type targetType, string value, int triggerIndex, out int spanStartIndex, out int spanEndIndex, out System.Collections.Generic.IEnumerable&lt;string&gt; completions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetCompletions(class System.Type targetType, string value, int32 triggerIndex, int32 spanStartIndex, int32 spanEndIndex, class System.Collections.Generic.IEnumerable`1&lt;string&gt; completions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Completions.CollectionCompletionSupport.TryGetCompletions(System.Type,System.String,System.Int32,System.Int32@,System.Int32@,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="triggerIndex" Type="System.Int32" />
+        <Parameter Name="spanStartIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="spanEndIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="completions" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="targetType">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="triggerIndex">To be added.</param>
+        <param name="spanStartIndex">To be added.</param>
+        <param name="spanEndIndex">To be added.</param>
+        <param name="completions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,68 @@
+﻿<Type Name="MotionPlane" FullName="Microsoft.Gestures.MotionPlane">
+  <TypeSignature Language="C#" Value="public enum MotionPlane" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MotionPlane extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.MotionPlane" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Specifies in which plane a <see cref="T:Microsoft.Gestures.MotionSegment" /> is executed.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Depth">
+      <MemberSignature Language="C#" Value="Depth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.MotionPlane Depth = unsigned int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.MotionPlane.Depth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The depth plain - this is the vertical plane between the user and the monitor in a desktop setup </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.MotionPlane Horizontal = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.MotionPlane.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The horizontal plain - parallel to the desk in a desktop setup </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.MotionPlane Vertical = unsigned int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.MotionPlane.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.MotionPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> The vertical plain - parallel to the monitor in a desktop setup </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

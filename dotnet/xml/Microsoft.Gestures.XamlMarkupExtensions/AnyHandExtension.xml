@@ -1,0 +1,58 @@
+﻿<Type Name="AnyHandExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension">
+  <TypeSignature Language="C#" Value="public class AnyHandExtension : Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnyHandExtension extends Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(Microsoft.Gestures.AnyHandContext))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnyHandExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHandContext">
+      <MemberSignature Language="C#" Value="public override Microsoft.Gestures.HandContext CreateHandContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Gestures.HandContext CreateHandContext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.AnyHandExtension.CreateHandContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HandContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

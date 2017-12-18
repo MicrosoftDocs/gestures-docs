@@ -1,0 +1,94 @@
+﻿<Type Name="SatisfactionReasoning" FullName="Microsoft.Gestures.SatisfactionReasoning">
+  <TypeSignature Language="C#" Value="public class SatisfactionReasoning" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SatisfactionReasoning extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.SatisfactionReasoning" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SatisfactionReasoning (Microsoft.Gestures.ConstraintAndScore constraintAndScore, System.Collections.Generic.ICollection&lt;Microsoft.Gestures.ConstraintAndScore&gt; evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.ConstraintAndScore constraintAndScore, class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.ConstraintAndScore&gt; evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SatisfactionReasoning.#ctor(Microsoft.Gestures.ConstraintAndScore,System.Collections.Generic.ICollection{Microsoft.Gestures.ConstraintAndScore})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="constraintAndScore" Type="Microsoft.Gestures.ConstraintAndScore" />
+        <Parameter Name="evidence" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.ConstraintAndScore&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="constraintAndScore">To be added.</param>
+        <param name="evidence">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConstraintAndScore">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.ConstraintAndScore ConstraintAndScore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.ConstraintAndScore ConstraintAndScore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.SatisfactionReasoning.ConstraintAndScore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.ConstraintAndScore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evidence">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Gestures.ConstraintAndScore&gt; Evidence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.ConstraintAndScore&gt; Evidence" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.SatisfactionReasoning.Evidence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Gestures.ConstraintAndScore&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.SatisfactionReasoning.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

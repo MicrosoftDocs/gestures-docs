@@ -1,0 +1,66 @@
+﻿<Type Name="DepthMotionScript" FullName="Microsoft.Gestures.DepthMotionScript">
+  <TypeSignature Language="C#" Value="public class DepthMotionScript : Microsoft.Gestures.StockMotionSegmentsScript&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DepthMotionScript extends Microsoft.Gestures.StockMotionSegmentsScript`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.DepthMotionScript" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.StockMotionSegmentsScript&lt;Microsoft.Gestures.DepthMotionSegment&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TPlaneSegment">Microsoft.Gestures.DepthMotionSegment</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DepthMotionScript (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.DepthMotionScript.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DepthMotionScript (Microsoft.Gestures.DepthMotionSegment motionSegment, Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.DepthMotionSegment motionSegment, class Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.DepthMotionScript.#ctor(Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.DepthMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.DepthMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

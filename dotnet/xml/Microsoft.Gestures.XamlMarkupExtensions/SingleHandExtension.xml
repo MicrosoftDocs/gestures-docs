@@ -1,0 +1,87 @@
+﻿<Type Name="SingleHandExtension" FullName="Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension">
+  <TypeSignature Language="C#" Value="public class SingleHandExtension : Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SingleHandExtension extends Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.XamlMarkupExtensions.HandContextExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtensionTypeConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(Microsoft.Gestures.SingleHandContext))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SingleHandExtension (Microsoft.Gestures.Hand hand);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Hand hand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.#ctor(Microsoft.Gestures.Hand)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHandContext">
+      <MemberSignature Language="C#" Value="public override Microsoft.Gestures.HandContext CreateHandContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Gestures.HandContext CreateHandContext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.CreateHandContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HandContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hand">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Hand Hand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.Hand Hand" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.XamlMarkupExtensions.SingleHandExtension.Hand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Hand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

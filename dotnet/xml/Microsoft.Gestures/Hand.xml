@@ -1,0 +1,52 @@
+﻿<Type Name="Hand" FullName="Microsoft.Gestures.Hand">
+  <TypeSignature Language="C#" Value="public enum Hand" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Hand extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Hand" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+            Enumerates the hands, can be used to specify handedness for a <see cref="T:Microsoft.Gestures.PalmPose" /> constraint.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LeftHand">
+      <MemberSignature Language="C#" Value="LeftHand" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.Hand LeftHand = unsigned int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Hand.LeftHand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Hand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Left hand </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightHand">
+      <MemberSignature Language="C#" Value="RightHand" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.Hand RightHand = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.Hand.RightHand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Hand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Right hand </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

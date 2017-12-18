@@ -1,0 +1,87 @@
+﻿<Type Name="GesturesFrameworkXamlLanguage" FullName="Microsoft.Gestures.GesturesFrameworkXamlLanguage">
+  <TypeSignature Language="C#" Value="public static class GesturesFrameworkXamlLanguage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GesturesFrameworkXamlLanguage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.GesturesFrameworkXamlLanguage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CollectionSeparator">
+      <MemberSignature Language="C#" Value="public const char CollectionSeparator;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char CollectionSeparator" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.CollectionSeparator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueConcatenator">
+      <MemberSignature Language="C#" Value="public const char ValueConcatenator;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char ValueConcatenator" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.ValueConcatenator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueDelimiter">
+      <MemberSignature Language="C#" Value="public const char ValueDelimiter;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char ValueDelimiter" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.ValueDelimiter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlNamespace">
+      <MemberSignature Language="C#" Value="public const string XmlNamespace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string XmlNamespace" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.GesturesFrameworkXamlLanguage.XmlNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

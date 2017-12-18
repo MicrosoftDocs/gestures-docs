@@ -1,0 +1,124 @@
+﻿<Type Name="PinchPose" FullName="Microsoft.Gestures.Stock.HandPoses.PinchPose">
+  <TypeSignature Language="C#" Value="public sealed class PinchPose : Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PinchPose extends Microsoft.Gestures.Stock.HandPoses.StockHandPose" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Stock.HandPoses.PinchPose" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.Stock.HandPoses.StockHandPose</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PinchPose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.PinchPose.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PinchPose (string name, Microsoft.Gestures.Finger finger = Microsoft.Gestures.Finger.Index, bool pinchSpread = false, Microsoft.Gestures.HandContext hand = null, Microsoft.Gestures.PoseDirection palmDirection = Microsoft.Gestures.PoseDirection.Forward);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype Microsoft.Gestures.Finger finger, bool pinchSpread, class Microsoft.Gestures.HandContext hand, valuetype Microsoft.Gestures.PoseDirection palmDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.PinchPose.#ctor(System.String,Microsoft.Gestures.Finger,System.Boolean,Microsoft.Gestures.HandContext,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="pinchSpread" Type="System.Boolean" />
+        <Parameter Name="hand" Type="Microsoft.Gestures.HandContext" />
+        <Parameter Name="palmDirection" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="pinchSpread">To be added.</param>
+        <param name="hand">To be added.</param>
+        <param name="palmDirection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finger">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.Finger Finger { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.Finger Finger" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandPoses.PinchPose.Finger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Finger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinchSpread">
+      <MemberSignature Language="C#" Value="public bool PinchSpread { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PinchSpread" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Stock.HandPoses.PinchPose.PinchSpread" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Stock.HandPoses.PinchPose.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

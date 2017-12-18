@@ -1,0 +1,57 @@
+﻿<Type Name="RelativeDistance" FullName="Microsoft.Gestures.RelativeDistance">
+  <TypeSignature Language="C#" Value="public enum RelativeDistance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelativeDistance extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.RelativeDistance" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Specifies the distance between two finger contexts, can be used to define <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> constraints.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NotTouching">
+      <MemberSignature Language="C#" Value="NotTouching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativeDistance NotTouching = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativeDistance.NotTouching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativeDistance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is separated from the second finger context </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Touching">
+      <MemberSignature Language="C#" Value="Touching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativeDistance Touching = unsigned int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativeDistance.Touching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativeDistance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is touching the second finger context </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

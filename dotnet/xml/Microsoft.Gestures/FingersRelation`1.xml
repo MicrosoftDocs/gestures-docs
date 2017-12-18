@@ -1,0 +1,259 @@
+﻿<Type Name="FingersRelation&lt;TRelationEnum&gt;" FullName="Microsoft.Gestures.FingersRelation&lt;TRelationEnum&gt;">
+  <TypeSignature Language="C#" Value="public abstract class FingersRelation&lt;TRelationEnum&gt; : Microsoft.Gestures.PoseConstraint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FingersRelation`1&lt;TRelationEnum&gt; extends Microsoft.Gestures.PoseConstraint" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingersRelation`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TRelationEnum" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.PoseConstraint</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplay, nq}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TRelationEnum">The relation type this class is concerned with. This would be <see cref="T:Microsoft.Gestures.RelativePlacement" /> in the case of a 
+            <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> child class and <see cref="T:Microsoft.Gestures.RelativeDistance" /> in the case of a <see cref="T:Microsoft.Gestures.FingertipDistanceRelation" /> child class.</typeparam>
+    <summary>
+            An abstract class representing a constraint dealing with the relation between different fingers.
+            </summary>
+    <remarks>
+      <para>
+            Child classes of <see cref="T:Microsoft.Gestures.FingersRelation`1" /> are used to define constraints describing the relative positioning of fingers (e.g., "the index and middle fingers are 
+            above the thumb finger") - see <seealso cref="T:Microsoft.Gestures.FingertipPlacementRelation" />, or the distance between fingers (e.g., "the thumb finger is touching the middle and ring fingers") - see
+            <seealso cref="T:Microsoft.Gestures.FingertipDistanceRelation" />.
+            </para>
+      <para>A <see cref="T:Microsoft.Gestures.FingersRelation`1" /> constraint describes the relation between two sets of fingers, one which is specified by <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" /> and the other which
+            is specified by <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" />. For example, the following combination of contexts can represent the "index and middle fingers are above the thumb finger" constraint:</para>
+      <list type="bullets">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Gestures.FingersRelation`1.Context" /> - <see cref="T:Microsoft.Gestures.AllFingersContext" /> instantiated using <see cref="M:Microsoft.Gestures.AllFingersContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger})" />
+            with an input array of <see cref="F:Microsoft.Gestures.Finger.Index" /> and <see cref="F:Microsoft.Gestures.Finger.Middle" />.</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Gestures.FingersRelation`1.OtherContext" /> - <see cref="T:Microsoft.Gestures.SingleFingerContext" /> instantiated using <see cref="M:Microsoft.Gestures.SingleFingerContext.#ctor(Microsoft.Gestures.Finger)" /> with <see cref="F:Microsoft.Gestures.Finger.Thumb" /> for an 
+            input.</description>
+        </item>
+      </list>
+      <para>The following snippet illustrates how the above mentioned constraint is defined in code:</para>
+      <code>
+            var indexAndMiddleAboveThumb = new FingertipPlacementRelation(new[] {Finger.Index, Finger.Middle}, RelativePlacement.Above, Finger.Thumb); // define the constraint
+            var myPose = new HandPose("MyPose");
+            myPose.PoseConstraints.Add(indexAndMiddleAboveThumb); // add the constraint to a pose
+            </code>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingersRelation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersRelation`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FingersRelation (Microsoft.Gestures.FingersContext context, TRelationEnum relation, Microsoft.Gestures.FingersContext otherContext = null);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext context, !TRelationEnum relation, class Microsoft.Gestures.FingersContext otherContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersRelation`1.#ctor(Microsoft.Gestures.FingersContext,`0,Microsoft.Gestures.FingersContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="relation" Type="TRelationEnum" />
+        <Parameter Name="otherContext" Type="Microsoft.Gestures.FingersContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="relation">To be added.</param>
+        <param name="otherContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_relation">
+      <MemberSignature Language="C#" Value="protected TRelationEnum _relation;" />
+      <MemberSignature Language="ILAsm" Value=".field family !TRelationEnum _relation" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.FingersRelation`1._relation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TRelationEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersRelation`1.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.FingersContext Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.FingersContext Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingersRelation`1.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingersContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The first set of fingers participating in this <see cref="T:Microsoft.Gestures.FingersRelation`1" /> constraint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepFreeze">
+      <MemberSignature Language="C#" Value="protected override void DeepFreeze ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeepFreeze() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersRelation`1.DeepFreeze" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersRelation`1.EqualsInternal(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherContext">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.FingersContext OtherContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.FingersContext OtherContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingersRelation`1.OtherContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingersContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The second set of fingers participating in this <see cref="T:Microsoft.Gestures.FingersRelation`1" /> constraint.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersRelation`1.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a <see cref="T:System.String" /> representation of this <see cref="T:Microsoft.Gestures.FingersRelation`1" /> instance.
+            </summary>
+        <returns>A <see cref="T:System.String" /> representation of this <see cref="T:Microsoft.Gestures.FingersRelation`1" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingersRelation`1.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

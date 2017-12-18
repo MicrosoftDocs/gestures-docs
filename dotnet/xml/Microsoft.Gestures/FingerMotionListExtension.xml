@@ -1,0 +1,697 @@
+﻿<Type Name="FingerMotionListExtension" FullName="Microsoft.Gestures.FingerMotionListExtension">
+  <TypeSignature Language="C#" Value="public static class FingerMotionListExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FingerMotionListExtension extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingerMotionListExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, Microsoft.Gestures.MotionScript motionScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, class Microsoft.Gestures.MotionScript motionScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.MotionScript)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="motionScript" Type="Microsoft.Gestures.MotionScript" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="motionScript">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.MotionScript motionScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, class Microsoft.Gestures.MotionScript motionScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.MotionScript)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="motionScript" Type="Microsoft.Gestures.MotionScript" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="motionScript">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.MotionScript motionScript);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, class Microsoft.Gestures.MotionScript motionScript) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.MotionScript)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="motionScript" Type="Microsoft.Gestures.MotionScript" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="motionScript">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.DepthMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.DepthMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.DepthMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.HorizontalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.HorizontalMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.HorizontalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.VerticalMotionSegment&gt; motionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.Collections.Generic.IEnumerable{Microsoft.Gestures.VerticalMotionSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="motionSegments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.VerticalMotionSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="motionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, Microsoft.Gestures.DepthMotionSegment motionSegment, Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, class Microsoft.Gestures.DepthMotionSegment motionSegment, class Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.DepthMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.DepthMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, Microsoft.Gestures.HorizontalMotionSegment motionSegment, Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, class Microsoft.Gestures.HorizontalMotionSegment motionSegment, class Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.HorizontalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.HorizontalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, Microsoft.Gestures.VerticalMotionSegment motionSegment, Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, class Microsoft.Gestures.VerticalMotionSegment motionSegment, class Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.VerticalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.VerticalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.Finger finger, string svgPath, Microsoft.Gestures.MotionPlane plane = Microsoft.Gestures.MotionPlane.Vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, valuetype Microsoft.Gestures.Finger finger, string svgPath, valuetype Microsoft.Gestures.MotionPlane plane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.Finger,System.String,Microsoft.Gestures.MotionPlane)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="svgPath" Type="System.String" />
+        <Parameter Name="plane" Type="Microsoft.Gestures.MotionPlane" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="finger">To be added.</param>
+        <param name="svgPath">To be added.</param>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.DepthMotionSegment motionSegment, Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, class Microsoft.Gestures.DepthMotionSegment motionSegment, class Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.DepthMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.DepthMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.HorizontalMotionSegment motionSegment, Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, class Microsoft.Gestures.HorizontalMotionSegment motionSegment, class Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.HorizontalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.HorizontalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.VerticalMotionSegment motionSegment, Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, class Microsoft.Gestures.VerticalMotionSegment motionSegment, class Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.VerticalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.VerticalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, Microsoft.Gestures.FingersContext fingersContext, string svgPath, Microsoft.Gestures.MotionPlane plane = Microsoft.Gestures.MotionPlane.Vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class Microsoft.Gestures.FingersContext fingersContext, string svgPath, valuetype Microsoft.Gestures.MotionPlane plane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},Microsoft.Gestures.FingersContext,System.String,Microsoft.Gestures.MotionPlane)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="svgPath" Type="System.String" />
+        <Parameter Name="plane" Type="Microsoft.Gestures.MotionPlane" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingersContext">To be added.</param>
+        <param name="svgPath">To be added.</param>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.DepthMotionSegment motionSegment, Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, class Microsoft.Gestures.DepthMotionSegment motionSegment, class Microsoft.Gestures.DepthMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.DepthMotionSegment,Microsoft.Gestures.DepthMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.DepthMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.DepthMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.HorizontalMotionSegment motionSegment, Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, class Microsoft.Gestures.HorizontalMotionSegment motionSegment, class Microsoft.Gestures.HorizontalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.HorizontalMotionSegment,Microsoft.Gestures.HorizontalMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.HorizontalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.HorizontalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.VerticalMotionSegment motionSegment, Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, class Microsoft.Gestures.VerticalMotionSegment motionSegment, class Microsoft.Gestures.VerticalMotionSegment[] nextMotionSegments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.VerticalMotionSegment,Microsoft.Gestures.VerticalMotionSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="motionSegment" Type="Microsoft.Gestures.VerticalMotionSegment" />
+        <Parameter Name="nextMotionSegments" Type="Microsoft.Gestures.VerticalMotionSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="motionSegment">To be added.</param>
+        <param name="nextMotionSegments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static void Add (this System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt; motionConstraints, System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, string svgPath, Microsoft.Gestures.MotionPlane plane = Microsoft.Gestures.MotionPlane.Vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Add(class System.Collections.Generic.ICollection`1&lt;class Microsoft.Gestures.MotionConstraint&gt; motionConstraints, class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, string svgPath, valuetype Microsoft.Gestures.MotionPlane plane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerMotionListExtension.Add(System.Collections.Generic.ICollection{Microsoft.Gestures.MotionConstraint},System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},System.String,Microsoft.Gestures.MotionPlane)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="motionConstraints" Type="System.Collections.Generic.ICollection&lt;Microsoft.Gestures.MotionConstraint&gt;" RefType="this" />
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="svgPath" Type="System.String" />
+        <Parameter Name="plane" Type="Microsoft.Gestures.MotionPlane" />
+      </Parameters>
+      <Docs>
+        <param name="motionConstraints">To be added.</param>
+        <param name="fingers">To be added.</param>
+        <param name="svgPath">To be added.</param>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

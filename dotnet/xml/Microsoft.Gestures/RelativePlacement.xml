@@ -1,0 +1,121 @@
+﻿<Type Name="RelativePlacement" FullName="Microsoft.Gestures.RelativePlacement">
+  <TypeSignature Language="C#" Value="public enum RelativePlacement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelativePlacement extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.RelativePlacement" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Specifies the spatial placement relation between two finger contexts, can be used to define <see cref="T:Microsoft.Gestures.FingertipPlacementRelation" /> constraints.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Above">
+      <MemberSignature Language="C#" Value="Above" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativePlacement Above = unsigned int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Above" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativePlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is above the second finger context </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Behind">
+      <MemberSignature Language="C#" Value="Behind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativePlacement Behind = unsigned int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Behind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativePlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is behind the second finger context </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Below">
+      <MemberSignature Language="C#" Value="Below" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativePlacement Below = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Below" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativePlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is below the second finger context </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InFront">
+      <MemberSignature Language="C#" Value="InFront" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativePlacement InFront = unsigned int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.InFront" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativePlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is in front of the second finger context </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativePlacement Left = unsigned int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativePlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is on the left of the second finger context </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.RelativePlacement Right = unsigned int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.RelativePlacement.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.RelativePlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> First finger context is on the right of the second finger context </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

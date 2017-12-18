@@ -1,0 +1,189 @@
+﻿<Type Name="HandContext" FullName="Microsoft.Gestures.HandContext">
+  <TypeSignature Language="C#" Value="public abstract class HandContext : Microsoft.Gestures.GestureContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HandContext extends Microsoft.Gestures.GestureContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.HandContext" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.GestureContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.Gestures.Completions.CompletionSupport(typeof(Microsoft.Gestures.Completions.HandContextCompletionSupport))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Gestures.XamlTypeConverters.HandContextConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HandContext (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Hand&gt; hands);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Hand&gt; hands) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Hand})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hands" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Hand&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hands">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandContext.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepFreeze">
+      <MemberSignature Language="C#" Value="protected override void DeepFreeze ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeepFreeze() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandContext.DeepFreeze" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandContext.EqualsInternal(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hands">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.FreezableList&lt;Microsoft.Gestures.Hand&gt; Hands { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.FreezableList`1&lt;valuetype Microsoft.Gestures.Hand&gt; Hands" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.HandContext.Hands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Gestures.XamlTypeConverters.EnumCollectionConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FreezableList&lt;Microsoft.Gestures.Hand&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Gestures.HandContext (Microsoft.Gestures.Hand hand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.HandContext op_Implicit(valuetype Microsoft.Gestures.Hand hand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandContext.op_Implicit(Microsoft.Gestures.Hand)~Microsoft.Gestures.HandContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HandContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hand" Type="Microsoft.Gestures.Hand" />
+      </Parameters>
+      <Docs>
+        <param name="hand">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Gestures.HandContext (Microsoft.Gestures.Hand[] hands);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Gestures.HandContext op_Implicit(valuetype Microsoft.Gestures.Hand[] hands) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandContext.op_Implicit(Microsoft.Gestures.Hand[])~Microsoft.Gestures.HandContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.HandContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hands" Type="Microsoft.Gestures.Hand[]" />
+      </Parameters>
+      <Docs>
+        <param name="hands">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.HandContext.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

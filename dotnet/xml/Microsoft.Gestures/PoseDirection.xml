@@ -1,0 +1,137 @@
+﻿<Type Name="PoseDirection" FullName="Microsoft.Gestures.PoseDirection">
+  <TypeSignature Language="C#" Value="public enum PoseDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PoseDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.PoseDirection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Specifies an absolute direction in space, can be used in the definition of <see cref="T:Microsoft.Gestures.PalmPose" /> and <see cref="T:Microsoft.Gestures.FingerPose" /> constraints.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Backward">
+      <MemberSignature Language="C#" Value="Backward" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.PoseDirection Backward = unsigned int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.PoseDirection.Backward" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Direction is facing away from the camera</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Down">
+      <MemberSignature Language="C#" Value="Down" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.PoseDirection Down = unsigned int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.PoseDirection.Down" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Direction is facing towards the floor</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Forward">
+      <MemberSignature Language="C#" Value="Forward" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.PoseDirection Forward = unsigned int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.PoseDirection.Forward" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Direction is facing towards the camera</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.PoseDirection Left = unsigned int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.PoseDirection.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Direction is facing left hand side of the user</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.PoseDirection Right = unsigned int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.PoseDirection.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Direction is facing right hand side of the user</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Undefined">
+      <MemberSignature Language="C#" Value="Undefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.PoseDirection Undefined = unsigned int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.PoseDirection.Undefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Direction is unconstrained </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Up">
+      <MemberSignature Language="C#" Value="Up" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Gestures.PoseDirection Up = unsigned int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Gestures.PoseDirection.Up" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.PoseDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary> Direction is facing towards the ceiling</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

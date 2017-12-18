@@ -1,0 +1,326 @@
+﻿<Type Name="FingerPose" FullName="Microsoft.Gestures.FingerPose">
+  <TypeSignature Language="C#" Value="public class FingerPose : Microsoft.Gestures.HandPartPose&lt;Microsoft.Gestures.FingersContext&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FingerPose extends Microsoft.Gestures.HandPartPose`1&lt;class Microsoft.Gestures.FingersContext&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.FingerPose" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.HandPartPose&lt;Microsoft.Gestures.FingersContext&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="ContextType">Microsoft.Gestures.FingersContext</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Represents a constraint describing the flexion and pointing direction of a subset of fingers.
+             </summary>
+    <remarks>
+      <para>A <see cref="T:Microsoft.Gestures.FingerPose" /> constraint refers to a set of fingers, defined by the <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" /> property, it specifies the direction of
+             these fingers, as defined by the <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> property, and their flexion state (the degree to which a fingers is open or folded), as defined
+             by the <see cref="P:Microsoft.Gestures.FingerPose.Flexion" /> property. Note that when the <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> value is set to <see cref="F:Microsoft.Gestures.PoseDirection.Undefined" />, the constraint
+             implies no restriction of the direction for fingers mentioned in <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" />.</para>
+      <para>The following code defines a <see cref="T:Microsoft.Gestures.HandPose" /> with a single <see cref="T:Microsoft.Gestures.FingerPose" /> constraint that is actualized when both the index and thumb fingers are open and 
+             pointing forward:</para>
+      <code>
+             var myPose = new HandPose("MyPose", new FingerPose(new[] {Finger.Index, Finger.Thumb}, FingerFlexion.Open, PoseDirection.Forward));
+             </code>
+            
+             The <see cref="T:Microsoft.Gestures.FingerPose" /> constraint in the example above restricts the pose of only the index and thumb fingers. As soon as the camera sees a hand whose index and thumb fingers 
+             are open and pointing forward, the encompassing <see cref="T:Microsoft.Gestures.Gesture" /> object's state-machine can advance to <c>myPose</c>, regardless of the state of the other fingers. To generalize, 
+             all the fingers which are not participating in the <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" /> of a <see cref="T:Microsoft.Gestures.FingerPose" /> are free to assume any state of flexion and point in 
+             any direction (unless constrained by a different <see cref="T:Microsoft.Gestures.FingerPose" /> instance). 
+             
+             <para>Note that specifying a <see cref="T:Microsoft.Gestures.FingerPose" /> constraint with a <see cref="P:Microsoft.Gestures.FingerPose.Flexion" /> value of <see cref="F:Microsoft.Gestures.FingerFlexion.Folded" /> (or <see cref="F:Microsoft.Gestures.FingerFlexion.FoldedTucked" />)
+             and in parallel a <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> value other than <see cref="F:Microsoft.Gestures.PoseDirection.Undefined" /> is ill-advised. This is because a folded finger cannot 
+             be meaningfully said to point in any particular direction. In addition, the tips of folded fingers are very likely to be hidden from the camera, making the estimated values of their 
+             directions unreliable.</para><para>Note that <see cref="T:Microsoft.Gestures.FingerPose" /> instances are mutable until the containing <see cref="T:Microsoft.Gestures.Gesture" /> object is registered with the gestures runtime, at which point it becomes 
+             frozen and cannot be modified any longer. </para></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a blank <see cref="T:Microsoft.Gestures.FingerPose" /> constraint. In order to obtain a meaningful constraint, the values of <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" />, 
+            <see cref="P:Microsoft.Gestures.HandPartPose`1.Direction" /> and\or <see cref="P:Microsoft.Gestures.FingerPose.Flexion" /> would have to be set manually.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.Finger finger, Microsoft.Gestures.PoseDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="finger">The <paramref name="finger" /> participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that <paramref name="finger" /> is required to be aligned with.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires <paramref name="finger" /> to be aligned with <paramref name="direction" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.PoseDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext fingersContext, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingersContext">Specifies the <see cref="T:Microsoft.Gestures.FingersContext" /> of the fingers participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that is required of the fingers indicated by <paramref name="fingersContext" />.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires the fingers indicated by <paramref name="fingersContext" /> to be aligned with <paramref name="direction" />. When 
+            an <see cref="T:Microsoft.Gestures.AnyFingerContext" /> is passed for the <paramref name="fingersContext" /> argument, the resulting constraint will require at least one finger mentioned in 
+            <paramref name="fingersContext" /> to be aligned with <paramref name="direction" />.
+            </summary>
+        <remarks>
+            This syntax is particularly useful to specify a constraint which can be satisfied by any subset of a given set of fingers, using <see cref="T:Microsoft.Gestures.AnyFingerContext" />. For example:
+            <code>
+            // the following pose will be triggered when at least one of the thumb, index or middle fingers is pointing down
+            var myPose = new HandPose("MyPose", new FingerPose(new AnyFingerContext(new[] {Finger.Thumb, Finger.Index, Finger.Middle}, PoseDirection.Down)));
+            </code></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.PoseDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingers">An enumeration of all the fingers which will participate in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that each of the <paramref name="fingers" /> is required to be aligned with.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires each of the given <paramref name="fingers" /> to be aligned with <paramref name="direction" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.Finger finger, Microsoft.Gestures.FingerFlexion flexion, Microsoft.Gestures.PoseDirection direction = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Gestures.Finger finger, valuetype Microsoft.Gestures.FingerFlexion flexion, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.Finger,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="finger" Type="Microsoft.Gestures.Finger" />
+        <Parameter Name="flexion" Type="Microsoft.Gestures.FingerFlexion" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="finger">The <paramref name="finger" /> participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on <paramref name="finger" />.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that <paramref name="finger" /> is required to be aligned with.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires <paramref name="finger" /> to attain the specified <paramref name="flexion" /> state and to be aligned with 
+            <paramref name="direction" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (Microsoft.Gestures.FingersContext fingersContext, Microsoft.Gestures.FingerFlexion flexion, Microsoft.Gestures.PoseDirection direction = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.FingersContext fingersContext, valuetype Microsoft.Gestures.FingerFlexion flexion, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(Microsoft.Gestures.FingersContext,Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingersContext" Type="Microsoft.Gestures.FingersContext" />
+        <Parameter Name="flexion" Type="Microsoft.Gestures.FingerFlexion" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingersContext">Specifies the <see cref="T:Microsoft.Gestures.FingersContext" /> of the fingers participating in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) that fingers indicated by <paramref name="fingersContext" /> need to 
+            comply with.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that is required of the fingers indicated by <paramref name="fingersContext" />.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires the fingers indicated by <paramref name="fingersContext" /> to attain the specified <paramref name="flexion" /> 
+            state and to be aligned with the given <paramref name="direction" />. When an <see cref="T:Microsoft.Gestures.AnyFingerContext" /> is passed for the <paramref name="fingersContext" /> argument, the 
+            resulting constraint will require least one finger mentioned in <paramref name="fingersContext" /> to comply with <paramref name="flexion" /> and <paramref name="direction" />.
+            </summary>
+        <remarks>
+            This syntax is particularly useful to specify a constraint which can be satisfied by any subset of a given set of fingers, using <see cref="T:Microsoft.Gestures.AnyFingerContext" />. For example:
+            <code>
+            // the following pose will be triggered when at least one of the thumb, index or middle fingers is folded
+            var myPose = new HandPose("MyPose", new FingerPose(new AnyFingerContext(new[] {Finger.Thumb, Finger.Index, Finger.Middle}, FingerFlexion.Folded)));
+            </code></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FingerPose (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt; fingers, Microsoft.Gestures.FingerFlexion flexion, Microsoft.Gestures.PoseDirection direction = Microsoft.Gestures.PoseDirection.Undefined);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype Microsoft.Gestures.Finger&gt; fingers, valuetype Microsoft.Gestures.FingerFlexion flexion, valuetype Microsoft.Gestures.PoseDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Finger},Microsoft.Gestures.FingerFlexion,Microsoft.Gestures.PoseDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fingers" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Finger&gt;" />
+        <Parameter Name="flexion" Type="Microsoft.Gestures.FingerFlexion" />
+        <Parameter Name="direction" Type="Microsoft.Gestures.PoseDirection" />
+      </Parameters>
+      <Docs>
+        <param name="fingers">An enumeration of all the fingers which will participate in the <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</param>
+        <param name="flexion">The <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) imposed on each of the given <paramref name="fingers" />.</param>
+        <param name="direction">The <see cref="T:Microsoft.Gestures.PoseDirection" /> that each of the <paramref name="fingers" /> is required to be aligned with.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.FingerPose" /> constraint which requires each of the given <paramref name="fingers" /> to attain the specified <paramref name="flexion" /> state and to be 
+            aligned with the given <paramref name="direction" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualsInternal">
+      <MemberSignature Language="C#" Value="protected override bool EqualsInternal (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EqualsInternal(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.EqualsInternal(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flexion">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.FingerFlexion Flexion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Gestures.FingerFlexion Flexion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.FingerPose.Flexion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Gestures.XamlTypeConverters.FlagEnumConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.FingerFlexion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Specifies the <see cref="T:Microsoft.Gestures.FingerFlexion" /> state (the degree to which a finger is open or folded) which will be associated with the fingers indicated by 
+            <see cref="P:Microsoft.Gestures.HandPartPose`1.Context" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a <see cref="T:System.String" /> representation of this <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.
+            </summary>
+        <returns>A <see cref="T:System.String" /> representation of this <see cref="T:Microsoft.Gestures.FingerPose" /> constraint.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.FingerPose.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

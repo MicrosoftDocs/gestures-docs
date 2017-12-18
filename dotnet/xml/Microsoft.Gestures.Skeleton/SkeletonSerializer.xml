@@ -1,0 +1,107 @@
+﻿<Type Name="SkeletonSerializer" FullName="Microsoft.Gestures.Skeleton.SkeletonSerializer">
+  <TypeSignature Language="C#" Value="public static class SkeletonSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SkeletonSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Skeleton.SkeletonSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeserializeSkeleton">
+      <MemberSignature Language="C#" Value="public static Microsoft.Gestures.Skeleton.IHandSkeleton DeserializeSkeleton (string skeleton);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Gestures.Skeleton.IHandSkeleton DeserializeSkeleton(string skeleton) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.DeserializeSkeleton(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.Skeleton.IHandSkeleton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="skeleton" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="skeleton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeSkeletons">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Skeleton.IHandSkeleton&gt; DeserializeSkeletons (string skeletons);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.Skeleton.IHandSkeleton&gt; DeserializeSkeletons(string skeletons) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.DeserializeSkeletons(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Skeleton.IHandSkeleton&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="skeletons" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="skeletons">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public static string Serialize (this Microsoft.Gestures.Skeleton.IHandSkeleton skeleton);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Serialize(class Microsoft.Gestures.Skeleton.IHandSkeleton skeleton) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.Serialize(Microsoft.Gestures.Skeleton.IHandSkeleton)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="skeleton" Type="Microsoft.Gestures.Skeleton.IHandSkeleton" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="skeleton">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public static string Serialize (this System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Skeleton.IHandSkeleton&gt; skeletons);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Serialize(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.Skeleton.IHandSkeleton&gt; skeletons) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Skeleton.SkeletonSerializer.Serialize(System.Collections.Generic.IEnumerable{Microsoft.Gestures.Skeleton.IHandSkeleton})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="skeletons" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.Skeleton.IHandSkeleton&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="skeletons">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

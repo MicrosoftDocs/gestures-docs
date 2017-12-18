@@ -1,0 +1,644 @@
+﻿<Type Name="Gesture" FullName="Microsoft.Gestures.Gesture">
+  <TypeSignature Language="C#" Value="public class Gesture : Microsoft.Gestures.GestureSegment, System.Windows.Markup.INameScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Gesture extends Microsoft.Gestures.GestureSegment implements class System.Windows.Markup.INameScope" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Gestures.Gesture" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Gestures</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Gestures.GestureSegment</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.INameScope</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Represents a <see cref="T:Microsoft.Gestures.Gesture" /> as a state-machine of <see cref="T:Microsoft.Gestures.GestureSegment" />s.
+            </summary>
+    <remarks>
+      <para>
+            A <see cref="T:Microsoft.Gestures.Gesture" /> is modeled as a state-machine and implemented as a directed graph whose nodes are represented as instances of <see cref="T:Microsoft.Gestures.GestureSegment" /> and whose edges are
+            represented by a single instance of <see cref="T:Microsoft.Gestures.GestureSegmentConnections" />. In other words, <see cref="T:Microsoft.Gestures.GestureSegment" />s represent states in the state-machine associated with this 
+            <see cref="T:Microsoft.Gestures.Gesture" /> (thus <see cref="T:Microsoft.Gestures.GestureSegment" /> and "state" are used interchangeably) while <see cref="T:Microsoft.Gestures.GestureSegmentConnections" /> represent the possible transitions between 
+            the states of this <see cref="T:Microsoft.Gestures.Gesture" />. <see cref="T:Microsoft.Gestures.GestureSegment" /> object type will usually be either <see cref="T:Microsoft.Gestures.HandPose" /> or <see cref="T:Microsoft.Gestures.HandMotion" />.
+            </para>
+      <para>
+            In run-time, the state-machine is initialized to the <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" /> state. When a descendant <see cref="T:Microsoft.Gestures.GestureSegment" /> of the current <see cref="T:Microsoft.Gestures.GestureSegment" /> is detected, the 
+            state-machine will advance its current state to point at the corresponding <see cref="T:Microsoft.Gestures.GestureSegment" />. In order to trigger a <see cref="T:Microsoft.Gestures.Gesture" /> the user is required 
+            to execute a series of <see cref="T:Microsoft.Gestures.HandPose" />s and <see cref="T:Microsoft.Gestures.HandMotion" />s that correspond to a path in the state machine which starts and ends with an <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" />. 
+            Such a path is called a "triggering path". When a triggering path is detected, the <see cref="E:Microsoft.Gestures.GestureSegment.Triggered" /> event of the <see cref="T:Microsoft.Gestures.Gesture" /> will be raised. 
+            The client code can subscribe to the <see cref="E:Microsoft.Gestures.GestureSegment.Triggered" /> event and respond to the <see cref="T:Microsoft.Gestures.Gesture" /> detection.
+            </para>
+      <para>
+            When the user executes a complete gesture successfully, or starts advancing along a triggering path and fails to complete the gesture correctly, the state-machine will reset itself 
+            (and start again from <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" />). The state-machine reset is marked by raising of the <see cref="E:Microsoft.Gestures.Gesture.IdleTriggered" /> event.
+            </para>
+      <para>
+            A <see cref="T:Microsoft.Gestures.Gesture" /> instance is mutable until it is registered with the gestures runtime, at which point it becomes frozen and cannot be modified any longer.
+            </para>
+      <para>
+            Note that a <see cref="T:Microsoft.Gestures.Gesture" /> is itself a <see cref="T:Microsoft.Gestures.GestureSegment" /> and thus <see cref="T:Microsoft.Gestures.Gesture" /> instances can be nested.
+            </para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Gesture ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a blank <see cref="T:Microsoft.Gestures.Gesture" /> with an empty state-machine. In order to represent a meaningful gesture, a sequence of <see cref="T:Microsoft.Gestures.HandPose" /> and\or 
+            <see cref="T:Microsoft.Gestures.HandMotion" /> objects would have to be manually added to the <see cref="T:Microsoft.Gestures.Gesture" /> instance (for example, by using the 
+            <see cref="M:Microsoft.Gestures.Gesture.AddTriggeringPath(Microsoft.Gestures.GestureSegment[])" /> method).
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Gesture (Microsoft.Gestures.GestureSegment[] triggeringPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Gestures.GestureSegment[] triggeringPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.#ctor(Microsoft.Gestures.GestureSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="triggeringPath" Type="Microsoft.Gestures.GestureSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="triggeringPath">A comma separated list of <see cref="T:Microsoft.Gestures.GestureSegment" /> objects, describing a sequence of states which upon detection will trigger this 
+            <see cref="T:Microsoft.Gestures.Gesture" /> instance. The <paramref name="triggeringPath" /> need not start or end with references to <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" /> (they will be added implicitly by the 
+            constructor).</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.Gesture" /> whose state machine is described by the given <paramref name="triggeringPath" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Gesture (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name assigned to the new <see cref="T:Microsoft.Gestures.Gesture" /> instance. This <see cref="T:System.String" /> will serve as a unique identifier for this <see cref="T:Microsoft.Gestures.Gesture" /> instance in the
+            Gestures Service debugging interface.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.Gesture" /> called <paramref name="name" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Gesture (string name, Microsoft.Gestures.GestureSegment[] triggeringPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Gestures.GestureSegment[] triggeringPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.#ctor(System.String,Microsoft.Gestures.GestureSegment[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="triggeringPath" Type="Microsoft.Gestures.GestureSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="name">The name assigned to the new <see cref="T:Microsoft.Gestures.Gesture" /></param>
+        <param name="triggeringPath">A comma separated list of <see cref="T:Microsoft.Gestures.GestureSegment" /> objects, describing a sequence of states which upon detection will trigger this 
+            <see cref="T:Microsoft.Gestures.Gesture" /> instance. The <paramref name="triggeringPath" /> need not start or end with references to <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" /> (they will be added implicitly by the 
+            constructor).</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Gestures.Gesture" /> called <paramref name="name" /> whose state machine is described by the given <paramref name="triggeringPath" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSubPath">
+      <MemberSignature Language="C#" Value="public void AddSubPath (Microsoft.Gestures.GestureSegment[] segments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubPath(class Microsoft.Gestures.GestureSegment[] segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.AddSubPath(Microsoft.Gestures.GestureSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="Microsoft.Gestures.GestureSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="segments">A comma separated list of <see cref="T:Microsoft.Gestures.GestureSegment" /> objects, describing a sequence of states which is to be added to the state-machine associated with this
+            <see cref="T:Microsoft.Gestures.Gesture" /> instance.</param>
+        <summary>
+            Adds a new path to the state-machine associated with this <see cref="T:Microsoft.Gestures.Gesture" />. Any edges on this path which previously existed in this <see cref="T:Microsoft.Gestures.Gesture" /> will be ignored.
+            Note that adding a new path to the state-machine graph may induce new triggering paths (a triggering path is a series of <see cref="T:Microsoft.Gestures.HandPose" />s and <see cref="T:Microsoft.Gestures.HandMotion" />s
+            which the user is required to execute in order to trigger the detection of the <see cref="T:Microsoft.Gestures.Gesture" />).
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTriggeringPath">
+      <MemberSignature Language="C#" Value="public void AddTriggeringPath (Microsoft.Gestures.GestureSegment[] segments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTriggeringPath(class Microsoft.Gestures.GestureSegment[] segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.AddTriggeringPath(Microsoft.Gestures.GestureSegment[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="Microsoft.Gestures.GestureSegment[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="segments">A comma separated list of <see cref="T:Microsoft.Gestures.GestureSegment" /> objects, describing a sequence of states which upon detection will trigger this 
+            <see cref="T:Microsoft.Gestures.Gesture" /> instance. <paramref name="segments" /> need not start or end with references to <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" /> (they will be added implicitly by the 
+            constructor).</param>
+        <summary>
+            Adds a new triggering path (a triggering path is a series of <see cref="T:Microsoft.Gestures.HandPose" />s and <see cref="T:Microsoft.Gestures.HandMotion" />s which the user is required to execute in order to trigger
+            the detection of the <see cref="T:Microsoft.Gestures.Gesture" />), described by <paramref name="segments" />, to the state-machine associated with this <see cref="T:Microsoft.Gestures.Gesture" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTriggeringPath">
+      <MemberSignature Language="C#" Value="public void AddTriggeringPath (System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt; segments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTriggeringPath(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.GestureSegment&gt; segments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.AddTriggeringPath(System.Collections.Generic.IEnumerable{Microsoft.Gestures.GestureSegment})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="segments" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="segments">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:Microsoft.Gestures.GestureSegment" /> objects, describing a sequence of states which upon detection will trigger this 
+            <see cref="T:Microsoft.Gestures.Gesture" /> instance. <paramref name="segments" /> need not start or end with references to <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" /> (they will be added implicitly by the 
+            constructor).</param>
+        <summary>
+            Adds a new triggering path (a triggering path is a series of <see cref="T:Microsoft.Gestures.HandPose" />s and <see cref="T:Microsoft.Gestures.HandMotion" />s which the user is required to execute in order to trigger
+            the detection of a <see cref="T:Microsoft.Gestures.Gesture" />), described by <paramref name="segments" />, to the state-machine associated with this <see cref="T:Microsoft.Gestures.Gesture" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateHashCode">
+      <MemberSignature Language="C#" Value="protected override int CalculateHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 CalculateHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.CalculateHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override Microsoft.Gestures.GestureSegment Clone (string newName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Gestures.GestureSegment Clone(string newName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.Clone(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.GestureSegment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="newName">The name of the cloned <see cref="T:Microsoft.Gestures.Gesture" />.</param>
+        <summary>
+            Returns a deep clone of this <see cref="T:Microsoft.Gestures.Gesture" />.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepFreeze">
+      <MemberSignature Language="C#" Value="protected override void DeepFreeze ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeepFreeze() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.DeepFreeze" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equivalent">
+      <MemberSignature Language="C#" Value="public bool Equivalent (Microsoft.Gestures.Gesture other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equivalent(class Microsoft.Gestures.Gesture other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.Equivalent(Microsoft.Gestures.Gesture)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Gestures.Gesture" />
+      </Parameters>
+      <Docs>
+        <param name="other">The other <see cref="T:Microsoft.Gestures.Gesture" /> to compare this <see cref="T:Microsoft.Gestures.Gesture" /> with.</param>
+        <summary>
+            Performs a deep comparison with <paramref name="other" />.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equivalent">
+      <MemberSignature Language="C#" Value="public override bool Equivalent (Microsoft.Gestures.GestureSegment other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equivalent(class Microsoft.Gestures.GestureSegment other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.Equivalent(Microsoft.Gestures.GestureSegment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Gestures.GestureSegment" />
+      </Parameters>
+      <Docs>
+        <param name="other">The other <see cref="T:Microsoft.Gestures.GestureSegment" /> to compare this <see cref="T:Microsoft.Gestures.Gesture" /> with.</param>
+        <summary>
+            Performs a deep comparison with <paramref name="other" />.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindName">
+      <MemberSignature Language="C#" Value="protected object FindName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object FindName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.FindName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdleGestureSegment">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.IdleGestureSegment IdleGestureSegment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.IdleGestureSegment IdleGestureSegment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Gesture.IdleGestureSegment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.IdleGestureSegment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" /> is the initial state of the state-machine representation of this <see cref="T:Microsoft.Gestures.Gesture" /> instance. Every path in the state machine that
+            starts and ends with the <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" /> is called a triggering path and corresponds to a legitimate execution of this <see cref="T:Microsoft.Gestures.Gesture" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdleTriggered">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; IdleTriggered;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt; IdleTriggered" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Gestures.Gesture.IdleTriggered" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Gestures.GestureSegmentTriggeredEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised whenever the state-machine of this <see cref="T:Microsoft.Gestures.Gesture" /> is reset (i.e., its state reaches the <see cref="P:Microsoft.Gestures.Gesture.IdleGestureSegment" />). This happens either when the 
+            <see cref="T:Microsoft.Gestures.Gesture" /> is successfully triggered or when the state-machine starts advancing along a triggering path but the <see cref="T:Microsoft.Gestures.Gesture" /> is not executed to completion
+            and the path is abandoned (a triggering path is a series of <see cref="T:Microsoft.Gestures.HandPose" />s and <see cref="T:Microsoft.Gestures.HandMotion" />s which the user is required to execute in order to trigger
+            the detection of a <see cref="T:Microsoft.Gestures.Gesture" />).
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeCore">
+      <MemberSignature Language="C#" Value="protected override void InitializeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.InitializeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt; this[Microsoft.Gestures.GestureSegment gestureSegment] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Gestures.GestureSegment&gt; Item(class Microsoft.Gestures.GestureSegment)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Gesture.Item(Microsoft.Gestures.GestureSegment)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Gestures.GestureSegment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gestureSegment" Type="Microsoft.Gestures.GestureSegment" />
+      </Parameters>
+      <Docs>
+        <param name="gestureSegment">A state in this <see cref="T:Microsoft.Gestures.Gesture" /> instance state-machine, one of <see cref="P:Microsoft.Gestures.Gesture.Segments" />.</param>
+        <summary>
+            Returns all the consecutive states (<see cref="T:Microsoft.Gestures.GestureSegment" />s) which <paramref name="gestureSegment" /> is pointing at in the state-machine.
+            </summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.GestureSegment this[string gestureSegmentName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.GestureSegment Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Gesture.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.GestureSegment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gestureSegmentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="gestureSegmentName">The name of the desired <see cref="T:Microsoft.Gestures.GestureSegment" />.</param>
+        <summary>
+            Returns the state (<see cref="T:Microsoft.Gestures.GestureSegment" />) in the state-machine whose name is <paramref name="gestureSegmentName" />.
+            </summary>
+        <value />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterName">
+      <MemberSignature Language="C#" Value="protected void RegisterName (string name, object scopedElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterName(string name, object scopedElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.RegisterName(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="scopedElement" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="scopedElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Segments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Gestures.GestureSegment&gt; Segments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Gestures.GestureSegment&gt; Segments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Gesture.Segments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Gestures.GestureSegment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The list of all the <see cref="T:Microsoft.Gestures.GestureSegment" />s comprising the state-machine representation of this <see cref="T:Microsoft.Gestures.Gesture" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SegmentsConnections">
+      <MemberSignature Language="C#" Value="public Microsoft.Gestures.GestureSegmentConnections SegmentsConnections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Gestures.GestureSegmentConnections SegmentsConnections" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Gestures.Gesture.SegmentsConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Gestures.GestureSegmentConnections</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Represents all the edges connecting states in the state-machine representation of this <see cref="T:Microsoft.Gestures.Gesture" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.INameScope.FindName">
+      <MemberSignature Language="C#" Value="object INameScope.FindName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Windows.Markup.INameScope.FindName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.System#Windows#Markup#INameScope#FindName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.INameScope.RegisterName">
+      <MemberSignature Language="C#" Value="void INameScope.RegisterName (string name, object scopedElement);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.INameScope.RegisterName(string name, object scopedElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.System#Windows#Markup#INameScope#RegisterName(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="scopedElement" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="scopedElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.INameScope.UnregisterName">
+      <MemberSignature Language="C#" Value="void INameScope.UnregisterName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.INameScope.UnregisterName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.System#Windows#Markup#INameScope#UnregisterName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterName">
+      <MemberSignature Language="C#" Value="protected void UnregisterName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UnregisterName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.UnregisterName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCore">
+      <MemberSignature Language="C#" Value="protected override void ValidateCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Gestures.Gesture.ValidateCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Gestures</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
