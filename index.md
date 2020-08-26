@@ -38,24 +38,24 @@ To get Project Prague running on your machine you will need to:
 
 1. **Plug your [depth camera](#supported-depth-cameras) in to a USB 3.0** port and place it below your computer's monitor, as illustrated in the image below:
 
-    ![RealSense camera desktop setup](Images\RealSenseDesktopSetup.jpg)
+    ![RealSense camera desktop setup](Images/RealSenseDesktopSetup.jpg)
 
 1. **Download and install** Project Prague runtime from [**aka.ms/gestures/download**](http://aka.ms/gestures/download). The installation will place **shortcuts on your desktop** pointing to our compiled demo applications:
 
-    <br><div align="center"><img src ="Images\DemoApplications.png" /></div>
+    <br><div align="center"><img src ="Images/DemoApplications.png" /></div>
 
     Our demo applications are:
 
     Application  | Description
     ------------ | ------------
-    <div><img align="center" src="Images\GesturesServiceIcon.png"><span> Microsoft.Gestures.Service</span></div> | Runs our [gesture detection service](getting-started-gestures-service.md)
-    <div><img align="center" src="Images\DiscoveryClientIcon.png"><span> Microsoft.Gestures.DiscoveryClient</span></div> | Provides gesture integration for Windows shell, PowerPoint, Skype and more
-    <div><img align="center" src="Images\GesturesCameraIcon.png"><span> Microsoft.Gestures.Camera.Viewer</span></div> | Displays the RGB stream from the camera, adding gesture-triggered <br> animated overlays
-    <div><img align="center" src="Images\WolflyIcon.png"><span> Wolfly</span></div> | Runs a gestures driven game made with Unity®
+    <div><img align="center" src="Images/GesturesServiceIcon.png"><span> Microsoft.Gestures.Service</span></div> | Runs our [gesture detection service](getting-started-gestures-service.md)
+    <div><img align="center" src="Images/DiscoveryClientIcon.png"><span> Microsoft.Gestures.DiscoveryClient</span></div> | Provides gesture integration for Windows shell, PowerPoint, Skype and more
+    <div><img align="center" src="Images/GesturesCameraIcon.png"><span> Microsoft.Gestures.Camera.Viewer</span></div> | Displays the RGB stream from the camera, adding gesture-triggered <br> animated overlays
+    <div><img align="center" src="Images/WolflyIcon.png"><span> Wolfly</span></div> | Runs a gestures driven game made with Unity®
 
 1. When installation is complete, a window titled **Microsoft Gestures Service** will be launched. This is our real-time **gesture and pose detection dashboard**. Make sure that your fingers are detected successfully, as demonstrated below:
 
-    ![Gesture Detection Dashboard](Images\MicrosoftGesturesService.png)
+    ![Gesture Detection Dashboard](Images/MicrosoftGesturesService.png)
 
 > [!NOTE]
 > By default, only right hand detection is enabled. To enable both hands, check the **Enable two hands** box in the **System** section of the Gestures Service window.
@@ -75,15 +75,15 @@ Before you start writing gestures, you should get familiar with the basic **buil
 
 A hand pose refers to **a snapshot of the hand at a given moment**. The hand pose contains a complete description of the state of the palm and the fingers in that snapshot. In our API, a hand pose is represented by the [HandPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handpose) class, which is **made up of various constraints** as illustrated below:
 
-![HandPose and constraints](Images\HandPoseAndConstraints.png)
+![HandPose and constraints](Images/HandPoseAndConstraints.png)
 
 You can express any hand pose by characterizing all the constraints involved in that pose, as illustrated below:
 
-![HandPose examples](Images\HandPoseExample.png)
+![HandPose examples](Images/HandPoseExample.png)
 
 The example above demonstrates all the constraints you can reasonably associate with the snapshot on the left. This example is given for educational purposes only, to show you the meaning of the different terms used to specify constraints in the Project Prague language. In practice, you would never use such a large number of constraints to specify a hand pose. You should try, instead, to find the minimal number of constraints that capture the essence of the hand pose. The following example is **a practical way to describe the same pose**:
 
-![HandPose example simplified](Images\HandPoseExampleSimplified.png)
+![HandPose example simplified](Images/HandPoseExampleSimplified.png)
 
 This last example captures well the essence of the pose in the snapshot: The pinching action performed by the thumb and index fingers. Notice that the middle, ring and pinky fingers are absent from the description of the hand pose, as they do not participate in the pinching action and are, therefore, not necessary to express the essence of the pose.
 
@@ -93,15 +93,15 @@ This last example captures well the essence of the pose in the snapshot: The pin
 
 As you move your hand, **your fingertips trace a curve through space**. We refer to this curve as a "hand motion", and in our API, it is represented by the [HandMotion](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handmotion) class. A hand motion is associated with a hand part (either the center of the palm or one of the fingertips) and **made up of a sequence of motion building blocks**. The available building blocks are illustrated below:
 
-![HandMotion building blocks](Images\HandMotionScript.png)
+![HandMotion building blocks](Images/HandMotionScript.png)
 
 As you can see, all **the building blocks describe motion which is two-dimensional**. In other words - the entire motion is contained within a single plane. We have introduced this limitation intentionally, in order to provide a better user experience, since unconstrained three-dimensional hand motion can be difficult to execute accurately. You can **choose one of three available planes to contain your hand motion**, as illustrated below:
 
-![Hand Motion Planes](Images\MotionPlanes.png)
+![Hand Motion Planes](Images/MotionPlanes.png)
 
 Once you've decided which hand part should execute the motion and chosen a plane to contain it, all that is left is to **specify the motion as a sequence of motion building blocks**, for example:
 
-![Motion - simple example](Images\MotionExample.png)
+![Motion - simple example](Images/MotionExample.png)
 
 ### Gesture
 
@@ -109,7 +109,7 @@ We think of a gesture as **a state-machine whose states represent hand poses, ha
 
 In our API, a gesture is represented by the [Gesture](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture) class. The following example illustrates a gesture whose state-machine is a simple sequence of hand poses and hand motions:
 
-![Gesture example](Images\GestureExample.png)
+![Gesture example](Images/GestureExample.png)
 
 **The Slingshot gesture in the example is made up of a single hand motion, named Retract, and three hand poses - two instances of NotPinching and one instance of Pinch**. The **Slingshot** gesture corresponds to the following action sequence: Imagine you are holding a slingshot in your left hand, now grasp its pocket with the thumb and index fingers of your right hand and pull it back to stretch the slingshot band, finally - spread the index and thumb fingers apart to release the pocket and let the imaginary projectile fly.
 
@@ -122,7 +122,7 @@ We will now give an example illustrating how to program a simple gesture using t
 
 We will implement the **RotateRight** gesture:
 
-![Rotate right FSM](Images\RotateRightFsm.png)
+![Rotate right FSM](Images/RotateRightFsm.png)
 
 Intuitively, when performing the RotateRight gesture, a user may expect some object in the foreground application will rotate right by 90°. We have used this gesture, for instance, in our Discovery Client, to trigger the rotation of an image in a PowerPoint slideshow.
 
