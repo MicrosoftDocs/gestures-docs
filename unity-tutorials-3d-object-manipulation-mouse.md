@@ -44,11 +44,11 @@ We recommend that you complete the [**Introduction**](unity-tutorials-introducti
 
 1. We will use the **PragueCursor.png** texture, provided with the [Project Prague toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage), as our cursor image. Select the **Cursor** game object in the **Hierarchy** window, locate the **PragueCursor.png** under **MicrosoftGesturesToolkit/Textures** in the **Project** window and drag-and-drop it to the **Cursor Image** box in the **Inspector** window:
 
-    ![Set Cursor Image](Images\UnitySetCursorImage.png)
+    ![Set Cursor Image](Images/UnitySetCursorImage.png)
 
 1. Play the scene now. Whenever the mouse pointer is within the scene borders, you will see a red cursor following it:
 
-    ![Cursor following mouse](Images\UnityMouseCursor.png)
+    ![Cursor following mouse](Images/UnityMouseCursor.png)
 
 ## Step 2 - Highlight Object under Cursor
 
@@ -58,7 +58,7 @@ We would like to use our cursor to move objects in the scene. In order to recogn
 
     To instantiate new primitives, go to the **GameObject** menu again, select **3D Object** and pick one of the primitives in the sub-menu (**Cube**, **Sphere**, etc.). Repeat this process several times, moving each new primitive to a different location in the scene:
 
-    ![Fill scene with primitives](Images\UnityPopulateSceneWithPrimitives.png)
+    ![Fill scene with primitives](Images/UnityPopulateSceneWithPrimitives.png)
 
     > [!TIP]
     > To move an object, click on it, press **w** and then drag it using the [**Move** gizmo](https://docs.unity3d.com/Manual/PositioningGameObjects.html#move).
@@ -83,11 +83,11 @@ We would like to use our cursor to move objects in the scene. In order to recogn
 
 1. Select the **Cursor** game object in the **Hierarchy** window. Locate the **OuterGlow.mat** material under **MicrosoftGesturesToolkit/Materials** in the **Project** window. Drag and drop **OuterGlow.mat** into the **Highlight Material** box in the **Inspector** window:
 
-    ![Add the highlight material](Images\UnityAddHighlightMaterial.png)
+    ![Add the highlight material](Images/UnityAddHighlightMaterial.png)
 
 1. Play the scene and move the cursor across the screen. Every time an object is under the cursor, its outline will glow with a bluish aura:
 
-    ![Play scene with glow effect](Images\UnityGlowScene.png)
+    ![Play scene with glow effect](Images/UnityGlowScene.png)
 
 ## Step 3 - Move Highlighted Object
 
@@ -122,7 +122,7 @@ On this step we will enable our cursor to "grab" an object and move it in space.
 
 1. Run the scene now, hover over an object and move it by pressing the left mouse button and dragging. Note that the color of the cursor changes when you enter grab mode:
 
-    ![Play scene with grab mode](Images\UnityGrabMode.png)
+    ![Play scene with grab mode](Images/UnityGrabMode.png)
 
 1. We will use the scroll wheel to control the movement of the grabbed object in the depth dimension.
 
