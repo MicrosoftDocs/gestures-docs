@@ -35,7 +35,7 @@ Refer to our [FAQ page](faq.md#i-have-visual-studio-2017-and-i-would-like-to-use
 
     ![Name the new Project](Images/UnityNameNewProject.png)
 
-1. Clone our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples/tree/master/Unity), and import our [toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) to your project - from the **Assets** menu, select **Import Package** and **Custom Package...**:
+1. Clone our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples), and import our [toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) to your project - from the **Assets** menu, select **Import Package** and **Custom Package...**:
 
     ![Import Project Prague toolkit](Images/UnityImportPackageMenu.png)
 
@@ -148,7 +148,7 @@ On this step, we will create the necessary wiring so that you can use a gesture 
 
     Visit our [overview page](index.md#gesture) to read more about the concept and structure of a gesture in Project Prague.
 
-    In this tutorial we will focus on sections 1 and 2. Namely, we will wire the predefined **"Tap"** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Using XAML to specify gestures and section 3 of the **GestureTrigger** UI will be covered in the [3D Object Manipulation tutorial](unity-tutorials-3d-object-manipulation-hand.md) tutorial.
+    In this tutorial we will focus on sections 1 and 2. Namely, we will wire the predefined **"Tap"** stock-gesture to trigger the **CreateRandomPrimitive()** method of the **PrimitiveFactory** game object. Using XAML to specify gestures and section 3 of the **GestureTrigger** UI will be covered in the [3D Object Manipulation tutorial](unity-tutorials-3d-object-manipulation-hand.md).
 
 1. Make sure **GestureTrigger** is still the selected object in the **Hierarchy** window and choose the **Tap** gesture from the **Stock Gesture** drop-down list in the **Inspector** window:
 
