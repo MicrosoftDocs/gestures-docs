@@ -26,7 +26,7 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
 1. In Unity, load the final project created in the [**3D Object Manipulation - Scene Preparation**](unity-tutorials-3d-object-manipulation-mouse.md) tutorial. Play the **3D Object Manipulation** scene. Make sure you can grab and move objects using the mouse:
 
-    ![Grabbing and moving instructions](Images\Unity3dCursorMouseInstructions.png)
+    ![Grabbing and moving instructions](Images/Unity3dCursorMouseInstructions.png)
 
     On [step 3](#step-3---grab-and-move-object-using-gestures) we will learn how to do drag an object (**number 2** in the figure above) using the hand, and on [step 4](#step-4---move-object-away-or-towards-camera) we will learn to move an object away and towards the camera (**number 3** in the figure above) using the hand.
 
@@ -44,7 +44,7 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
     The hand-skeleton is provided in units of millimeters, in the following left-handed coordinate system:
 
-    ![Hand skeleton coordinate system](Images\UnityHandSkeletonCoordinates.png)
+    ![Hand skeleton coordinate system](Images/UnityHandSkeletonCoordinates.png)
     *We used a RealSense™ camera here to demonstrate the coordinate system axes. Note that the same coordinate system applies to all [depth-cameras](index.md#supported-depth-cameras) supported by Project Prague.*
 
     Ideally, we would like the **Main Camera** in our scene to see your hand from the perspective of your eyes. If we can achieve this - the 3D cursor's projection to the screen will follow your hand in a way that feels natural.
@@ -63,7 +63,7 @@ We recommend you complete the [**Introduction**](unity-tutorials-introduction.md
 
     Note that the **PalmPosition** property of the **skeleton** corresponds to the location of the center of the hand:
 
-    ![Palm position landmark](Images\UnityPalmPosition.png)
+    ![Palm position landmark](Images/UnityPalmPosition.png)
 
 1. replace the **GetCursorScreenPosition()** with the following contents:
 
@@ -108,14 +108,14 @@ We will now introduce a gesture and use it to trigger the cursor to enter and le
 
     When done, the **GestureTrigger** **Inspector** view should look like this:
 
-    ![GrabReleaseGesture gesture definition](Images\UnityGrabReleaseGesture.png)
+    ![GrabReleaseGesture gesture definition](Images/UnityGrabReleaseGesture.png)
 
     > [!TIP]
     > To generate a XAML representation of a gesture, create a [C# gesture object](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture) and call its [ToXaml()](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.xamlizable.toxaml#Microsoft_Gestures_Xamlizable_ToXaml) method. Visit [our overview page](index.md#creating-gestures-in-project-prague) to read about creating gestures in C#.
 
     The **GrabReleaseGesture** is made up of 3 poses as illustrated in the state-machine below:
 
-    ![GrabReleaseGesture](Images\UnityGrabReleaseGestureStateMachine.png)
+    ![GrabReleaseGesture](Images/UnityGrabReleaseGestureStateMachine.png)
 
     To learn more about the concept of a gesture as a state machine, please visit our [overview page](index.md#gesture).
 
@@ -131,11 +131,11 @@ We will now introduce a gesture and use it to trigger the cursor to enter and le
 
         - In the **Segment #1** drop down list, select the **GrabPose** (1), then click the **+** sign in the **On Trigger ()** pane (2). Drag the **Cursor** object to the **None (Object)** box (3) and select the **Cursor → StartGrab()** method from the **No Function** drop-down list (4):
 
-        ![GrabPose gesture trigger](Images\UnityGrabGestureTrigger.png)
+        ![GrabPose gesture trigger](Images/UnityGrabGestureTrigger.png)
 
         - In the **Segment #2** drop down list, select the **Idle** (1), then click the **+** sign in the **On Trigger ()** pane (2). Drag the **Cursor** object to the **None (Object)** box (3) and select the **Cursor → StopGrab()** method from the **No Function** drop-down list (4):
 
-        ![Idle gesture trigger](Images\UnityIdleGestureTrigger.png)
+        ![Idle gesture trigger](Images/UnityIdleGestureTrigger.png)
 
 1. Run the scene. Test the feature we've added on this step:
 

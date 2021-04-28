@@ -29,27 +29,27 @@ Refer to our [FAQ page](faq.md#i-have-visual-studio-2017-and-i-would-like-to-use
 
 1. Launch the Unity editor and create a new project in a location of your choice:
 
-    ![Create new Unity project](Images\UnityCreateNewProject.png)
+    ![Create new Unity project](Images/UnityCreateNewProject.png)
 
     Name the project **Introduction** and select a location where you would like to place it:
 
-    ![Name the new Project](Images\UnityNameNewProject.png)
+    ![Name the new Project](Images/UnityNameNewProject.png)
 
 1. Clone our [GitHub samples repository](https://github.com/Microsoft/Gestures-Samples), and import our [toolkit for Unity](https://github.com/Microsoft/Gestures-Samples/blob/master/Unity/Microsoft.Gestures.Toolkit.unitypackage) to your project - from the **Assets** menu, select **Import Package** and **Custom Package...**:
 
-    ![Import Project Prague toolkit](Images\UnityImportPackageMenu.png)
+    ![Import Project Prague toolkit](Images/UnityImportPackageMenu.png)
 
     Browse to the package location on your disk (**Unity** directory within the cloned repository) and open it:
 
-    ![Locating Project Prague Unity package](Images\UnityBrowsingToPackageLocation.png)
+    ![Locating Project Prague Unity package](Images/UnityBrowsingToPackageLocation.png)
 
     Choose to **Import** all the package contents:
 
-    ![Import full package contents](Images\UnityImportAllPackageContents.png)
+    ![Import full package contents](Images/UnityImportAllPackageContents.png)
 
 1. This is a good time to save your scene - press **Ctrl+S** and give your scene a name:
 
-    ![Save scene](Images\UnitySaveScene.png)
+    ![Save scene](Images/UnitySaveScene.png)
 
 > [!TIP]
 > It's a good practice to save the scene from time to time to avoid losing your work. We recommend you save the scene (using **Ctrl+S**) at the end of every tutorial step.
@@ -60,7 +60,7 @@ We will now establish a connection between our Unity application and the [**Gest
 
 1. In the **Project** window of the Unity editor, browse to the **Prefabs** directory (under **MicrosoftGesturesToolkit**):
 
-    ![Project Prague prefabs](Images\UnityProjectPraguePrefabs.png)
+    ![Project Prague prefabs](Images/UnityProjectPraguePrefabs.png)
 
     We will use the **GesturesManager** prefab in order to communicate with the [Gestures Service](getting-started-gestures-service.md). Every Unity scene that works with Project Prague must contain exactly one instance of the **GesturesManager**.
 
@@ -68,27 +68,27 @@ We will now establish a connection between our Unity application and the [**Gest
 
     Drag and drop the corresponding prefabs to your scene:
 
-    ![Add prefabs to scene](Images\UnityAddPrefabs.png)
+    ![Add prefabs to scene](Images/UnityAddPrefabs.png)
 
 1. Now play the scene by pressing the **play** button or using the **Ctrl+P** keyboard shortcut. Make sure that the icon in the bottom right corner is in the **Detecting** state:
 
-    ![Connection to service](Images\UnityConnectionToService.png)
+    ![Connection to service](Images/UnityConnectionToService.png)
 
     This indicates that our application was able to establish a connection with the **Gestures Service** and that gesture detection is active.
     
     If, instead, the reported state is **Disconnected**:
 
-    ![Unity disconnected icon](Images\UnityDisconnectedIcon.png)
+    ![Unity disconnected icon](Images/UnityDisconnectedIcon.png)
 
     Please launch your **Gestures Service** (use the **Microsoft.Gestures.Service** desktop shortcut). The state should change to **Detecting** within several seconds of launching.
 
     If the reported state is **Connected**:
 
-    ![Unity connected icon](Images\UnityConnected.png)
+    ![Unity connected icon](Images/UnityConnected.png)
 
     Please make sure that the **Enable Detection** checkbox in the **Microsoft Gestures Service** window is checked:
 
-    ![Gestures Service - enable detection](Images\UnityGesturesServiceEnableDetection.png)
+    ![Gestures Service - enable detection](Images/UnityGesturesServiceEnableDetection.png)
 
 > [!IMPORTANT]
 > Don't forget to exit the play mode (by pressing the **play** button or **Ctrl+P** again) before you move to the next step. Any changes you make to the scene while it is playing will be discarded once you exit play mode.
@@ -99,19 +99,19 @@ To demonstrate how gestures can be used in a Unity game, we will start by adding
 
 1. Use the **GameObject** menu to **Create Empty**, rename the new object to **PrimitiveFactory**:
 
-    ![Create new game object](Images\UnityCreateGameObject.png)
+    ![Create new game object](Images/UnityCreateGameObject.png)
 
     In the **Project** window, create a new folder under **Assets** and name it **Scripts**. This folder will contain the code which will be executed upon gesture detection.
 
-    ![Create Scripts folder](Images\UnityCreateNewFolder.png)
+    ![Create Scripts folder](Images/UnityCreateNewFolder.png)
 
     In the **Scripts** folder, create a new script named **PrimitiveFactory** (no need to add the .cs extension to the script name):
 
-    ![Create new script](Images\UnityCreateScript.png)
+    ![Create new script](Images/UnityCreateScript.png)
 
 1. To associate the **PrimitiveFactory** script with the **PrimitiveFactory** game object, drag and drop the script to the blank area below the **Add Component** button in the game object's **Inspector** window:
 
-    ![Associate script](Images\UnityAssociateScript.png)
+    ![Associate script](Images/UnityAssociateScript.png)
 
     In the **Project** window, double click the **PrimitiveFactory** icon to edit the script in Visual Studio. Once open, replace the contents of PrimitiveFactory.cs with the following code:
 
@@ -119,7 +119,7 @@ To demonstrate how gestures can be used in a Unity game, we will start by adding
 
 1. Play the scene and use your mouse pointer to left-click anywhere within the scene frame. Every click will instantiate a new randomly generated 3D-primitive:
 
-    ![Ptimitives being generateded](Images\UnityObjectSpawn.png)
+    ![Ptimitives being generateded](Images/UnityObjectSpawn.png)
 
 > [!TIP]
 > Take a look at the **Console** window of the Unity editor. You will find there various messages, warnings and errors, generated by the various entities in our scene and the Unity platform itself.
@@ -132,11 +132,11 @@ On this step, we will create the necessary wiring so that you can use a gesture 
 
     Drag and drop the **GestureTrigger** prefab from the **Project** window to your scene in the **Hierarchy** window:
 
-    ![Add GestureTrigger prefab](Images\UnityAddGestureTriggerPrefab.png)
+    ![Add GestureTrigger prefab](Images/UnityAddGestureTriggerPrefab.png)
 
 1. Select the **GestureTrigger** game object in the **Hierarchy** window, and turn to the **Inspector** window:
 
-    ![GestureTrigger inspector](Images\UnityGestureTriggerInspector.png)
+    ![GestureTrigger inspector](Images/UnityGestureTriggerInspector.png)
 
     The sections of the UI (user interface), numbered 1 to 4 above, allow you to configure a gesture and its effect:
 
@@ -152,19 +152,19 @@ On this step, we will create the necessary wiring so that you can use a gesture 
 
 1. Make sure **GestureTrigger** is still the selected object in the **Hierarchy** window and choose the **Tap** gesture from the **Stock Gesture** drop-down list in the **Inspector** window:
 
-    ![Set Tap as the stock gesture](Images\UnityGestureTriggerTap.png)
+    ![Set Tap as the stock gesture](Images/UnityGestureTriggerTap.png)
 
 1. To make the methods of **PrimitiveFactory** available for **GestureTrigger**, click the **+** sign in the **On Trigger ()** pane, then drag and drop the **PrimitiveFactory** game object from the **Hierarchy** window to the **None (object)** box in the **Inspector**:
 
-    ![Add PrimitiveFactory to objects](Images\UnityAddingEventHandler.png)
+    ![Add PrimitiveFactory to objects](Images/UnityAddingEventHandler.png)
 
     Finally, to designate **CreateRandomPrimitive()** as the handler method for the **Tap** gesture, click the **No Function** drop-down in the **Inspector** window of **GestureTrigger**, select **PrimitiveFactory** and **CreateRandomPrimitive ()**:
 
-    ![Hook CreateRandomPrimitive() event handler](Images\UnityHookingEventHandler.png)
+    ![Hook CreateRandomPrimitive() event handler](Images/UnityHookingEventHandler.png)
 
 1. Play the scene now. You should still be able to generate a new 3D-primitive using the left mouse button. In addition, you should now be able to do that with the **Tap** gesture (perform with either hand):
 
-    ![Tap Gesture Animation](Images\UnityTapGesture.png)
+    ![Tap Gesture Animation](Images/UnityTapGesture.png)
 
     If you cannot successfullly use the **Tap** gesture to generate new primitives in the scene, please refer to the [troubleshooting section](#troubleshooting).
 
@@ -191,13 +191,13 @@ On this step, we will add a gesture to clear all previously generated 3D-primiti
 
 1. Our **Discovery Client** demo application uses the **Finger Snap** gesture to open the start menu. Note that we are also using this gesture in our Unity application. You should disable or close the **Discovery Client** because we don't want **Finger Snap** to have any side-effects outside of Unity. To disable - click on the Project Prague tray icon and choose **Disable**:
 
-    ![Disable the Discovery Client](Images\UnityDisableDiscoClient.png)
+    ![Disable the Discovery Client](Images/UnityDisableDiscoClient.png)
 
     You can always follow the same steps to re-enable the **Discovery Client**.
 
 1. Now run the scene. Generate a few primitives using the **Tap** gesture and destroy them using the **Finger Snap** gesture (perform with either hand):
 
-    ![Snap gesture state machine](Images\UnitySnapGesture.png)
+    ![Snap gesture state machine](Images/UnitySnapGesture.png)
 
 ## Step 6 - Using a Gesture to Control the Camera
 
@@ -209,7 +209,7 @@ On this step we will use a Project Prague toolkit prefab to control the position
 
 1. Play the scene. Now, in addition to creating and destroying objects, you can control the camera using the following gesture (perform with either hand):
 
-    ![GrabReleaseGesture](Images\UnityGrabReleaseGestureStateMachine.png)
+    ![GrabReleaseGesture](Images/UnityGrabReleaseGestureStateMachine.png)
 
     Clinching your hand into a fist (**InitSpreadPose** → **GrabPose** transition) will cause the camera to "snap" to the hand - allowing you to tumble and dolly the camera by moving your fist through space.
 
@@ -223,7 +223,7 @@ On this step we will use a Project Prague toolkit prefab to control the position
 
 If you've reached the end of [Step 4](#step-4---using-a-gesture-to-generate-new-3d-primitives-in-the-scene) and the **Tap** gesture is not working for you, please play the Unity scene, open the **Microsoft Gestures Service** window and verify the following:
 
-![Microsoft Gestures Window](Images\UnityTroubleshooting.png)
+![Microsoft Gestures Window](Images/UnityTroubleshooting.png)
 
 1. When you bring your hand close to the depth camera, you can see it in the **image** section of the **Microsoft Gestures Service** window, with colorful arrows indicating the estimated positions of the fingers and palm. If you don't see such an image, you are probably experiencing camera issues - please refer to our [camera troubleshooting](troubleshooting-camera.md) page.
 1. **Unity** appears in the list of **Clients** and **Unity_TapGesture** appears in the sub-list of gestures associated with the **Unity** client. If this is not the case, please verify that

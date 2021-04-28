@@ -30,20 +30,20 @@ You need to install [Visual Studio Tools for Unity](https://www.visualstudio.com
 
 1. Choose **Modify**:
 
-    ![Visual Studio Installer Modify](Images\UnityVisualStudioInstaller.png)
+    ![Visual Studio Installer Modify](Images/UnityVisualStudioInstaller.png)
 
 1. Scroll down to the **Mobile & Gaming** category and select the **Game development with Unity** component:
 
-    ![Visual Studio Tools for Unity](Images\UnityVisualStudioToolsInstall.png)
+    ![Visual Studio Tools for Unity](Images/UnityVisualStudioToolsInstall.png)
 
     Click **Modify** to install the **Visual Studio Tools for Unity** component.
 
 When the installation completes, verify that Unity can access Visual Studio as its script editor. In the Unity editor **Preferences**, browse to the **External Script Editor** drop-down list, and select **Visual Studio 2017**:
 
-![Unity External Script Editor](Images\UnityExternalScriptEditor.png)
+![Unity External Script Editor](Images/UnityExternalScriptEditor.png)
 
 If **Visual Studio 2017** is not one of the options available in the **External Script Editor** drop-down list, select the **Browse...** option and paste "%programfiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe" in the **File name** text box:
 
-![Path to devenv.exe](Images\UnityPathToDevenv.png)
+![Path to devenv.exe](Images/UnityPathToDevenv.png)
 
 For further assistance with the installation, refer to the [Visual Studio Tools for Unity documentation](https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity#install-visual-studio-tools-for-unity).
