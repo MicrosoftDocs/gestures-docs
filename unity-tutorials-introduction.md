@@ -23,7 +23,7 @@ You will also need the following software tools for this tutorial
 - [Unity](https://unity3d.com/get-unity/download) editor version 5.5 or higher.
 - Visual Studio 2015 or later with [Visual Studio Tools for Unity](https://www.visualstudio.com/vs/unity-tools/).
 
-Refer to our [FAQ page](faq.md#i-have-visual-studio-2017-and-i-would-like-to-use-it-as-the-c-script-editor-for-unity-what-do-i-need-to-do) for help with installing Visual Studio Tools for Unity.
+Refer to our [FAQ page](faq.yml#i-have-visual-studio-2017-and-i-would-like-to-use-it-as-the-c--script-editor-for-unity--what-do-i-need-to-do-) for help with installing Visual Studio Tools for Unity.
 
 ## Step 1 - Create and Configure a New Unity Project
 
