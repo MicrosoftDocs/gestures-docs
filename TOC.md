@@ -9,4 +9,4 @@
 # [Troubleshooting](troubleshooting-camera.md)
 ## [RealSense™](troubleshooting-RealSense-camera.md)
 ## [Kinect v2](troubleshooting-Kinect-camera.md)
-# [FAQ](faq.md)
+# [FAQ](faq.yml)
