@@ -16,7 +16,7 @@ Using Project Prague, you can provide your users with hand gestures to intuitive
 
 Brand | Gesture Detection Range | Experience
 ------|------|--------|
-[**Intel® RealSense™ SR300 camera**](https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html) | 20-60 [cm] | **Best**
+[**Intel® RealSense™ SR300 camera**](https://ark.intel.com/content/www/us/en/ark/products/92329/intel-realsense-camera-sr300.html) | 20-60 [cm] | **Best**
 **Intel® RealSense™ F200 camera** | 20-60 [cm] | Good
 [**Kinect for Windows v2**](https://developer.microsoft.com/en-us/windows/kinect/hardware) | 60-110 [cm] | Good
 
@@ -40,7 +40,7 @@ To get Project Prague running on your machine you will need to:
 
     ![RealSense camera desktop setup](Images/RealSenseDesktopSetup.jpg)
 
-1. **Download and install** Project Prague runtime from [**aka.ms/gestures/download**](http://aka.ms/gestures/download). The installation will place **shortcuts on your desktop** pointing to our compiled demo applications:
+1. **Download and install** Project Prague runtime from [**aka.ms/gestures/download**](https://aka.ms/gestures/download). The installation will place **shortcuts on your desktop** pointing to our compiled demo applications:
 
     <br><div align="center"><img src ="Images/DemoApplications.png" /></div>
 
@@ -73,7 +73,7 @@ Before you start writing gestures, you should get familiar with the basic **buil
 
 ### Hand pose
 
-A hand pose refers to **a snapshot of the hand at a given moment**. The hand pose contains a complete description of the state of the palm and the fingers in that snapshot. In our API, a hand pose is represented by the [HandPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handpose) class, which is **made up of various constraints** as illustrated below:
+A hand pose refers to **a snapshot of the hand at a given moment**. The hand pose contains a complete description of the state of the palm and the fingers in that snapshot. In our API, a hand pose is represented by the [HandPose](/dotnet/api/microsoft.gestures.handpose) class, which is **made up of various constraints** as illustrated below:
 
 ![HandPose and constraints](Images/HandPoseAndConstraints.png)
 
@@ -91,7 +91,7 @@ This last example captures well the essence of the pose in the snapshot: The pin
 
 ### Hand motion
 
-As you move your hand, **your fingertips trace a curve through space**. We refer to this curve as a "hand motion", and in our API, it is represented by the [HandMotion](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handmotion) class. A hand motion is associated with a hand part (either the center of the palm or one of the fingertips) and **made up of a sequence of motion building blocks**. The available building blocks are illustrated below:
+As you move your hand, **your fingertips trace a curve through space**. We refer to this curve as a "hand motion", and in our API, it is represented by the [HandMotion](/dotnet/api/microsoft.gestures.handmotion) class. A hand motion is associated with a hand part (either the center of the palm or one of the fingertips) and **made up of a sequence of motion building blocks**. The available building blocks are illustrated below:
 
 ![HandMotion building blocks](Images/HandMotionScript.png)
 
@@ -107,7 +107,7 @@ Once you've decided which hand part should execute the motion and chosen a plane
 
 We think of a gesture as **a state-machine whose states represent hand poses, hand motions, or even other gestures**. In this state-machine there are initial states and receiving states. A path starting with an initial state and ending with a receiving state represents a sequence of actions (hand poses, hand motions and hand gestures) the user must carry out in order to trigger the detection of the corresponding gesture.
 
-In our API, a gesture is represented by the [Gesture](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture) class. The following example illustrates a gesture whose state-machine is a simple sequence of hand poses and hand motions:
+In our API, a gesture is represented by the [Gesture](/dotnet/api/microsoft.gestures.gesture) class. The following example illustrates a gesture whose state-machine is a simple sequence of hand poses and hand motions:
 
 ![Gesture example](Images/GestureExample.png)
 
@@ -138,7 +138,7 @@ Having defined the gesture, you need to **hook up the event indicating gesture d
 
 [!code-csharp[RotateRight triggered event subscription](CodeSnippets\RotateRightTriggeredEvent.cs)]
 
-**The detection itself is performed in the Microsoft.Gestures.Service.exe process** (associated with the "Microsoft Gestures Service" window discussed above). This process runs in the background and acts as a service for gesture detection. We provide you with the [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) class in order to communicate with the service. The following code snippet **instantiates a [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) object and registers the RotateRight gesture** for detection:
+**The detection itself is performed in the Microsoft.Gestures.Service.exe process** (associated with the "Microsoft Gestures Service" window discussed above). This process runs in the background and acts as a service for gesture detection. We provide you with the [GesturesServiceEndpoint](/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) class in order to communicate with the service. The following code snippet **instantiates a [GesturesServiceEndpoint](/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) object and registers the RotateRight gesture** for detection:
 
 [!code-csharp[Connect to end-point](CodeSnippets\ConnectToEndPoint.cs)]
 
@@ -148,7 +148,7 @@ When you wish to stop the detection of the **RotateRight** gesture, you can **un
 
 And your handler will no longer be triggered when the user executes the **RotateRight** gesture.
 
-When you are finished working with gestures, you should **dispose** of the [GesturesServiceEndpoint](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) object:
+When you are finished working with gestures, you should **dispose** of the [GesturesServiceEndpoint](/dotnet/api/microsoft.gestures.endpoint.gesturesserviceendpoint) object:
 
 [!code-csharp[Dispose gestures service](CodeSnippets\DisposeGesturesService.cs)]
 
