@@ -51,6 +51,7 @@
     },
     "fileMetadata": {},
     "template": [],
+    "isCanonicalUrlWithMoniker": true,
     "dest": "gestures-dotnet",
     "lruSize": 0
   }
