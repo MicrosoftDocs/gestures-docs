@@ -62,4 +62,4 @@ sections:
           
           ![Path to devenv.exe](Images/UnityPathToDevenv.png)
           
-          For further assistance with the installation, refer to the [Visual Studio Tools for Unity documentation](https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity#install-visual-studio-tools-for-unity).
+          For further assistance with the installation, refer to the [Visual Studio Tools for Unity documentation](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity#install-visual-studio-tools-for-unity).

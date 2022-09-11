@@ -111,7 +111,7 @@ We will now introduce a gesture and use it to trigger the cursor to enter and le
     ![GrabReleaseGesture gesture definition](Images/UnityGrabReleaseGesture.png)
 
     > [!TIP]
-    > To generate a XAML representation of a gesture, create a [C# gesture object](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture) and call its [ToXaml()](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.xamlizable.toxaml#Microsoft_Gestures_Xamlizable_ToXaml) method. Visit [our overview page](index.md#creating-gestures-in-project-prague) to read about creating gestures in C#.
+    > To generate a XAML representation of a gesture, create a [C# gesture object](/dotnet/api/microsoft.gestures.gesture) and call its [ToXaml()](/dotnet/api/microsoft.gestures.xamlizable.toxaml#Microsoft_Gestures_Xamlizable_ToXaml) method. Visit [our overview page](index.md#creating-gestures-in-project-prague) to read about creating gestures in C#.
 
     The **GrabReleaseGesture** is made up of 3 poses as illustrated in the state-machine below:
 
@@ -125,7 +125,7 @@ We will now introduce a gesture and use it to trigger the cursor to enter and le
     - **Idle** detection will cause the cursor to leave grab mode, i.e., it should trigger **StopGrab()**.
 
     > [!NOTE]
-    > The [**Idle** state](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state in every gesture. Whenever the user either performs a gesture to completion or abandons a gesture in the middle of its execution, the state-machine falls back to the **idle** state.
+    > The [**Idle** state](/dotnet/api/microsoft.gestures.gesture.idlegesturesegment#Microsoft_Gestures_Gesture_IdleGestureSegment) is the initial state in every gesture. Whenever the user either performs a gesture to completion or abandons a gesture in the middle of its execution, the state-machine falls back to the **idle** state.
 
     Examine the **GestureTrigger** game object in the **Inspector** window and press the **Add Gesture Segment Event Button** *twice*. This should generate two new UI (user interface) sections, **Segment #1** and **Segment #2**.
 
