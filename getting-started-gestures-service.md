@@ -68,10 +68,10 @@ This section of the **Gestures Service UI** displays the IR video stream produce
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Image.png)
 
-On top of the IR frame, we draw vectors indicating the estimated direction of each finger and location of each fingertip. We also draw a local coordinate system, centered at the [palm position](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.skeleton.ihandskeleton.palmposition#Microsoft_Gestures_Skeleton_IHandSkeleton_PalmPosition) and made up of the following axes:
+On top of the IR frame, we draw vectors indicating the estimated direction of each finger and location of each fingertip. We also draw a local coordinate system, centered at the [palm position](/dotnet/api/microsoft.gestures.skeleton.ihandskeleton.palmposition#Microsoft_Gestures_Skeleton_IHandSkeleton_PalmPosition) and made up of the following axes:
 
-- **Blue** - the direction **perpendicular to the palm plane**. In our API, we refer to this axis as the [palm direction](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.skeleton.ihandskeleton.palmdirection#Microsoft_Gestures_Skeleton_IHandSkeleton_PalmDirection).
-- **Green** - the direction that would be **aligned with the middle finger had it been stretched out**. In our API, we refer to this axis as the [palm orientation](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.skeleton.ihandskeleton.palmorientation#Microsoft_Gestures_Skeleton_IHandSkeleton_PalmOrientation).
+- **Blue** - the direction **perpendicular to the palm plane**. In our API, we refer to this axis as the [palm direction](/dotnet/api/microsoft.gestures.skeleton.ihandskeleton.palmdirection#Microsoft_Gestures_Skeleton_IHandSkeleton_PalmDirection).
+- **Green** - the direction that would be **aligned with the middle finger had it been stretched out**. In our API, we refer to this axis as the [palm orientation](/dotnet/api/microsoft.gestures.skeleton.ihandskeleton.palmorientation#Microsoft_Gestures_Skeleton_IHandSkeleton_PalmOrientation).
 - **Red** - the cross product of the palm direction (blue) and palm orientation (green) axes.
 
 #### **Clients section**
@@ -96,7 +96,7 @@ Following is a snapshot of the **Gesture Detection** section. Every gesture that
 
 ![Gestures Service UI](Images/MicrosoftGesturesService_Timeline.png)
 
-Depending on its definition, a gesture can be executed by a specific designated hand (right or left) or by either one of the hands (you can specify this when defining [HandPoses](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.handpose) associated with the gesture, assigning them a [PalmPose](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.palmpose) constraint constructed using either [SingleHandContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.singlehandcontext) or [AnyHandContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.anyhandcontext)). For a given gesture, the **[Right]** (**Left**) line details the history of execution by the right (left) hand. Only when the **Enable two hands [Experimental]** box in the **System** section of the UI is checked, left hand detection is enabled and the **[Left]** lines will become highlighted.
+Depending on its definition, a gesture can be executed by a specific designated hand (right or left) or by either one of the hands. You can specify this when defining [HandPoses](/dotnet/api/microsoft.gestures.handpose) associated with the gesture, assigning them a [PalmPose](/dotnet/api/microsoft.gestures.palmpose) constraint constructed using either [SingleHandContext](/dotnet/api/microsoft.gestures.singlehandcontext) or [AnyHandContext](/dotnet/api/microsoft.gestures.anyhandcontext). For a given gesture, the **[Right]** (**Left**) line details the history of execution by the right (left) hand. Only when the **Enable two hands [Experimental]** box in the **System** section of the UI is checked, left hand detection is enabled and the **[Left]** lines will become highlighted.
 
 There are three columns in the **Gesture Detection** section of the UI:
 
@@ -106,10 +106,10 @@ There are three columns in the **Gesture Detection** section of the UI:
 - **TimeLine** - displays the history of events associated with the corresponding gesture.
   - ![green triangle](Images/GreenTriangle.png) - indicates a gesture registration event.
   - ![red square](Images/RedSquare.png) - indicates a gesture de-registration event.
-  - ![blue circle](Images/BlueCircle.png) - indicates the gesture state-machine advanced due to a successful detection of the following [gesture segment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesturesegment) (state).
-  - ![gray circle](Images/GrayCircle.png) - indicates the gesture state-machine was reset to the [idle](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.IdleGestureSegment) state, meaning the gesture was either performed to completion or abandoned.
+  - ![blue circle](Images/BlueCircle.png) - indicates the gesture state-machine advanced due to a successful detection of the following [gesture segment](/dotnet/api/microsoft.gestures.gesturesegment) (state).
+  - ![gray circle](Images/GrayCircle.png) - indicates the gesture state-machine was reset to the [idle](/dotnet/api/microsoft.gestures.IdleGestureSegment) state, meaning the gesture was either performed to completion or abandoned.
   - ![vulcan salute](Images/VulcanSalute.png) - indicates that the entire gesture was successfully detected.
-- **Current** - specifies the name of the current [gesture segment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.gestures.gesturesegment) (state) within the gesture state-machine.
+- **Current** - specifies the name of the current [gesture segment](/dotnet/api/microsoft.gestures.gesturesegment) (state) within the gesture state-machine.
 
 #### **Log section**
 
