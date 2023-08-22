@@ -12,7 +12,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "dotnet/**"
         ]
       }
     ],
@@ -24,7 +25,8 @@
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "dotnet/**"
         ]
       }
     ],
