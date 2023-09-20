@@ -1,3 +1,6 @@
+---
+description: Master 3D object manipulation in Unity with hand gestures. Learn to create a 3D cursor controlled by hand gestures in this 30-minute tutorial.
+---
 # 3D Object Manipulation
 
 This tutorial will introduce you to using gesture and skeleton input to enrich the user interface of the games and applications you make with Unity. We will create a 3D cursor that is controlled by hand gestures. We will use this cursor to select objects in the scene and move them in 3D space.
