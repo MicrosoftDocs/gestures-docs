@@ -1,18 +1,18 @@
 # Overview
 
-## What is Project Prague?
+## What is Project Gesture?
 
-Project Prague is an **SDK** (software development kit) that allows you to create **NUI** (natural user interface) experiences based on **hand gesture** input. We provide APIs (application programming interfaces) for **C#, C++ (including UWP and .NET Core flavors)**, enabling you to easily design and implement your own customized hand gestures and integrate them into your applications. Visit our [**GitHub samples repository**](https://aka.ms/gestures/samples) to explore some hand gesture experiences and get acquainted with our programming model.
+Project Gesture is an **SDK** (software development kit) that allows you to create **NUI** (natural user interface) experiences based on **hand gesture** input. We provide APIs (application programming interfaces) for **C#, C++ (including UWP and .NET Core flavors)**, enabling you to easily design and implement your own customized hand gestures and integrate them into your applications. Visit our [**GitHub samples repository**](https://aka.ms/gestures/samples) to explore some hand gesture experiences and get acquainted with our programming model.
 
 **The building blocks of a gesture are hand poses and hand motions**. Using simple constraints specified in an intuitive language, we allow you to define any hand pose and any hand motion you like. You can **string together a sequence of hand poses and hand motions to specify a gesture**. Once your gesture is defined and registered with our runtime, we will notify you every time we detect that your user has performed the gesture with their hand. At this point you can run the desired logic to respond to the detected gesture.
 
-Using Project Prague, you can provide your users with hand gestures to intuitively control music and video playback, bookmark and like web content, send an emoji on IM (instant messaging) applications, interact with a digital assistant, create and run PowerPoint slideshows, manipulate three-dimensional objects, play games using their hands alone, and much more.
+Using Project Gesture, you can provide your users with hand gestures to intuitively control music and video playback, bookmark and like web content, send an emoji on IM (instant messaging) applications, interact with a digital assistant, create and run PowerPoint slideshows, manipulate three-dimensional objects, play games using their hands alone, and much more.
 
-## Getting started with Project Prague
+## Getting started with Project Gesture
 
 ### Supported depth cameras
 
-**You need to have a depth camera** to run Project Prague on your machine. We currently support the following camera brands:
+**You need to have a depth camera** to run Project Gesture on your machine. We currently support the following camera brands:
 
 Brand | Gesture Detection Range | Experience
 ------|------|--------|
@@ -24,7 +24,7 @@ For optimal performance, **we recommend you use the Intel® RealSense™ SR300 c
 
 ### Hardware and software requirements
 
-Please make sure your system meets the following requirements before you proceed to set up Project Prague:
+Please make sure your system meets the following requirements before you proceed to set up Project Gesture:
 
 Category     | Recommended | Minimal
 ------------ | ------------ | -------------
@@ -32,15 +32,15 @@ CPU | Intel® Core™ i7 series, 8 logical cores | Intel® Core™ i5 series, 4 
 Free RAM | 2GB or more | 1GB
 Operating System | Windows 10 with Creator Update installed | Windows 10
 
-### Setting up Project Prague on your machine
+### Setting up Project Gesture on your machine
 
-To get Project Prague running on your machine you will need to:
+To get Project Gesture running on your machine you will need to:
 
 1. **Plug your [depth camera](#supported-depth-cameras) in to a USB 3.0** port and place it below your computer's monitor, as illustrated in the image below:
 
     ![RealSense camera desktop setup](Images\RealSenseDesktopSetup.jpg)
 
-1. **Download and install** Project Prague runtime from [**aka.ms/gestures/download**](http://aka.ms/gestures/download). The installation will place **shortcuts on your desktop** pointing to our compiled demo applications:
+1. **Download and install** Project Gersture runtime from [**aka.ms/gestures/download**](http://aka.ms/gestures/download). The installation will place **shortcuts on your desktop** pointing to our compiled demo applications:
 
     <br><div align="center"><img src ="Images\DemoApplications.png" /></div>
 
@@ -60,14 +60,14 @@ To get Project Prague running on your machine you will need to:
 > [!NOTE]
 > By default, only right hand detection is enabled. To enable both hands, check the **Enable two hands** box in the **System** section of the Gestures Service window.
 
-1. Note that Project Prague setup has configured the following two applications to **launch on Windows startup and run in the background**:
+1. Note that Project Gesture setup has configured the following two applications to **launch on Windows startup and run in the background**:
 
     * **Microsoft.Gestures.Sync** - keeps the [Gestures Service](getting-started-gestures-service.md) running and pulls updates when we publish them.
     * **Microsoft.Gestures.DiscoveryClient** - provides gesture integration for various contexts: Windows shell, PowerPoint, Skype, YouTube, Photos and Visual Studio.
 
     You can modify this configuration any time in the Startup tab of the Task Manager.
 
-## Understanding gestures in Project Prague
+## Understanding gestures in Project Gesture
 
 Before you start writing gestures, you should get familiar with the basic **building blocks of a gesture - hand poses and hand motions**.
 
@@ -81,7 +81,7 @@ You can express any hand pose by characterizing all the constraints involved in 
 
 ![HandPose examples](Images\HandPoseExample.png)
 
-The example above demonstrates all the constraints you can reasonably associate with the snapshot on the left. This example is given for educational purposes only, to show you the meaning of the different terms used to specify constraints in the Project Prague language. In practice, you would never use such a large number of constraints to specify a hand pose. You should try, instead, to find the minimal number of constraints that capture the essence of the hand pose. The following example is **a practical way to describe the same pose**:
+The example above demonstrates all the constraints you can reasonably associate with the snapshot on the left. This example is given for educational purposes only, to show you the meaning of the different terms used to specify constraints in the Project Gesture language. In practice, you would never use such a large number of constraints to specify a hand pose. You should try, instead, to find the minimal number of constraints that capture the essence of the hand pose. The following example is **a practical way to describe the same pose**:
 
 ![HandPose example simplified](Images\HandPoseExampleSimplified.png)
 
@@ -113,12 +113,12 @@ In our API, a gesture is represented by the [Gesture](https://docs.microsoft.com
 
 **The Slingshot gesture in the example is made up of a single hand motion, named Retract, and three hand poses - two instances of NotPinching and one instance of Pinch**. The **Slingshot** gesture corresponds to the following action sequence: Imagine you are holding a slingshot in your left hand, now grasp its pocket with the thumb and index fingers of your right hand and pull it back to stretch the slingshot band, finally - spread the index and thumb fingers apart to release the pocket and let the imaginary projectile fly.
 
-## Creating gestures in Project Prague
+## Creating gestures in Project Gesture
 
-We will now give an example illustrating how to program a simple gesture using the Project Prague API.
+We will now give an example illustrating how to program a simple gesture using the Project Gesture API.
 
 > [!IMPORTANT]
-> The root **namespace** for all Project Prague .NET entities is **Microsoft.Gestures** and, accordingly, **Microsoft::Gestures** for all native entities.
+> The root **namespace** for all Project Gesture .NET entities is **Microsoft.Gestures** and, accordingly, **Microsoft::Gestures** for all native entities.
 
 We will implement the **RotateRight** gesture:
 
